@@ -1,0 +1,314 @@
+GN-Done:
+Add: Noise 3D - position & scale.
+Add: Vector Noise
+Add: Noise seed -> Vector Seed.
+	**Deleted, with all Noise Texture into 4D
+Add: Index Mask Falloff.
+Add: proximity falloff.
+Add: MixXYZ.
+Add: *Radial Falloff
+	*Switch node not receive field.
+	*Resolved in Oct.4th.
+Add: *Directional Falloff
+Add: Delay Falloff
+Add: Time Info
+Add: Sin Function
+Add: Random Transform.
+Add: Min-Max Node -> Randomness
+Add: Wiggle Node.
+Add: Geometry Info Node: Position, Normal, index node.
+	all from points domain.
+*Attribute Linkage node - unproducible, bug.
+
+Add: Float range node.
+
+proximity falloff.
+-target - because instances not realized.
+-move position into the group node.
+
+Index Mask Falloff.
+-why Inversion? - Need to use Booleaned output in example instead.
+-Remove position input.
+
+Radial Falloff.
+-Object info into opposite direction.
+	-> use "subtract" instead of add position.
+
+Scale from Noise should be called "Freq"
+
+Delay Falloff
+-fix Clamp Max
+-Add "Variances".
+-change into "time Input"
+-Use "step interval" instead of division.
+
+Time info.
+-add Offset.
+
+Sin Function
+-Amplitude.
+-Cos output
+
+Directional Falloff
+-Remove max outut
+
+Random Transform - random Scale
+Float Range
+-Computer index always start from 0, needs to offset to 1.
+
+Add: Parenting Node
+Loop Index List Length node.
+
+Sin Function
+-Linear Pingpong
+
+Random Transform
+-Change Default value of Freq
+-Add XY Plane Option.
+-Seed link to "line offset".
+Change All Noise Seed into 4D-W
+
+Delay-Falloff
+-Too much order from "index" - How to solve it?
+-Random integer method?
+
+Add: Polygon Info node -> Attribute Info-Face
+-position.
+-normal
+-index.
+
+All Falloff add Custom Vector.
+-Proximity Falloff - Switch Map Range in Target Mode; Max-Distance.
+
+Noise 3D -> rename to "Noise".
+-Color Ramp Inside to change magnitude of Noise?
+
+Rotation to Vector?
+
+.G_Color Scale Node -> Color MapRange.
+-> Going tobe Replaced by Vector MapRange Update.
+
+Noise 3D
+-Scale *2
+Vector Wiggle
+-Default minimum tob -1
+
+Delay-Falloff
+-Seed into Random Value.
+-ID Switch, Custom or Default.
+
+Random Transform
+-Location Output is Wrong - Why Capture Not Working??
+	-Current Use "Position" as Output
+
+Sin Function
+-rename "Remap 0-1"
+
+Add: Index Seed
+
+Grid of Correct Indices
+-investigate the order
+
+Float Range
+-Stop Mode.
+
+Fix: Negati
+-Factor math tob Multiply
+
+Index Loop List Length
+-index+1 for actual list length.
+
+MixXYZ
+-expose Vector Socket
+
+All Falloff
+-Ease Ease
+*Update to Gradient Texture?
+
+Delay Falloff
+-Set Animation Interval -> Duration
+*Output Unclamped Time?
+-Fix Clamp Ease Ease - Disable Ease Ease By Default.
+*Only Ease Ease At low value? - NO.
+
+Time Info
+-Start Frame/End Frame
+
+Add: Fill Volume
+-for shader displacement - UV/ID output?
+
+Add: Index Converge
+-Division, Floor, Multiply
+-Modulo Mode?
+
+Direction Falloff
+*Why two clamps previously?
+-Customize Center -> Rel to position.
+-Additional Offset
+
+**Delay Falloff
+-Reverse Index Option.
+-Fix Custom ID Option.
+-Variance should on top of Random Index
+
+Falloff Presets
+-Remove Ori/Rel, all into Rel
+
+Spline Falloff
+*Once Curve to Points is out, Update.
+*Issue & Design in the resolution.
+-Output Curve
+
+Add: Bevel Spline.
+Add: Helical Connection.
+-In series / in parellel? - in Series.
+
+Proximity Falloff
+-Location Offset
+-Scale Offset
+
+Float Range
+-Fix Start Bug
+-Add Loop Float Range Function?
+	-possible for stop mode?
+	-modulo at stop, step by???
+
+MixXYZ
+-Fac into Slider
+
+Add: Combine Euler
+
+Time Info
+-Delete "start frame" & "end frame"
+	-Referencing to scene. Append node tree will append scene.
+
+Add: Animate node.
+
+**All Noise
+-Check Float Output - KNOWN BUG
+
+Delete: Pingpong Function
+	-converged to Sin already
+Add: Randomness
+
+Proximity Falloff
+-Obj/Geo Switch
+-Scale Offset update to Geo mode as well? -Rejected. Max-Distance
+
+Randomness
+-Vector Update.
+-Rel to Avg Swtich.
+
+Index Seed.
+-Fix Seed 1 & 2
+
+Implicite Attribute.
+-Index Converge
+-Delay Falloff?
+
+Loop Index Length
+-modulo-1
+
+Float Range.
+-Stop Loop not correct?
+	-Modulo Amount should be the subtracted value.
+
+Directional Falloff
+-Location Offset According to Axis.
+
+Noise 3D
+-Custom Vector
+
+Combine Euler
+-Change Default Value, 0,0,0
+
+Implicite Attribute
+-Index Evaluation Change?
+	-ISuee with Randomness node -> output+1
+
+Loop Index List Length
+-change to Max-Index Output.
+-Re-organize output priority.
+-No longer needed?
+
+Grid of Correct Indicies
+Automatic Realize Instances.
+
+Ease-Ease
+-Minimum Output Linkage -> Fix Radial Falloff
+
+Add: Shuffle List node?
+
+Add: Geometry to Instance
+
+Attribute Info
+-Point position
+-Polygon Center
+-Polygon Index
+
+Proximity Falloff
+-Only X-Scale Evaluated.
+-Negative Scale BUG in the offset.
+
+Delete: Attribute Info-Point.
+
+Add: Translate Position.
+
+Add: Cloud Shadow node.
+
+Add: Animate Node.
+-start & stop time.
+-Duration
+
+Rename Index Converge into "Index Per Instance"
+**Revert Change for consistentcy in tutorial.
+
+Directional Falloff:
+-Relative to vector working?
+
+Curve EndPosition
+
+Example 7 & 9 rewrite.
+-EX7 for polygon Animation
+-EX9?
+
+Attribute Info:
+Face Index +1 to avoid "Implicite Attribute" in Randomness series node.
+
+Add: Randomization (Shuffle list)
+
+Helical Connection Into LOOP.
+
+Delete: Vector Seed.
+
+Attribute Info
+-both default output & +1
+
+Noise 3D.
+-Decrease Amplitude by factor 2
+
+Noise Node
+-Float Factor taking X of color/XYZ
+	otherwise being averaged from color.
+
+Time info.
+-Multiply Mode.
+
+Add: Normal Displacement
+-normal & scale.
+-Set position & Selection?
+
+Directional Falloff
+-Add Back Rel to Vector. But using Vector instead of Boolean.
+**No because of usage is rather limited.
+-----------------
+GN-Todo:
+Add: Shuffle List -> List Randomization.
+**Wait until Merge by Distance.
+
+All Node
+-Add Implicit Position/ID
+	**Use Switch Node once improvement?
+	??
+
+Add: Reverse Index?

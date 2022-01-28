@@ -1,0 +1,271 @@
+Done:
+Directional Falloff
+-Location Offset -> Directional Offset
+
+Grid of Correct Indicies
+-Default Boolean change.
+
+Loop Index
+-Add Element Selection.
+
+Optimize All Noise Node.
+-If seed=0, use 3D version.
+Check Object Coordinate.
+-Fix Object Scale issue using Switch node.
+
+Translate position
+-Add Object.
+-Add Vector Vector
+-Change "Scale Factor"
+-Fix "Only for Location"
+
+Directional Falloff
+-Scale Flip Fix
+
+Hexagon Distribution
+-Center X
+-Center Y
+
+Implicite Attribute Node
+-Rewrite Index at -1. -> Flickering Possibility?
+-Fix ALL PRESET
+1_re-Add Implicite Attribute to each -> Finished.
+2_re-Add Each Demo File.
+	-At Helical Connection
+-Breaking
+	-Index List Length
+		-Point Distribute Node
+	-Curve Deform.
+-Fixed.
+-Rewrite Position Back to 0,0,0?
+	-What if Plugging Index to Vector?
+
+Delete Polygon Disappearance.
+
+Attribute Spline
+-Add Realize Instance
+
+All Noise
+-Only For Location Switch.
+
+Vector Noise
+-Separate Vector Evaluation -> Evolution 3D.
+
+Is Inside Volume
+-Fix Compare
+
+Fix Animate Node.
+
+**1.1.0b
+Add: Viewport Render Switch.
+
+Array on Spline
+-Fix Loop
+-Rewrite to Follow Spliens method.
+
+Vector Noise
+-Remove Limitation on Freq
+
+Normal Displacement
+-Default Value
+
+Attribute Spline
+-Fix Spline Domain in Start & End
+
+Object Coordinate.
+Translate Position
+-are both nodes necessary? - Object Coordinate Node is lighter.
+-Integrate Object Coordinate into Translate position.
+-Fix Glitch caused by Epsilon in compare.
+
+**1.1.0d
+All Noise Node
+-Fix 3D, 4D swtich design - From Or to And.
+	**Why? -Revert.
+
+Fill Volume
+-Add Midlevel; Default 0.5
+
+Add: Index Extraction
+
+Object Coordinates
+-More detailed XYZ Multiply.
+Translate Position
+-Add Rotation Possibility?
+
+Rename: Attribute Mesh to Attribute Mesh Info
+
+Add: Cyclic Keep Shape -> Reset Curve Cyclic
+
+**1.1.0e
+Bounding Box Falloff
+-Add mirror.
+	-> Improve Ease Ease Node.
+Mirror option to all node using Ease Ease?
+-probably no. not really useful to many.
+	-needs to investigate about directional falloff negative option?
+
+Viewport Render Switch
+-Reverse input.
+
+Bevel Curve
+-Rel UV option to add multiplica on Spline Length?
+	*Not sure If really working; Hold.
+
+Directional Falloff
+-Optimization using Vector math instead of math.
+
+Bevel Curve
+-Fix Spline Cyclic Condition.
+
+Add: Trim Curve Normalized
+
+Time Info
+-Negative Option.
+
+Index Seed
+-Default Offset.
+
+Add: Vector Seed
+-as Seed for Noise.
+-Integrate into All Noises?
+	-How to trigger Evolution then?
+-Performance Test of Noise
+	Icos 6 division, 4D 70 ms, 3D 32 ms
+-Is Vector Wiggle Still needed?
+	-Keep for 1.0 series.
+
+Add: Motion Variance
+-Start Variance.
+-Speed Variance.
+
+Follow Spline
+-Factor renamed to be Parameter.
+
+Add: Voronoi 3D
+-Round Option.
+
+1.1.0F
+Motion Variance
+-Fix Loop At.
+
+Alignment on Spline
+-Rotation Offset Allow Degree/Radians
+
+Add: Snap Function.
+
+Add: Remap 0-1
+
+Parenting
+-Limit way of rotation/scale.
+
+Animate Node
+-Rename Min Max -> Start & End
+
+Time info
+-Negati to Contant Offset?
+
+Add: Rounding Voronoi.
+
+Randomness
+-Remove to Constant.
+-Add Mid-Level for Var.
+Negati
+-Add Mid-Level
+
+Delete Instance Variance Node.
+
+Delete All Realize Instance option.
+-Attribute Spline
+-Follow Spline
+
+Follow Spline & Array on Spline
+-Motion Variance - Clamp Start
+-Delete Realize Instance Option.
+	-The node group growed too big.
+
+Add: Wrap Modifier
+
+Object Coordinate
+-Subtract Location results in Repulsion
+-Whereelse is used? to prevent breaking of other nodes.
+	-Noise & Radial Falloff requires minus location.
+		-Fixing Radial Falloff
+	-all rest requires Add Location.
+		-other falloff is using "Object Control".
+	-Replacement Failed, Due requiring Scale in Proximity and Directional.
+-----------------
+GN-Todo:
+Add: Knot
+
+**3.1 Done
+Offset Field List
+-Group Index
+
+**3.1 TODO
+Offset Field List
+-check if geometry can be optional?
+-Test Custom Index for Polygons.
+
+Group Index
+-any falloff based on index?
+-Index Mask Falloff
+-Fade Falloff
+
+**3.1
+New Compare Node
+-Implicite Attribute
+-Compare Vector
+
+New Map Range Node
+-Color Scale (still needed anyway?)
+
+Scene Time Node
+-Time info Node.
+
+Spline Index
+-Is Attribute Spline still necessary?
+	Yes -Spline index as increment within each Spline.
+
+Mix-Node
+-Negati Mid Level
+-Warp Modifier
+
+
+DELETE:
+-Index Converge?
+-Attribute to Instances
+-Curve Deform
+-Color Scale
+-Geometry To Instance.
+
+Update:
+-Point Distribute
+	-to see if Face Area help.
+-
+
+Enum
+-Bounding Box Falloff
+-Curve Linear
+-Rotation to Vector
+-Radial Falloff
+What does object control do?
+-Ori and Relative set.
+--------------------
+GN-Known Issue:
+Shuffle List
+**Optimization after Merge by Distance.
+
+Instance Variations
+-Assign Transform at the end?
+-Loop node not until 3.2+
+
+Curve Deform Node.
+Center Geometry Node
+**Chance of optimization?
+
+Object Coordinate
+-Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Add: Random Color
