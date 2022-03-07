@@ -5,3 +5,14 @@ This repository is used by the add-on made by Possibly_furret at https://www.ins
 
 The add-on intends to check updates and download the newest Blender Files from this repository every time you open Blender, and it will link these node groups inside the File. Therefore, you no longer need to check update and download linked file by your own; everything should be downloaded and linked automatically with the add-on.
 We hope the add-on will improve your experience in your usages of these presets.
+
+## List of Presets Presented in the Manual:
+### 01. Falloff
+  Bounding Box Falloff <br>
+  Delay Falloff <br>
+  Directional Falloff <br>
+  Fade Falloff <br>
+  Index Mask Falloff <br>
+  Proximity Falloff <br>
+  Radial Falloff <br>
+  Splien Falloff <br>
