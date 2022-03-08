@@ -199,6 +199,15 @@ Point Distribute
 -Density Method better in General.
 	Switch Optimization between Method?
 	-Set Switch at 50,000.
+
+Index List Length
+-Resolve Instance Index Issue.
+
+Attribute Mesh Info
+-Why Polygon Index has been +1?
+
+Sin Function.
+-Add Relative Phase & Constant Phase.
 -----------------
 GN-Todo:
 
