@@ -208,6 +208,9 @@ Attribute Mesh Info
 
 Sin Function.
 -Add Relative Phase & Constant Phase.
+
+Delete: Modulo Fraction
+-Not useful imo, can just use Wrap Math instead.
 -----------------
 GN-Todo:
 
