@@ -211,6 +211,9 @@ Sin Function.
 
 Delete: Modulo Fraction
 -Not useful imo, can just use Wrap Math instead.
+
+Offset Field List
+-Improve precision -> Real Looping indices within the group.
 -----------------
 GN-Todo:
 
