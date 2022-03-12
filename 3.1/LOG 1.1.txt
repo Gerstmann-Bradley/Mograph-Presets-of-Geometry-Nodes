@@ -214,6 +214,9 @@ Delete: Modulo Fraction
 
 Offset Field List
 -Improve precision -> Real Looping indices within the group.
+
+Is inside Volume
+-Improved Accuracy for Sphere
 -----------------
 GN-Todo:
 
