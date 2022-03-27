@@ -225,6 +225,9 @@ Helical Connection
 
 Random Transform
 -Output Points when there's no Instance.
+
+Animate Node
+-Add: Ease Ease Option.
 -----------------
 GN-Todo:
 Index Randomize.
