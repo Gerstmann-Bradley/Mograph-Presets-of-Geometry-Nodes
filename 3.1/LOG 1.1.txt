@@ -217,8 +217,18 @@ Offset Field List
 
 Is inside Volume
 -Improved Accuracy for Sphere
+
+Mar.28.2022
+Helical Connection
+-Revisit, Profile Curve Method?
+	-No. while it's a good and convenient approach. seems there are various limitation. and loop is still required.
+
+Random Transform
+-Output Points when there's no Instance.
 -----------------
 GN-Todo:
+Index Randomize.
+-Group Index?
 
 **3.1 New Node and Workflow Changes:
 New Compare Node
