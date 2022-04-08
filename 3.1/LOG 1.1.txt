@@ -228,6 +228,16 @@ Random Transform
 
 Animate Node
 -Add: Ease Ease Option.
+
+*Apr.8th
+Round Voronoi
+-Mid-Level
+
+Parenting
+-Scale Fix.
+
+Random Transform
+-Rotation Fix
 -----------------
 GN-Todo:
 Index Randomize.
