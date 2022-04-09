@@ -238,6 +238,9 @@ Parenting
 
 Random Transform
 -Rotation Fix
+
+Delay Falloff
+-Maximum Output Limitation
 -----------------
 GN-Todo:
 Index Randomize.
