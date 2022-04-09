@@ -241,10 +241,20 @@ Random Transform
 
 Delay Falloff
 -Maximum Output Limitation
+
+
+Field to Constant
+-Implicit Custom Geometry
+
+Warp
+-Location Offset.
 -----------------
 GN-Todo:
 Index Randomize.
 -Group Index?
+
+Grid of Correct Instance:
+-Row & Column Index?
 
 **3.1 New Node and Workflow Changes:
 New Compare Node
