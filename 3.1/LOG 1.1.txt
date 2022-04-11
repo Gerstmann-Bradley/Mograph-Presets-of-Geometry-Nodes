@@ -248,6 +248,9 @@ Field to Constant
 
 Warp
 -Location Offset.
+
+Helical Connection
+-Complete Refactor, to eliminate loop method.
 -----------------
 GN-Todo:
 Index Randomize.
