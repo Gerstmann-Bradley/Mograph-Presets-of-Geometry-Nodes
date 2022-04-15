@@ -251,6 +251,9 @@ Warp
 
 Helical Connection
 -Complete Refactor, to eliminate loop method.
+
+Reset Spline Cyclic
+-Rename Geometry to Curve.
 -----------------
 GN-Todo:
 Index Randomize.
