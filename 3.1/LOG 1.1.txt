@@ -242,7 +242,6 @@ Random Transform
 Delay Falloff
 -Maximum Output Limitation
 
-
 Field to Constant
 -Implicit Custom Geometry
 
@@ -254,6 +253,13 @@ Helical Connection
 
 Reset Spline Cyclic
 -Rename Geometry to Curve.
+
+*Apr.21
+Solidify
+-Default Value 0.01
+
+Random Transform
+-Translation must not influence rotation and scale.
 -----------------
 GN-Todo:
 Index Randomize.
