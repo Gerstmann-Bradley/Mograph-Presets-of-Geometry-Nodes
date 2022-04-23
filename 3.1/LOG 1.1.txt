@@ -250,9 +250,10 @@ Warp
 
 Helical Connection
 -Complete Refactor, to eliminate loop method.
+	-Benefit: working on multiple splines, doesn't require loop subunit.
 
 Reset Spline Cyclic
--Rename Geometry to Curve.
+-Rename "Geometry" Socket to "Curve".
 
 *Apr.21
 Solidify
@@ -270,6 +271,11 @@ Index Seed
 	-If Using color, amount always limited within 10.
 -Reconstruct for true Index in Offset
 	+1 multiply and then add.
+
+Helical Connections
+-Field input in Radius & Bevel Radius.
+-Output Curve Only -> Allowing UV output for Curves.
+-Rename "Twist" into "Tilt"
 -----------------
 GN-Todo:
 Index Randomize.
