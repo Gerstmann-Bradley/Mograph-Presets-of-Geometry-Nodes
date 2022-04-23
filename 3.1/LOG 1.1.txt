@@ -260,6 +260,16 @@ Solidify
 
 Random Transform
 -Translation must not influence rotation and scale.
+
+Random Transform
+-Scale issue
+	-seems W stop working if large number with index seed?
+	-no, Evolution must not be 0 for scale to work.
+Index Seed
+-White noise method?
+	-If Using color, amount always limited within 10.
+-Reconstruct for true Index in Offset
+	+1 multiply and then add.
 -----------------
 GN-Todo:
 Index Randomize.
