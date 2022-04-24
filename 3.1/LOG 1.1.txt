@@ -276,6 +276,12 @@ Helical Connections
 -Field input in Radius & Bevel Radius.
 -Output Curve Only -> Allowing UV output for Curves.
 -Rename "Twist" into "Tilt"
+
+*Apr.24
+Add: Curve Points Preview
+-a temporary node.
+	no longer tolerable with 1m point side from Curve to Points.
+
 -----------------
 GN-Todo:
 Index Randomize.
