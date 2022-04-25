@@ -284,6 +284,16 @@ Add: Curve Points Preview
 
 Attribute Spline
 -Transfer in Spline Domain instead of Points.
+	-no effect. because transfer determined by Spline index instead of domain.
+
+Bevel Curve
+-Radius to be set by "Set Radius" instead of curve circle.
+	-when set by single value, performance comparable to without set radius node.
+		-> performance impact tob minimal.
+	-0.66 ms in 100k curve circle.
+Helical Connections
+-Delete "Bevel Radius" Options.
+	-Since too redundant when containing Bevel Curve behind.
 -----------------
 GN-Todo:
 Index Randomize.
