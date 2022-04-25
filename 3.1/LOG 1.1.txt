@@ -282,6 +282,8 @@ Add: Curve Points Preview
 -a temporary node.
 	no longer tolerable with 1m point side from Curve to Points.
 
+Attribute Spline
+-Transfer in Spline Domain instead of Points.
 -----------------
 GN-Todo:
 Index Randomize.
