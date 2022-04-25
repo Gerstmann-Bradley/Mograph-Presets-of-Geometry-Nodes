@@ -291,6 +291,7 @@ Bevel Curve
 	-when set by single value, performance comparable to without set radius node.
 		-> performance impact tob minimal.
 	-0.66 ms in 100k curve circle.
+-Fix Fill Cap.
 Helical Connections
 -Delete "Bevel Radius" Options.
 	-Since too redundant when containing Bevel Curve behind.
