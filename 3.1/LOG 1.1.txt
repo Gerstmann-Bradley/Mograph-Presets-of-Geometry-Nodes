@@ -295,6 +295,8 @@ Bevel Curve
 Helical Connections
 -Delete "Bevel Radius" Options.
 	-Since too redundant when containing Bevel Curve behind.
+-Center Geometry when Iteration at 2.
+	-Using Curve Line Method.
 -----------------
 GN-Todo:
 Index Randomize.
