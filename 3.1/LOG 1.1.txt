@@ -297,6 +297,21 @@ Helical Connections
 	-Since too redundant when containing Bevel Curve behind.
 -Center Geometry when Iteration at 2.
 	-Using Curve Line Method.
+
+*Apr.27
+Bevel Curve
+-When Set Curve Radius, the radius is determined by the last set.
+	-in 100k vertices curve circle bevel at 3.
+		performance lag is not significant 400 ms Vs.350 ms. 
+	-but optimization may still need to be considered; but HOW?
+
+Index Extraction.
+-For Multiple Instance
+	-index transfer by distance.
+-Transfer attribute not working for spline; T88630
+	-spline detection?
+		-temporary solution, to support either mesh/spline.
+-Add Internal Compare for Selection.
 -----------------
 GN-Todo:
 Index Randomize.
