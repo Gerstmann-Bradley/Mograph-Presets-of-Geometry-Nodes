@@ -304,6 +304,10 @@ Bevel Curve
 	-in 100k vertices curve circle bevel at 3.
 		performance lag is not significant 400 ms Vs.350 ms. 
 	-but optimization may still need to be considered; but HOW?
+		-using Mean=Input Method.
+		-(in 5kk Curve Circle, "Mean" Vs. "Min" and "Max" (26 ms Vs. 140 ms)
+	*Statistic Node is outputing Wrong Mean.T97685
+		-Set episilon to 0.1; Hope Problem will be Resolved.
 
 Index Extraction.
 -For Multiple Instance
