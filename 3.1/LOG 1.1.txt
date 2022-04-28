@@ -312,6 +312,9 @@ Index Extraction.
 	-spline detection?
 		-temporary solution, to support either mesh/spline.
 -Add Internal Compare for Selection.
+
+Curve Linear.
+-Soft limi of X/Y/Z options
 -----------------
 GN-Todo:
 Index Randomize.
