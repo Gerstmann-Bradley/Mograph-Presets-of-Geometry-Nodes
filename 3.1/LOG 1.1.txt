@@ -315,6 +315,10 @@ Index Extraction.
 
 Curve Linear.
 -Soft limi of X/Y/Z options
+
+Add: Value Precision
+-Naming of Socket? How to name Factor?
+	-10's Exponent?
 -----------------
 GN-Todo:
 Index Randomize.
