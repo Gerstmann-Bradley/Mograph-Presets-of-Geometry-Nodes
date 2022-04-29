@@ -323,6 +323,12 @@ Curve Linear.
 Add: Value Precision
 -Naming of Socket? How to name Factor?
 	-10's Exponent?
+-Default Value Change: Exponent-1
+
+Hexagon Grid
+-Default Value Change: All Centered.
+-Width -> X; Length -> Y
+	-to be consistent with Naming of the Center axis.
 -----------------
 GN-Todo:
 Index Randomize.
