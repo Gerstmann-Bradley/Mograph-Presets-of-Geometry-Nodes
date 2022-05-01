@@ -329,6 +329,12 @@ Hexagon Grid
 -Default Value Change: All Centered.
 -Width -> X; Length -> Y
 	-to be consistent with Naming of the Center axis.
+
+Snap Function
+-Increment Offset
+
+Add: Merge Distance Curve.
+-a temporary node.
 -----------------
 GN-Todo:
 Index Randomize.
