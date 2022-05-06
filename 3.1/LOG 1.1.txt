@@ -335,6 +335,10 @@ Snap Function
 
 Add: Merge Distance Curve.
 -a temporary node.
+
+Grid of Correct Indicies
+-naming Unitfying X and Y
+-X & Y indicies
 -----------------
 GN-Todo:
 Index Randomize.
