@@ -337,6 +337,7 @@ Add: Merge Distance Curve.
 -a temporary node.
 
 Grid of Correct Indicies
+-> Renamed: Grid Distribution.
 -naming Unitfying X and Y
 -X & Y indicies
 -----------------
