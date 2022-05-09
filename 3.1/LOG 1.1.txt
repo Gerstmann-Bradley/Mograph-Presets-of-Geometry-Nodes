@@ -340,6 +340,14 @@ Grid of Correct Indicies
 -> Renamed: Grid Distribution.
 -naming Unitfying X and Y
 -X & Y indicies
+
+Bevel Curve
+-fix Custom Bevel with Radius Control.
+	-what if radius is field?
+
+Field to Constant.
+-Switch default geometry from mesh into Curve line point.
+	-to accept more attribute like spline parameter...
 -----------------
 GN-Todo:
 Index Randomize.
