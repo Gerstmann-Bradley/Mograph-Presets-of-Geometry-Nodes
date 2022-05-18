@@ -351,6 +351,16 @@ Field to Constant.
 
 Delay Falloff
 -Custom Index can be used in Random Index Socket at the same time.
+
+*May.18
+Add: Bend Deform
+-Offset Origin -undesired.
+-Tilting -undesired
+	-in Z and X deform, both tilting are expected to happen on Y-axis?
+-Degree/Radian Switch
+	-Default value becomes tricky. Truly desired?
+-Bug Fix (X-mode angle 0 causes missing geometry, why?)
+	-Not to use deform function when angle=0 -> Optimization.
 -----------------
 GN-Todo:
 Index Randomize.
