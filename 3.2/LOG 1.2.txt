@@ -1,0 +1,37 @@
+Done:
+UV Transfer
+-Fully Functional with UV input & UV output.
+
+Fill Volume
+-expose SD gradient input in case multiple Geometry in the tree?
+-expose gradient output for use of other cases?
+
+Bevel Curve
+-Output UV Attribute
+	-rejected: store named attribute cost performance.
+-UV attribute can be used in other cases.
+*****************
+To Do:
+Index Randomize.
+-Group Index?
+
+**3.2
+New Node & Workflow Changes:
+*Named Attribute
+-UV transfer.
+-Fill Volume.
+--------------------
+GN-Known Issue:
+Curve Deform Node.
+Center Geometry Node
+**Chance of optimization?
+
+Object Coordinate
+-Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Bevel Curve
+-Is Index UV really needed?
+
+Add: Random Color
+-HSV & HSL.
