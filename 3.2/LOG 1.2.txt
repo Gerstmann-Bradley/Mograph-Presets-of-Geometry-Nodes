@@ -10,6 +10,9 @@ Bevel Curve
 -Output UV Attribute
 	-rejected: store named attribute cost performance.
 -UV attribute can be used in other cases.
+
+Bend Deform
+-Origin Offset - Not the same as the modifier. Unknown solution.
 *****************
 To Do:
 Index Randomize.
