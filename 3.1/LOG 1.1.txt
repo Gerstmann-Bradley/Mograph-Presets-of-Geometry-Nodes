@@ -361,6 +361,10 @@ Add: Bend Deform
 	-Default value becomes tricky. Truly desired?
 -Bug Fix (X-mode angle 0 causes missing geometry, why?)
 	-Not to use deform function when angle=0 -> Optimization.
+
+Random Rotation
+-Change Rotation Euler Order.
+	-random rotation first and then rotate euler - making sure global Z-axis lock?
 -----------------
 GN-Todo:
 Index Randomize.
