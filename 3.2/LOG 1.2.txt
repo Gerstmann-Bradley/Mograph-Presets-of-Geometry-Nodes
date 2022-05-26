@@ -13,10 +13,16 @@ Bevel Curve
 
 Bend Deform
 -Origin Offset - Not the same as the modifier. Unknown solution.
+
+Field at Index
+-Suppo for Point Cloud.
 *****************
 To Do:
 Index Randomize.
 -Group Index?
+
+Proximity Falloff
+-Add Absolute scale Offset?
 
 **3.2
 New Node & Workflow Changes:
