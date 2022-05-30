@@ -14,8 +14,26 @@ Bevel Curve
 Bend Deform
 -Origin Offset - Not the same as the modifier. Unknown solution.
 
-Field at Index
+Index Extraction
 -Suppo for Point Cloud.
+
+Point Distribute
+-Remove Random Poisson Toggle
+	-Replaced by Distance Minimal Toggle.
+	-Rename "Poisson Distance"
+
+Proximity Falloff
+-Fix Negative Scale Offset
+
+
+Follow Splines
+-Curve Point Preview Resize??
+	-already divided by 10?
+
+Add: Duplicate Geometry
+-Mesh Line Setup; No need Selection input.
+
+Add: Random Helices Distribution
 *****************
 To Do:
 Index Randomize.
