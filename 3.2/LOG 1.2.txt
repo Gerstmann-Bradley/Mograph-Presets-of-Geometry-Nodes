@@ -34,6 +34,36 @@ Add: Duplicate Geometry
 -Mesh Line Setup; No need Selection input.
 
 Add: Random Helices Distribution
+
+Point Distribute
+-Remove Random Poisson Toggle
+	-Replaced by Distance Minimal Toggle.
+	-Rename "Poisson Distance"
+
+Proximity Falloff
+-Fix Negative Scale Offset
+
+
+Follow Splines
+-Curve Point Preview Resize??
+	-already divided by 10?
+
+Add: Duplicate Geometry
+-Mesh Line Setup; No need Selection input.
+
+Add: Random Helices Distribution
+
+NOT Add: Viewer?
+-abandonded.
+-Uknown Geometry
+-Uknown Datatype.
+-Uknown Domain.
+
+Add: Set AutoSmooth.
+
+Animate
+-Duration/End Mode
+	-Default Value Change.
 *****************
 To Do:
 Index Randomize.
@@ -51,7 +81,7 @@ New Node & Workflow Changes:
 GN-Known Issue:
 Curve Deform Node.
 Center Geometry Node
-**Chance of optimization?
+**Chance of Optimization?
 
 Object Coordinate
 -Different Order of Operation is required in different cases.
@@ -62,3 +92,4 @@ Bevel Curve
 
 Add: Random Color
 -HSV & HSL.
+(3.3)
