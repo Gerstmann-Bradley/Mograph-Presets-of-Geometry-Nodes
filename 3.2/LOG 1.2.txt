@@ -60,6 +60,7 @@ NOT Add: Viewer?
 -Uknown Domain.
 
 Add: Set AutoSmooth.
+-Rename -> Set Shade AutoSmooth.
 
 Animate
 -Duration/End Mode
