@@ -1,0 +1,41 @@
+Done:
+Add: Random Color HSV.
+
+Follow Spline
+Array on Spline
+-improvement with new Sample Curve node.
+
+Add: Self Random Value
+*****************
+To Do:
+Index Randomize.
+-Group Index?
+
+Proximity Falloff
+-Add Absolute scale Offset?
+
+
+**3.4
+Transfer Attribute to Sample error?
+	-Sample Curve to Points may require Sample by Index.
+
+New Node & Workflow Changes:
+Trim Curve Support cyclic curve.
+Sample Curve node - index.
+	*Follow Spline -
+		-Performance improvement by 4-7X.
+	*Array on Spline -
+		-1 curve 1 value from Sample Curve.
+		-Mean statistics the fastest method.
+--------------------
+GN-Known Issue:
+Curve Deform Node.
+Center Geometry Node
+**Chance of optimization?
+
+Object Coordinate
+-Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Bevel Curve
+-Is Index UV really needed?
