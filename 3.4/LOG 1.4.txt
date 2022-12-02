@@ -6,6 +6,13 @@ Array on Spline
 -improvement with new Sample Curve node.
 
 Add: Self Random Value
+
+Add:
+-Append Point to Curve
+
+Reset Curve Cyclic
+-interpolate domain than capture attribute?
+	-Found no Performance improvement.
 *****************
 To Do:
 Index Randomize.
@@ -13,7 +20,6 @@ Index Randomize.
 
 Proximity Falloff
 -Add Absolute scale Offset?
-
 
 **3.4
 Transfer Attribute to Sample error?
@@ -39,3 +45,6 @@ Object Coordinate
 
 Bevel Curve
 -Is Index UV really needed?
+
+**General rule of Boolean design:
+Yes/No - Check=yes, uncheck=no.
