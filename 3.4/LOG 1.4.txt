@@ -15,6 +15,12 @@ Reset Curve Cyclic
 	-Found no Performance improvement.
 
 Add: To Curve Points
+
+Add: Spline Info
+-interpolate domain version of attribute Spline
+
+Delete Mix Vector
+Delete Helical Connection
 *****************
 To Do:
 Index Randomize.
@@ -22,8 +28,6 @@ Index Randomize.
 
 Proximity Falloff
 -Add Absolute scale Offset?
-
-
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
