@@ -21,6 +21,11 @@ Add: Spline Info
 
 Delete Mix Vector
 Delete Helical Connection
+
+Add: Map to UV Space
+
+Bounding Box
+-XYZ Default Limit
 *****************
 To Do:
 Index Randomize.
