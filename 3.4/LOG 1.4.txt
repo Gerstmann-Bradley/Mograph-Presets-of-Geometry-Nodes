@@ -26,6 +26,12 @@ Add: Map to UV Space
 
 Bounding Box
 -XYZ Default Limit
+
+Transfer Attribute in Proximity
+-Renamed to "Sample in Proximity"
+
+Map to UV Space
+--Add custom Bounding box.
 *****************
 To Do:
 Index Randomize.
@@ -51,7 +57,6 @@ Sample Curve node - index.
 		-Mean statistics the fastest method.
 Mix Node
 -Delete Mix vector
-
 --------------------
 GN-Known Issue:
 Curve Deform Node.
