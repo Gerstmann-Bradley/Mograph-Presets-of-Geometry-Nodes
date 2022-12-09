@@ -31,7 +31,8 @@ Transfer Attribute in Proximity
 -Renamed to "Sample in Proximity"
 
 Map to UV Space
---Add custom Bounding box.
+-Add custom Bounding box.
+-Add Mapped Normal Output.
 *****************
 To Do:
 Index Randomize.
