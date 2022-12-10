@@ -60,6 +60,7 @@ Sample Curve node - index.
 		-Mean statistics the fastest method.
 Mix Node
 -Delete Mix vector
+-Delete Mix float
 --------------------
 GN-Known Issue:
 Curve Deform Node.
