@@ -32,7 +32,22 @@ Transfer Attribute in Proximity
 
 Map to UV Space
 -Add custom Bounding box.
+-Add Mapped Position Output - Deleted, Assumed not useful.
 -Add Mapped Normal Output.
+
+Add Curve Split
+-Default Selection No?
+
+Directional Falloff
+-Default XYZ Limit.
+
+Helical Connection
+-Legacy Behavior canceling.
+
+Curve Split
+-Capture Radius?
+
+Add: Edge Distance
 *****************
 To Do:
 Index Randomize.
@@ -41,14 +56,18 @@ Index Randomize.
 Proximity Falloff
 -Add Absolute scale Offset?
 
-Add 
+Map to UV Space
+-what if Sample UV map not in the range of 0-1?
+	-if using bounding box, tend to cause unwanted point to be eliminated.
+-Custom Bound what about Z?
+	-I guess Z custom is needed for animation.
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
 **3.4
 Transfer Attribute to Sample error?
-	-Sample Curve to Points may require Sample by Index.
+	-Sample Curve to Points may require Sample by Index£¿
 
 New Node & Workflow Changes:
 Trim Curve Support cyclic curve.
@@ -73,6 +92,7 @@ Object Coordinate
 
 Bevel Curve
 -Is Index UV really needed?
+	-deleted
 
 **General rule of Boolean design:
 Yes/No - Check=yes, uncheck=no.
