@@ -63,6 +63,17 @@ Translate Position.
 	-Practically speaking they are barely being used.
 -Keep Object Coordinate in the node, but remove sockets.
 **What Other Nodes are using Object Coordinate? Total 5 after delete.
+	-Noise 3D
+	-Vector Noise
+	-Translate Position
+	-Radial Falloff - Fixed.
+	-Voronoi 3D
+-Hide .Object Coordinate Now.
+
+Voronoi 3D
+-Connect Mid-level to Rounding.
+	-Why Rounding Mid-level is reversed?
+	-Why Rounding isn't fully accurate?
 *****************
 To Do:
 Index Randomize.
@@ -70,6 +81,10 @@ Index Randomize.
 
 Proximity Falloff
 -Add Absolute scale Offset?
+
+Bevel Curve
+-Length UV Check
+
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
