@@ -48,6 +48,21 @@ Curve Split
 -Capture Radius?
 
 Add: Edge Distance
+
+Map to UV Space
+-what if Sample UV map not in the range of 0-1?
+	-if using bounding box, tend to cause unwanted point to be eliminated.
+-Custom Bound what about Z?
+	-I guess Z custom is needed for animation.
+
+**Noise 3D
+Vector Noise.
+Vector Wiggle - is this node necesssary?
+Translate Position.
+-Is Object Transform Really necessary?
+	-Practically speaking they are barely being used.
+-Keep Object Coordinate in the node, but remove sockets.
+**What Other Nodes are using Object Coordinate? Total 5 after delete.
 *****************
 To Do:
 Index Randomize.
@@ -55,12 +70,6 @@ Index Randomize.
 
 Proximity Falloff
 -Add Absolute scale Offset?
-
-Map to UV Space
--what if Sample UV map not in the range of 0-1?
-	-if using bounding box, tend to cause unwanted point to be eliminated.
--Custom Bound what about Z?
-	-I guess Z custom is needed for animation.
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
