@@ -74,6 +74,9 @@ Voronoi 3D
 -Connect Mid-level to Rounding.
 	-Why Rounding Mid-level is reversed?
 	-Why Rounding isn't fully accurate?
+
+Map to UV Space
+-Vector Map Range rewrite
 *****************
 To Do:
 Index Randomize.
