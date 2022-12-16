@@ -8,7 +8,7 @@ Array on Spline
 Add: Self Random Value
 
 Add:
--Append Point to Curve
+-Append Point to Curves
 
 Reset Curve Cyclic
 -interpolate domain than capture attribute?
@@ -77,6 +77,9 @@ Voronoi 3D
 
 Map to UV Space
 -Vector Map Range rewrite
+
+Map to UV Space
+-Renamed to "UV Deformer"
 *****************
 To Do:
 Index Randomize.
@@ -87,6 +90,7 @@ Proximity Falloff
 
 Bevel Curve
 -Length UV Check
+
 
 
 **Simulation Branch
