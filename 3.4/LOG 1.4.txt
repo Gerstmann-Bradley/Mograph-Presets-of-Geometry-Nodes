@@ -80,6 +80,32 @@ Map to UV Space
 
 Map to UV Space
 -Renamed to "UV Deformer"
+
+Center Geometry
+-Remove Custom Bound Boolean.
+	-use Implicit Geometry.
+
+UV Deformer
+-Optimization of Normal Sampling.
+	-If no normal input, can we remove it.
+	-Capture attribute always computing normal.
+	-Sample Attribute better option when not being used.
+		-When used in Points, it seems lagging more than capture; otherwise better speed than capturing.
+
+Remap 0-1
+-Add Reverse toggle.
+
+Append Points to Curve
+-Geometry Renamed to "Curves"
+**Curves input and Output consistency
+-Bevel Curve
+-Append Points to Curve
+-Curve Split
+-smooth curve
+-merge distance curve
+
+Fix ZB_07 Attribute Voronoi
+-Missing "Mix Vector"
 *****************
 To Do:
 Index Randomize.
@@ -91,14 +117,24 @@ Proximity Falloff
 Bevel Curve
 -Length UV Check
 
-
+Solidify
+-Merge by Distance is merging other points too.
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
+Curve Raycast Collision Detection
+Branching Thickness Decrement
+
+**3.5
+Add: Expand Selection Node
+	-can it be used to shrink?
+
 **3.4
 Transfer Attribute to Sample error?
 	-Sample Curve to Points may require Sample by Index£¿
+Transfer Attribute in Proximity
+-Renamed to "Sample in Proximity"
 
 New Node & Workflow Changes:
 Trim Curve Support cyclic curve.
