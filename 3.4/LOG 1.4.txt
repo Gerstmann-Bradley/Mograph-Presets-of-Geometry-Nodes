@@ -106,6 +106,14 @@ Append Points to Curve
 
 Fix ZB_07 Attribute Voronoi
 -Missing "Mix Vector"
+
+Append Point to Curves
+-Set point is effecting all points
+	-index not excluded because of selection input.
+	-Interpolate Domain is needed.
+
+Point Distribute
+-Amount, lower minimum 0 clamp
 *****************
 To Do:
 Index Randomize.
@@ -117,14 +125,14 @@ Proximity Falloff
 Bevel Curve
 -Length UV Check
 
-Solidify
--Merge by Distance is merging other points too.
-
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
 Curve Raycast Collision Detection
 Branching Thickness Decrement
+
+Delete: Curve Extrapolation
+-replaced by Append Points to Curves
 
 **3.5
 Add: Expand Selection Node
@@ -160,6 +168,10 @@ Object Coordinate
 Bevel Curve
 -Is Index UV really needed?
 	-deleted
+
+Solidify
+-Merge by Distance is merging other points too.
+	-no way to resolve it.
 
 **General rule of Boolean design:
 Yes/No - Check=yes, uncheck=no.
