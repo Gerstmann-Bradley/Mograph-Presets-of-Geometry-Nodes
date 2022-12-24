@@ -114,6 +114,11 @@ Append Point to Curves
 
 Point Distribute
 -Amount, lower minimum 0 clamp
+
+Array on Splines
+-renamed to "Array on Splines"
+-Index Not propagating.
+	-Modulo function on curve domain size to recover Spline Index.
 *****************
 To Do:
 Index Randomize.
@@ -125,14 +130,14 @@ Proximity Falloff
 Bevel Curve
 -Length UV Check
 
+Delete: Curve Extrapolation
+-replaced by Append Points to Curves
+
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
 Curve Raycast Collision Detection
 Branching Thickness Decrement
-
-Delete: Curve Extrapolation
--replaced by Append Points to Curves
 
 **3.5
 Add: Expand Selection Node
