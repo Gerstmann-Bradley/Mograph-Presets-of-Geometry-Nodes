@@ -119,6 +119,11 @@ Array on Splines
 -renamed to "Array on Splines"
 -Index Not propagating.
 	-Modulo function on curve domain size to recover Spline Index.
+-Issue of Duplicating Element in Spline Index
+	-Index Converge than Modulo Method.
+
+Index Converge
+-Add Moudlo function.
 *****************
 To Do:
 Index Randomize.
