@@ -124,6 +124,53 @@ Array on Splines
 
 Index Converge
 -Add Moudlo function.
+
+Follow Splines
+Array on Splines
+-Parameter & Offset/10
+
+Follow Splines
+-Node too BIG
+	-Remove Motion Variance Group
+	-Remove Normalize
+	-Keep Scale Variance.
+-Parameter -> "Offset/10"
+Array on Splines
+-Offset -> "Offset/10"
+
+Curve Extrapolate
+-Complete Rewrite
+	-Simplify
+	-only tangent and offset needed.
+-Support Curves than Single Curve
+	-tutorial of interpolate domain?
+
+Add: To Bounding Box
+
+Attribute Voronoi
+-Optimize by Sample Index than Capturing
+	-Data Changed due to Split Edges.
+	-how to keep data use sample index?
+
+Curve Deform
+-Complete Rewrite
+-Repeated Vector rotate.
+	-chance of optimization? - Finished.
+Curve Extrapolate
+-Automatic Flipping?
+	-Seems not needed. Implemented but disabled.
+
+Add: Instance Bounding Box
+
+Add: 3D Viewer
+
+Curve Deform
+-Support Instances
+	-I don't want to capture instance attribute twice.
+	-I don't want to output Instance Index in Instance Bounding Box.
+		-Since they are irrelevant.
+	-Mesh island may not correspond to Instance Index.
+	-Mesh island as default, Instance index as Custom.
 *****************
 To Do:
 Index Randomize.
@@ -135,14 +182,13 @@ Proximity Falloff
 Bevel Curve
 -Length UV Check
 
-Delete: Curve Extrapolation
--replaced by Append Points to Curves
-
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
 Curve Raycast Collision Detection
 Branching Thickness Decrement
+
+Dynamic Orientation
 
 **3.5
 Add: Expand Selection Node
@@ -167,9 +213,11 @@ Mix Node
 -Delete Mix float
 --------------------
 GN-Known Issue:
-Curve Deform Node.
-Center Geometry Node
-**Chance of optimization?
+Multi Switch needed
+-Curve Deform
+-Directional Falloff
+-Radial Falloff
+-Group Per Domain
 
 Object Coordinate
 -Different Order of Operation is required in different cases.
