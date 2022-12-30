@@ -186,6 +186,7 @@ Curve Deformer
 
 Curve Deformer
 -condition for Instances following a single Curve.
+	-Add Test; Possibly need to loop Curve Index.
 *****************
 To Do:
 Index Randomize.
@@ -204,6 +205,8 @@ Curve Raycast Collision Detection
 Branching Thickness Decrement
 
 Dynamic Orientation
+
+Follow Spline
 
 **3.5
 Add: Expand Selection Node
