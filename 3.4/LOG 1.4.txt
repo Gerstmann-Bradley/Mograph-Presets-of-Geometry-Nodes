@@ -171,6 +171,14 @@ Curve Deform
 		-Since they are irrelevant.
 	-Mesh island may not correspond to Instance Index.
 	-Mesh island as default, Instance index as Custom.
+
+Curve Deform
+-Scaling
+-Rotation change
+	-Seems not necessarily better result.
+Curve Extrapolate
+-Dynamic Extension?
+	-I dont' want to use complicate switch, what if flow is field. Extrapolation can't be field?
 *****************
 To Do:
 Index Randomize.
