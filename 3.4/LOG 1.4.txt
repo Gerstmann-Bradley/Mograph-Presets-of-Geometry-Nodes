@@ -183,10 +183,11 @@ Curve Extrapolate
 Curve Deformer
 -At Instance mode, Curve length not shared across different curve.
 	-Sample Instance Index on Spline length of spline domain.
-
-Curve Deformer
 -condition for Instances following a single Curve.
 	-Add Test; Possibly need to loop Curve Index.
+-Easier and more intuitive Value Generation Method
+	-Captureing Multiple Parameters May Cost performance.
+		-Test shown Instance Bounding Box cost the most performance than capturing other parameters.
 *****************
 To Do:
 Index Randomize.
@@ -249,5 +250,6 @@ Solidify
 -Merge by Distance is merging other points too.
 	-no way to resolve it.
 
-**General rule of Boolean design:
-Yes/No - Check=yes, uncheck=no.
+**General rule of design:
+Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
