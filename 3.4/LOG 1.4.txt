@@ -164,7 +164,7 @@ Add: Instance Bounding Box
 
 Add: 3D Viewer
 
-Curve Deform
+Curve Deformer
 -Support Instances
 	-I don't want to capture instance attribute twice.
 	-I don't want to output Instance Index in Instance Bounding Box.
@@ -172,13 +172,17 @@ Curve Deform
 	-Mesh island may not correspond to Instance Index.
 	-Mesh island as default, Instance index as Custom.
 
-Curve Deform
+Curve Deformer
 -Scaling
 -Rotation change
 	-Seems not necessarily better result.
 Curve Extrapolate
 -Dynamic Extension?
 	-I dont' want to use complicate switch, what if flow is field. Extrapolation can't be field?
+
+Curve Deformer
+-At Instance mode, Curve length not shared across different curve.
+	-Sample Instance Index on Spline length of spline domain.
 *****************
 To Do:
 Index Randomize.
@@ -189,6 +193,8 @@ Proximity Falloff
 
 Bevel Curve
 -Length UV Check
+
+
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
