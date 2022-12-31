@@ -219,6 +219,17 @@ Curve Deformer
 	-I don't know if Clamp is really needed. I Also don't know if a Fix is needed.
 	-Delete Geometry When it's outout clamp
 		-Bypass Delete if Cyclic Spline
+
+3D viewer
+-Default Attribute to take Position.
+-If Width=1, no Bevel
+
+UV Deformer not working on UV from Curves
+-why?
+	-Needs Double Reset Spline Cyclic
+Bevel Curve
+-Double Reset Spline Cyclic
+-Double Fac/Length.
 *****************
 To Do:
 Index Randomize.
@@ -226,9 +237,6 @@ Index Randomize.
 
 Proximity Falloff
 -Add Absolute scale Offset?
-
-Bevel Curve
--Length UV Check
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
