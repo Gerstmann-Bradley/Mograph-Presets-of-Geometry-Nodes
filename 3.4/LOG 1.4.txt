@@ -178,7 +178,7 @@ Curve Deformer
 	-Seems not necessarily better result.
 Curve Extrapolate
 -Dynamic Extension?
-	-I dont' want to use complicate switch, what if flow is field. Extrapolation can't be field?
+	-I don't want to use complicate switch, and what if flow is field. Extrapolation can't be field for every curve?
 
 Curve Deformer
 -At Instance mode, Curve length not shared across different curve.
@@ -188,6 +188,37 @@ Curve Deformer
 -Easier and more intuitive Value Generation Method
 	-Captureing Multiple Parameters May Cost performance.
 		-Test shown Instance Bounding Box cost the most performance than capturing other parameters.
+
+Curve Deformer
+-What if Cyclic Curve
+-Bug Some Instances Not Shown.
+	-Instance Bounding Box Bug? Some Values output 0.
+		-Mesh Island Default doesn't work for Suzanne. Single Instance contains 3 island.
+	-Instance Overlapped. 2 instance on a single curve.
+		-Modulo was wrong to have subtract 1.
+-Do we preview curves?
+
+3D Viewer
+-Delete Overlaping Points
+	-Performance Test, Merge by Distance much more expansive than instancing 100000 Instances.
+
+Duplicate Geometry
+-Improvement using Points.
+
+Curve Extrapolate
+-Add Factor control on Start and End.
+Curve Deformer
+-Add Controls of Extrapolates
+-Must we include Extrapolate Inside?
+		-If changing Extrapolate, it will change factor offset.
+		-What if multiple curves of different Spline Length
+	-Output Distance offset in Extrapolate.
+	-Input Distance offset.
+-Why Clamp Is not working?
+	-negati is giving midlevel 0.5. lower than the threshold
+	-I don't know if Clamp is really needed. I Also don't know if a Fix is needed.
+	-Delete Geometry When it's outout clamp
+		-Bypass Delete if Cyclic Spline
 *****************
 To Do:
 Index Randomize.
@@ -237,6 +268,15 @@ Multi Switch needed
 -Directional Falloff
 -Radial Falloff
 -Group Per Domain
+-Follow Splines
+-Array on Splines
+
+Curve Deformer
+-What if I need special settings in special cases?
+	-no Extrapolation
+	-no extra clamping.
+-worth to add more options and more switches?
+
 
 Object Coordinate
 -Different Order of Operation is required in different cases.
