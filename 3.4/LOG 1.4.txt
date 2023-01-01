@@ -247,6 +247,9 @@ Add: Face Rotation
 		-Should apply to all weight input. I am going against blender's implementation.
 	-Should Offset index be included?
 Add: Edge of Face
+-Interpolate domain to replace field at index.
+-Reduce amount of interpolate domain
+
 *****************
 To Do:
 Index Randomize.
@@ -257,9 +260,6 @@ Proximity Falloff
 
 UV Deformer
 -Try to Check &/ Fix some height issue.
-
-
-
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
