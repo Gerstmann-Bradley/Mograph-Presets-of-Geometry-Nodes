@@ -244,6 +244,7 @@ Add: Face Rotation
 		-Should we follow the same principle in making the preset?
 		-why is it so unintuitive?
 		-Multiply -1 better than 1/divide.
+		-Should apply to all weight input. I am going against blender's implementation.
 	-Should Offset index be included?
 Add: Edge of Face
 *****************
