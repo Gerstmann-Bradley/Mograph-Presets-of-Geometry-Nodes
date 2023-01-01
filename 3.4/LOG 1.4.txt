@@ -230,6 +230,22 @@ UV Deformer not working on UV from Curves
 Bevel Curve
 -Double Reset Spline Cyclic
 -Double Fac/Length.
+
+Translate Position
+-Missing Implicit Attribute.
+
+3D Viewer
+-Add Rotation
+-Change Marker for Matrix Pointing.
+
+Add: Face Rotation
+	-Naming
+	-In Blender, Lower the weight, higher the priority
+		-Should we follow the same principle in making the preset?
+		-why is it so unintuitive?
+		-Multiply -1 better than 1/divide.
+	-Should Offset index be included?
+Add: Edge of Face
 *****************
 To Do:
 Index Randomize.
@@ -237,6 +253,12 @@ Index Randomize.
 
 Proximity Falloff
 -Add Absolute scale Offset?
+
+UV Deformer
+-Try to Check &/ Fix some height issue.
+
+
+
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
@@ -284,7 +306,6 @@ Curve Deformer
 	-no Extrapolation
 	-no extra clamping.
 -worth to add more options and more switches?
-
 
 Object Coordinate
 -Different Order of Operation is required in different cases.
