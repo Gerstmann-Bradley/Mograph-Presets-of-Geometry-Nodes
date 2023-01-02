@@ -246,10 +246,22 @@ Add: Face Rotation
 		-Multiply -1 better than 1/divide.
 		-Should apply to all weight input. I am going against blender's implementation.
 	-Should Offset index be included?
-Add: Edge of Face
+Add: Edges of Face
 -Interpolate domain to replace field at index.
 -Reduce amount of interpolate domain
 
+Curve Split
+-Can points being connected after split?
+	-no, what if multiple points on a single spline are deleted.
+
+Add: Curl Noise Turbulence
+-Copied from Entagma tutorial.
+
+Noise 3D
+-Optimize Fac Output
+-Add Falloff Option
+-Should I rearrange the Sockets?
+	-Decide Not.
 *****************
 To Do:
 Index Randomize.
@@ -261,6 +273,8 @@ Proximity Falloff
 UV Deformer
 -Try to Check &/ Fix some height issue.
 
+
+
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
@@ -270,6 +284,10 @@ Branching Thickness Decrement
 Dynamic Orientation
 
 Follow Spline
+
+Add: Trigger
+-Boolean Trigger
+-Time recording.
 
 **3.5
 Add: Expand Selection Node
