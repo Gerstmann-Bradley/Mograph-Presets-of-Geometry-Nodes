@@ -256,12 +256,19 @@ Curve Split
 
 Add: Curl Noise Turbulence
 -Copied from Entagma tutorial.
+-Already outputing -1 to 1 range.
+	-Divide 2 for +/-0.5 range.
+	-Currently no Mid-Level.
 
 Noise 3D
 -Optimize Fac Output
 -Add Falloff Option
 -Should I rearrange the Sockets?
 	-Decide Not.
+	-Note Upon Rearrangement, there will be no compatibility issue.
+
+Add: Curve Connect
+-For Unfolding spiral reasons.
 *****************
 To Do:
 Index Randomize.
@@ -272,8 +279,6 @@ Proximity Falloff
 
 UV Deformer
 -Try to Check &/ Fix some height issue.
-
-
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
