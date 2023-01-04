@@ -269,6 +269,17 @@ Noise 3D
 
 Add: Curve Connect
 -For Unfolding spiral reasons.
+	-but not working for spiral.
+	-made a new method included in "Spiral Unfold", but not sure if should be merged into Curve Connect. How to design for different mode of merging?
+
+3D viewer
+-Add Axis Option.
+
+Curve Points Preview
+-Add Show Curve Option.
+
+Add: Spiral Unfold
+-Rotation May contains issue
 *****************
 To Do:
 Index Randomize.
@@ -279,6 +290,9 @@ Proximity Falloff
 
 UV Deformer
 -Try to Check &/ Fix some height issue.
+
+Curve Points Preview
+-Show Original
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
