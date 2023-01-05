@@ -288,6 +288,21 @@ Add: Remap Vectors by Bounds
 3D Viewer
 -Points Instance not enough for Face Corner Viewer.
 	-Add a domain.
+
+3D Viewer
+-Curve Count bug
+
+Spiral Unfold
+-Rotation Guide, & Add Rotation
+
+Curve Deform
+-Flow offset based on Scale.
+	-Scaling is occured at center point as expected.
+	-not sure changing will give better results.
+
+UV Deformer
+-Try to Check &/ Fix some height issue.
+	-seems no problem although I don't know why it's stretched.
 *****************
 To Do:
 Index Randomize.
@@ -295,13 +310,8 @@ Index Randomize.
 
 Proximity Falloff
 -Add Absolute scale Offset?
-
-UV Deformer
--Try to Check &/ Fix some height issue.
-
-3D Viewer
--Curve Count bug
-
+	-Change Map range 0.
+	-but is adding a new socket necessary.
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
