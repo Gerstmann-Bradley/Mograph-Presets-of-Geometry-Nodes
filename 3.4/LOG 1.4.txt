@@ -303,6 +303,9 @@ Curve Deform
 UV Deformer
 -Try to Check &/ Fix some height issue.
 	-seems no problem although I don't know why it's stretched.
+
+Curve Deformer
+-Add Offset Flow
 *****************
 To Do:
 Index Randomize.
