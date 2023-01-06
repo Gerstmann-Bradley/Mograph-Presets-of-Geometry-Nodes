@@ -306,15 +306,25 @@ UV Deformer
 
 Curve Deformer
 -Add Offset Flow
+
+3D Viewer
+-Curve Rotation Correction
+	-Add options to View Rotation?
+
+Curve Connect
+-Parallel connection method
+
+Spiral Unfold
+-Curve Connect Method.
 *****************
 To Do:
 Index Randomize.
--Group Index?
+-Group Index? -Failed
 
 Proximity Falloff
 -Add Absolute scale Offset?
-	-Change Map range 0.
-	-but is adding a new socket necessary.
+	-can Change mini of Map range 0.
+	-but is adding a new socket necessary?
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
@@ -366,6 +376,7 @@ Multi Switch needed
 Curve Deformer
 -What if I need special settings in special cases?
 	-no Extrapolation
+		-Put Extrapolation Process outside.
 	-no extra clamping.
 -worth to add more options and more switches?
 
