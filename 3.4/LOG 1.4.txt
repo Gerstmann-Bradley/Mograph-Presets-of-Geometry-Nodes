@@ -326,6 +326,15 @@ Proximity Falloff
 	-can Change mini of Map range 0.
 	-but is adding a new socket necessary?
 
+Bevel Curve
+-Radius Functionality Check
+	-When Spline parameter * in radius, boolean output 0.
+	-One Switch Node is broken with Field to Constant
+
+Random Transform
+-Broken due to missing vector wiggle.
+	-fixed but didn't test out.
+
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
@@ -376,7 +385,6 @@ Multi Switch needed
 Curve Deformer
 -What if I need special settings in special cases?
 	-no Extrapolation
-		-Put Extrapolation Process outside.
 	-no extra clamping.
 -worth to add more options and more switches?
 
