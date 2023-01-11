@@ -316,6 +316,23 @@ Curve Connect
 
 Spiral Unfold
 -Curve Connect Method.
+
+Bevel Curve
+-Radius Functionality Check
+	-When Spline parameter * in radius, boolean output 0.
+	-One Switch Node is broken with Field to Constant
+
+Curve Deform
+-Is axis being clampped to be 1?
+	-The initial implementation was made for "Factor".
+
+Random Transform
+-Broken due to missing vector wiggle.
+	-fixed but didn't test out.
+		-Tested; Mid-level 0
+-Freq Add 0.001 to avoid perlin pitfall.
+
+Add: Quad Dimension
 *****************
 To Do:
 Index Randomize.
@@ -326,14 +343,10 @@ Proximity Falloff
 	-can Change mini of Map range 0.
 	-but is adding a new socket necessary?
 
-Bevel Curve
--Radius Functionality Check
-	-When Spline parameter * in radius, boolean output 0.
-	-One Switch Node is broken with Field to Constant
+Add: Quad Face Area
 
-Random Transform
--Broken due to missing vector wiggle.
-	-fixed but didn't test out.
+Add: Binding investigation for bend deformer.
+-Concept Proving First
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
