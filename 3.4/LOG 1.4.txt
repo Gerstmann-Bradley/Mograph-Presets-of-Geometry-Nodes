@@ -332,7 +332,22 @@ Random Transform
 		-Tested; Mid-level 0
 -Freq Add 0.001 to avoid perlin pitfall.
 
-Add: Quad Dimension
+Add: Face Dimension
+
+Add: Face Points
+-Mesh to Points Method Vs. Dual Mesh method
+ 	-700*700 UV Sphere, 40 ms Vs. 188 ms
+
+Add: Remap Vector Bounds
+	-note Name similarity with Remap Vector by Bounds
+
+Custom Weights Vs. Weights Vs. Custom Cost
+	-Face Dimension
+	-Face Neighbor Index.
+	-Edges of face
+	-Face Points
+-blender is using lighter weight.
+-preset is custom weights is for heavier weight - Multiply -1.
 *****************
 To Do:
 Index Randomize.
@@ -346,7 +361,9 @@ Proximity Falloff
 Add: Quad Face Area
 
 Add: Binding investigation for bend deformer.
--Concept Proving First
+-Concept Proving First??
+	-Vector Binding method. Rotate with Vector.
+
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
