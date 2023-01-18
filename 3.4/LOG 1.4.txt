@@ -365,6 +365,10 @@ Face Points
 	-2.4 ms Vs. 23 ms.
 -Weight Test
 	-is interpolate domain needed?
+-The necessity of Sample Index
+	-Mesh to Points is losing Geometry Data.
+	-Consistent Capturing not necessarily a good idea?
+	-Sampling is better performant than Capturing.
 *****************
 To Do:
 Index Randomize.
