@@ -343,11 +343,28 @@ Add: Remap Vector Bounds
 
 Custom Weights Vs. Weights Vs. Custom Cost
 	-Face Dimension
-	-Face Neighbor Index.
 	-Edges of face
 	-Face Points
 -blender is using lighter weight.
 -preset is custom weights is for heavier weight - Multiply -1.
+
+Remap Vector by Bounds
+-Renamed to "Remap Vector to Bounds"?
+	-Name similarity to "Remap Vector Bounds"
+Remap Vector Bounds
+-"Normalize Vector Bounds"
+
+Add: Vertex Rotation
+
+Face Points
+-Why it has to Split Edge?
+	-Edges of Vertex may go beyond its polygon
+	-> Add: Weighting Edge Option to choose between Split Edge Vs. non-Split Edge method
+-Performance test.
+	-100*100 UV Sphere
+	-2.4 ms Vs. 23 ms.
+-Weight Test
+	-is interpolate domain needed?
 *****************
 To Do:
 Index Randomize.
@@ -363,6 +380,10 @@ Add: Quad Face Area
 Add: Binding investigation for bend deformer.
 -Concept Proving First??
 	-Vector Binding method. Rotate with Vector.
+
+Curve Deformer
+-Investigate Necessity of Vector Remap.
+
 
 
 **Simulation Branch
