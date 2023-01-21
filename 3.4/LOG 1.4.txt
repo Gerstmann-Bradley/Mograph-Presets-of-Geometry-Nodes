@@ -385,6 +385,17 @@ Vertex Rotation
 Face Points
 -Normal Only Rotation
 	-pivot Z alignment on X + pivot Auto alignment on Z.
+
+Alignment on Splines
+-Bypass rotate euler.
+
+Array on Spline
+-Sample Index onto Points cost the most performance.
+	-Rotation requires 2 attribute thus 2X performance.
+-Mesh Line replaced by Points
+	-2X faster performance benefit.
+-Instance Vs. Duplicate Element
+	Duplicate Element 2X slower than Instance
 *****************
 To Do:
 Index Randomize.
@@ -395,15 +406,12 @@ Proximity Falloff
 	-can Change mini of Map range 0.
 	-but is adding a new socket necessary?
 
-Add: Quad Face Area
-
 Add: Binding investigation for bend deformer.
 -Concept Proving First??
 	-Vector Binding method. Rotate with Vector.
 
 Curve Deformer
 -Investigate Necessity of Vector Remap.
-
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
@@ -422,6 +430,7 @@ Add: Trigger
 **3.5
 Add: Expand Selection Node
 	-can it be used to shrink?
+	-Boarder shrinkage has flaws.
 
 **3.4
 Transfer Attribute to Sample error?
