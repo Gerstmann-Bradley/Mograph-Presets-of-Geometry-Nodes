@@ -369,6 +369,22 @@ Face Points
 	-Mesh to Points is losing Geometry Data.
 	-Consistent Capturing not necessarily a good idea?
 	-Sampling is better performant than Capturing.
+
+Edges of Face
+-Add: Weighing Edges.
+	-NOT Possible. Split Edge is needed for Polygon Animaiton.
+
+Boundary Selection
+-Investigate - Voronoi Splitting.
+	-If the mesh contain holes, the Dual Mesh Edge won't be accurate.
+
+Vertex Rotation
+-Normal Only Rotation
+-Aligning to an Edge isn't a good solution.
+
+Face Points
+-Normal Only Rotation
+	-pivot Z alignment on X + pivot Auto alignment on Z.
 *****************
 To Do:
 Index Randomize.
@@ -387,7 +403,6 @@ Add: Binding investigation for bend deformer.
 
 Curve Deformer
 -Investigate Necessity of Vector Remap.
-
 
 
 **Simulation Branch
