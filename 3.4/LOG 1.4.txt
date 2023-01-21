@@ -396,6 +396,16 @@ Array on Spline
 	-2X faster performance benefit.
 -Instance Vs. Duplicate Element
 	Duplicate Element 2X slower than Instance
+
+Curve Linear
+-Improve Performance of Stop Mode.
+	-2X faster in non-centered Stop Mode
+	-2X faster in Centered Stop Mode.
+
+Add: Hair on Surface
+-not to include point distribute inside.
+	-Or else will add >=4 sockets.
+	-and require additional random rotation control.
 *****************
 To Do:
 Index Randomize.
@@ -412,6 +422,8 @@ Add: Binding investigation for bend deformer.
 
 Curve Deformer
 -Investigate Necessity of Vector Remap.
+
+
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
@@ -460,6 +472,7 @@ Multi Switch needed
 -Array on Splines
 -Remap Vector by Bounds
 -3D Viewer
+-Orientation Switch
 
 Curve Deformer
 -What if I need special settings in special cases?
