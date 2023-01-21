@@ -406,6 +406,10 @@ Add: Hair on Surface
 -not to include point distribute inside.
 	-Or else will add >=4 sockets.
 	-and require additional random rotation control.
+
+Face Points
+-Weighing Edge Performance in N/-1 mode.
+	-Not N-mode, "And" Weighing Edge, instead of "Or"
 *****************
 To Do:
 Index Randomize.
