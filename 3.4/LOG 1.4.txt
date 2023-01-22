@@ -410,6 +410,8 @@ Add: Hair on Surface
 Face Points
 -Weighing Edge Performance in N/-1 mode.
 	-Not N-mode, "And" Weighing Edge, instead of "Or"
+
+Add: Is Sharp Edge
 *****************
 To Do:
 Index Randomize.
@@ -427,7 +429,8 @@ Add: Binding investigation for bend deformer.
 Curve Deformer
 -Investigate Necessity of Vector Remap.
 
-
+Hair on Surface
+-Proximity targets differently for each point in complex geometry
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
