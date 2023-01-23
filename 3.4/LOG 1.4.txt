@@ -412,6 +412,13 @@ Face Points
 	-Not N-mode, "And" Weighing Edge, instead of "Or"
 
 Add: Is Sharp Edge
+
+Curve Linear
+-Fix Orientation bug in the Stop Mode.
+
+UV Deformer
+-Z axis remap factor 0.5.
+-Add Curve radius 0 in bounding box for temporary support of 3.5 bug.
 *****************
 To Do:
 Index Randomize.
@@ -494,6 +501,10 @@ Object Coordinate
 Bevel Curve
 -Is Index UV really needed?
 	-deleted
+
+UV Deformer
+-Not to use "normal" at curve.
+	-Z-evaluation is triggered by "Curve Bounding Box" bug.
 
 Solidify
 -Merge by Distance is merging other points too.
