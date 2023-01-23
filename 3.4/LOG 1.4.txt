@@ -419,6 +419,12 @@ Curve Linear
 UV Deformer
 -Z axis remap factor 0.5.
 -Add Curve radius 0 in bounding box for temporary support of 3.5 bug.
+
+**Bevel Curve
+-Remove internal Set Radius.
+	-Statistical Methods giving decimals.
+		-deviate compare results.
+	-or compare result is mislead by small constant radius input.
 *****************
 To Do:
 Index Randomize.
