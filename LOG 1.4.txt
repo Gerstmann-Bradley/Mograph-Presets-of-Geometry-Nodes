@@ -1,0 +1,528 @@
+Done:
+Add: Random Color HSV.
+
+Follow Spline
+Array on Spline
+-improvement with new Sample Curve node.
+
+Add: Self Random Value
+
+Add:
+-Append Point to Curves
+
+Reset Curve Cyclic
+-interpolate domain than capture attribute?
+	-Found no Performance improvement.
+
+Add: To Curve Points
+
+Add: Spline Info
+-interpolate domain version of attribute Spline
+
+Delete Mix Vector
+Delete Helical Connection
+
+Add: Map to UV Space
+
+Bounding Box
+-XYZ Default Limit
+
+Transfer Attribute in Proximity
+-Renamed to "Sample in Proximity"
+
+Map to UV Space
+-Add custom Bounding box.
+-Add Mapped Position Output - Deleted, Assumed not useful.
+-Add Mapped Normal Output.
+
+Add Curve Split
+-Default Selection No?
+
+Directional Falloff
+-Default XYZ Limit.
+
+Helical Connection
+-Legacy Behavior canceling.
+
+Curve Split
+-Capture Radius?
+
+Add: Edge Distance
+
+Map to UV Space
+-what if Sample UV map not in the range of 0-1?
+	-if using bounding box, tend to cause unwanted point to be eliminated.
+-Custom Bound what about Z?
+	-I guess Z custom is needed for animation.
+
+**Noise 3D
+Vector Noise.
+Vector Wiggle - is this node necesssary?
+Translate Position.
+-Is Object Transform Really necessary?
+	-Practically speaking they are barely being used.
+-Keep Object Coordinate in the node, but remove sockets.
+**What Other Nodes are using Object Coordinate? Total 5 after delete.
+	-Noise 3D
+	-Vector Noise
+	-Translate Position
+	-Radial Falloff - Fixed.
+	-Voronoi 3D
+-Hide .Object Coordinate Now.
+
+Voronoi 3D
+-Connect Mid-level to Rounding.
+	-Why Rounding Mid-level is reversed?
+	-Why Rounding isn't fully accurate?
+
+Map to UV Space
+-Vector Map Range rewrite
+
+Map to UV Space
+-Renamed to "UV Deformer"
+
+Center Geometry
+-Remove Custom Bound Boolean.
+	-use Implicit Geometry.
+
+UV Deformer
+-Optimization of Normal Sampling.
+	-If no normal input, can we remove it.
+	-Capture attribute always computing normal.
+	-Sample Attribute better option when not being used.
+		-When used in Points, it seems lagging more than capture; otherwise better speed than capturing.
+
+Remap 0-1
+-Add Reverse toggle.
+
+Append Points to Curve
+-Geometry Renamed to "Curves"
+**Curves input and Output consistency
+-Bevel Curve
+-Append Points to Curve
+-Curve Split
+-smooth curve
+-merge distance curve
+
+Fix ZB_07 Attribute Voronoi
+-Missing "Mix Vector"
+
+Append Point to Curves
+-Set point is effecting all points
+	-index not excluded because of selection input.
+	-Interpolate Domain is needed.
+
+Point Distribute
+-Amount, lower minimum 0 clamp
+
+Array on Splines
+-renamed to "Array on Splines"
+-Index Not propagating.
+	-Modulo function on curve domain size to recover Spline Index.
+-Issue of Duplicating Element in Spline Index
+	-Index Converge than Modulo Method.
+
+Index Converge
+-Add Moudlo function.
+
+Follow Splines
+Array on Splines
+-Parameter & Offset/10
+
+Follow Splines
+-Node too BIG
+	-Remove Motion Variance Group
+	-Remove Normalize
+	-Keep Scale Variance.
+-Parameter -> "Offset/10"
+Array on Splines
+-Offset -> "Offset/10"
+
+Curve Extrapolate
+-Complete Rewrite
+	-Simplify
+	-only tangent and offset needed.
+-Support Curves than Single Curve
+	-tutorial of interpolate domain?
+
+Add: To Bounding Box
+
+Attribute Voronoi
+-Optimize by Sample Index than Capturing
+	-Data Changed due to Split Edges.
+	-how to keep data use sample index?
+
+Curve Deform
+-Complete Rewrite
+-Repeated Vector rotate.
+	-chance of optimization? - Finished.
+Curve Extrapolate
+-Automatic Flipping?
+	-Seems not needed. Implemented but disabled.
+
+Add: Instance Bounding Box
+
+Add: 3D Viewer
+
+Curve Deformer
+-Support Instances
+	-I don't want to capture instance attribute twice.
+	-I don't want to output Instance Index in Instance Bounding Box.
+		-Since they are irrelevant.
+	-Mesh island may not correspond to Instance Index.
+	-Mesh island as default, Instance index as Custom.
+
+Curve Deformer
+-Scaling
+-Rotation change
+	-Seems not necessarily better result.
+Curve Extrapolate
+-Dynamic Extension?
+	-I don't want to use complicate switch, and what if flow is field. Extrapolation can't be field for every curve?
+
+Curve Deformer
+-At Instance mode, Curve length not shared across different curve.
+	-Sample Instance Index on Spline length of spline domain.
+-condition for Instances following a single Curve.
+	-Add Test; Possibly need to loop Curve Index.
+-Easier and more intuitive Value Generation Method
+	-Captureing Multiple Parameters May Cost performance.
+		-Test shown Instance Bounding Box cost the most performance than capturing other parameters.
+
+Curve Deformer
+-What if Cyclic Curve
+-Bug Some Instances Not Shown.
+	-Instance Bounding Box Bug? Some Values output 0.
+		-Mesh Island Default doesn't work for Suzanne. Single Instance contains 3 island.
+	-Instance Overlapped. 2 instance on a single curve.
+		-Modulo was wrong to have subtract 1.
+-Do we preview curves?
+
+3D Viewer
+-Delete Overlaping Points
+	-Performance Test, Merge by Distance much more expansive than instancing 100000 Instances.
+
+Duplicate Geometry
+-Improvement using Points.
+
+Curve Extrapolate
+-Add Factor control on Start and End.
+Curve Deformer
+-Add Controls of Extrapolates
+-Must we include Extrapolate Inside?
+		-If changing Extrapolate, it will change factor offset.
+		-What if multiple curves of different Spline Length
+	-Output Distance offset in Extrapolate.
+	-Input Distance offset.
+-Why Clamp Is not working?
+	-negati is giving midlevel 0.5. lower than the threshold
+	-I don't know if Clamp is really needed. I Also don't know if a Fix is needed.
+	-Delete Geometry When it's outout clamp
+		-Bypass Delete if Cyclic Spline
+
+3D viewer
+-Default Attribute to take Position.
+-If Width=1, no Bevel
+
+UV Deformer not working on UV from Curves
+-why?
+	-Needs Double Reset Spline Cyclic
+Bevel Curve
+-Double Reset Spline Cyclic
+-Double Fac/Length.
+
+Translate Position
+-Missing Implicit Attribute.
+
+3D Viewer
+-Add Rotation
+-Change Marker for Matrix Pointing.
+
+Add: Face Rotation
+	-Naming
+	-In Blender, Lower the weight, higher the priority
+		-Should we follow the same principle in making the preset?
+		-why is it so unintuitive?
+		-Multiply -1 better than 1/divide.
+		-Should apply to all weight input. I am going against blender's implementation.
+	-Should Offset index be included?
+Add: Edges of Face
+-Interpolate domain to replace field at index.
+-Reduce amount of interpolate domain
+
+Curve Split
+-Can points being connected after split?
+	-no, what if multiple points on a single spline are deleted.
+
+Add: Curl Noise Turbulence
+-Copied from Entagma tutorial.
+-Already outputing -1 to 1 range.
+	-Divide 2 for +/-0.5 range.
+	-Currently no Mid-Level.
+
+Noise 3D
+-Optimize Fac Output
+-Add Falloff Option
+-Should I rearrange the Sockets?
+	-Decide Not.
+	-Note Upon Rearrangement, there will be no compatibility issue.
+
+Add: Curve Connect
+-For Unfolding spiral reasons.
+	-but not working for spiral.
+	-made a new method included in "Spiral Unfold", but not sure if should be merged into Curve Connect. How to design for different mode of merging?
+
+3D viewer
+-Add Axis Option.
+
+Curve Points Preview
+-Add Show Curve Option.
+
+Add: Spiral Unfold
+-Rotation issue resolve.
+
+Add: Remap Vectors by Bounds
+-is that necessary to have UV attribute as Options?
+	-not only for UV, but may also for position.
+
+3D Viewer
+-Points Instance not enough for Face Corner Viewer.
+	-Add a domain.
+
+3D Viewer
+-Curve Count bug
+
+Spiral Unfold
+-Rotation Guide, & Add Rotation
+
+Curve Deform
+-Flow offset based on Scale.
+	-Scaling is occured at center point as expected.
+	-not sure changing will give better results.
+
+UV Deformer
+-Try to Check &/ Fix some height issue.
+	-seems no problem although I don't know why it's stretched.
+
+Curve Deformer
+-Add Offset Flow
+
+3D Viewer
+-Curve Rotation Correction
+	-Add options to View Rotation?
+
+Curve Connect
+-Parallel connection method
+
+Spiral Unfold
+-Curve Connect Method.
+
+Bevel Curve
+-Radius Functionality Check
+	-When Spline parameter * in radius, boolean output 0.
+	-One Switch Node is broken with Field to Constant
+
+Curve Deform
+-Is axis being clampped to be 1?
+	-The initial implementation was made for "Factor".
+
+Random Transform
+-Broken due to missing vector wiggle.
+	-fixed but didn't test out.
+		-Tested; Mid-level 0
+-Freq Add 0.001 to avoid perlin pitfall.
+
+Add: Face Dimension
+
+Add: Face Points
+-Mesh to Points Method Vs. Dual Mesh method
+ 	-700*700 UV Sphere, 40 ms Vs. 188 ms
+
+Add: Remap Vector Bounds
+	-note Name similarity with Remap Vector by Bounds
+
+Custom Weights Vs. Weights Vs. Custom Cost
+	-Face Dimension
+	-Edges of face
+	-Face Points
+-blender is using lighter weight.
+-preset is custom weights is for heavier weight - Multiply -1.
+
+Remap Vector by Bounds
+-Renamed to "Remap Vector to Bounds"?
+	-Name similarity to "Remap Vector Bounds"
+Remap Vector Bounds
+-"Normalize Vector Bounds"
+
+Add: Vertex Rotation
+
+Face Points
+-Why it has to Split Edge?
+	-Edges of Vertex may go beyond its polygon
+	-> Add: Weighting Edge Option to choose between Split Edge Vs. non-Split Edge method
+-Performance test.
+	-100*100 UV Sphere
+	-2.4 ms Vs. 23 ms.
+-Weight Test
+	-is interpolate domain needed?
+-The necessity of Sample Index
+	-Mesh to Points is losing Geometry Data.
+	-Consistent Capturing not necessarily a good idea?
+	-Sampling is better performant than Capturing.
+
+Edges of Face
+-Add: Weighing Edges.
+	-NOT Possible. Split Edge is needed for Polygon Animaiton.
+
+Boundary Selection
+-Investigate - Voronoi Splitting.
+	-If the mesh contain holes, the Dual Mesh Edge won't be accurate.
+
+Vertex Rotation
+-Normal Only Rotation
+-Aligning to an Edge isn't a good solution.
+
+Face Points
+-Normal Only Rotation
+	-pivot Z alignment on X + pivot Auto alignment on Z.
+
+Alignment on Splines
+-Bypass rotate euler.
+
+Array on Spline
+-Sample Index onto Points cost the most performance.
+	-Rotation requires 2 attribute thus 2X performance.
+-Mesh Line replaced by Points
+	-2X faster performance benefit.
+-Instance Vs. Duplicate Element
+	Duplicate Element 2X slower than Instance
+
+Curve Linear
+-Improve Performance of Stop Mode.
+	-2X faster in non-centered Stop Mode
+	-2X faster in Centered Stop Mode.
+
+Add: Hair on Surface
+-not to include point distribute inside.
+	-Or else will add >=4 sockets.
+	-and require additional random rotation control.
+
+Face Points
+-Weighing Edge Performance in N/-1 mode.
+	-Not N-mode, "And" Weighing Edge, instead of "Or"
+
+Add: Is Sharp Edge
+
+Curve Linear
+-Fix Orientation bug in the Stop Mode.
+
+UV Deformer
+-Z axis remap factor 0.5.
+-Add Curve radius 0 in bounding box for temporary support of 3.5 bug.
+
+**Bevel Curve
+-Remove internal Set Radius.
+	-Statistical Methods giving decimals.
+		-deviate compare results.
+	-or compare result is mislead by small constant radius input.
+
+Hexagonal Distribution
+-Add X-Index.
+*****************
+To Do:
+Index Randomize.
+-Group Index? -Failed
+
+Proximity Falloff
+-Add Absolute scale Offset?
+	-can Change mini of Map range 0.
+	-but is adding a new socket necessary?
+
+Add: Binding investigation for bend deformer.
+-Concept Proving First??
+	-Vector Binding method. Rotate with Vector.
+
+Curve Deformer
+-Investigate Necessity of Vector Remap.
+
+Hair on Surface
+-Proximity targets differently for each point in complex geometry
+
+Add: Smooth.
+
+**Simulation Branch
+Start Time, Elapsed Time, Previous Position, Velocity Attribute
+
+Curve Raycast Collision Detection
+Branching Thickness Decrement
+
+Dynamic Orientation
+
+Follow Spline
+
+Add: Trigger
+-Boolean Trigger
+-Time recording.
+
+
+
+**3.5
+Add: Expand Selection Node
+	-can it be used to shrink?
+	-Boarder shrinkage has flaws.
+
+**3.4
+Transfer Attribute to Sample error?
+	-Sample Curve to Points may require Sample by Index£¿
+Transfer Attribute in Proximity
+-Renamed to "Sample in Proximity"
+
+New Node & Workflow Changes:
+Trim Curve Support cyclic curve.
+Sample Curve node - index.
+	*Follow Spline -
+		-Performance improvement by 4-7X.
+	*Array on Spline -
+		-1 curve 1 value from Sample Curve.
+		-Mean statistics the fastest method.
+Mix Node
+-Delete Mix vector
+-Delete Mix float
+--------------------
+GN-Known Issue:
+Multi Switch needed
+-Curve Deform
+-Directional Falloff
+-Radial Falloff
+-Group Per Domain
+-Follow Splines
+-Array on Splines
+-Remap Vector by Bounds
+-3D Viewer
+-Orientation Switch
+
+Curve Deformer
+-What if I need special settings in special cases?
+	-no Extrapolation
+	-no extra clamping.
+-worth to add more options and more switches?
+
+Object Coordinate
+-Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Bevel Curve
+-Is Index UV really needed?
+	-deleted
+
+UV Deformer
+-Not to use "normal" at curve.
+	-Z-evaluation is triggered by "Curve Bounding Box" bug.
+
+Solidify
+-Merge by Distance is merging other points too.
+	-no way to resolve it.
+
+**General rule of design:
+Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
