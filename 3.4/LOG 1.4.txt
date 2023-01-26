@@ -425,6 +425,9 @@ UV Deformer
 	-Statistical Methods giving decimals.
 		-deviate compare results.
 	-or compare result is mislead by small constant radius input.
+
+Hexagonal Distribution
+-Add X-Index.
 *****************
 To Do:
 Index Randomize.
@@ -445,6 +448,8 @@ Curve Deformer
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
+Add: Smooth.
+
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
@@ -458,6 +463,8 @@ Follow Spline
 Add: Trigger
 -Boolean Trigger
 -Time recording.
+
+
 
 **3.5
 Add: Expand Selection Node
