@@ -428,6 +428,10 @@ UV Deformer
 
 Hexagonal Distribution
 -Add X-Index.
+
+Attribute Voronoi
+-Internal Split Edge with Face Set Boudnary; saving performance than universal split.
+-Add Toggle for Split Edges.
 *****************
 To Do:
 Index Randomize.
@@ -448,8 +452,6 @@ Curve Deformer
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
-Add: Smooth.
-
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
@@ -464,12 +466,12 @@ Add: Trigger
 -Boolean Trigger
 -Time recording.
 
-
-
 **3.5
 Add: Expand Selection Node
 	-can it be used to shrink?
 	-Boarder shrinkage has flaws.
+
+Add: Smooth Positions
 
 **3.4
 Transfer Attribute to Sample error?
