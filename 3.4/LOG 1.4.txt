@@ -432,6 +432,14 @@ Hexagonal Distribution
 Attribute Voronoi
 -Internal Split Edge with Face Set Boudnary; saving performance than universal split.
 -Add Toggle for Split Edges.
+
+Duplicate Geometry
+-Rename: "Point Instance Geometry"
+
+Points Distribute
+-when the face area extremely small. default density 10 will result in 0 points creation.
+-bump up density will cause minimal performance cost in small mesh.
+	-change 10 -> 50. in a huge mesh 80X80X80 cube it seems 5X slow.
 *****************
 To Do:
 Index Randomize.
@@ -451,6 +459,8 @@ Curve Deformer
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
+
+
 
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
