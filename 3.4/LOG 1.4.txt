@@ -440,6 +440,10 @@ Points Distribute
 -when the face area extremely small. default density 10 will result in 0 points creation.
 -bump up density will cause minimal performance cost in small mesh.
 	-change 10 -> 50. in a huge mesh 80X80X80 cube it seems 5X slow.
+
+Boundary Selection
+-Rewrite using "Edge neighbor = 1" method
+	-not perfect in Point Domain. requires Edge Domain.
 *****************
 To Do:
 Index Randomize.
