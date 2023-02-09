@@ -461,6 +461,9 @@ Proximity Falloff
 	-End Result must be clamped to Min-Max.
 	-Must overshoot the original gradient.
 		-enable Falloff Animation to value 2 for overshoot.
+
+UV deformer
+-initial input geometry should also set point radius 0.
 ****************************************************************************************************
 To Do:
 Index Randomize.
