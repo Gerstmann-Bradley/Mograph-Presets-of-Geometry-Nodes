@@ -455,6 +455,12 @@ Bevel Curve
 UV deformer
 -Points radius also taken into account of Bounding Box.
 	-Set Point Radius to 0.
+
+Proximity Falloff
+-Falloff Animation Remake
+	-End Result must be clamped to Min-Max.
+	-Must overshoot the original gradient.
+		-enable Falloff Animation to value 2 for overshoot.
 ****************************************************************************************************
 To Do:
 Index Randomize.
@@ -477,7 +483,6 @@ Hair on Surface
 
 Bend Deform
 -Angle Check
-
 ****************************************************************************************************
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
