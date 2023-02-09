@@ -463,7 +463,9 @@ Proximity Falloff
 		-enable Falloff Animation to value 2 for overshoot.
 
 UV deformer
--initial input geometry should also set point radius 0.
+-initial input geometry should also set point radius 0?
+	-meaningless, If input are points, likely need to output mapped normal for instancing.
+-Switch to decrease confusing bug report.
 ****************************************************************************************************
 To Do:
 Index Randomize.
@@ -561,7 +563,6 @@ UV Deformer
 Solidify
 -Merge by Distance is merging other points too.
 	-no way to resolve it.
-
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
