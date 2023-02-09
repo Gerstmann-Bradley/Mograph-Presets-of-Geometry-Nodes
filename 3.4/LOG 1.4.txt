@@ -448,6 +448,9 @@ Boundary Selection
 Bevel Curve
 -Reset Spline Cyclic when cyclic
 	-shouldn't this feature implemented in reset spline cyclic instead?
+-reverse to again implement UV to Index mode.
+	-Fac/Length may change when curve is deformed.
+	-but Index will not unless resampled.
 *****************
 To Do:
 Index Randomize.
@@ -537,6 +540,8 @@ Object Coordinate
 Bevel Curve
 -Is Index UV really needed?
 	-deleted
+	-reverse deletion
+	-Fac/Length may change upon curve deformation, but index will not.
 
 UV Deformer
 -Not to use "normal" at curve.
