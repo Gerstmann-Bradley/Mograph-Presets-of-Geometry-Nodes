@@ -451,7 +451,11 @@ Bevel Curve
 -reverse to again implement UV to Index mode.
 	-Fac/Length may change when curve is deformed.
 	-but Index will not unless resampled.
-*****************
+
+UV deformer
+-Points radius also taken into account of Bounding Box.
+	-Set Point Radius to 0.
+****************************************************************************************************
 To Do:
 Index Randomize.
 -Group Index? -Failed
@@ -474,8 +478,7 @@ Hair on Surface
 Bend Deform
 -Angle Check
 
-
-
+****************************************************************************************************
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
@@ -514,7 +517,7 @@ Sample Curve node - index.
 Mix Node
 -Delete Mix vector
 -Delete Mix float
---------------------
+****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
 -Curve Deform
@@ -551,6 +554,7 @@ Solidify
 -Merge by Distance is merging other points too.
 	-no way to resolve it.
 
+****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
 Statistic Mean is of the best performance.
