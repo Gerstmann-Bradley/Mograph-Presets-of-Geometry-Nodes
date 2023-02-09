@@ -444,6 +444,10 @@ Points Distribute
 Boundary Selection
 -Rewrite using "Edge neighbor = 1" method
 	-not perfect in Point Domain. requires Edge Domain.
+
+Bevel Curve
+-Reset Spline Cyclic when cyclic
+	-shouldn't this feature implemented in reset spline cyclic instead?
 *****************
 To Do:
 Index Randomize.
@@ -463,6 +467,9 @@ Curve Deformer
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
+
+Bend Deform
+-Angle Check
 
 
 
