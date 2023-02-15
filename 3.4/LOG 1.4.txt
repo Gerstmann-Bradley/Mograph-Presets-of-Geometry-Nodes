@@ -466,6 +466,14 @@ UV deformer
 -initial input geometry should also set point radius 0?
 	-meaningless, If input are points, likely need to output mapped normal for instancing.
 -Switch to decrease confusing bug report.
+
+Bevel Curve
+-New method of UV unwrapping to reduce requirements of reset spline cyclic?
+	-Wrapping Torus with seam is not giving ideal result
+	-store attribute on face corner also not reduce issue of capture method.
+
+Vertex Rotation
+-Only keep the normal method.
 ****************************************************************************************************
 To Do:
 Index Randomize.
@@ -563,6 +571,10 @@ UV Deformer
 Solidify
 -Merge by Distance is merging other points too.
 	-no way to resolve it.
+
+Spline Falloff
+-Step Size Check
+-Falloff Animation Changes to correspond to Proximity Falloff?
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
