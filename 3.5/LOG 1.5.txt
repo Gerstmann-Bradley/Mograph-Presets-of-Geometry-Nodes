@@ -1,0 +1,73 @@
+Done:
+Add: Expand/Shrink Selection Node
+-should it use value or boolean?
+	-difficult to manage value increment/-.
+
+Add: Smooth Position
+
+Add: Tilt Alignment
+
+Fill Volume
+-Legacy Behavior.
+****************************************************************************************************
+To Do:
+Bend Deform
+-Angle Check
+
+Index Randomize
+-Group Index Bug
+
+****************************************************************************************************
+**Simulation Branch
+Start Time, Elapsed Time, Previous Position, Velocity Attribute
+
+Curve Raycast Collision Detection
+Branching Thickness Decrement
+
+Dynamic Orientation
+
+Follow Spline
+
+Add: Trigger
+-Boolean Trigger
+-Time recording.
+
+**3.6
+****************************************************************************************************
+GN-Known Issue:
+Multi Switch needed
+-Curve Deform
+-Directional Falloff
+-Radial Falloff
+-Group Per Domain
+-Follow Splines
+-Array on Splines
+-Remap Vector by Bounds
+-3D Viewer
+-Orientation Switch
+
+Object Coordinate
+-Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Solidify
+-Merge by Distance is merging other points too.
+	-no way to resolve it.
+
+Index Randomize.
+-Group Index? -Failed
+
+Proximity Falloff
+-Add Absolute scale Offset?
+	-can Change mini of Map range 0.
+	-but is adding a new socket necessary?
+
+Hair on Surface
+-Proximity targets differently for each point in complex geometry
+
+Curve Deformer
+-Investigate Necessity of Vector Remap.
+****************************************************************************************************
+**General rule of design:
+Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
