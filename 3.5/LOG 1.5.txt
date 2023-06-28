@@ -12,6 +12,16 @@ Fill Volume
 
 Tilt Alignment
 -Add Tilt Adjustment.
+
+Bounding Box Falloff
+-Geometry Output rename to "Instances"?
+	-no it's realized, so must not be instances
+
+Remap 0-1
+-Should I Clamp the input?
+	-When working with Sin Function, not clamping will have a non-clamped correct remapping.
+
+Add: Curve Curvature
 ****************************************************************************************************
 To Do:
 Bend Deform
