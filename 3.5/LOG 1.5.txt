@@ -21,7 +21,18 @@ Remap 0-1
 -Should I Clamp the input?
 	-When working with Sin Function, not clamping will have a non-clamped correct remapping.
 
-Add: Curve Curvature
+Add: Curve Curvature.
+
+Append Points to Curve
+-Resample Method Vs. Extrude Vertices method.
+	-stress-testing at 10k random helices distribution with 1k points each.
+	-Curve Extrapolation Vs. Append Points to Curve Vs. Extrusion method.
+	-492, 466, 624 ms.
+
+Array on Splines
+-bug at count 1. shown at parameter 0.
+	-why I was using statistic minimum equal method?
+	-change to equal to -1 method.
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -29,7 +40,6 @@ Bend Deform
 
 Index Randomize
 -Group Index Bug
-
 ****************************************************************************************************
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
