@@ -34,7 +34,7 @@ Array on Splines
 	-why I was using statistic minimum equal method?
 	-change to equal to -1 method.
 
-Add: Scaling Sequence
+Add: Power Scaling
 -for use in 4.0 loop.
 ****************************************************************************************************
 To Do:
