@@ -41,7 +41,11 @@ Array on Splines
 -Sample Curve to output radius.
 
 Loop Index
--Name output as "Loop Index"
+-Name output as "Loop Index".
+
+Float Range
+-Stop Mode not include End？
+	-When Step= -1, end is not included.
 ****************************************************************************************************
 To Do:
 Bend Deform
