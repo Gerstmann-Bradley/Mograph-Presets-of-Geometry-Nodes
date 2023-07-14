@@ -36,6 +36,12 @@ Array on Splines
 
 Add: Power Scaling
 -for use in 4.0 loop.
+
+Array on Splines
+-Sample Curve to output radius.
+
+Loop Index
+-Name output as "Loop Index"
 ****************************************************************************************************
 To Do:
 Bend Deform
