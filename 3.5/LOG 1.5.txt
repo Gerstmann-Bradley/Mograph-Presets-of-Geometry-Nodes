@@ -35,7 +35,12 @@ Array on Splines
 	-change to equal to -1 method.
 
 Add: Power Scaling
--for use in 4.0 loop.
+-for use in 4.0 loop. For every loop, a value should be x% of its previous state. 
+	-This is a "function" to multiply the initial value to x% with power of loop index.
+-Input:
+	Basic Input value; Default 1.
+	Base - base of power; such as 80%.
+	Loop Index.
 
 Array on Splines
 -Sample Curve to output radius.
@@ -46,6 +51,25 @@ Loop Index
 Float Range
 -Stop Mode not include End？
 	-When Step= -1, end is not included.
+
+Bounding Box Falloff
+-Geometry Output renamed to "Realized Instance"
+
+Fade Falloff
+-in Tree Leaves Growth Example, the direction is reversed.
+-Can I use Implicite Index, and when needed, to reuse "Group Index" Outside?
+	-The issue is not simply the index. but the total number from accumulate field.
+-How to reverse Index?
+
+-value/10 is no longer necessary due to value precision; and it caused inconsistency when driving multiple values.
+*Fade Falloff
+*Follow Splines
+-Array on Spline excluded from changes.
+	-since offset is unlikely effecting the result?
+
+Oscillation Function
+-Actual usage of it?
+	-different from sin function, it should be used more for animation than a static scene?
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -54,21 +78,37 @@ Bend Deform
 Index Randomize
 -Group Index Bug
 ****************************************************************************************************
+To Do:
+Bend Deform
+-Angle Check
+
+Index Randomize
+-Group Index Bug?
+****************************************************************************************************
+**Serial Loop Node
+Add: Index Viewer
+
+Add: Fixed Relaxation Solver
+Add: Fixed Intersection Solver
+
+Instance Bounding Box
+Bounding Box Falloff for Instance?
+
+
+
 **Simulation Branch
 Start Time, Elapsed Time, Previous Position, Velocity Attribute
 
-Curve Raycast Collision Detection
-Branching Thickness Decrement
+Curve Raycast Collision Detection?
+Branching Thickness Decrement?
 
 Dynamic Orientation
 
 Follow Spline
 
 Add: Trigger
--Boolean Trigger
--Time recording.
-
-**3.6
+-Boolean Trigger?
+-Time recording?
 ****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
