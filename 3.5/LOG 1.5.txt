@@ -70,6 +70,13 @@ Fade Falloff
 Oscillation Function
 -Actual usage of it?
 	-different from sin function, it should be used more for animation than a static scene?
+
+Fill Volume
+-Default Value.
+
+Index Extraction
+-Still not Functioning on curve?
+	-what was the reason statistic point? -deteled
 ****************************************************************************************************
 To Do:
 Bend Deform
