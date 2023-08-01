@@ -77,13 +77,22 @@ Fill Volume
 Index Extraction
 -Still not Functioning on curve?
 	-what was the reason statistic point? -deteled
+
+Array on Splines
+-Float Range input in Custom Parameter contains error due to Spline Index.
+	-If using Points, no Spline index attribute and thus causing errors.
+-Rewrite. Using curve instancing on curve to keep spline index attribute?
 ****************************************************************************************************
 To Do:
 Bend Deform
 -Angle Check
 
 Index Randomize
--Group Index Bug
+-Group Index Bug?
+
+**Falloff - Delete Min/Max options
+-to decrease node sizes to allowing more options?
+-Remap 0-1 is used more frequently than native min-max.
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -98,9 +107,10 @@ Add: Index Viewer
 Add: Fixed Relaxation Solver
 Add: Fixed Intersection Solver
 
+Random Index per island?
+
 Instance Bounding Box
 Bounding Box Falloff for Instance?
-
 
 
 **Simulation Branch
@@ -113,7 +123,7 @@ Dynamic Orientation
 
 Follow Spline
 
-Add: Trigger
+**Add: Trigger
 -Boolean Trigger?
 -Time recording?
 ****************************************************************************************************
@@ -128,6 +138,10 @@ Multi Switch needed
 -Remap Vector by Bounds
 -3D Viewer
 -Orientation Switch
+
+
+Add: Origin Offset.
+-Too complicate without enum node.
 
 Object Coordinate
 -Different Order of Operation is required in different cases.
