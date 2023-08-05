@@ -82,6 +82,17 @@ Array on Splines
 -Float Range input in Custom Parameter contains error due to Spline Index.
 	-If using Points, no Spline index attribute and thus causing errors.
 -Rewrite. Using curve instancing on curve to keep spline index attribute?
+
+*Redundancy?
+	-Curve Points Preview
+	-To Curve Points?
+-They are different. Curve Points are Curve resampled at 1. but Curve Points Preview is generating real single points.
+
+Self Random Value
+-renamed to "Self Random Seed"
+
+Random Transform
+-Output Points instead of Point Instances.
 ****************************************************************************************************
 To Do:
 Bend Deform
