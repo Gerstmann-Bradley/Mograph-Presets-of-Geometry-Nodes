@@ -95,6 +95,13 @@ Random Transform
 -Output Points instead of Point Instances.
 
 Add: Fibonacci Spiral
+
+Store UVMap
+-Add: Offset.
+
+Implicit Attribute
+-Add Float Attribute Option.
+	-Set negative value to the least.
 ****************************************************************************************************
 To Do:
 Bend Deform
