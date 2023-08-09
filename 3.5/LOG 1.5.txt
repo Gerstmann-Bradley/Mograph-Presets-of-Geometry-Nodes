@@ -104,6 +104,10 @@ Implicit Attribute
 	-Set negative value to the least.
 
 Add: Local Offset
+
+Add: Trigger
+-Boolean Trigger?
+-Birth Time Recording?
 ****************************************************************************************************
 To Do:
 Bend Deform
