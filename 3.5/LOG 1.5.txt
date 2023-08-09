@@ -102,6 +102,8 @@ Store UVMap
 Implicit Attribute
 -Add Float Attribute Option.
 	-Set negative value to the least.
+
+Add: Local Offset
 ****************************************************************************************************
 To Do:
 Bend Deform
