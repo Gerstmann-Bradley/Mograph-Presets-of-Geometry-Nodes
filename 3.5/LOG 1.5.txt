@@ -108,6 +108,8 @@ Add: Local Offset
 Add: Trigger
 -Boolean Trigger?
 -Birth Time Recording?
+
+Add: Curve Intersection Detection
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -119,6 +121,8 @@ Index Randomize
 **Falloff - Delete Min/Max options
 -to decrease node sizes to allowing more options?
 -Remap 0-1 is used more frequently than native min-max.
+
+Add: Curve Rolling?
 ****************************************************************************************************
 To Do:
 Bend Deform
