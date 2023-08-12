@@ -110,6 +110,9 @@ Add: Trigger
 -Birth Time Recording?
 
 Add: Curve Intersection Detection
+
+Append Point to Curves
+-Add Selection Input. In case position/offset is not changed.
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -168,7 +171,6 @@ Multi Switch needed
 -Remap Vector by Bounds
 -3D Viewer
 -Orientation Switch
-
 
 Add: Origin Offset.
 -Too complicate without enum node.
