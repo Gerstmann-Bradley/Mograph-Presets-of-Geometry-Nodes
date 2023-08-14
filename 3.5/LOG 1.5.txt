@@ -113,6 +113,14 @@ Add: Curve Intersection Detection
 
 Append Point to Curves
 -Add Selection Input. In case position/offset is not changed.
+
+Append Points to Curve
+-Default Selection if Offset is 0?
+	-find no improvement.
+	-Selection method even worse if in extrude mesh method.
+
+Local Offset
+-Lock 2nd Axis
 ****************************************************************************************************
 To Do:
 Bend Deform
