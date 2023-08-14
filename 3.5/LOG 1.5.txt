@@ -121,6 +121,9 @@ Append Points to Curve
 
 Local Offset
 -Lock 2nd Axis
+
+Add: Curve Rolling
+Delete: Spiral Unfold
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -132,8 +135,6 @@ Index Randomize
 **Falloff - Delete Min/Max options
 -to decrease node sizes to allowing more options?
 -Remap 0-1 is used more frequently than native min-max.
-
-Add: Curve Rolling?
 ****************************************************************************************************
 To Do:
 Bend Deform
