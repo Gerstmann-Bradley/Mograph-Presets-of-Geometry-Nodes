@@ -140,6 +140,23 @@ Delete: Oscillation Function
 -Add Wave Visualizer
 
 Add: Inertial Offset
+-Mix Study.
+	-Offset= Mix Position - Position.
+-Sphere Bug Study?
+	-can't reproduce sometimes; Unknown.
+-Trigger Time Study; Replace with Trigger.
+	-Don't remember how i fixed it but i fixed it somehow; tested multiple times.
+
+Trigger
+-Fix wrong evaluation of time recording.
+-Should I add a "continue trigger status"?
+	-not now.
+
+Sin Function
+-Visualizer Longer.
+	-Trim Negative part.
+		-visualizer used for oscillation, and negative range is bad.
+-Add marker indicating the amplitude.
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -151,13 +168,7 @@ Index Randomize
 **Falloff - Delete Min/Max options
 -to decrease node sizes to allowing more options?
 -Remap 0-1 is used more frequently than native min-max.
-****************************************************************************************************
-To Do:
-Bend Deform
--Angle Check
 
-Index Randomize
--Group Index Bug?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
