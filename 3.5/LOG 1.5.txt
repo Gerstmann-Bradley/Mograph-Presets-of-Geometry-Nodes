@@ -124,6 +124,14 @@ Local Offset
 
 Add: Curve Rolling
 Delete: Spiral Unfold
+
+Value Precision
+-Add Negati Option
+
+Oscillation Function
+-Add Visualizer
+-rename Decay Constant -> Persistance
+-rename Amplitude Damping -> Damping Factor
 ****************************************************************************************************
 To Do:
 Bend Deform
