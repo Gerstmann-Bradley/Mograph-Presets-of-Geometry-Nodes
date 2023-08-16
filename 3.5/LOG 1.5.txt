@@ -139,6 +139,7 @@ Delete: Oscillation Function
 -Combine Functionality to Sin Function
 -Add Wave Visualizer
 
+Add: Inertial Offset
 ****************************************************************************************************
 To Do:
 Bend Deform
