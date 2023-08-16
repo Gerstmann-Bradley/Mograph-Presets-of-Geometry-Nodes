@@ -129,9 +129,16 @@ Value Precision
 -Add Negati Option
 
 Oscillation Function
--Add Visualizer
+-not add Visualizer
+	-Impossible as "value" input from upstream
+	-If combine Oscillation with Sin Function. Node is larger and still have to copy paste the whole interior.
 -rename Decay Constant -> Persistance
 -rename Amplitude Damping -> Damping Factor
+
+Delete: Oscillation Function
+-Combine Functionality to Sin Function
+-Add Wave Visualizer
+
 ****************************************************************************************************
 To Do:
 Bend Deform
