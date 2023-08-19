@@ -139,14 +139,6 @@ Delete: Oscillation Function
 -Combine Functionality to Sin Function
 -Add Wave Visualizer
 
-Add: Inertial Offset
--Mix Study.
-	-Offset= Mix Position - Position.
--Sphere Bug Study?
-	-can't reproduce sometimes; Unknown.
--Trigger Time Study; Replace with Trigger.
-	-Don't remember how i fixed it but i fixed it somehow; tested multiple times.
-
 Trigger
 -Fix wrong evaluation of time recording.
 -Should I add a "continue trigger status"?
