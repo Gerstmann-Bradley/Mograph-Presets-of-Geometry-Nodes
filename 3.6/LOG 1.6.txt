@@ -1,3 +1,4 @@
+Done:
 Add: Inertial Offset
 -Mix Study.
 	-Offset= Mix Position - Position.
@@ -6,8 +7,19 @@ Add: Inertial Offset
 -Trigger Time Study; Replace with Trigger.
 	-Don't remember how i fixed it but i fixed it somehow; tested multiple times.
 
+Add: Capture Velocity
+-Store named Attribute Method to minimize the need of multiple linkage and socket output.
+
+Bevel Curve
+-Separate Component to keep non-curve mesh in the output?
+	-this will enforce the UV capture within the node group; not sure desirable.
+
+Append Points to Curve
+-Spearate Geometry and join geometry method will shuffle spline index.
+-Rewrite with New Performance test.
+	random helices 2000x1500; performance 180 ms for all 3 methods.
 ****************************************************************************************************
-To Do:
+TTo Do:
 Bend Deform
 -Angle Check
 
@@ -17,33 +29,63 @@ Index Randomize
 **Falloff - Delete Min/Max options
 -to decrease node sizes to allowing more options?
 -Remap 0-1 is used more frequently than native min-max.
+DelayFalloff
+Directional Falloff
+Radial Falloff
+Proximity Falloff
+Bounding Box Falloff
+
+Array on Splines
+-Can custom parameters be captured for later?
+
+Trigger
+-Trigger Evaluation below Trigger Time?
+-Add Custom Scene time?
+
+
+Index Reverse
+-somehow spline index 10 is missing between 9 to 11.
+	-likely due to domain.
+10 missing from map range?
+	-Bug Report
+
+Add: Simulation Switch
+
 
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
 
-Add: Fixed Relaxation Solver
-Add: Fixed Intersection Solver
+Add: Relaxation Solver
+	-Note about Performance improvement about breaking the Loop.
+		-Stop evaluation once it's completed.
+		-Stop statistics if equal to the last.
+Add: Dynamic Radius Solver
 
 Random Index per island?
 
 Instance Bounding Box
 Bounding Box Falloff for Instance?
 
+Add: Fill Curve Volume?
+-Interpolate Curve Method not working.
+	-endpoint will be attracted by the guide instead of filling the volume.
+-Loop Method.
 
-**Simulation Branch
-Start Time, Elapsed Time, Previous Position, Velocity Attribute
+New Proximity Falloff?
+-layered Evaluation
+
+
+**Simulation Nodes
+Start Time, Elapsed Time, Previous Position, Velocity Attribute?
+-Store Named Attribute/linkage and their usage tends to scatter around, and thus unlikely benefit from presetizing.
 
 Curve Raycast Collision Detection?
+-done.
 Branching Thickness Decrement?
 
-Dynamic Orientation
-
-Follow Spline
-
-**Add: Trigger
--Boolean Trigger?
--Time recording?
+Follow Velocity?
+-Done as "Capture Velocity"
 ****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
@@ -56,6 +98,7 @@ Multi Switch needed
 -Remap Vector by Bounds
 -3D Viewer
 -Orientation Switch
+
 
 Add: Origin Offset.
 -Too complicate without enum node.
