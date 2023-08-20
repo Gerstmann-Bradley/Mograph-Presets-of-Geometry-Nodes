@@ -14,10 +14,13 @@ Bevel Curve
 -Separate Component to keep non-curve mesh in the output?
 	-this will enforce the UV capture within the node group; not sure desirable.
 
-Append Points to Curve
+**Append Points to Curve
 -Spearate Geometry and join geometry method will shuffle spline index.
 -Rewrite with New Performance test.
 	random helices 2000x1500; performance 180 ms for all 3 methods.
+-Do I need to Evaluate on Domain?
+	-curve Normal and Tangent will break.
+	
 ****************************************************************************************************
 TTo Do:
 Bend Deform
@@ -51,7 +54,8 @@ Index Reverse
 
 Add: Simulation Switch
 
-
+Curve Intersection Detections
+-no need to 
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
