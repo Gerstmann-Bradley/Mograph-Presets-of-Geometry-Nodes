@@ -20,7 +20,15 @@ Bevel Curve
 	random helices 2000x1500; performance 180 ms for all 3 methods.
 -Do I need to Evaluate on Domain?
 	-curve Normal and Tangent will break.
-	
+
+Index Reverse
+-somehow spline index 10 is missing between 9 to 11.
+	-likely due to domain.
+10 missing from map range?
+	-Bug Report.
+
+Curve Intersection Detections
+-Add Additional Collider
 ****************************************************************************************************
 TTo Do:
 Bend Deform
