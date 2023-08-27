@@ -29,8 +29,23 @@ Index Reverse
 
 Curve Intersection Detections
 -Add Additional Collider
+
+Add: Simulation Switch
+
+Simulation Switch
+-Use one Switch instead of 2 and join geometry nodes.
+
+Vector Seed
+-Integer Seed and Float Seed
+
+Proximity Falloff
+-internal Curve to Mesh
+
+Follow Spline
+-parameter of curve will not be used in offset.
+	-Downside of using "Points"
 ****************************************************************************************************
-TTo Do:
+To Do:
 Bend Deform
 -Angle Check
 
@@ -53,17 +68,9 @@ Trigger
 -Trigger Evaluation below Trigger Time?
 -Add Custom Scene time?
 
+Add: Accelerator?
 
-Index Reverse
--somehow spline index 10 is missing between 9 to 11.
-	-likely due to domain.
-10 missing from map range?
-	-Bug Report
-
-Add: Simulation Switch
-
-Curve Intersection Detections
--no need to 
+Add: Simulation Value.
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
