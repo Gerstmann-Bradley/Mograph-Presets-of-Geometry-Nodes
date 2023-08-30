@@ -44,6 +44,20 @@ Proximity Falloff
 Follow Spline
 -parameter of curve will not be used in offset.
 	-Downside of using "Points"
+
+Index Seed
+-Add Second Offset
+
+Point Distribute
+-Poison Disc Inaccuracy Investigate.
+	-Seems ok
+
+Trigger
+-Trigger Evaluation below Trigger Time?
+-Add Custom Scene time?
+	-Not now. Time difference can be done manually subtraction if really needed.
+
+Add: Curve Branching
 ****************************************************************************************************
 To Do:
 Bend Deform
@@ -64,12 +78,7 @@ Bounding Box Falloff
 Array on Splines
 -Can custom parameters be captured for later?
 
-Trigger
--Trigger Evaluation below Trigger Time?
--Add Custom Scene time?
-
 Add: Accelerator?
-
 Add: Simulation Value.
 ****************************************************************************************************
 **Serial Loop Node
