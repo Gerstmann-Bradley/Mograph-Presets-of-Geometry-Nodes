@@ -58,6 +58,17 @@ Trigger
 	-Not now. Time difference can be done manually subtraction if really needed.
 
 Add: Curve Branching
+
+Add: Inertial Deformer
+
+Curve Rolling
+-able to change certain scales of rotation?
+	No. It will change the overall length of the straight line.
+
+Knit
+-Fix errors from oscillation.
+	-What Does .Sin_Unit do? -how come it is updated with newest version of Sin Function?
+	-.Sin_Unit is the old Sin Function, as new sine function requires duplication for oscillation.
 ****************************************************************************************************
 To Do:
 Bend Deform
