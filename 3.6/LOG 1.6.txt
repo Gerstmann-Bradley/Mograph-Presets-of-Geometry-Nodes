@@ -69,6 +69,15 @@ Knit
 -Fix errors from oscillation.
 	-What Does .Sin_Unit do? -how come it is updated with newest version of Sin Function?
 	-.Sin_Unit is the old Sin Function, as new sine function requires duplication for oscillation.
+
+Inertial Deformer
+Inertial Offset
+-Add blur to Inertial Position
+-Add Normalize Option for Inertia?
+	-not good in demo file though?
+
+curve intersection detections
+-why not using curve to mesh to fill volume?
 ****************************************************************************************************
 To Do:
 Bend Deform
