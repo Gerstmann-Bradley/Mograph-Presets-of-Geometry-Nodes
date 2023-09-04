@@ -87,6 +87,7 @@ Inertial Deformer
 Inertial Offset
 -Rename Time Socket.
 -Add Blur to Delta Frame Time
+-Add Trigger status to Blur Weight to remove unwanted Side Effects.
 ****************************************************************************************************
 To Do:
 Bend Deform
