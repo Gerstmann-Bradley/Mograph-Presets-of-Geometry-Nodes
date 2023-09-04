@@ -78,6 +78,10 @@ Inertial Offset
 
 curve intersection detections
 -why not using curve to mesh to fill volume?
+
+Normalize Field
+-Remove Min & Max.
+-Add setting to reverse 0-1 relationship.
 ****************************************************************************************************
 To Do:
 Bend Deform
