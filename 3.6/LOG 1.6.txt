@@ -82,6 +82,11 @@ curve intersection detections
 Normalize Field
 -Remove Min & Max.
 -Add setting to reverse 0-1 relationship.
+
+Inertial Deformer
+Inertial Offset
+-Rename Time Socket.
+-Add Blur to Delta Frame Time
 ****************************************************************************************************
 To Do:
 Bend Deform
