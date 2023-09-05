@@ -88,6 +88,8 @@ Inertial Offset
 -Rename Time Socket.
 -Add Blur to Delta Frame Time
 -Add Trigger status to Blur Weight to remove unwanted Side Effects.
+	-Revert Changes, the issue was in Trigger Status and time for points never being moved.
+-Add 0 Multiplier for the time if Inertia is 0. 
 ****************************************************************************************************
 To Do:
 Bend Deform
