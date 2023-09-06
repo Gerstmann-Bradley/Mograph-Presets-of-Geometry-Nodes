@@ -106,6 +106,10 @@ Points Distribution
 	-The result will be very unstable for Dynamic Mesh
 -Density Factor method will also fail.
 	-Also Cost performance with too many points in the first Poisson Distribution.
+
+Curve Branching
+-Stop automatic Join, as more branches may needed without the initial Join.
+-Once Without Join, Limiter should output empty geometry once triggered.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -171,7 +175,7 @@ Radial Falloff
 Proximity Falloff
 Bounding Box Falloff
 
-Advanced Node Options:
+**Advanced Node Options:
 Proximity Falloff
 -Add Absolute scale Offset?
 	-can Change mini of Map range 0.
