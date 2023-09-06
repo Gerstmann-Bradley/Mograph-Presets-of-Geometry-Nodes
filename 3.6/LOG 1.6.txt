@@ -90,28 +90,43 @@ Inertial Offset
 -Add Trigger status to Blur Weight to remove unwanted Side Effects.
 	-Revert Changes, the issue was in Trigger Status and time for points never being moved.
 -Add 0 Multiplier for the time if Inertia is 0. 
+
+Inertial Offset
+Inertial Deformer
+-Add Option to disable Simulation
+	-Disabling node group is working, it's just the set position not getting the information.
+
+Sin Function
+-link the frequency and Phase with Decay.
+
+Points Distribution
+-Re-investigate inaccuracy at small amount?
+	-Unknown Reason
+-Alternative method to Select Points Instead?
+	-The result will be very unstable for Dynamic Mesh
+-Density Factor method will also fail.
+	-Also Cost performance with too many points in the first Poisson Distribution.
 ****************************************************************************************************
 To Do:
-Bend Deform
--Angle Check
-
-Index Randomize
--Group Index Bug?
-
-**Falloff - Delete Min/Max options
--to decrease node sizes to allowing more options?
--Remap 0-1 is used more frequently than native min-max.
-DelayFalloff
-Directional Falloff
-Radial Falloff
-Proximity Falloff
-Bounding Box Falloff
-
 Array on Splines
 -Can custom parameters be captured for later?
 
 Add: Accelerator?
 Add: Simulation Value.
+
+Proximity Falloff
+-possible to set some absolute range instead of relative?
+
+Sample Over time.
+-A Collection of Sample Index
+
+Add: Smooth Over time
+
+Sin Function
+-Oscillation automatic offset to 0 when 0-1 remap?
+
+Inertial Offset
+-Not working in Case of Waffle Bouncing. Requires investigation?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
@@ -135,7 +150,6 @@ Add: Fill Curve Volume?
 New Proximity Falloff?
 -layered Evaluation
 
-
 **Simulation Nodes
 Start Time, Elapsed Time, Previous Position, Velocity Attribute?
 -Store Named Attribute/linkage and their usage tends to scatter around, and thus unlikely benefit from presetizing.
@@ -146,6 +160,28 @@ Branching Thickness Decrement?
 
 Follow Velocity?
 -Done as "Capture Velocity"
+
+4.0
+**Falloff - Delete Min/Max options
+-to decrease node sizes to allowing more options?
+-Remap 0-1 is used more frequently than native min-max.
+DelayFalloff
+Directional Falloff
+Radial Falloff
+Proximity Falloff
+Bounding Box Falloff
+
+Advanced Node Options:
+Proximity Falloff
+-Add Absolute scale Offset?
+	-can Change mini of Map range 0.
+	-but is adding a new socket necessary?
+
+Sin Function
+-Oscillator Section
+
+3D Viewer
+-Simplify
 ****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
@@ -158,7 +194,6 @@ Multi Switch needed
 -Remap Vector by Bounds
 -3D Viewer
 -Orientation Switch
-
 
 Add: Origin Offset.
 -Too complicate without enum node.
@@ -173,17 +208,16 @@ Solidify
 
 Index Randomize.
 -Group Index? -Failed
-
-Proximity Falloff
--Add Absolute scale Offset?
-	-can Change mini of Map range 0.
-	-but is adding a new socket necessary?
+-Using Serial Loop
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
 Curve Deformer
 -Investigate Necessity of Vector Remap.
+
+Bend Deform
+-Angle Check?
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
