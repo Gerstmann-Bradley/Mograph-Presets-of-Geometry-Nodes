@@ -110,6 +110,8 @@ Points Distribution
 Curve Branching
 -Stop automatic Join, as more branches may needed without the initial Join.
 -Once Without Join, Limiter should output empty geometry once triggered.
+-Rename Sockets.
+	-Does Time interval Limiter Actually do anything?
 ****************************************************************************************************
 To Do:
 Array on Splines
