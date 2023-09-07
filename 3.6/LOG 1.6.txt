@@ -115,6 +115,8 @@ Curve Branching
 
 Simulation Switch
 -Default At Frame changes to -1 to avoid wrong clamp.
+
+Add: Decay Function
 ****************************************************************************************************
 To Do:
 Array on Splines
