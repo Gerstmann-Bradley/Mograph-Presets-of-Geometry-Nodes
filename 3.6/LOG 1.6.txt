@@ -117,6 +117,13 @@ Simulation Switch
 -Default At Frame changes to -1 to avoid wrong clamp.
 
 Add: Decay Function
+
+Add: Stretch Map
+
+Add: Curve Branching Parameters
+	-Integrating to Curve Branching?
+		-What If I want to customize settings?
+-Decay Function should be outside independently.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -138,10 +145,6 @@ Sin Function
 
 Inertial Offset
 -Not working in Case of Waffle Bouncing. Requires investigation?
-
-Add: Curve Branching Parameters
-	-Integrating to Curve Branching?
-		-What If I want to customize settings?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
