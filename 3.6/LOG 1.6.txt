@@ -112,6 +112,9 @@ Curve Branching
 -Once Without Join, Limiter should output empty geometry once triggered.
 -Rename Sockets.
 	-Does Time interval Limiter Actually do anything?
+
+Simulation Switch
+-Default At Frame changes to -1 to avoid wrong clamp.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -133,6 +136,10 @@ Sin Function
 
 Inertial Offset
 -Not working in Case of Waffle Bouncing. Requires investigation?
+
+Add: Curve Branching Parameters
+	-Integrating to Curve Branching?
+		-What If I want to customize settings?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
