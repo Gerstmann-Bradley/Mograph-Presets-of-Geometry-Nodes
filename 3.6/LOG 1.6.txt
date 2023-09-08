@@ -118,12 +118,28 @@ Simulation Switch
 
 Add: Decay Function
 
-Add: Stretch Map
+Add: Stretch Falloff
 
 Add: Curve Branching Parameters
 	-Integrating to Curve Branching?
 		-What If I want to customize settings?
 -Decay Function should be outside independently.
+
+Add: Temporal Object Info
+-Velocity
+-Last Movement Position
+
+Add: Temporal Smooth Position
+
+Add: Modulo Selection
+-Can use Index Mask Falloff?
+
+Set Branching Parameters
+-Deviation needs an average and variance.
+	-long panels can be fixed in 4.0
+
+Curve Branching
+-Add a Feedback Limit.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -134,11 +150,6 @@ Add: Simulation Value.
 
 Proximity Falloff
 -possible to set some absolute range instead of relative?
-
-Sample Over time.
--A Collection of Sample Index
-
-Add: Smooth Over time
 
 Sin Function
 -Oscillation automatic offset to 0 when 0-1 remap?
