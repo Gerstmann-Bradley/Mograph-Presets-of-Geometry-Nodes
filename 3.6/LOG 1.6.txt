@@ -140,6 +140,9 @@ Set Branching Parameters
 
 Curve Branching
 -Add a Feedback Limit.
+
+Spline Info
+-Add Start and End Position
 ****************************************************************************************************
 To Do:
 Array on Splines
