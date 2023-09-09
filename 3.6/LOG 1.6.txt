@@ -143,6 +143,21 @@ Curve Branching
 
 Spline Info
 -Add Start and End Position
+
+Curve Branching
+-Failed to add Update Velocity with Curve tangent.
+	-V length on Curve tangent implementation.
+	-The result is not intepertable.
+
+Set Branching Parameters.
+-Using Angle for Deviation; internally to radians is no longer needed.
+-Allow use Custom Axis.
+	-Still considering for changes.
+
+Curve Split
+-Options to use captured curve parameter/Edge parameter.
+
+Add: Tangent Normal Cross Product.
 ****************************************************************************************************
 To Do:
 Array on Splines
