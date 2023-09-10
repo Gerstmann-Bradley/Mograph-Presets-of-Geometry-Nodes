@@ -158,6 +158,13 @@ Curve Split
 -Options to use captured curve parameter/Edge parameter.
 
 Add: Tangent Normal Cross Product.
+
+Temporal Object Info
+-Freeze Velocity on Stop
+	-Add: Inertia Velocity
+-Remove Trigger on Movement and custom evaluation.
+	-Starting Position means Starting Position.
+-What other parameters may be important to add?
 ****************************************************************************************************
 To Do:
 Array on Splines
