@@ -177,6 +177,8 @@ Inertial Deformer.
 
 Temporal Sampling
 -Remove Position input since Geometry represents old position.
+-Newly Generated Geometry Will be recorded to have old position 0.
+	-Resolve Glitch by using New Index Subtracting Old index Evaluation.
 ****************************************************************************************************
 To Do:
 Array on Splines
