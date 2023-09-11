@@ -181,6 +181,7 @@ Temporal Sampling
 	-Resolve Glitch by using New Index Subtracting Old index Evaluation.
 
 Add: Tracer
+-Add Trim Function
 ****************************************************************************************************
 To Do:
 Array on Splines
