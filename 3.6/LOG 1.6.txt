@@ -165,6 +165,18 @@ Temporal Object Info
 -Remove Trigger on Movement and custom evaluation.
 	-Starting Position means Starting Position.
 -What other parameters may be important to add?
+
+Temporal Smooth Position
+-Use case confirmed. Help reduce the glitch due to any reason.
+-Fix Initialize Position trigger.
+
+Inertial Deformer.
+-Delta Time Switch Removed.
+	-previously needed because initial position was 0.
+	-But inputing Geometry in the input solves problem.
+
+Temporal Sampling
+-Remove Position input since Geometry represents old position.
 ****************************************************************************************************
 To Do:
 Array on Splines
