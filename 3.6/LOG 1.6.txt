@@ -182,6 +182,9 @@ Temporal Sampling
 
 Add: Tracer
 -Add Trim Function
+-Import Attribute into Simulation zone.
+	-No named attribute.
+-Statistic mean to remove red linkage bug.
 ****************************************************************************************************
 To Do:
 Array on Splines
