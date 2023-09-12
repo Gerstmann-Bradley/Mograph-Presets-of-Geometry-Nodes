@@ -185,6 +185,9 @@ Add: Tracer
 -Import Attribute into Simulation zone.
 	-No named attribute.
 -Statistic mean to remove red linkage bug.
+
+Tracer
+-Improve to take dynamic Input.
 ****************************************************************************************************
 To Do:
 Array on Splines
