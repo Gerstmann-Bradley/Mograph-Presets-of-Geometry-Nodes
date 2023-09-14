@@ -188,6 +188,10 @@ Add: Tracer
 
 Tracer
 -Improve to take dynamic Input.
+
+Curve Intersection Detection
+-Revert Curve to Mesh Changes
+	-low accuracy on move - Require New Testing Tree
 ****************************************************************************************************
 To Do:
 Array on Splines
