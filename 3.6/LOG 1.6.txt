@@ -192,6 +192,11 @@ Tracer
 Curve Intersection Detection
 -Revert Curve to Mesh Changes
 	-low accuracy on move - Require New Testing Tree
+	-Due to Setting Change of Local Offset Node.
+-improve Additional Collider set.
+-Improve Performance by Resample Curve
+	-Count 5 enough for straight.
+	-what if not straight?
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -263,6 +268,10 @@ Sin Function
 
 3D Viewer
 -Simplify
+
+Curve Intersection Detection.
+-Collider Setting
+
 ****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
