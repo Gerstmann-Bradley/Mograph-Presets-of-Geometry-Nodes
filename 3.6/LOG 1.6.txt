@@ -197,6 +197,11 @@ Curve Intersection Detection
 -Improve Performance by Resample Curve
 	-Count 5 enough for straight.
 	-what if not straight?
+
+Add: Filled Mesh Circle
+
+Expand/Shrink Selection
+-Renamed to "Scale Selection"
 ****************************************************************************************************
 To Do:
 Array on Splines
