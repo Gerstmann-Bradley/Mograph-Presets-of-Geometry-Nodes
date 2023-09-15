@@ -202,6 +202,12 @@ Add: Filled Mesh Circle
 
 Expand/Shrink Selection
 -Renamed to "Scale Selection"
+
+Inertial Offset
+Inertial Deformer
+-Add: Threshold.
+
+Add: Temporal Value
 ****************************************************************************************************
 To Do:
 Array on Splines
