@@ -208,6 +208,13 @@ Inertial Deformer
 -Add: Threshold.
 
 Add: Temporal Value
+
+Sin Function
+-Change Default Freq
+
+Displacement Value Range Change
+-Normal Displacement
+-Fill Volume
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -282,7 +289,6 @@ Sin Function
 
 Curve Intersection Detection.
 -Collider Setting
-
 ****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
