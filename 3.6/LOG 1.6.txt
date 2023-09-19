@@ -215,6 +215,30 @@ Sin Function
 Displacement Value Range Change
 -Normal Displacement
 -Fill Volume
+
+Smooth Position
+-Add Exclude Boundary option.
+	-Use float to enable magnitude.
+
+Temporal Sampling
+-Trigger Status Default Value 0
+
+Inertial Deformer
+-Add Internal Oscillator.
+-Add minimal Clamping of trigger time to remove wrong effect of phase.
+	-if I add it outside, won't it cause problem?
+-backward compatibility to tutorials.
+	-make internal oscillator 0 to be untriggered.
+
+Add: Collision Deformer
+
+Add: Dynamic Surface Sampling
+
+Sin Function
+-Oscillation automatic offset to 0 when 0-1 remap?
+	-when input is dynamic, I think maximum is not known.
+
+Add: Freeze Geometry
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -225,12 +249,19 @@ Add: Simulation Value.
 
 Proximity Falloff
 -possible to set some absolute range instead of relative?
-
-Sin Function
--Oscillation automatic offset to 0 when 0-1 remap?
+-Vertex and Face in Mesh mode?
 
 Inertial Offset
 -Not working in Case of Waffle Bouncing. Requires investigation?
+
+Add: New Geometry Detection
+
+Capture Velocity
+-Is it really working as expected?
+
+Add: Set Particle Parameters
+
+Add: Flow on Surface
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
