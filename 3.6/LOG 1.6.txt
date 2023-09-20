@@ -239,6 +239,9 @@ Sin Function
 	-when input is dynamic, I think maximum is not known.
 
 Add: Freeze Geometry
+
+Dynamic Surface Sampling
+-Intake Set Position. How to name Sockets?
 ****************************************************************************************************
 To Do:
 Array on Splines
