@@ -243,6 +243,17 @@ Add: Freeze Geometry
 Dynamic Surface Sampling
 -Include Set Position. How to name Sockets?
 -Add Rotation Socket in case rotating Points.
+
+Dynamic Surface Sampling
+-what if points are distributed on surface?
+	-Custom Sample on Normal and Rotation won't work because attribute is not on the points.
+
+Random Rotation
+-Input rotation to be rotated euler by random rotation.
+	-to make sure input rotation can be random rotated on Z only.
+
+Oscillator
+-Add Options to include/exclude phase on Oscillator.
 ****************************************************************************************************
 To Do:
 Array on Splines
