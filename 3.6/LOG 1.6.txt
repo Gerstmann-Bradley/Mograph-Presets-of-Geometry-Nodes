@@ -241,7 +241,8 @@ Sin Function
 Add: Freeze Geometry
 
 Dynamic Surface Sampling
--Intake Set Position. How to name Sockets?
+-Include Set Position. How to name Sockets?
+-Add Rotation Socket in case rotating Points.
 ****************************************************************************************************
 To Do:
 Array on Splines
