@@ -254,6 +254,16 @@ Random Rotation
 
 Oscillator
 -Add Options to include/exclude phase on Oscillator.
+
+Temporal Sampling
+-rename Position to Previous Position.
+
+Set Branching Parameter
+-renamed from Parameters; Blender seems to use singular.
+
+Dynamic Surface Sampling
+-Optimization test
+	-unpack UV island is very expensive.
 ****************************************************************************************************
 To Do:
 Array on Splines
