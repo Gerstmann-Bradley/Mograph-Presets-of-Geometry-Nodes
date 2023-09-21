@@ -2,6 +2,7 @@
 
 This is a github repository of Blender Geometry Nodes Presets made by Bradley Animation (youtu: https://cutt.ly/FUIg4Hb).<br>
 This repository is used by the add-on made by Possibly_ferret at https://www.instagram.com/possibly_ferret/.<br>
+The add-on Repository is here: https://github.com/Gerstmann-Bradley/Bradley-Geometry-Nodes-Preset <br>
 Add-on Download Page: https://gum.co/jSyDM, & Installation Guide: https://youtu.be/8Xr8kH-6ncE<br>
 
 The add-on intends to check updates and download the newest Blender Files from this repository every time you open Blender, and it will link these node groups inside the File. Therefore, you no longer need to check update and download linked file by your own; everything should be downloaded and linked automatically with the add-on.
