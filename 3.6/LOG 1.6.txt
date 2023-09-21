@@ -264,6 +264,9 @@ Set Branching Parameter
 Dynamic Surface Sampling
 -Optimization test
 	-unpack UV island is very expensive.
+
+Add: Set Particle Parameter
+
 ****************************************************************************************************
 To Do:
 Array on Splines
