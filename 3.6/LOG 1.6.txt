@@ -276,6 +276,10 @@ Add: Dynamic Curve Sampling
 -include custom Normal and Tangent
 	-too bad for maintenance if included within Surface Sampling.
 -Add Inertnal Freezing.
+
+Proximity Falloff
+-Vertex and Face in Mesh mode?
+	-In Mesh Mode, Face Evaluation makes much more sense.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -289,7 +293,6 @@ Add: Simulation Value
 
 Proximity Falloff
 -possible to set some absolute range instead of relative?
--Vertex and Face in Mesh mode?
 
 Inertial Offset
 -Not working in Case of Waffle Bouncing. Requires investigation?
