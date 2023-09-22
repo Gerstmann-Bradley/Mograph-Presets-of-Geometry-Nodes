@@ -270,6 +270,12 @@ Add: Set Particle Parameter
 Dynamic Surface Sampling
 -Index method to replace UV method.
 	-Can there be cases UV better than Index?
+-Add Internal Freezing.
+
+Add: Dynamic Curve Sampling
+-include custom Normal and Tangent
+	-too bad for maintenance if included within Surface Sampling.
+-Add Inertnal Freezing.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -280,7 +286,6 @@ Add: Accelerator?
 
 Add: Simulation Value
 -Customizable Scene Time Frame.
-
 
 Proximity Falloff
 -possible to set some absolute range instead of relative?
