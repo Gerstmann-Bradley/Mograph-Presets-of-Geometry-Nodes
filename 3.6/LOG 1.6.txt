@@ -267,13 +267,20 @@ Dynamic Surface Sampling
 
 Add: Set Particle Parameter
 
+Dynamic Surface Sampling
+-Index method to replace UV method.
+	-Can there be cases UV better than Index?
 ****************************************************************************************************
 To Do:
 Array on Splines
 -Can custom parameters be captured for later?
 
 Add: Accelerator?
-Add: Simulation Value.
+-Set Acceleration and Start Time and output Velocity for Simulation Zone.
+
+Add: Simulation Value
+-Customizable Scene Time Frame.
+
 
 Proximity Falloff
 -possible to set some absolute range instead of relative?
@@ -287,9 +294,16 @@ Add: New Geometry Detection
 Capture Velocity
 -Is it really working as expected?
 
-Add: Set Particle Parameters
-
 Add: Flow on Surface
+
+Point Distribute
+-Poisson Disc method is generating too few points than it should.
+-Order of Sockets
+
+Curl Noise Turbulence
+-Particle generation Jaggyness investigate.
+
+Add: Time Falloff?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
