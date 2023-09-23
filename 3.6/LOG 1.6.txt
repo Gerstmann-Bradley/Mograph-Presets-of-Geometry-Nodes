@@ -309,6 +309,11 @@ Collision Deformer
 	*Falloff Vector
 	*Falloff Noise not implementing value tweaking yet.
 		-4.0 panel required 
+
+Collision Deformer
+-The noise is giving bad values.
+	-Linked with Vector Magnitude?
+-Self Identification not to be used when no Self Collision
 ****************************************************************************************************
 To Do:
 Array on Splines
