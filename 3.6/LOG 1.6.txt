@@ -299,6 +299,16 @@ Collision Deformer
 
 Tracer
 -Add Curves Age
+
+Collision Deformer
+-Falloff Implementation
+	-Positive Vs. Negative.
+		-sadly Interpolation seems inpossible given current Design.
+		-While it's possible. it will make node even larger.
+	*Falloff Distance.
+	*Falloff Vector
+	*Falloff Noise not implementing value tweaking yet.
+		-4.0 panel required 
 ****************************************************************************************************
 To Do:
 Array on Splines
