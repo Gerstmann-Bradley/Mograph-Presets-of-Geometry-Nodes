@@ -317,6 +317,7 @@ Collision Deformer
 
 Collision Deformer
 -Add Reverse Strength Option
+-Add Noise Freq
 ****************************************************************************************************
 To Do:
 Array on Splines
