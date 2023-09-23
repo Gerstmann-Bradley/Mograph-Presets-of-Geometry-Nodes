@@ -333,6 +333,8 @@ Add: Voxel Remesh
 Collision Deformer
 -Add Voxelize Collider Options
 	-note Voxelize Self in Self-Collision state seems wrong doing.
+-Add Voxel Size
+	-In Complex Geometry, Detailed Voxel Required.
 ****************************************************************************************************
 To Do:
 Array on Splines
