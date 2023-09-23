@@ -314,6 +314,9 @@ Collision Deformer
 -The noise is giving bad values.
 	-Linked with Vector Magnitude?
 -Self Identification not to be used when no Self Collision
+
+Collision Deformer
+-Add Reverse Strength Option
 ****************************************************************************************************
 To Do:
 Array on Splines
