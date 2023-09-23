@@ -318,6 +318,10 @@ Collision Deformer
 Collision Deformer
 -Add Reverse Strength Option
 -Add Noise Freq
+-Add Noise Scale
+-Abort Linear Light Method
+	-can't make sure 0 when there's no vector.
+		as noise per se not possible to scale.
 ****************************************************************************************************
 To Do:
 Array on Splines
