@@ -285,6 +285,20 @@ Add: Time Falloff
 
 Collision Deformer
 -Hit Self Island Doesn't Count.
+
+Time Falloff
+-Add: Intrinsic Time
+
+Collision Deformer
+-Two raycast as reverse normal collision will always hit negative normal.
+	-to use single raycast, mesh island not equal, and normal direction must equal.
+		-otherwise opposite side will be deformed too.
+-Smooth Position doesn't require many iterations.
+-Ray Limit Important in the case of Sphere.
+	-Requiring Loop Checks in 4.0?
+
+Tracer
+-Add Curves Age
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -315,8 +329,6 @@ Point Distribute
 
 Curl Noise Turbulence
 -Particle generation Jaggyness investigate.
-
-Add: Time Falloff?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
