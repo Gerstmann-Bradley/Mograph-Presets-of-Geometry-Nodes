@@ -322,6 +322,17 @@ Collision Deformer
 -Abort Linear Light Method
 	-can't make sure 0 when there's no vector.
 		as noise per se not possible to scale.
+
+Inertial Deformer
+-Text Collision Test Failure. Investigate.
+	-It's because tiny movement from Falloff Distance
+
+Add: Text Mesh
+Add: Voxel Remesh
+
+Collision Deformer
+-Add Voxelize Collider Options
+	-note Voxelize Self in Self-Collision state seems wrong doing.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -352,6 +363,9 @@ Point Distribute
 
 Curl Noise Turbulence
 -Particle generation Jaggyness investigate.
+
+Parenting
+-When no Object Input, Scale=0. anyway to fix?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
