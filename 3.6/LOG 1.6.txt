@@ -280,6 +280,11 @@ Add: Dynamic Curve Sampling
 Proximity Falloff
 -Vertex and Face in Mesh mode?
 	-In Mesh Mode, Face Evaluation makes much more sense.
+
+Add: Time Falloff
+
+Collision Deformer
+-Hit Self Island Doesn't Count.
 ****************************************************************************************************
 To Do:
 Array on Splines
