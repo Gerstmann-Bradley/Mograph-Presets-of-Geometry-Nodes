@@ -335,6 +335,7 @@ Collision Deformer
 	-note Voxelize Self in Self-Collision state seems wrong doing.
 -Add Voxel Size
 	-In Complex Geometry, Detailed Voxel Required.
+-Voxelize Outside can properly view the result and even smooth it.
 ****************************************************************************************************
 To Do:
 Array on Splines
