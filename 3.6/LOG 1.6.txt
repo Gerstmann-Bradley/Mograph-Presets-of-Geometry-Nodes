@@ -346,6 +346,9 @@ Voxel Remesh
 Smooth Position
 -Border Clamp -> Border Smooth.
 	*Used in Demo node tree & Voxel Remesh.
+
+Add: Temporal Geometry Info
+Add: Folded Surface Detection
 ****************************************************************************************************
 To Do:
 Array on Splines
