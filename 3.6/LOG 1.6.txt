@@ -352,6 +352,9 @@ Add: Folded Surface Detection
 
 Collision Deformer
 -Add Implicit Attribute for Falloff Evaluation.
+
+Proximity Falloff
+-When Input Mesh contains no Face. Use Point instead.
 ****************************************************************************************************
 To Do:
 Array on Splines
