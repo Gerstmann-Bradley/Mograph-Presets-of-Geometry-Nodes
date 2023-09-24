@@ -349,6 +349,9 @@ Smooth Position
 
 Add: Temporal Geometry Info
 Add: Folded Surface Detection
+
+Collision Deformer
+-Add Implicit Attribute for Falloff Evaluation.
 ****************************************************************************************************
 To Do:
 Array on Splines
