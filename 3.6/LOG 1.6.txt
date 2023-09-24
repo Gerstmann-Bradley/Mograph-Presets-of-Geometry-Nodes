@@ -342,6 +342,10 @@ Collision Deformer
 
 Voxel Remesh
 -Add Internal Smooth Position
+
+Smooth Position
+-Border Clamp -> Border Smooth.
+	*Used in Demo node tree & Voxel Remesh.
 ****************************************************************************************************
 To Do:
 Array on Splines
