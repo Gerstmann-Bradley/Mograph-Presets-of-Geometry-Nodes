@@ -336,6 +336,12 @@ Collision Deformer
 -Add Voxel Size
 	-In Complex Geometry, Detailed Voxel Required.
 -Voxelize Outside can properly view the result and even smooth it.
+-Reverse Strength -> Reverse Ray.
+	-True Reverse Strength makes no sense.
+	-Reverse Ray makes sense in some condition such as plane.
+
+Voxel Remesh
+-Add Internal Smooth Position
 ****************************************************************************************************
 To Do:
 Array on Splines
