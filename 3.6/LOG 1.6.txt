@@ -355,6 +355,15 @@ Collision Deformer
 
 Proximity Falloff
 -When Input Mesh contains no Face. Use Point instead.
+
+Parenting
+-When no Object Input, Scale=0. anyway to fix?
+	-Instance to Points and Count Point amount.
+
+Collision Deformer
+-Add Custom Noise
+-Add Selection
+	-Function can be done by Strength.
 ****************************************************************************************************
 To Do:
 Array on Splines
