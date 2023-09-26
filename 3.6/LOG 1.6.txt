@@ -389,6 +389,7 @@ Add: Simulation Value
 
 Proximity Falloff
 -possible to set some absolute range instead of relative?
+-Empty Object Mode, Object Mesh Mode, Custom Mesh Mode.
 
 Inertial Offset
 -Not working in Case of Waffle Bouncing. Requires investigation?
@@ -462,8 +463,16 @@ Sin Function
 3D Viewer
 -Simplify
 
-Curve Intersection Detection.
--Collider Setting
+Add: Geometry Limiter
+-Modify from Simulation Switch
+
+Inertial Deformer
+-Internal Oscillator and External Oscillator
+
+Dynamic Surface Sampling
+-Custom Sample
+
+Collision Deformer.
 ****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
