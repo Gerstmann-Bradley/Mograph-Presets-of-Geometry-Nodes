@@ -1,0 +1,146 @@
+Done:
+Ease Ease
+-New Map range Smooth to replace colorramp.
+
+**Falloff - Delete Min/Max options
+-to decrease node sizes to allowing more options?
+-Remap 0-1 is used more frequently than native min-max.
+DelayFalloff
+Directional Falloff
+Radial Falloff
+Proximity Falloff
+Bounding Box Falloff
+
+Proximity Falloff
+-Empty Object Mode, Object Mesh Mode, Custom Mesh Mode.
+	-> Obj/Mesh/Custom Mesh
+
+**Sin Function
+-Oscillator Section
+
+Add: Iteration Switch
+-Modify from Simulation Switch.
+
+*Inertial Deformer
+-Internal Oscillator and External Oscillator
+
+Set Particle Parameter
+-Attribute VIT Section
+
+Noise 3D
+-Advanced Settings Section.
+
+Collision Deformer.
+-Falloff Section
+-Raylimit Section
+
+3D Viewer -> "Viewer 3D"
+-Name Changes. Search Function can't type number.
+
+Add: Attribute Viewer
+
+Add: Relaxation Solver
+	-Note about Performance improvement about breaking the Loop.
+		-Stop evaluation once it's completed.
+		-Stop statistics if equal to the last.
+Add: Dynamic Radius Solver
+Add: Alternating Solver
+
+Rename: Set Branching Parameter
+-> Set Branch Parameter
+
+Add: Set Branch Radius
+
+Delete: Inertial Offset
+
+Loop Index
+-Advanced Selection
+
+Point Distribute
+-Poisson Disc method is generating too few points than it should.
+	-Order of Sockets
+-> Native Poisson with Count Limiter.
+	-Panel For poisson Mode.
+****************************************************************************************************
+To Do:
+Array on Splines
+-Can custom parameters be captured for later?
+
+Add: Accelerator?
+-Set Acceleration and Start Time and output Velocity for Simulation Zone.
+
+Add: Simulation Value
+-Customizable Scene Time Frame.
+
+Proximity Falloff
+-possible to set some absolute range instead of relative?
+
+Add: New Geometry Detection
+
+Add: Flow on Surface
+
+Random Index per island?
+
+Add: Fill Curve Volume?
+-Interpolate Curve Method not working.
+	-endpoint will be attracted by the guide instead of filling the volume.
+-Loop Method.
+
+New Proximity Falloff?
+-layered Evaluation
+********************************************************
+*Geometry Type Node
+-Index Viewer
+
+*Loop Index Node
+-Solver
+-Set Branch Radius
+****************************************************************************************************
+GN-Known Issue:
+Multi Switch needed
+-Curve Deform
+-Directional Falloff
+-Radial Falloff
+-Group Per Domain
+-Follow Splines
+-Array on Splines
+-Remap Vector by Bounds
+-3D Viewer
+-Orientation Switch
+-Geometry Type
+
+Add: Origin Offset.
+-Too complicate without enum node.
+
+Object Coordinate
+-Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Solidify
+-Merge by Distance is merging other points too.
+	-no way to resolve it.
+
+Index Randomize.
+-Group Index? -Failed
+-Using Serial Loop
+
+Hair on Surface
+-Proximity targets differently for each point in complex geometry
+
+****************************************************************************************************
+Investigation:
+Curve Deformer
+-Investigate Necessity of Vector Remap.
+
+Bend Deform
+-Angle Check?
+
+Capture Velocity
+-Is it really working as expected?
+
+Curl Noise Turbulence
+-Particle generation Jaggyness investigate.
+****************************************************************************************************
+**General rule of design:
+Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
