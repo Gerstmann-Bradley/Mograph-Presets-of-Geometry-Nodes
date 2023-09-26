@@ -406,9 +406,6 @@ Point Distribute
 
 Curl Noise Turbulence
 -Particle generation Jaggyness investigate.
-
-Parenting
--When no Object Input, Scale=0. anyway to fix?
 ****************************************************************************************************
 **Serial Loop Node
 Add: Index Viewer
