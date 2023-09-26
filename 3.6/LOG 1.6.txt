@@ -367,6 +367,15 @@ Collision Deformer
 
 Filled Mesh Circle
 -Change output name and Add UV Map output.
+
+Curve Split
+-Edge Selection -> Selection.
+
+Text Mesh
+-Output "Mesh"
+
+Knit
+-X and Y is reversed.
 ****************************************************************************************************
 To Do:
 Array on Splines
