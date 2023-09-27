@@ -106,6 +106,9 @@ Add: Fill Curve Volume?
 -Interpolate Curve Method not working.
 	-endpoint will be attracted by the guide instead of filling the volume.
 -Loop Method.
+
+Set Particle Parameter
+-Should output birthtime/Age?
 ********************************************************
 *Geometry Type Node
 -Index Viewer
