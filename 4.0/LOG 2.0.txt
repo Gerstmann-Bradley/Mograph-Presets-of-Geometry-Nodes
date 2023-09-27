@@ -85,6 +85,14 @@ Backport Bevel Curve and Reset Cyclic Spline changes to 3.6
 
 Simulation Switch
 -Internally Replaced by Iteration Switch
+
+Set Particle Parameter
+-Should output birthtime/Age?
+	-Only birth time can be recorded at birth.
+	-Age can be separate output to birth time.
+
+Collision Deformer.
+-Add Reverse Detection
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -107,8 +115,6 @@ Add: Fill Curve Volume?
 	-endpoint will be attracted by the guide instead of filling the volume.
 -Loop Method.
 
-Set Particle Parameter
--Should output birthtime/Age?
 ********************************************************
 *Geometry Type Node
 -Index Viewer
