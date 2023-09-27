@@ -61,6 +61,30 @@ Point Distribute
 	-Order of Sockets
 -> Native Poisson with Count Limiter.
 	-Panel For poisson Mode.
+
+Proximity Falloff
+-Add: Abs Min/Range Mode.
+-Add: Abs Min/Range/Rel.
+
+Add: Layered Proximity Falloff
+-layered Evaluation
+	-named consideration:
+	-Accumulate
+	-Layered
+	-Composite
+
+Bevel Curve
+-Cleanup and Improve UV generation Method.
+-Remove Reset Cyclic Option.
+-Previous F/L mode was reversed somehow.
+
+Reset Cyclic Spline
+-Internal Detection of cyclic status and improve performance.
+
+Backport Bevel Curve and Reset Cyclic Spline changes to 3.6
+
+Simulation Switch
+-Internally Replaced by Iteration Switch
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -72,9 +96,6 @@ Add: Accelerator?
 Add: Simulation Value
 -Customizable Scene Time Frame.
 
-Proximity Falloff
--possible to set some absolute range instead of relative?
-
 Add: New Geometry Detection
 
 Add: Flow on Surface
@@ -85,9 +106,6 @@ Add: Fill Curve Volume?
 -Interpolate Curve Method not working.
 	-endpoint will be attracted by the guide instead of filling the volume.
 -Loop Method.
-
-New Proximity Falloff?
--layered Evaluation
 ********************************************************
 *Geometry Type Node
 -Index Viewer
@@ -95,6 +113,8 @@ New Proximity Falloff?
 *Loop Index Node
 -Solver
 -Set Branch Radius
+-Layered Proximity Falloff
+-
 ****************************************************************************************************
 GN-Known Issue:
 Multi Switch needed
@@ -126,7 +146,6 @@ Index Randomize.
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
-
 ****************************************************************************************************
 Investigation:
 Curve Deformer
