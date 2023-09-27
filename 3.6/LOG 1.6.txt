@@ -384,6 +384,9 @@ Bevel Curve
 
 Reset Cyclic Spline
 -Internal Detection of cyclic status and improve performance.
+
+Set Particle Parameter
+-Fix Age Output.
 ****************************************************************************************************
 To Do:
 Array on Splines
