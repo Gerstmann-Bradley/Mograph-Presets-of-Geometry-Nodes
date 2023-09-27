@@ -376,6 +376,14 @@ Text Mesh
 
 Knit
 -X and Y is reversed.
+
+Bevel Curve
+-Cleanup and Improve UV generation Method.
+-Remove Reset Cyclic Option.
+-Previous F/L mode was reversed somehow.
+
+Reset Cyclic Spline
+-Internal Detection of cyclic status and improve performance.
 ****************************************************************************************************
 To Do:
 Array on Splines
