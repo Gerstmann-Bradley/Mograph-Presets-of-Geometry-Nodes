@@ -93,6 +93,12 @@ Set Particle Parameter
 
 Collision Deformer.
 -Add Reverse Detection
+
+Solver
+-Add Relative Margin.
+
+Dynamic Radius Solver
+-Performance Bug Temp Fix
 ****************************************************************************************************
 To Do:
 Array on Splines
