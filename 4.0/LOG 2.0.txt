@@ -101,10 +101,10 @@ Dynamic Radius Solver
 -Performance Bug Temp Fix
 
 Add: Collision on Surface.
--Add Velocity Damping
+-Clamp Damping & Friction.
 
-Relaxation Solver
--Add Dimension Factor
+Randomness
+-Replace Vector Factor
 ****************************************************************************************************
 To Do:
 Array on Splines
