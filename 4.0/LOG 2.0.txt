@@ -99,6 +99,8 @@ Solver
 
 Dynamic Radius Solver
 -Performance Bug Temp Fix
+
+Add: Collision on Surface.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -112,15 +114,12 @@ Add: Simulation Value
 
 Add: New Geometry Detection
 
-Add: Flow on Surface
-
 Random Index per island?
 
 Add: Fill Curve Volume?
 -Interpolate Curve Method not working.
 	-endpoint will be attracted by the guide instead of filling the volume.
 -Loop Method.
-
 ********************************************************
 *Geometry Type Node
 -Index Viewer
