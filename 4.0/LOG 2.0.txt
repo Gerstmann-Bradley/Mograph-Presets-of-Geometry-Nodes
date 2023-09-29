@@ -105,6 +105,17 @@ Add: Collision on Surface.
 
 Randomness
 -Replace Vector Factor
+
+Proximity Falloff
+-Abs/Rel Mode rearrange based on Commonality.
+-Falloff Animation rewrite to work for Abs/Rel Mode.
+	-Implementation based on distanced value + original version.
+	-Pure Distance method will not have upper limit in falloff animation setting.
+		-the result will be like "Abs Range" Mode.
+
+Bevel Curve
+-Custom UV Parameter?
+	-Why not just sample from freeze geometry?
 ****************************************************************************************************
 To Do:
 Array on Splines
