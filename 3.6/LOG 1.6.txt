@@ -387,6 +387,9 @@ Reset Cyclic Spline
 
 Set Particle Parameter
 -Fix Age Output.
+
+Local Offset
+-Fix Offset Z axis malfunction bug.
 ****************************************************************************************************
 To Do:
 Array on Splines
