@@ -119,6 +119,10 @@ Bevel Curve
 
 Local Offset
 -Fix Offset Z axis malfunction bug.
+
+Dynamic Surface Sampling
+-When no Dynamic/Frozen Statement input, use original position.
+-When only Custom frozen state input, sampling frozen state.
 ****************************************************************************************************
 To Do:
 Array on Splines
