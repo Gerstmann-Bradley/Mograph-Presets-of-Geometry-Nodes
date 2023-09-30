@@ -116,6 +116,9 @@ Proximity Falloff
 Bevel Curve
 -Custom UV Parameter?
 	-Why not just sample from freeze geometry?
+
+Local Offset
+-Fix Offset Z axis malfunction bug.
 ****************************************************************************************************
 To Do:
 Array on Splines
