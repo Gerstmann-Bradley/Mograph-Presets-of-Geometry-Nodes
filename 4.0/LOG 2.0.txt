@@ -138,6 +138,8 @@ Add: Modulo Falloff
 -Replace Index Mask falloff internally.
 	-Delete Index Mask Falloff?
 		-No, to remove confusion of red linkage when using Frame.
+
+Add: Collision Detection in Radius
 ****************************************************************************************************
 To Do:
 Array on Splines
