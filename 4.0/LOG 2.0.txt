@@ -123,6 +123,21 @@ Local Offset
 Dynamic Surface Sampling
 -When no Dynamic/Frozen Statement input, use original position.
 -When only Custom frozen state input, sampling frozen state.
+
+Cloud Shadow
+-Advanced Settings
+
+Translate Position
+-Sections
+
+Relaxation Solver
+-Add Offset output.
+-Renamed Output for "Sample Position", "Sample Offset"
+
+Add: Modulo Falloff
+-Replace Index Mask falloff internally.
+	-Delete Index Mask Falloff?
+		-No, to remove confusion of red linkage when using Frame.
 ****************************************************************************************************
 To Do:
 Array on Splines
