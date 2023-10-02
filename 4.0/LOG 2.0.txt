@@ -140,6 +140,16 @@ Add: Modulo Falloff
 		-No, to remove confusion of red linkage when using Frame.
 
 Add: Collision Detection in Radius
+
+Random Transform
+-Panels
+
+Dynamic Radius Solver
+-bug resolved in #113011. change back to attribute.
+-capture attribute to resolve bug in #112711
+
+Alternating Solver
+-Capture Attribute for #112711.
 ****************************************************************************************************
 To Do:
 Array on Splines
