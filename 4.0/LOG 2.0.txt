@@ -150,6 +150,10 @@ Dynamic Radius Solver
 
 Alternating Solver
 -Capture Attribute for #112711.
+
+Layered Proximity Falloff
+-Default when Falloff substep 0, tends to normalize the result.
+-Change default scale setting, as it must be mesh, and must be visualized.
 ****************************************************************************************************
 To Do:
 Array on Splines
