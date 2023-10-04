@@ -154,6 +154,9 @@ Alternating Solver
 Layered Proximity Falloff
 -Default when Falloff substep 0, tends to normalize the result.
 -Change default scale setting, as it must be mesh, and must be visualized.
+
+Attribute Viwer
+-Add Displacem Vector to replace normal when no normal is available.
 ****************************************************************************************************
 To Do:
 Array on Splines
