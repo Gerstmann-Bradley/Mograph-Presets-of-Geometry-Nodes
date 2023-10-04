@@ -157,6 +157,8 @@ Layered Proximity Falloff
 
 Attribute Viwer
 -Add Displacem Vector to replace normal when no normal is available.
+-Add Named attribute float.
+-Pick Instance instability upon Index Mode. an Index input is necessary.
 ****************************************************************************************************
 To Do:
 Array on Splines
