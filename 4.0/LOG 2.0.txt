@@ -177,6 +177,8 @@ Dynamic Surface Sampling
 	*Dynamic Space Sampling
 
 Add: Dynamic Space Sampling
+-Note sometimes Sampling isn't 100% accurate due to amount of subdivision.
+-Output Index for Attribute Sampling.
 ****************************************************************************************************
 To Do:
 Array on Splines
