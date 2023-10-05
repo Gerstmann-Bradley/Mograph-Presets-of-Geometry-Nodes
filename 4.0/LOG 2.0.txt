@@ -159,6 +159,24 @@ Attribute Viwer
 -Add Displacem Vector to replace normal when no normal is available.
 -Add Named attribute float.
 -Pick Instance instability upon Index Mode. an Index input is necessary.
+
+Point Distribut
+-Volume Mode?
+-Density seems not linear in distribution amount.
+
+Collision Deformer
+-What's the benefit of reverse detection?
+	-Reverse For the moment.
+
+Dynamic Surface Sampling
+-Is freezing input geometry necessary? What If I have an animation?
+	-In the case of Point Distribute, the input geometry must be dynamic.
+-> Add Switch to Freeze Inputting Geometry.
+	*Dynamic Surface Sampling
+	*Dynamic Curve Sampling
+	*Dynamic Space Sampling
+
+Add: Dynamic Space Sampling
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -170,6 +188,9 @@ Add: Accelerator?
 Add: Simulation Value
 -Customizable Scene Time Frame.
 
+Proximity Falloff
+-possible to set some absolute range instead of relative?
+
 Add: New Geometry Detection
 
 Random Index per island?
@@ -178,6 +199,16 @@ Add: Fill Curve Volume?
 -Interpolate Curve Method not working.
 	-endpoint will be attracted by the guide instead of filling the volume.
 -Loop Method.
+
+Points to Curve.
+-Does it improve Curve Connect?
+
+Layered Proximity
+-Interpolation inside the repeat zone?
+-Options to normalize the final result?
+
+Collision on Surface
+-output Trigger Status?
 ********************************************************
 *Geometry Type Node
 -Index Viewer
