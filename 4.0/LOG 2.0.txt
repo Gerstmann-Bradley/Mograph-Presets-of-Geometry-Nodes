@@ -179,6 +179,8 @@ Dynamic Surface Sampling
 Add: Dynamic Space Sampling
 -Note sometimes Sampling isn't 100% accurate due to amount of subdivision.
 -Output Index for Attribute Sampling.
+
+Add: Dynamic Radius Simulation
 ****************************************************************************************************
 To Do:
 Array on Splines
