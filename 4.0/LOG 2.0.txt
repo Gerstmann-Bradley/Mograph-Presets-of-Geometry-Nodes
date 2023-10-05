@@ -184,6 +184,11 @@ Add: Dynamic Radius Simulation
 
 Collision Deformer
 -Add Internal Mode of Collision For self-mesh Collision.
+	-Internal Mode must hit only self? what about collider?
+	-Use "Or" to include both backwards and forward hit in Internal Mode.
+	-If hit position is 0, exclude all results.
+-Note about strength difference required.
+	-Will it be solve by Iterations?
 ****************************************************************************************************
 To Do:
 Array on Splines
