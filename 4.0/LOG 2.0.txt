@@ -181,6 +181,9 @@ Add: Dynamic Space Sampling
 -Output Index for Attribute Sampling.
 
 Add: Dynamic Radius Simulation
+
+Collision Deformer
+-Add Internal Mode of Collision For self-mesh Collision.
 ****************************************************************************************************
 To Do:
 Array on Splines
