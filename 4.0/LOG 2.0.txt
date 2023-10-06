@@ -189,6 +189,9 @@ Collision Deformer
 	-If hit position is 0, exclude all results.
 -Note about strength difference required.
 	-Will it be solve by Iterations?
+
+Attribute Island
+-Add Island Count
 ****************************************************************************************************
 To Do:
 Array on Splines
