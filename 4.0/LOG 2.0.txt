@@ -192,6 +192,8 @@ Collision Deformer
 
 Attribute Island
 -Add Island Count
+
+Add: Measurement
 ****************************************************************************************************
 To Do:
 Array on Splines
