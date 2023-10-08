@@ -195,6 +195,13 @@ Attribute Island
 
 Add: Measurement
 -when surrounding values are equal, choose random Index.
+
+Is inside Volume
+-Add Default Direction when Normal is 0.
+
+Measurement
+-Add: External Measurement.
+-Reverse Min/Max Boolean; Max is used much more frequent.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -267,6 +274,9 @@ Index Randomize.
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
+
+Dynamic Space Sampling
+-Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry.
 ****************************************************************************************************
 Investigation:
 Curve Deformer
