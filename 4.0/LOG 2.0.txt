@@ -207,6 +207,20 @@ Measurement
 
 Vector Rotation Viewer
 -Can be replaced by Viewer 3D.
+
+Measurement
+-Benefit of Default Normalization
+	-even if to use direction for offset. Normalize help unify the speed.
+
+Sample in Proximity
+-Float Support.
+-Nearst Surface Interpolation Support
+
+Text Mesh
+-High Extrusion will cost performance.
+	-Add Fast Mode
+
+Add: Step Extrusion
 ****************************************************************************************************
 To Do:
 Array on Splines
