@@ -202,6 +202,11 @@ Is inside Volume
 Measurement
 -Add: External Measurement.
 -Reverse Min/Max Boolean; Max is used much more frequent.
+-Add Normalize Direciton Option.
+	-Direction should not be normalized when "distance" is needed; also by default it doesn't cost not to realize it.
+
+Vector Rotation Viewer
+-Can be replaced by Viewer 3D.
 ****************************************************************************************************
 To Do:
 Array on Splines
