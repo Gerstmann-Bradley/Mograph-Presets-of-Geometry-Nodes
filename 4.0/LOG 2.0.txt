@@ -194,6 +194,7 @@ Attribute Island
 -Add Island Count
 
 Add: Measurement
+-when surrounding values are equal, choose random Index.
 ****************************************************************************************************
 To Do:
 Array on Splines
