@@ -221,6 +221,9 @@ Text Mesh
 	-Add Fast Mode
 
 Add: Step Extrusion
+
+Warp
+-Fix Missing Mix-Vector.
 ****************************************************************************************************
 To Do:
 Array on Splines
