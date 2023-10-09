@@ -160,7 +160,7 @@ Attribute Viwer
 -Add Named attribute float.
 -Pick Instance instability upon Index Mode. an Index input is necessary.
 
-Point Distribut
+Point Distribute
 -Volume Mode?
 -Density seems not linear in distribution amount.
 
@@ -192,6 +192,8 @@ Collision Deformer
 
 Attribute Island
 -Add Island Count
+	-For the case required for Island into Points.
+	-Maybe replaced one Split Geometry Group landing?
 
 Add: Measurement
 -when surrounding values are equal, choose random Index.
@@ -206,7 +208,7 @@ Measurement
 	-Direction should not be normalized when "distance" is needed; also by default it doesn't cost not to realize it.
 
 Vector Rotation Viewer
--Can be replaced by Viewer 3D.
+-Not Implement, as can be replaced by Viewer 3D.
 
 Measurement
 -Benefit of Default Normalization
@@ -224,6 +226,21 @@ Add: Step Extrusion
 
 Warp
 -Fix Missing Mix-Vector.
+
+Layered Proximity Falloff
+-Optimization to decrease maximal iterations.
+	-pre Proximity Falloff decrease maximal polygons required.
+	-Final Resampling Requires proximity restriction.
+		-it decreases the requirement of excessive margin.
+-425 Point ZE_01 test, 199 -> 131 ms 
+
+Set Partcle Parameter
+-Fix Direction Var.; normalized to pi.
+-Add Speed Var.
+
+Iteration Switch
+Simulation Switch
+-Add: Custom Switch.
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -252,7 +269,6 @@ Points to Curve.
 
 Layered Proximity
 -Interpolation inside the repeat zone?
--Options to normalize the final result?
 
 Collision on Surface
 -output Trigger Status?
