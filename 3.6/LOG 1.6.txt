@@ -390,6 +390,9 @@ Set Particle Parameter
 
 Local Offset
 -Fix Offset Z axis malfunction bug.
+
+Warp
+-Fix Missing Mix Vector
 ****************************************************************************************************
 To Do:
 Array on Splines
