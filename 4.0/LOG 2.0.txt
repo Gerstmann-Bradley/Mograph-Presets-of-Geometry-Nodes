@@ -244,6 +244,9 @@ Simulation Switch
 
 Text Mesh
 -Add No Remesh Option in Separate panel to ensure triangles as a default mode.
+
+Curve Deformer
+-Re-organization to fit 4.0 panel.
 ****************************************************************************************************
 To Do:
 Array on Splines
