@@ -241,6 +241,9 @@ Set Partcle Parameter
 Iteration Switch
 Simulation Switch
 -Add: Custom Switch.
+
+Text Mesh
+-Add No Remesh Option in Separate panel to ensure triangles as a default mode.
 ****************************************************************************************************
 To Do:
 Array on Splines
