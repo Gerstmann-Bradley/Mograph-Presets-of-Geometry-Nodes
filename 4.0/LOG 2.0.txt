@@ -247,6 +247,15 @@ Text Mesh
 
 Curve Deformer
 -Re-organization to fit 4.0 panel.
+
+Solidify
+-change default extusion minimum to 0. Negative solidify doesn't make sense by default?
+
+Is Inside Volume
+-Two hit Method should be enough without Normal Comparing?
+	-what if for a structure with centrual hole?
+-Normal Comparing
+	-what if flipped face? - No way to know.
 ****************************************************************************************************
 To Do:
 Array on Splines
