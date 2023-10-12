@@ -256,6 +256,11 @@ Is Inside Volume
 	-what if for a structure with centrual hole?
 -Normal Comparing
 	-what if flipped face? - No way to know.
+
+
+Vector Seed
+-Decrease Integer increment by 20th.
+	-too High will be over threshold of Noise Texture
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -295,6 +300,18 @@ Collision on Surface
 -Solver
 -Set Branch Radius
 -Layered Proximity Falloff
+-
+
+4.1:
+**Hash Node
+-help generate ID in Set Particle Parameter
+
+Split Geometry Group
+-for Island into points.
+
+Parallel Loop
+-Measurement
+-Attribute Viewer
 -
 ****************************************************************************************************
 GN-Known Issue:
