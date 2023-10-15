@@ -256,11 +256,18 @@ Is Inside Volume
 	-what if for a structure with centrual hole?
 -Normal Comparing
 	-what if flipped face? - No way to know.
-
+-Algorithm Comparison.
+	-Sample Nearest Surface Method slowest (>1 second).
+	-Sample Index and RayCast show similar result (150 ms) at high poly.
+	-RayCast method overall shows best general usage.
 
 Vector Seed
 -Decrease Integer increment by 20th.
-	-too High will be over threshold of Noise Texture
+	-too High will be over threshold of Noise Texture.
+-Removed in case of future inconsistency.
+
+Cloud Shadow
+-Add Smooth Position
 ****************************************************************************************************
 To Do:
 Array on Splines
