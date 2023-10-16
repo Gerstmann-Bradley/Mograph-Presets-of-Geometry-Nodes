@@ -263,11 +263,12 @@ Is Inside Volume
 
 Vector Seed
 -Decrease Integer increment by 20th.
-	-too High will be over threshold of Noise Texture.
--Removed in case of future inconsistency.
+	-too High will be over threshold of Noise Texture
 
 Cloud Shadow
 -Add Smooth Position
+
+Add: Get UV Seam
 ****************************************************************************************************
 To Do:
 Array on Splines
@@ -354,6 +355,10 @@ Hair on Surface
 
 Dynamic Space Sampling
 -Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry.
+
+Curve Deformer
+-Mirrow Image Bug
+	-Can't simply fix by switching Min/Max, will be different according to mode.
 ****************************************************************************************************
 Investigation:
 Curve Deformer
