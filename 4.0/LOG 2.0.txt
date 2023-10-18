@@ -277,6 +277,10 @@ Value Precision
 Dynamic Curve Sampling
 -Default Position when Sampling Sockets not occupied.
 -Fix Position Output should be position instead of sampled results.
+
+Random Helices Distribution
+-Var. Section
+-New Layout and Namings
 ****************************************************************************************************
 To Do:
 Array on Splines
