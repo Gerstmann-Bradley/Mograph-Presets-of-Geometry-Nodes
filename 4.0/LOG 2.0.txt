@@ -269,6 +269,14 @@ Cloud Shadow
 -Add Smooth Position
 
 Add: Get UV Seam
+
+Value Precision
+-Add: Add from 1.
+	-for case like 101% or 96%
+
+Dynamic Curve Sampling
+-Default Position when Sampling Sockets not occupied.
+-Fix Position Output should be position instead of sampled results.
 ****************************************************************************************************
 To Do:
 Array on Splines
