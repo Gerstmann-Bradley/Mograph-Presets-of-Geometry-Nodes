@@ -281,6 +281,7 @@ Dynamic Curve Sampling
 Random Helices Distribution
 -Var. Section
 -New Layout and Namings
+-Fix Start Radius and End Radius 
 ****************************************************************************************************
 To Do:
 Array on Splines
