@@ -288,6 +288,9 @@ Helical Connections
 
 Add: Fill Curve Volume
 -Renamed -> Fill Curve Tube
+
+Braid
+-Fix internal Sin Unit to remove Damping.
 ****************************************************************************************************
 To Do:
 Array on Splines
