@@ -281,7 +281,12 @@ Dynamic Curve Sampling
 Random Helices Distribution
 -Var. Section
 -New Layout and Namings
--Fix Start Radius and End Radius 
+-Fix Start Radius and End Radius
+
+Helical Connections
+-Remove Realize Instance; Seems not often Useful.
+
+Add: Fill Curve Volume
 ****************************************************************************************************
 To Do:
 Array on Splines
