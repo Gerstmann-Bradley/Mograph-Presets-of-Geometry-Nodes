@@ -393,6 +393,9 @@ Local Offset
 
 Warp
 -Fix Missing Mix Vector
+
+Is inside Volume
+-Direction 0,0,1 when there's no normal.
 ****************************************************************************************************
 To Do:
 Array on Splines
