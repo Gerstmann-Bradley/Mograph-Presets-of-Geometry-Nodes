@@ -296,6 +296,9 @@ Add: Connect Close Points
 
 Proximity Falloff
 -If no Custom Geometry, Falloff 0. 
+
+Curve Branching
+-Support Loop Instead of Simulation.
 ****************************************************************************************************
 To Do:
 Array on Splines
