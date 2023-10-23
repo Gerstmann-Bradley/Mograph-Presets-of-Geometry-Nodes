@@ -299,6 +299,12 @@ Proximity Falloff
 
 Curve Branching
 -Support Loop Instead of Simulation.
+
+Set Branch Radius
+-Expose Internal Named Attribute
+
+Set Branching Parameter
+-Fix All/XY Direction Set.
 ****************************************************************************************************
 To Do:
 Array on Splines
