@@ -305,6 +305,13 @@ Set Branch Radius
 
 Set Branching Parameter
 -Fix All/XY Direction Set.
+
+Randomness
+-When using its vector output.
+	-Old node start with default value of 0,0,0 in XYZ.
+-Avg in Vector is already pure positive or pure negative.
+	-Vector should have different signs in 3 axis.
+	-new random value for vector to normalize and multiply with the average.
 ****************************************************************************************************
 To Do:
 Array on Splines
