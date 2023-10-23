@@ -303,7 +303,7 @@ Curve Branching
 Set Branch Radius
 -Expose Internal Named Attribute
 
-Set Branching Parameter
+Set Branch Parameter
 -Fix All/XY Direction Set.
 
 Randomness
@@ -312,6 +312,9 @@ Randomness
 -Avg in Vector is already pure positive or pure negative.
 	-Vector should have different signs in 3 axis.
 	-new random value for vector to normalize and multiply with the average.
+
+Curve Branching
+-Feedback Limiter is to limit, not to allow.
 ****************************************************************************************************
 To Do:
 Array on Splines
