@@ -291,6 +291,11 @@ Add: Fill Curve Volume
 
 Braid
 -Fix internal Sin Unit to remove Damping.
+
+Add: Connect Close Points
+
+Proximity Falloff
+-If no Custom Geometry, Falloff 0. 
 ****************************************************************************************************
 To Do:
 Array on Splines
