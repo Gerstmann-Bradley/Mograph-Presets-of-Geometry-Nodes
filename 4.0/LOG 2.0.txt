@@ -319,6 +319,18 @@ Curve Branching
 -Remove Iteration Index; the work is very unfavorable for usage in the loop.
 
 Add: Tree Generator
+-Unify Decay Constant for simplicity
+-Decay Hierarchy should start from 0.
+
+Trim Curve Normalize
+-Add Offset Attribute
+
+Tree Generator
+-Add Parameter Decay For Length
+
+**Index Seed
+-Change internal Offset from 5, 15, 25 to 2, 4, 6
+
 ****************************************************************************************************
 To Do:
 Array on Splines
