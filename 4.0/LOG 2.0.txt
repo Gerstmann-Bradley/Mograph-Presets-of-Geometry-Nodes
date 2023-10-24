@@ -315,6 +315,7 @@ Randomness
 
 Curve Branching
 -Feedback Limiter is to limit, not to allow.
+-Add Hierarchy Min+1 Mode.
 ****************************************************************************************************
 To Do:
 Array on Splines
