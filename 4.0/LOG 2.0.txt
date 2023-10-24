@@ -409,6 +409,9 @@ Dynamic Space Sampling
 Curve Deformer
 -Mirrow Image Bug
 	-Can't simply fix by switching Min/Max, will be different according to mode.
+
+Trim Curve Normalize
+-add offset attribute for tree trim.
 ****************************************************************************************************
 Investigation:
 Curve Deformer
