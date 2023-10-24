@@ -335,6 +335,7 @@ Tree Generator
 -Parameter Decay should be remapped based on "From Start" and "Until End"
 -New Hierarchy must set only after duplication, otherwise interrupt selection.
 -Enable Serial Connection of Tree Generator by put maximal hierarchy into loop index.
+-Output Hierarchy
 ****************************************************************************************************
 To Do:
 Array on Splines
