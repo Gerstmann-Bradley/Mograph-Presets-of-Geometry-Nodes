@@ -353,6 +353,10 @@ Dynamic Curve Sampling
 Array on Splines
 -Can custom parameters be captured for later?
 	-Use the original curve to duplicate instead.
+	-Bad Idea as exponential growth.
+-Remove Instance on Instance; Resample on the original.
+	-the point of array is to allow offset per spline.
+	**Currently selection is not working.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
