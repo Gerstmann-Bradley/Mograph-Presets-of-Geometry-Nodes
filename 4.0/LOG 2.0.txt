@@ -349,11 +349,12 @@ Dynamic Space Sampling
 Dynamic Curve Sampling
 -Capture Attribute before curve to mesh.
 	-seems no diffference though?
-****************************************************************************************************
-To Do:
+
 Array on Splines
 -Can custom parameters be captured for later?
-
+	-Use the original curve to duplicate instead.
+****************************************************************************************************
+To Do:
 Add: Accelerator?
 -Set Acceleration and Start Time and output Velocity for Simulation Zone.
 
@@ -380,6 +381,30 @@ Layered Proximity
 
 Collision on Surface
 -output Trigger Status?
+
+Text Mesh
+-Extrusion 0 mode is slower than Fast Remesh Mode.
+
+Delay Falloff
+-Instance Mode
+-Custom Time Boolean?
+
+Temporal Value
+-Not Functioning
+
+Curve Deformer
+-Normalize Flow?
+
+UV Deformer
+-Unlock Limitation of UV Min/Max?
+
+Trim Curve Normalize / Normalize Curve Length
+
+Smooth Curve
+-Mode needs sections
+
+Tree Generator
+-Add Limiter
 ********************************************************
 *Geometry Type Node
 -Index Viewer
@@ -435,13 +460,6 @@ Hair on Surface
 
 Dynamic Space Sampling
 -Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry.
-
-Curve Deformer
--Mirrow Image Bug
-	-Can't simply fix by switching Min/Max, will be different according to mode.
-
-Trim Curve Normalize
--add offset attribute for tree trim.
 ****************************************************************************************************
 Investigation:
 Curve Deformer
@@ -455,6 +473,10 @@ Capture Velocity
 
 Curl Noise Turbulence
 -Particle generation Jaggyness investigate.
+
+Inertia Deformer
+-Waffle Softbody, using minimal will still leak inertia.
+	-issue in 3.6 but not in 4.0. no idea why.
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
