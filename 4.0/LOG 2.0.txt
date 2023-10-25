@@ -363,6 +363,15 @@ Tree Generator
 	-wiggle was bad because noise in loop causes glitch in instances.
 -Move Noise outside loop.
 	-Share index from first branch to follow children.
+
+Set Branch Radius
+-Add Radius Attribute output in case of record and change.
+
+Array on Splines
+-Add additional sample float.
+
+Add: Capture BirthTime.
+-One-way Capture
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
