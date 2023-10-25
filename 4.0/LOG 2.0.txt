@@ -345,6 +345,10 @@ Dynamic Space Sampling
 -not sure why curve to mesh not applying for all samples.
 -not sure why vertex may work better than curve tangent.
 -Custom Tangent specific for Tree Wiggle usage.
+
+Dynamic Curve Sampling
+-Capture Attribute before curve to mesh.
+	-seems no diffference though?
 ****************************************************************************************************
 To Do:
 Array on Splines
