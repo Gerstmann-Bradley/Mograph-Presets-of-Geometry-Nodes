@@ -336,6 +336,15 @@ Tree Generator
 -New Hierarchy must set only after duplication, otherwise interrupt selection.
 -Enable Serial Connection of Tree Generator by put maximal hierarchy into loop index.
 -Output Hierarchy
+
+Add: Tree Wiggle
+
+Dynamic Space Sampling
+-Add support to curve.
+-curve tangent not really good choice.
+-not sure why curve to mesh not applying for all samples.
+-not sure why vertex may work better than curve tangent.
+-Custom Tangent specific for Tree Wiggle usage.
 ****************************************************************************************************
 To Do:
 Array on Splines
