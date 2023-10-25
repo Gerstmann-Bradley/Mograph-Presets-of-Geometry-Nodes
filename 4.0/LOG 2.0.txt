@@ -357,6 +357,12 @@ Array on Splines
 -Remove Instance on Instance; Resample on the original.
 	-the point of array is to allow offset per spline.
 	**Currently selection is not working.
+
+Tree Generator
+-Add Built in Wiggle.
+	-wiggle was bad because noise in loop causes glitch in instances.
+-Move Noise outside loop.
+	-Share index from first branch to follow children.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
