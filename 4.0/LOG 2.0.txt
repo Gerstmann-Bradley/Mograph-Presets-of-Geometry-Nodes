@@ -375,8 +375,11 @@ Add: Capture BirthTime.
 -> Capture Event.
 -Expose Evaluation criteria.
 
-Index Extration
+**Index Extration
 -Renamed to "Get Index"
+
+Capture Event
+-Add "Once For All" Option
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
