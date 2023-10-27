@@ -389,6 +389,13 @@ Proximity Falloff
 Bevel Curve
 -Fix UV Sampling bug.
 	-Sampling on face corner should be on on face corner domain.
+
+Tree Generator
+-Add Wiggle Hierarchy Limit
+-Add Custom Wiggle Vector.
+	-Current wiggle is sin function of original random rotation.
+		-the pattern will be easily seen.
+	-Custom Wiggle vector intends to allow more advanced wiggle from noises.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
