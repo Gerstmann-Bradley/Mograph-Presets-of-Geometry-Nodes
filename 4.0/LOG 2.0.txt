@@ -381,9 +381,14 @@ Add: Capture BirthTime.
 Capture Event
 -Add "Once For All" Option
 -Add "Keep Trigger" Option
+	-change to "Disable Trigger" Option
 
 Proximity Falloff
 -Remove influence from object scale at mesh mode.
+
+Bevel Curve
+-Fix UV Sampling bug.
+	-Sampling on face corner should be on on face corner domain.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
