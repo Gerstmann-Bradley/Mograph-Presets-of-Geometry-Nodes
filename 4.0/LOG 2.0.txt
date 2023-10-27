@@ -380,6 +380,10 @@ Add: Capture BirthTime.
 
 Capture Event
 -Add "Once For All" Option
+-Add "Keep Trigger" Option
+
+Proximity Falloff
+-Remove influence from object scale at mesh mode.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
