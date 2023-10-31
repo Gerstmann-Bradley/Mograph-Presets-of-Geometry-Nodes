@@ -396,6 +396,7 @@ Tree Generator
 	-Current wiggle is sin function of original random rotation.
 		-the pattern will be easily seen.
 	-Custom Wiggle vector intends to allow more advanced wiggle from noises.
+-Fix Synchronized Phase of Wiggle.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
