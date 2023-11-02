@@ -397,6 +397,13 @@ Tree Generator
 		-the pattern will be easily seen.
 	-Custom Wiggle vector intends to allow more advanced wiggle from noises.
 -Fix Synchronized Phase of Wiggle.
+
+Curve Deformer
+-Add Automatic Support of Single Instance
+-Add Support for scale relative to Spline Length to avoid clipping
+
+Tree Generator
+-If value decay end to be negative, it means no decay.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
@@ -443,9 +450,6 @@ UV Deformer
 -Unlock Limitation of UV Min/Max?
 
 Trim Curve Normalize / Normalize Curve Length
-
-Smooth Curve
--Mode needs sections
 
 Tree Generator
 -Add Limiter
