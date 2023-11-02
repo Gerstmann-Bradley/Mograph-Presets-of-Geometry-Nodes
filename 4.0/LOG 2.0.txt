@@ -388,7 +388,7 @@ Proximity Falloff
 
 Bevel Curve
 -Fix UV Sampling bug.
-	-Sampling on face corner should be on on face corner domain.
+	-Sampling on face corner should be on face corner domain of Index.
 
 Tree Generator
 -Add Wiggle Hierarchy Limit
@@ -407,7 +407,7 @@ Tree Generator
 
 Add: Is Inside View
 -Frustum Culling.
--Known Issue: should add sensor relationship into box generation too.
+-add sensor relationship into box generation.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
