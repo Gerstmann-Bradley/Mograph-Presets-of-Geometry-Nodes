@@ -404,6 +404,10 @@ Curve Deformer
 
 Tree Generator
 -If value decay end to be negative, it means no decay.
+
+Add: Is Inside View
+-Frustum Culling.
+-Known Issue: should add sensor relationship into box generation too.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
