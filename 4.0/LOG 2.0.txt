@@ -409,10 +409,13 @@ Add: Is Inside View
 -Frustum Culling.
 -add sensor relationship into box generation.
 
-Viewport Render Switch
--"Render Preview" -> "Render Viewport"
--Add: Preview Render.
+Curve Split
+-Output both Selection and non-Selection
+-"Remnant" and "Split"
 
+
+Random Rotation
+-Add Extra XY to reduce serial connection of random rotation
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
