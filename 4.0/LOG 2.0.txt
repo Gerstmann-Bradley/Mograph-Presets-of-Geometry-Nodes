@@ -408,6 +408,11 @@ Tree Generator
 Add: Is Inside View
 -Frustum Culling.
 -add sensor relationship into box generation.
+
+Viewport Render Switch
+-"Render Preview" -> "Render Viewport"
+-Add: Preview Render.
+
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
