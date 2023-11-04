@@ -415,10 +415,6 @@ Curve Split
 
 Random Rotation
 -Add Extra XY to reduce serial connection of random rotation
-
-Proximity Falloff
--Obj Mesh mode should use face proximity when possible
-	-bug was due to wrong geometry target measurement in face count. 
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
