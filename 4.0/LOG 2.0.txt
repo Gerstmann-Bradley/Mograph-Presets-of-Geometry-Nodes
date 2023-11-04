@@ -415,6 +415,9 @@ Curve Split
 
 Random Rotation
 -Add Extra XY to reduce serial connection of random rotation
+
+**Curve Split
+-Reverse "Remnant" and "Split" Order.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
