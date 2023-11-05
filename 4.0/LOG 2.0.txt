@@ -425,6 +425,9 @@ Index Seed
 Fibonacci Spiral
 -Length reimplementation into "Falloff" from 0 to 1
 -Add "Inner Radius" Control.
+
+Noise 3D, Vector Noise, Voronoi 3D, Curl Noise Turbulence
+-Evolution into Advanced Settings.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
