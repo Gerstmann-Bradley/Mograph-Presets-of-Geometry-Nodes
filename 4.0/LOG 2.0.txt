@@ -428,6 +428,9 @@ Fibonacci Spiral
 
 Noise 3D, Vector Noise, Voronoi 3D, Curl Noise Turbulence
 -Evolution into Advanced Settings.
+
+Proximity Falloff
+-When Object input not used and custom mesh used, automatically switch to custom mesh mode.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
@@ -442,11 +445,6 @@ Proximity Falloff
 Add: New Geometry Detection
 
 Random Index per island?
-
-Add: Fill Curve Volume?
--Interpolate Curve Method not working.
-	-endpoint will be attracted by the guide instead of filling the volume.
--Loop Method.
 
 Points to Curve.
 -Does it improve Curve Connect?
