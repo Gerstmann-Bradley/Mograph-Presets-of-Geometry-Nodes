@@ -431,6 +431,13 @@ Noise 3D, Vector Noise, Voronoi 3D, Curl Noise Turbulence
 
 Proximity Falloff
 -When Object input not used and custom mesh used, automatically switch to custom mesh mode.
+
+Add: Aligned Surface Tangent
+
+Collision on Surface
+-restudy and Modification.
+-Add Panel Section.
+-Internal Gravity. 
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
