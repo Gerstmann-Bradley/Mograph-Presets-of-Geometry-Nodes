@@ -438,6 +438,9 @@ Collision on Surface
 -restudy and Modification.
 -Add Panel Section.
 -Internal Gravity. 
+
+Folded Surface Detection
+-Add options to freeze or not.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
