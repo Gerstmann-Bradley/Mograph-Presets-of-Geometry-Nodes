@@ -441,6 +441,21 @@ Collision on Surface
 
 Folded Surface Detection
 -Add options to freeze or not.
+
+Collision Deformer
+-Output Float "Falloff".
+	-Value 1 means Collision Detection.
+	-Value 0-1 means Falloff
+
+Not Add: Voronoi Fracture.
+-Mesh Boolean too slow in subdivided Geometry.
+
+Sample In Proximity.
+-Add Panel.
+-Fix when Falloff distance 0.
+-Currently Transfering all based on "Multiply Falloff".
+	-as for float value, or color / displacement, etc.
+-Add: Custom Falloff Option.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
