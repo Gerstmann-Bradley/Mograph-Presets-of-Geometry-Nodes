@@ -456,6 +456,10 @@ Sample In Proximity.
 -Currently Transfering all based on "Multiply Falloff".
 	-as for float value, or color / displacement, etc.
 -Add: Custom Falloff Option.
+
+Collision Deformer
+-Fix Falloff Output when there's no collision.
+	-mapping of proximity falloff will be 0 if no geometry evaluation.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
