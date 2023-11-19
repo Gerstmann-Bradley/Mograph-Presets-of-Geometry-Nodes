@@ -466,6 +466,9 @@ Tree Generator
 
 Set Branch Radius
 -Add some offset to Parameter Sampling.
+
+Tree Generator
+-Add Default Trunk.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
