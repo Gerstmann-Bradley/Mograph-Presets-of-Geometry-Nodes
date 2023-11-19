@@ -460,6 +460,9 @@ Sample In Proximity.
 Collision Deformer
 -Fix Falloff Output when there's no collision.
 	-mapping of proximity falloff will be 0 if no geometry evaluation.
+
+Tree Generator
+-Fix Rotation due to Extra XY rotation of random rotation node. 
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
