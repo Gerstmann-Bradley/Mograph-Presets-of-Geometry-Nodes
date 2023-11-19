@@ -462,7 +462,10 @@ Collision Deformer
 	-mapping of proximity falloff will be 0 if no geometry evaluation.
 
 Tree Generator
--Fix Rotation due to Extra XY rotation of random rotation node. 
+-Fix Rotation due to Extra XY rotation of random rotation node.
+
+Set Branch Radius
+-Add some offset to Parameter Sampling.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
