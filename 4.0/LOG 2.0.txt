@@ -469,6 +469,10 @@ Set Branch Radius
 
 Tree Generator
 -Add Default Trunk.
+
+Spline Falloff
+-For some reason Step/100 has default value of 0.
+	-change to "Resample Interval" and use % to show.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
