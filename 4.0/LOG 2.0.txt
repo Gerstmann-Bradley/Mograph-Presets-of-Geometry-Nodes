@@ -473,6 +473,10 @@ Tree Generator
 Spline Falloff
 -For some reason Step/100 has default value of 0.
 	-change to "Resample Interval" and use % to show.
+
+Tree Generator
+-Add Parameter Clamp for Default Trunk.
+-Add End Probability for Branching.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
