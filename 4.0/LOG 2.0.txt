@@ -486,6 +486,7 @@ Add: Mesh Falloff
 -Soft Clamp of Scale offset to be -1 to 1; Default 0.2 for usage of default cube.
 	-also clamp in proximity falloff.
 -Add Expand/Shrink Options
+-Fix Falloff Animation for entire falloff instead of just proximity.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
