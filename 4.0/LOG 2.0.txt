@@ -485,7 +485,7 @@ Add: Mesh Falloff
 -is it good to simply use two group nodes instead of constructing individually?
 -Soft Clamp of Scale offset to be -1 to 1; Default 0.2 for usage of default cube.
 	-also clamp in proximity falloff.
-
+-Add Expand/Shrink Options
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
