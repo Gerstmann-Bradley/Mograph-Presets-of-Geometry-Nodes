@@ -494,6 +494,9 @@ Inertial Deformer
 -blur is not recommended for internal oscillator as it will generate undesired waves.
 -Move most output sections to external oscillator.
 	-only keep for compatibility issues for the moment.
+
+Delay Falloff
+-Fix, not sure why ease ease is remapping to 0,0.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
