@@ -487,6 +487,13 @@ Add: Mesh Falloff
 	-also clamp in proximity falloff.
 -Add Expand/Shrink Options
 -Fix Falloff Animation for entire falloff instead of just proximity.
+
+Inertial Deformer
+-Internal Oscillator rework.
+	-don't know why this new formula works in decreasing frequency, but it works.
+-blur is not recommended for internal oscillator as it will generate undesired waves.
+-Move most output sections to external oscillator.
+	-only keep for compatibility issues for the moment.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
