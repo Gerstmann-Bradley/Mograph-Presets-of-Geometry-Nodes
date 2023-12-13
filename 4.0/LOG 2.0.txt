@@ -512,6 +512,10 @@ Add: Inertial Offset
 
 Inertial Deformer, Inertial Offset
 -Add Inertia Noise.
+	-Revert.
+	-Difficult to manage between falloff and recorded data.
+-Move Delta Time to External Oscillator.
+	-replaced by inertia velocity. which can have length output.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
