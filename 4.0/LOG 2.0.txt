@@ -509,6 +509,9 @@ Inertial Deformer
 Add: Inertial Offset
 -For individual value/field instead of whole geometry.
 	such as rotation...
+
+Inertial Deformer, Inertial Offset
+-Add Inertia Noise.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
