@@ -497,6 +497,11 @@ Inertial Deformer
 
 Delay Falloff
 -Fix, not sure why ease ease is remapping to 0,0.
+
+Inertial Deformer
+-Add Velocity Threshold
+-Keep Delta Time as normal output for spiderweb use case.
+
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
