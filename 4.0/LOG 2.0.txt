@@ -516,6 +516,9 @@ Inertial Deformer, Inertial Offset
 	-Difficult to manage between falloff and recorded data.
 -Move Delta Time to External Oscillator.
 	-replaced by inertia velocity. which can have length output.
+
+Add: Rod
+-personal use for modifier.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
