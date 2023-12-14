@@ -519,6 +519,7 @@ Inertial Deformer, Inertial Offset
 
 Add: Rod
 -personal use for modifier.
+-Add Center Option
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
