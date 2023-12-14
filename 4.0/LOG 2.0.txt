@@ -520,6 +520,9 @@ Inertial Deformer, Inertial Offset
 Add: Rod
 -personal use for modifier.
 -Add Center Option
+
+Inertial Deformer, Inertial Offset
+-Oscillator renamed to "Factor"
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
