@@ -527,6 +527,9 @@ Inertial Deformer, Inertial Offset
 Collision Deformer
 -Remove Default Noise
 -Add Default Falloff Distance
+-Remove Internal Noise
+	-Noise can be driven by falloff outside.
+	-Custom Position can be changed if driven outside.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
