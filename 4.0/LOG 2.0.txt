@@ -523,6 +523,10 @@ Add: Rod
 
 Inertial Deformer, Inertial Offset
 -Oscillator renamed to "Factor"
+
+Collision Deformer
+-Remove Default Noise
+-Add Default Falloff Distance
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
