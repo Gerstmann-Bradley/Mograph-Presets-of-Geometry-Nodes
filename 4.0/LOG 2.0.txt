@@ -530,6 +530,10 @@ Collision Deformer
 -Remove Internal Noise
 	-Noise can be driven by falloff outside.
 	-Custom Position can be changed if driven outside.
+
+Tree Generator
+-Trunk Length Options
+-Reorganize branching
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
