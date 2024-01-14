@@ -538,6 +538,8 @@ Tree Generator
 
 Curve Linear
 -When Count 0, no geometry output.
+
+Add: Show in Render
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
