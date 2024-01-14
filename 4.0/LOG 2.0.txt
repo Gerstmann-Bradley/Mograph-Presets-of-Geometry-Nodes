@@ -534,6 +534,10 @@ Collision Deformer
 Tree Generator
 -Trunk Length Options
 -Reorganize branching
+-Length shouldn't be negative
+
+Curve Linear
+-When Count 0, no geometry output.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
