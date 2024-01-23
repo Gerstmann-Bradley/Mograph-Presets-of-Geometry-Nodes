@@ -547,6 +547,7 @@ Add: Value String Formatter
 
 Collision Deformer
 -Allow Custom Normal in case there are floors?
+	-Displacement normal is not the same as detection normal.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
