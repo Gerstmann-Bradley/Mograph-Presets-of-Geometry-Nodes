@@ -544,6 +544,9 @@ Add: Show in Render
 Add: Value String Formatter
 -Known Issues: decimal digit
 -Known Issues: negative value as digit.
+
+Collision Deformer
+-Allow Custom Normal in case there are floors?
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
