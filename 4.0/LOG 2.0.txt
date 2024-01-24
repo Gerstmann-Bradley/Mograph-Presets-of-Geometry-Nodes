@@ -555,6 +555,10 @@ Add: Spherical Geo
 
 Self Random Seed
 -> Self Object Seed; for better search.
+
+Voronoi 3D
+-Add Falloff Option
+-Move Rounding to Top?
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
