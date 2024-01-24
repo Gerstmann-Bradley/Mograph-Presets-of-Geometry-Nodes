@@ -552,6 +552,9 @@ Collision Deformer
 Add: Spherical Geo
 -Cube Sphere implemented first.
 	-waiting for menu switch for UV sphere & icos
+
+Self Random Seed
+-> Self Object Seed; for better search.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
