@@ -548,6 +548,10 @@ Add: Value String Formatter
 Collision Deformer
 -Allow Custom Normal in case there are floors?
 	-Displacement normal is not the same as detection normal.
+
+Add: Spherical Geo
+-Cube Sphere implemented first.
+	-waiting for menu switch for UV sphere & icos
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
