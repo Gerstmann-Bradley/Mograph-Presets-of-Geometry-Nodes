@@ -561,6 +561,10 @@ Voronoi 3D
 -Move Rounding to Top?
 -Put "Randomness" into advanced settings.
 -Output Position for future ID
+
+Point Instance Geometry
+-Expose Pick Instance and Instance Index settings.
+-use set position instead of default point position to allow float range.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
