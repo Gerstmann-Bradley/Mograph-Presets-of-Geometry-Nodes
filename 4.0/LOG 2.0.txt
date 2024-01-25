@@ -566,6 +566,9 @@ Point Instance Geometry
 -Expose Pick Instance and Instance Index settings.
 -use set position instead of default point position to allow float range.
 -Make Instance Index random inside node group.
+
+Randomness
+-Vector Factor with Hard Clamp to 100 instead of 0
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
@@ -573,9 +576,6 @@ Add: Accelerator?
 
 Add: Simulation Value
 -Customizable Scene Time Frame.
-
-Proximity Falloff
--possible to set some absolute range instead of relative?
 
 Add: New Geometry Detection
 
@@ -603,8 +603,7 @@ Curve Deformer
 UV Deformer
 -Unlock Limitation of UV Min/Max?
 
-Tree Generator
--Add Limiter
+Trim Curve Normalize / Normalize Curve Length
 ********************************************************
 *Geometry Type Node
 -Index Viewer
@@ -620,32 +619,36 @@ Tree Generator
 -help generate ID in Set Particle Parameter
 
 Split Geometry Group
--for Island into points.
+-for Island into points at island center?
 
 Parallel Loop
 -Measurement
 -Attribute Viewer
 -
-****************************************************************************************************
-GN-Known Issue:
+
 Multi Switch needed
--Curve Deform
+-Curve Deformer
 -Directional Falloff
 -Radial Falloff
 -Group Per Domain
 -Follow Splines
 -Array on Splines
 -Remap Vector by Bounds
--3D Viewer
+-Viewer 3D
 -Orientation Switch
 -Geometry Type
-
-Value String Formatter
--decimal support.
--negative symbol as digit.
+-Randomness
+	-Rel to Avg requires multiple mode.
 
 Add: Origin Offset.
 -Too complicate without enum node.
+
+Implicit Attribute
+-
+
+****************************************************************************************************
+GN-Known Issue:
+
 
 Object Coordinate
 -Different Order of Operation is required in different cases.
