@@ -560,6 +560,7 @@ Voronoi 3D
 -Add Falloff Option
 -Move Rounding to Top?
 -Put "Randomness" into advanced settings.
+-Output Position for future ID
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
