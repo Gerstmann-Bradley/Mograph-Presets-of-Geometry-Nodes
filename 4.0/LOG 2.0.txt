@@ -559,6 +559,7 @@ Self Random Seed
 Voronoi 3D
 -Add Falloff Option
 -Move Rounding to Top?
+-Put "Randomness" into advanced settings.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
