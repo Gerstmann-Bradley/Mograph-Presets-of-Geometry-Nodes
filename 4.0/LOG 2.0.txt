@@ -569,6 +569,13 @@ Point Instance Geometry
 
 Randomness
 -Vector Factor with Hard Clamp to 100 instead of 0
+
+Random Color HSV
+-Var. into Factor sliders.
+
+Index Randomize
+-Simple version rewrite using Custom Index.
+	-however the usefulness of group ID is when using multiple splines?
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
