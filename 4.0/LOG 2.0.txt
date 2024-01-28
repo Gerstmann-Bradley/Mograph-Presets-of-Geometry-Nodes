@@ -576,6 +576,9 @@ Random Color HSV
 Index Randomize
 -Simple version rewrite using Custom Index.
 	-however the usefulness of group ID is when using multiple splines?
+
+Curve Connect
+-unhide "Reverse" boolean.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
