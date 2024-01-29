@@ -1,5 +1,5 @@
 Done:
-Multi Switch needed
+**Multi Switch needed
 --Spherical Geo
 --Proximity Falloff
 --Directional Falloff
@@ -13,13 +13,7 @@ Multi Switch needed
 --Layered Proximity
 --Mesh Falloff
 
--Group Per Domain
--Offset Field List
--Fade Falloff
--Face Points
--Delay Falloff
-
-Implicit Attribute
+**Implicit Attribute
 --Cloud Shadow
 --Vector Seed
 --Proximity Falloff
@@ -50,29 +44,33 @@ Implicit Attribute
 --Index Mask Falloff
 --Mesh Falloff
 
-ZA_18
-
-Rotation
+**Rotation Socket
 --Combine Euler Rotation
 --Radial Falloff
 --Point Distribute
 --Random Transform
 --.Object Control
 --Point Instance Geometry
--3D Viewer
 --Rotation to Vector
-
--Alignment on Splines
--Random Rotation
--Follow Splines
--Dynamic Surface Sampling
--Dynamic Curve Sampling
 
 Follow Splines
 -Fix Loop Start & Loop Minimum
+	--keep in case of motion variances.
+
+Delay Falloff
+-Discard Enum plans.
+	-Loop Factor into Float for more general effect.
+-Add Advanced Panel
 
 Delete Orientation Switch
 -only used once inside a node group.
+
+Delete: Object Coordinates
+-Previous Known Issue: Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Bevel Curve
+-Allow Scaling of Cap UV automatically.
 ****************************************************************************************************
 To Do:
 Attribute Island
@@ -81,21 +79,17 @@ Attribute Island
 Add: Accelerator?
 -Set Acceleration and Start Time and output Velocity for Simulation Zone.
 
+Bevel Curve
+-Round Cap instead of Flat Cap
+
 Add: Simulation Value
 -Customizable Scene Time Frame.
-
-Add: New Geometry Detection
-
-Random Index per island?
 
 Points to Curve.
 -Does it improve Curve Connect?
 
 Layered Proximity
 -Interpolation inside the repeat zone?
-
-Collision on Surface
--output Trigger Status?
 
 Delay Falloff
 -Instance Mode
@@ -111,6 +105,29 @@ UV Deformer
 -Unlock Limitation of UV Min/Max?
 
 Trim Curve Normalize / Normalize Curve Length
+
+Multi Switch Needed:
+-Group Per Domain
+	-Why this method is important.
+	-allowing different values inside each group. such as island, instances, etc.
+		-Index Randomize
+		-Offset Field List
+		-Fade Falloff
+-Face Points
+
+Rotate Rotation:
+-3D Viewer
+-Alignment on Splines
+-Random Rotation
+-Follow Splines
+-Dynamic Surface Sampling
+-Dynamic Curve Sampling
+
+Split Geometry Group
+-for Island into points at island center?
+
+Add: Origin Offset.
+-Too complicate without enum node.
 ********************************************************
 *Geometry Type Node
 -Index Viewer?
@@ -125,22 +142,12 @@ Trim Curve Normalize / Normalize Curve Length
 **Hash Node
 -help generate ID in Set Particle Parameter
 
-Split Geometry Group
--for Island into points at island center?
-
 Parallel Loop
 -Measurement
 -Attribute Viewer
 -
-
-Add: Origin Offset.
--Too complicate without enum node.
 ****************************************************************************************************
 GN-Known Issue:
-Object Coordinate
--Different Order of Operation is required in different cases.
-	-wait for Enum List?/Switch?
-
 Solidify
 -Merge by Distance is merging other points too.
 	-no way to resolve it.
@@ -167,10 +174,6 @@ Capture Velocity
 
 Curl Noise Turbulence
 -Particle generation Jaggyness investigate.
-
-Inertia Deformer
--Waffle Softbody, using minimal will still leak inertia.
-	-issue in 3.6 but not in 4.0. no idea why.
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
