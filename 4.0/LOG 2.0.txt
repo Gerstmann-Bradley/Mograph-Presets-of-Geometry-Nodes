@@ -579,6 +579,17 @@ Index Randomize
 
 Curve Connect
 -unhide "Reverse" boolean.
+
+Random Color HSV -> Random Color
+
+Index Randomize
+-New Group Index Simplify and Rewrite.
+
+Bevel Curve
+-bad UV when transfer index at multiple curve face corner with cap.
+	-sample nearest method will have error.
+-Instance own Cap Instead.
+	-inhereted performance cost from merge by distance, etc.
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
@@ -596,9 +607,6 @@ Points to Curve.
 
 Layered Proximity
 -Interpolation inside the repeat zone?
-
-Collision on Surface
--output Trigger Status?
 
 Delay Falloff
 -Instance Mode
