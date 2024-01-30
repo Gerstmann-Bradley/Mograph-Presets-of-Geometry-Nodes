@@ -86,6 +86,8 @@ Add: Origin Offset.
 Face Points
 -UV X and Y.
 	-not mixing because I don't want diagnal value come into play?
+
+UV Transfer -> Get UV Map
 ****************************************************************************************************
 To Do:
 Attribute Island
