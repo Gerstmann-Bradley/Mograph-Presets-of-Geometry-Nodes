@@ -71,16 +71,28 @@ Delete: Object Coordinates
 
 Bevel Curve
 -Allow Scaling of Cap UV automatically.
+-New Sections for Fills Caps.
+	-allowing spherical.
+	-allowing parameter for UV scales.
+
+Braid
+-Amp & Rel Factor/100 into %.
+
+Add: Origin Offset.
+-currently only support Bottom Center.
+-not making sense for working on instances.
+	-realizing instances will be performance heavy.
+
+Face Points
+-UV X and Y.
+	-not mixing because I don't want diagnal value come into play?
 ****************************************************************************************************
 To Do:
 Attribute Island
--Island Count Not Neccessary
+-Island Count Not Neccessary?
 
 Add: Accelerator?
 -Set Acceleration and Start Time and output Velocity for Simulation Zone.
-
-Bevel Curve
--Round Cap instead of Flat Cap
 
 Add: Simulation Value
 -Customizable Scene Time Frame.
@@ -90,10 +102,6 @@ Points to Curve.
 
 Layered Proximity
 -Interpolation inside the repeat zone?
-
-Delay Falloff
--Instance Mode
--Custom Time Boolean?
 
 Temporal Value
 -Not Functioning
@@ -113,7 +121,6 @@ Multi Switch Needed:
 		-Index Randomize
 		-Offset Field List
 		-Fade Falloff
--Face Points
 
 Rotate Rotation:
 -3D Viewer
@@ -125,9 +132,6 @@ Rotate Rotation:
 
 Split Geometry Group
 -for Island into points at island center?
-
-Add: Origin Offset.
--Too complicate without enum node.
 ********************************************************
 *Geometry Type Node
 -Index Viewer?
@@ -177,4 +181,3 @@ Curl Noise Turbulence
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
-Statistic Mean is of the best performance.
