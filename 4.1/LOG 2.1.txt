@@ -89,6 +89,12 @@ Face Points
 
 UV Transfer -> Get UVMap
 -"UVMap" for consistency than "UV Map"
+
+Solidify
+-Improve performance by limiting merge by distance to boundary.
+
+Noise 3D, Vector Noise, Voronoi 3D
+-allow more dimensions.
 ****************************************************************************************************
 To Do:
 Attribute Island
@@ -159,10 +165,6 @@ Solidify
 -Merge by Distance is merging other points too.
 	-no way to resolve it.
 
-Index Randomize.
--Group Index? -Failed
--Using Serial Loop
-
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
@@ -184,3 +186,4 @@ Curl Noise Turbulence
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
