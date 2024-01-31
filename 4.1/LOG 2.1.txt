@@ -95,6 +95,9 @@ Solidify
 
 Noise 3D, Vector Noise, Voronoi 3D
 -allow more dimensions.
+
+Bevel Curve
+-Fix: somehow I disabled merge by distance.
 ****************************************************************************************************
 To Do:
 Attribute Island
