@@ -104,6 +104,8 @@ Bevel Curve
 	-Segment only for 1 because limitation in Fill Curves.
 	-UV Unwrap possible.
 	-Use flipping face instead of rotation since bevel shape may irregular.
+		-Flipping face is not good for spherical rotation case.
+		-enable flipping face only for custom bevel.
 ****************************************************************************************************
 To Do:
 Attribute Island
