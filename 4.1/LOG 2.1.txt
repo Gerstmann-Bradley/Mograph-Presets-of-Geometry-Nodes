@@ -99,6 +99,7 @@ Noise 3D, Vector Noise, Voronoi 3D
 Bevel Curve
 -Fix: somehow I disabled merge by distance.
 -If Input Curve is cyclic, Fill caps Function should be disabled regardless.
+-Caps Segments first to show importance.
 ****************************************************************************************************
 To Do:
 Attribute Island
