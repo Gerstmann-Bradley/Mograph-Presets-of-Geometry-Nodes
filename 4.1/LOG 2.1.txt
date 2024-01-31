@@ -100,6 +100,10 @@ Bevel Curve
 -Fix: somehow I disabled merge by distance.
 -If Input Curve is cyclic, Fill caps Function should be disabled regardless.
 -Caps Segments first to show importance.
+-Allow Caps of Custom Bevel
+	-Segment only for 1 because limitation in Fill Curves.
+	-UV Unwrap possible.
+	-Use flipping face instead of rotation since bevel shape may irregular.
 ****************************************************************************************************
 To Do:
 Attribute Island
