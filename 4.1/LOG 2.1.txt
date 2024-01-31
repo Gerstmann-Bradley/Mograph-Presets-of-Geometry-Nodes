@@ -106,6 +106,8 @@ Bevel Curve
 	-Use flipping face instead of rotation since bevel shape may irregular.
 		-Flipping face is not good for spherical rotation case.
 		-enable flipping face only for custom bevel.
+-Delete Curve when length 0.
+	-Performance test seems not to be impacted by presence of delete geometry.
 ****************************************************************************************************
 To Do:
 Attribute Island
