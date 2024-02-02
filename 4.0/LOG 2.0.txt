@@ -590,6 +590,12 @@ Bevel Curve
 	-sample nearest method will have error.
 -Instance own Cap Instead.
 	-inhereted performance cost from merge by distance, etc.
+
+Capture Velocity
+-> Velocity Capture
+
+Capture Event
+-> Event Capture
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
