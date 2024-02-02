@@ -108,6 +108,10 @@ Bevel Curve
 		-enable flipping face only for custom bevel.
 -Delete Curve when length 0.
 	-Performance test seems not to be impacted by presence of delete geometry.
+-Rename to "Round Cap"
+
+Motion Variance
+-Fix Randomness inside.
 ****************************************************************************************************
 To Do:
 Attribute Island
