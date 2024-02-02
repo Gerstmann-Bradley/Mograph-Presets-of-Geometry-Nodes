@@ -112,6 +112,9 @@ Bevel Curve
 
 Motion Variance
 -Fix Randomness inside.
+
+Add: Rotate Euler
+-for the moment Feb.2.2024 until Rotate Rotation Support Local Axis.
 ****************************************************************************************************
 To Do:
 Attribute Island
