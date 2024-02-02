@@ -117,6 +117,12 @@ Add: Rotate Euler
 -for the moment Feb.2.2024 until Rotate Rotation Support Local Axis.
 -If all in 1 axis, performance the same.
 	-but if random axes, rotate rotation in sequence faster than single rotate euler.
+
+Capture Event
+->Event Capture
+
+Capture Velocity
+->Velocity Capture
 ****************************************************************************************************
 To Do:
 Attribute Island
