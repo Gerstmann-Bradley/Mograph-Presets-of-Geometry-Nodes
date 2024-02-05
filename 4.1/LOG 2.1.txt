@@ -32,7 +32,7 @@ Done:
 --Delay Falloff
 --Index Converge
 --Randomness
---UV Transfer
+--UV Transfer -> Get UVMap
 --Viewer 3D -> 3D Viewer
 --Get Index
 --Warp
@@ -123,6 +123,40 @@ Capture Event
 
 Capture Velocity
 ->Velocity Capture
+
+Rotate Rotation:
+--*Alignment on Splines
+--*Random Rotation
+--*Follow Splines
+--*Dynamic Surface Sampling
+--*Dynamic Curve Sampling
+
+Array on Splines
+-Fix Default Loop Setting.
+
+**Keep Vector form in Rotation Offset Input
+-Alignment on Splines
+	-Degree and radiance switch issue.
+-3D Viewer
+	-this node is complex and involve default socket case.
+
+Internal Menu Switch Fixes
+-UV Deformer
+-Randomness
+-Grid distribution
+
+Implicit Attribute - Normal
+-Implicite Vector to be Curve tangent instead of position.
+	-Replace existing normal implicit attribute
+--Normal Displacement
+--UV Deformer
+--Alignment on Splines
+
+Attribute Island
+-Island Count Not Neccessary because of Split to Instances?
+	-Many Downsides with Split to Instances
+		-Position reset.
+		-Attribute lost.
 ****************************************************************************************************
 To Do:
 Attribute Island
