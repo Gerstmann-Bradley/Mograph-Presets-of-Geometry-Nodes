@@ -151,6 +151,22 @@ Implicit Attribute - Normal
 --Normal Displacement
 --UV Deformer
 --Alignment on Splines
+--Curve Rolling
+--Attribute Voronoi
+--Collision Deformer
+-Collision on Surface
+--Delay Falloff
+--Face Dimension
+--Face Neighbor Index
+--Index Reverse
+-*Is inside Volume.
+	-Points requires 0,0,1 Vector instead of normal.
+--Layered Proximity Falloff
+--Remap Vector to Bounds
+--Tangent Normal Cross Product
+--Solidify
+--Step Extrusion
+--Vertex Rotation
 
 Attribute Island
 -Island Count Not Neccessary because of Split to Instances?
@@ -159,8 +175,7 @@ Attribute Island
 		-Attribute lost.
 ****************************************************************************************************
 To Do:
-Attribute Island
--Island Count Not Neccessary?
+Motion Variance Re-design.
 
 Add: Accelerator?
 -Set Acceleration and Start Time and output Velocity for Simulation Zone.
@@ -192,17 +207,8 @@ Multi Switch Needed:
 		-Index Randomize
 		-Offset Field List
 		-Fade Falloff
-
-Rotate Rotation:
--3D Viewer
--Alignment on Splines
--Random Rotation
--Follow Splines
--Dynamic Surface Sampling
--Dynamic Curve Sampling
-
-Split Geometry Group
--for Island into points at island center?
+-Curve Deformer
+-Remap Vector to Bounds
 ********************************************************
 *Geometry Type Node
 -Index Viewer?
