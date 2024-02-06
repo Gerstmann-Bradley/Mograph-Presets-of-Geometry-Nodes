@@ -173,6 +173,11 @@ Attribute Island
 	-Many Downsides with Split to Instances
 		-Position reset.
 		-Attribute lost.
+
+Default Limit Change
+-Noise 3D -Freq.
+-Sin function & Sin Unit -Freq
+-Proximity Falloff -Scale Offset
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
