@@ -119,10 +119,10 @@ Add: Rotate Euler
 	-but if random axes, rotate rotation in sequence faster than single rotate euler.
 
 Capture Event
-->Event Capture
+->Event Capture -> Record Event.
 
 Capture Velocity
-->Velocity Capture
+->Velocity Capture -> Record Velocity
 
 Rotate Rotation:
 --*Alignment on Splines
