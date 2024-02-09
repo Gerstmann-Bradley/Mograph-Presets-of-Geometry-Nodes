@@ -119,14 +119,14 @@ Add: Rotate Euler
 	-but if random axes, rotate rotation in sequence faster than single rotate euler.
 
 Capture Event
-->Event Capture -> Record Event.
+->Event Capture
 
 Capture Velocity
-->Velocity Capture -> Record Velocity
+->Velocity Capture
 
 Rotate Rotation:
---*Alignment on Splines
---*Random Rotation
+--Alignment on Splines
+--Random Rotation
 --*Follow Splines
 --*Dynamic Surface Sampling
 --*Dynamic Curve Sampling
@@ -178,6 +178,12 @@ Default Limit Change
 -Noise 3D -Freq.
 -Sin function & Sin Unit -Freq
 -Proximity Falloff -Scale Offset
+
+Inertial Offset
+-add Rotation socket.
+
+Temporal Sampling
+-add Rotation Socket.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
