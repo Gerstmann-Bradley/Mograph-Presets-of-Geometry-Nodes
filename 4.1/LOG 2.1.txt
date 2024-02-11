@@ -190,6 +190,10 @@ Face Points
 
 Randomness
 -Var. Only Mode Fix for Vector
+
+Point Instance Geometry
+-Adding Custom Points Socket
+-Add Implicit Position
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
