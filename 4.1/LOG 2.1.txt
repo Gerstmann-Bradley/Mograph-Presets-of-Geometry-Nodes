@@ -184,6 +184,9 @@ Inertial Offset
 
 Temporal Sampling
 -add Rotation Socket.
+
+Face Points
+-Weighing Edge by Default
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
