@@ -187,6 +187,9 @@ Temporal Sampling
 
 Face Points
 -Weighing Edge by Default
+
+Randomness
+-Var. Only Mode Fix for Vector
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
