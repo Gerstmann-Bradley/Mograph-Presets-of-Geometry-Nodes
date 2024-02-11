@@ -592,10 +592,13 @@ Bevel Curve
 	-inhereted performance cost from merge by distance, etc.
 
 Capture Velocity
--> Velocity Capture
+-> Record Velocity
 
 Capture Event
--> Event Capture
+-> Record Event
+
+Face Point
+-Weighing Edge on by Default
 ****************************************************************************************************
 To Do:
 Add: Accelerator?
