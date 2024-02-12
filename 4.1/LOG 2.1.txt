@@ -194,6 +194,8 @@ Randomness
 Point Instance Geometry
 -Adding Custom Points Socket
 -Add Implicit Position
+
+Add: Solidified Outline
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
