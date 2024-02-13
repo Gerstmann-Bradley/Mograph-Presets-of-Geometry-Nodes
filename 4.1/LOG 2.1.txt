@@ -205,6 +205,9 @@ Dynamic Surface Sampling, Dynamic Curve Sampling
 
 Freeze Geometry
 -Add Selection Input
+
+Origin Offset
+-Add Front & Back
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
