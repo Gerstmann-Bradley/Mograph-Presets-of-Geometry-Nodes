@@ -208,6 +208,11 @@ Freeze Geometry
 
 Origin Offset
 -Add Front & Back
+
+Curve Extrapolate 
+-Investigate Wrong Connections
+	-it doesn't work if curves don't have the same point counts.
+	-Rewrite with Extrude
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
