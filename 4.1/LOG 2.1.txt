@@ -216,6 +216,8 @@ Curve Extrapolate
 
 Controller
 -Hide Scale Sections.
+
+Add: Curve Interconnection
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
