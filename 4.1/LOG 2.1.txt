@@ -199,6 +199,12 @@ Add: Solidified Outline
 
 Origin Offset
 -Add Left, Up, Right
+
+Dynamic Surface Sampling, Dynamic Curve Sampling
+-Add Selection Input
+
+Freeze Geometry
+-Add Selection Input
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
