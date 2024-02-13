@@ -196,6 +196,9 @@ Point Instance Geometry
 -Add Implicit Position
 
 Add: Solidified Outline
+
+Origin Offset
+-Add Left, Up, Right
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
