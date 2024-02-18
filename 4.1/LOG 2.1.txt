@@ -218,6 +218,9 @@ Controller
 -Hide Scale Sections.
 
 Add: Curve Interconnection
+
+Layered Proximity Falloff
+-Iterating all if limit value is -1
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
