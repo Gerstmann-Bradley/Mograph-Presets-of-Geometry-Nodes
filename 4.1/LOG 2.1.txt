@@ -221,6 +221,14 @@ Add: Curve Interconnection
 
 Layered Proximity Falloff
 -Iterating all if limit value is -1
+
+Solidified Outline
+-Variance in thickness?
+-Known: Inhereted variance due to different normal and solidify...
+
+Reset Spline Cyclic
+-Rewrite with Extrude?
+	-no. Errors and performance either minimally better or worse.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
