@@ -229,6 +229,23 @@ Solidified Outline
 Reset Spline Cyclic
 -Rewrite with Extrude?
 	-no. Errors and performance either minimally better or worse.
+
+Bounding Box Falloff
+-Clean up.
+-not implementing Center Mode
+	-needs to add a new socket of expansion.
+	-not sure if it's worth so to take extra space.
+	-also too complicate when working with instances.
+
+Delete: Object Control
+-Doesn't seem necessary and less used overall.
+
+Directional Falloff
+-Use Rotate Vector to replace Vector Rotate.
+	-Origin issue done by subtract and add back the location offset.
+
+Set Curve Tilt Alignment
+-Add: Guide by Camera
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
