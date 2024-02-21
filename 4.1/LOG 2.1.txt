@@ -246,6 +246,15 @@ Directional Falloff
 
 Set Curve Tilt Alignment
 -Add: Guide by Camera
+
+Add: Align Rotation to Camera
+
+Collision Deformer
+-Menu Switch.
+-Remove Noise remnant.
+	-can be applied outside with falloff
+-Keep Falloff Set position and Smooth Position.
+	-for speed up of regular workflow.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
