@@ -255,6 +255,9 @@ Collision Deformer
 	-can be applied outside with falloff
 -Keep Falloff Set position and Smooth Position.
 	-for speed up of regular workflow.
+
+Curve Linear
+-Default Count Clamp Value Change
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
