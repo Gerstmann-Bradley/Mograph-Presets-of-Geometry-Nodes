@@ -258,6 +258,11 @@ Collision Deformer
 
 Curve Linear
 -Default Count Clamp Value Change
+
+Animate
+-Originally it contains a driver to animate.
+	-shown in the outliner; was accidentally deleted by me.
+	-Fix by Replacing with Time info.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
