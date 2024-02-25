@@ -272,7 +272,10 @@ Noise 3D
 -Allow Evolution to work in 3D mode on Z-axis.
 
 Freeze Geometry
--FIx Selection Input
+-Fix Selection Input
+
+Attribute Instance
+-Panel Section for Custom Float and Vector.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
