@@ -266,6 +266,13 @@ Animate
 
 Random Transform
 -Fix Noise 3D used inside.
+-Fix Evolution Setting.
+
+Noise 3D
+-Allow Evolution to work in 3D mode on Z-axis.
+
+Freeze Geometry
+-FIx Selection Input
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
