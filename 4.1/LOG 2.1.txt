@@ -276,6 +276,9 @@ Freeze Geometry
 
 Attribute Instance
 -Panel Section for Custom Float and Vector.
+
+Curve Split
+-Enable Default Select All
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
