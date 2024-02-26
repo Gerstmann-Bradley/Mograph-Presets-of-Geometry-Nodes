@@ -279,6 +279,9 @@ Attribute Instance
 
 Curve Split
 -Enable Default Select All
+
+Is Inside View
+-Use Active Camera & Add options to use custom Camera.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
