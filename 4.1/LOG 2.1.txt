@@ -282,6 +282,12 @@ Curve Split
 
 Is Inside View
 -Use Active Camera & Add options to use custom Camera.
+
+Origin Offset
+-add vector Offset
+
+Motion Variance
+-Put Loop option above.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
