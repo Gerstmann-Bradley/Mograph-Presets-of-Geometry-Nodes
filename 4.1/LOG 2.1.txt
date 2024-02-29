@@ -288,6 +288,13 @@ Origin Offset
 
 Motion Variance
 -Put Loop option above.
+
+Time Falloff
+-Add Delay time inside.
+
+Collision Deformer
+-Implicit geometry is on when only edge is presented for falloff evaluation; the result becomes 1 for all.
+	-Fix by using face count only.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design.
