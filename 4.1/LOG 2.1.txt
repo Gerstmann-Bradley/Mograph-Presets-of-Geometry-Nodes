@@ -295,9 +295,34 @@ Time Falloff
 Collision Deformer
 -Implicit geometry is on when only edge is presented for falloff evaluation; the result becomes 1 for all.
 	-Fix by using face count only.
+
+Multi Switch Needed:
+-Group Per Domain
+	-Why this method is important.
+	-allowing different values inside each group. such as island, instances, etc.
+		-Index Randomize
+		-Offset Field List
+			-remove field; output index only.
+			-coupled with evaluate at Index.
+		-Fade Falloff
+-Curve Deformer
+	-Update Offset A and B relative to bounding box.
+	-Default value from 0 to 0.5
 ****************************************************************************************************
 To Do:
-Motion Variance Re-design.
+Motion Variance Re-design?
+
+Scale Selection
+-Use Float, and Clamp Iteration Values?
+
+Field to Constant
+-Redesign?
+-Add Rotation Socket.
+
+Collision Deformer
+-In Island & Internal Collision, the strength to self should be 0.5.
+
+Investigate: is inside view & curve split?
 
 Add: Accelerator?
 -Set Acceleration and Start Time and output Velocity for Simulation Zone.
@@ -323,14 +348,8 @@ UV Deformer
 Trim Curve Normalize / Normalize Curve Length
 
 Multi Switch Needed:
--Group Per Domain
-	-Why this method is important.
-	-allowing different values inside each group. such as island, instances, etc.
-		-Index Randomize
-		-Offset Field List
-		-Fade Falloff
--Curve Deformer
 -Remap Vector to Bounds
+-3D Viewer
 ********************************************************
 *Geometry Type Node
 -Index Viewer?
@@ -341,7 +360,7 @@ Multi Switch Needed:
 -Layered Proximity Falloff
 -
 
-4.x:
+4.3:
 **Hash Node
 -help generate ID in Set Particle Parameter
 
@@ -349,6 +368,16 @@ Parallel Loop
 -Measurement
 -Attribute Viewer
 -
+
+Axes to Rotation
+-Alignment on Splines
+-Follow Splines
+-Dynamic Surface Sampling
+-Dynamic Curve Sampling
+
+**Domain Support
+-Normalize Field
+
 ****************************************************************************************************
 GN-Known Issue:
 Solidify
@@ -373,6 +402,19 @@ Capture Velocity
 
 Curl Noise Turbulence
 -Particle generation Jaggyness investigate.
+
+Instance Bounding Box
+-known using local axis.
+	-Split to Instances can reset axis to global.
+		-the question is what group ID to use. what's the common use case?
+
+Reset Instance Origin.
+-Use Bounding Box?
+
+Add: Recalculate Normal
+-Face normal comparing to Vertex & Edge Normal method?
+	-Split edge will offset all local information. all normal to be 0,0,1.
+	-flipped face normal leads to flipped vertex normal.
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
