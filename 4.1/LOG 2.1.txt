@@ -297,7 +297,7 @@ Collision Deformer
 	-Fix by using face count only.
 
 Multi Switch Needed:
--Group Per Domain
+--Group Per Domain
 	-Why this method is important.
 	-allowing different values inside each group. such as island, instances, etc.
 		-Index Randomize
@@ -305,9 +305,13 @@ Multi Switch Needed:
 			-remove field; output index only.
 			-coupled with evaluate at Index.
 		-Fade Falloff
--Curve Deformer
+--Curve Deformer
 	-Update Offset A and B relative to bounding box.
 	-Default value from 0 to 0.5
+
+Multi Switch Needed:
+--Remap Vector to Bounds
+--3D Viewer
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
@@ -377,7 +381,9 @@ Axes to Rotation
 
 **Domain Support
 -Normalize Field
-
+-Group Per Domain
+-3D Viewer
+-Remap Vector to Bounds
 ****************************************************************************************************
 GN-Known Issue:
 Solidify
