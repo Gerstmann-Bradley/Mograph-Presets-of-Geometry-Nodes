@@ -312,6 +312,15 @@ Multi Switch Needed:
 Multi Switch Needed:
 --Remap Vector to Bounds
 --3D Viewer
+
+Add: Accelerator?
+-No.
+-Set Acceleration and Start Time and output Velocity for Simulation Zone.
+	-am not interested in actual acceleration and math.
+
+Collision Deformer
+-Implicit Geometry Using face count becomes an incredible multiplier destruction.
+	-solved by compare >0.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
