@@ -324,6 +324,10 @@ Collision Deformer
 
 Noise 3D, Voronoi 3D
 -Add Evolution to 1D method too.
+
+Set particle Parameter
+-enable var. by default.
+-Direction Var. by number than degree.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
