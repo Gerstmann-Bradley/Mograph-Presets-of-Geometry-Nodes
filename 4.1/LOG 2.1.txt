@@ -321,6 +321,9 @@ Add: Accelerator?
 Collision Deformer
 -Implicit Geometry Using face count becomes an incredible multiplier destruction.
 	-solved by compare >0.
+
+Noise 3D, Voronoi 3D
+-Add Evolution to 1D method too.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
