@@ -328,6 +328,7 @@ Noise 3D, Voronoi 3D
 Set particle Parameter
 -enable var. by default.
 -Direction Var. by number than degree.
+-Use % in Var.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
