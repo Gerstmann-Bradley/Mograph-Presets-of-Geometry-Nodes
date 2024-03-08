@@ -332,6 +332,10 @@ Set particle Parameter
 
 Sample in Proximity
 -Support Curve
+-Different mode for falloff multiplier
+
+Multi-Switch
+-Add description to socket for socket name.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
@@ -370,10 +374,6 @@ UV Deformer
 -Unlock Limitation of UV Min/Max?
 
 Trim Curve Normalize / Normalize Curve Length
-
-Multi Switch Needed:
--Remap Vector to Bounds
--3D Viewer
 ********************************************************
 *Geometry Type Node
 -Index Viewer?
