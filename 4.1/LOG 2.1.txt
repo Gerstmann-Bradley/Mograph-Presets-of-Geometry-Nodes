@@ -329,6 +329,9 @@ Set particle Parameter
 -enable var. by default.
 -Direction Var. by number than degree.
 -Use % in Var.
+
+Sample in Proximity
+-Support Curve
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
