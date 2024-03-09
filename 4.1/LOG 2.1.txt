@@ -336,6 +336,9 @@ Sample in Proximity
 
 Multi-Switch
 -Add description to socket for socket name.
+
+Sample in Proximity
+-Capture Curve Parameter when curve to mesh.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
