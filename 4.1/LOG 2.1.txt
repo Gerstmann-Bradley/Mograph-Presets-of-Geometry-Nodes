@@ -356,6 +356,10 @@ Delay Falloff
 
 Delay Falloff
 -Remove Duration Var. and all Advanced Function.
+
+Follow Spline
+-Curve Attribute Lost during curve to points.
+	-Capture Attribute at spline domain.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
