@@ -342,6 +342,11 @@ Sample in Proximity
 
 Point Instance Geometry
 -add Advanced Panel
+
+Delete: Attribute Viewer
+
+Index Randomize
+-Add "Repeat" to divide max Index.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
