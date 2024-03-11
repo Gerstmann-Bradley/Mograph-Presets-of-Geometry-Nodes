@@ -346,7 +346,16 @@ Point Instance Geometry
 Delete: Attribute Viewer
 
 Index Randomize
--Add "Repeat" to divide max Index.
+-Add "Target Repeat" to divide max Index.
+
+Delay Falloff
+-Previous Var. in Step is too minimal to be noticeable.
+	-New Var. on Duration use Internal Randomness.
+		-Really Ideal and necessary?
+	-Step Var. too risky as it has butterfly effect and not able to accumulate itself.
+
+Delay Falloff
+-Remove Duration Var. and all Advanced Function.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
