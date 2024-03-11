@@ -339,6 +339,9 @@ Multi-Switch
 
 Sample in Proximity
 -Capture Curve Parameter when curve to mesh.
+
+Point Instance Geometry
+-add Advanced Panel
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
