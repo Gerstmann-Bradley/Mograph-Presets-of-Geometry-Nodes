@@ -366,6 +366,9 @@ Add: Mesh Rolling
 Align Rotation to Camera
 -Try to preserve Original Rotation?
 	-The other axis is set by "Tangent". no need more implementation
+
+Bend Deform
+-Add Plane Axis
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
@@ -375,10 +378,6 @@ Scale Selection
 
 Mesh Rolling
 -Support Empty and Vector?
-
-Bend Deform
--use Bounding Box?
--different origin Axis?
 
 Field to Constant
 -Redesign?
