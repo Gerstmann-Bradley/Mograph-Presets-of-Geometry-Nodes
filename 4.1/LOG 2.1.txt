@@ -360,12 +360,25 @@ Delay Falloff
 Follow Spline
 -Curve Attribute Lost during curve to points.
 	-Capture Attribute at spline domain.
+
+Add: Mesh Rolling
+
+Align Rotation to Camera
+-Try to preserve Original Rotation?
+	-The other axis is set by "Tangent". no need more implementation
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
 
 Scale Selection
 -Use Float, and Clamp Iteration Values?
+
+Mesh Rolling
+-Support Empty and Vector?
+
+Bend Deform
+-use Bounding Box?
+-different origin Axis?
 
 Field to Constant
 -Redesign?
