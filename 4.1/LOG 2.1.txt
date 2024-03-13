@@ -382,6 +382,12 @@ Origin Offset
 
 Center Geometry.
 -Improve performance by removing position attribute usage.
+
+Warp
+-Rename: Warp Deformer
+
+Bend Deform
+-Rename: Bend Deformer
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
