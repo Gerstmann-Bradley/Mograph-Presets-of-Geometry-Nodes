@@ -371,6 +371,17 @@ Bend Deform
 -Add Plane Axis
 
 Add: Screw Deformer
+-Add Height
+-Add Merge.
+	-Optimize Merge to only merge Start, End & Center origin.
+-Add Support to Curve.
+-Capture UV Map before merge.
+
+Origin Offset
+-fix
+
+Center Geometry.
+-Improve performance by removing position attribute usage.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
