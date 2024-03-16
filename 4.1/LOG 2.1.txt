@@ -397,6 +397,9 @@ Screw Deformer
 Cloud Shadow
 -Fix Modifier Version with Default Attribute position
 -Internal use Noise 3D. Support Menu.
+
+Temporal Sampling
+-Add Sampling Mode with Index & Nearest in case Geo created from Volume.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
