@@ -393,6 +393,9 @@ Screw Deformer
 -Fix View Index Out of Range
 
 **Adding All to Asset Library
+
+Cloud Shadow
+-Fix Modifier Version with Default Attribute position
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
