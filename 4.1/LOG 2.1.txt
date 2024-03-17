@@ -403,6 +403,11 @@ Temporal Sampling
 -Add Sampling Mode with Index & Nearest in case Geo created from Volume.
 
 Add: Plane Remesh
+
+Scale Selection
+-Output Needs to be evaluated on Point/Face.
+	-face corner won't be taken in blur attribute.
+	-no exposing the change. can be re-evaluated outside manually.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
