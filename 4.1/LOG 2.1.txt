@@ -407,7 +407,14 @@ Add: Plane Remesh
 Scale Selection
 -Output Needs to be evaluated on Point/Face.
 	-face corner won't be taken in blur attribute.
-	-no exposing the change. can be re-evaluated outside manually.
+	-Decide on Points only. Others can be re-evaluated outside manually.
+
+Align Rotation to Camera
+-Custom Tangent -> secondary axis
+
+Plane Remesh
+-Optimize in case geometry not supported.
+	-keep warning sign with extrude geometry.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
