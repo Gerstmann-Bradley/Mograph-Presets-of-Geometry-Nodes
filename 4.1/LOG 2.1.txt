@@ -43,6 +43,7 @@ Done:
 --Sample in Proximity
 --Index Mask Falloff
 --Mesh Falloff
+--Append Point to Curve
 
 **Rotation Socket
 --Combine Euler Rotation
@@ -400,6 +401,8 @@ Cloud Shadow
 
 Temporal Sampling
 -Add Sampling Mode with Index & Nearest in case Geo created from Volume.
+
+Add: Plane Remesh
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
