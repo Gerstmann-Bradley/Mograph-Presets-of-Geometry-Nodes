@@ -39,7 +39,7 @@ Done:
 --Index List Length
 --Bend Deform
 --Random Color
---Normalize Bounds
+--Normalize Vector Bounds
 --Sample in Proximity
 --Index Mask Falloff
 --Mesh Falloff
@@ -118,6 +118,7 @@ Add: Rotate Euler
 -for the moment Feb.2.2024 until Rotate Rotation Support Local Axis.
 -If all in 1 axis, performance the same.
 	-but if random axes, rotate rotation in sequence faster than single rotate euler.
+-Removed before beta
 
 Capture Event
 ->Event Capture
@@ -415,6 +416,66 @@ Align Rotation to Camera
 Plane Remesh
 -Optimize in case geometry not supported.
 	-keep warning sign with extrude geometry.
+
+Rotation Offset into Quaternion
+--Alignment on Splines
+--Align Rotation to Camera
+
+***
+Custom Position -> Position
+Custom ID -> ID
+Custom Index -> ID
+Custom Normal -> Normal
+--Cloud Shadow
+--Vector Seed
+--Proximity Falloff
+--Directional Falloff
+--Radial Falloff
+--Curl Noise Turbulence
+--BoundingBox Falloff
+--Vector Noise
+--Translate Position
+--Noise 3D
+--Normal Displacement
+--Vector Noise
+--Voronoi 3D
+--Translate Position
+--Index Randomize
+--Delay Falloff
+--Index Converge
+--Randomness
+--UV Transfer -> Get UVMap
+--Viewer 3D -> 3D Viewer
+--Get Index
+--Warp
+--Index List Length
+--Bend Deform
+--Random Color
+--Normalize Vector Bounds
+--Sample in Proximity
+--Index Mask Falloff
+--Mesh Falloff
+--Append Point to Curve
+
+--Normal Displacement
+--UV Deformer
+--Alignment on Splines
+--Curve Rolling
+--Attribute Voronoi
+--Collision Deformer
+-Collision on Surface
+--Delay Falloff
+--Face Dimension
+--Face Neighbor Index
+--Index Reverse
+-*Is inside Volume.
+	-Points requires 0,0,1 Vector instead of normal.
+--Layered Proximity Falloff
+--Remap Vector to Bounds
+--Tangent Normal Cross Product
+--Solidify
+--Step Extrusion
+--Vertex Rotation
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
