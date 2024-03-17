@@ -478,6 +478,9 @@ Custom Normal -> Normal
 --Vertex Rotation
 
 Add: Cumulative Attribute
+
+Delay Falloff
+-Based on Index to avoid effect from Point Distribute
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
