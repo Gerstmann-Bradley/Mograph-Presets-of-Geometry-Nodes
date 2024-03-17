@@ -476,6 +476,8 @@ Custom Normal -> Normal
 --Solidify
 --Step Extrusion
 --Vertex Rotation
+
+Add: Cumulative Attribute
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
