@@ -1,0 +1,606 @@
+Done:
+**Multi Switch needed
+--Spherical Geo
+--Proximity Falloff
+--Directional Falloff
+--Curve Linear
+--Radial Falloff
+--BoundingBox Falloff
+--Follow Splines
+--Bevel Curve
+--Rotation to Vector
+--Bend Deform
+--Layered Proximity
+--Mesh Falloff
+
+**Implicit Attribute
+--Cloud Shadow
+--Vector Seed
+--Proximity Falloff
+--Directional Falloff
+--Radial Falloff
+--Curl Noise Turbulence
+--BoundingBox Falloff
+--Vector Noise
+--Translate Position
+--Noise 3D
+--Normal Displacement
+--Vector Noise
+--Voronoi 3D
+--Translate Position
+--Index Randomize
+--Delay Falloff
+--Index Converge
+--Randomness
+--UV Transfer -> Get UVMap
+--Viewer 3D -> 3D Viewer
+--Get Index
+--Warp
+--Index List Length
+--Bend Deform
+--Random Color
+--Normalize Vector Bounds
+--Sample in Proximity
+--Index Mask Falloff
+--Mesh Falloff
+--Append Point to Curve
+
+**Rotation Socket
+--Combine Euler Rotation
+--Radial Falloff
+--Point Distribute
+--Random Transform
+--.Object Control
+--Point Instance Geometry
+--Rotation to Vector
+
+Follow Splines
+-Fix Loop Start & Loop Minimum
+	--keep in case of motion variances.
+
+Delay Falloff
+-Discard Enum plans.
+	-Loop Factor into Float for more general effect.
+-Add Advanced Panel
+
+Delete Orientation Switch
+-only used once inside a node group.
+
+Delete: Object Coordinates
+-Previous Known Issue: Different Order of Operation is required in different cases.
+	-wait for Enum List?/Switch?
+
+Bevel Curve
+-Allow Scaling of Cap UV automatically.
+-New Sections for Fills Caps.
+	-allowing spherical.
+	-allowing parameter for UV scales.
+
+Braid
+-Amp & Rel Factor/100 into %.
+
+Add: Origin Offset.
+-currently only support Bottom Center.
+-not making sense for working on instances.
+	-realizing instances will be performance heavy.
+
+Face Points
+-UV X and Y.
+	-not mixing because I don't want diagnal value come into play?
+
+UV Transfer -> Get UVMap
+-"UVMap" for consistency than "UV Map"
+
+Solidify
+-Improve performance by limiting merge by distance to boundary.
+
+Noise 3D, Vector Noise, Voronoi 3D
+-allow more dimensions.
+
+Bevel Curve
+-Fix: somehow I disabled merge by distance.
+-If Input Curve is cyclic, Fill caps Function should be disabled regardless.
+-Caps Segments first to show importance.
+-Allow Caps of Custom Bevel
+	-Segment only for 1 because limitation in Fill Curves.
+	-UV Unwrap possible.
+	-Use flipping face instead of rotation since bevel shape may irregular.
+		-Flipping face is not good for spherical rotation case.
+		-enable flipping face only for custom bevel.
+-Delete Curve when length 0.
+	-Performance test seems not to be impacted by presence of delete geometry.
+-Rename to "Round Cap"
+
+Motion Variance
+-Fix Randomness inside.
+
+Add: Rotate Euler
+-for the moment Feb.2.2024 until Rotate Rotation Support Local Axis.
+-If all in 1 axis, performance the same.
+	-but if random axes, rotate rotation in sequence faster than single rotate euler.
+-Removed before beta
+
+Capture Event
+->Event Capture
+
+Capture Velocity
+->Velocity Capture
+
+Rotate Rotation:
+--Alignment on Splines
+--Random Rotation
+--*Follow Splines
+--*Dynamic Surface Sampling
+--*Dynamic Curve Sampling
+
+Array on Splines
+-Fix Default Loop Setting.
+
+**Keep Vector form in Rotation Offset Input
+-Alignment on Splines
+	-Degree and radiance switch issue.
+-3D Viewer
+	-this node is complex and involve default socket case.
+
+Internal Menu Switch Fixes
+-UV Deformer
+-Randomness
+-Grid distribution
+
+Implicit Attribute - Normal
+-Implicite Vector to be Curve tangent instead of position.
+	-Replace existing normal implicit attribute
+--Normal Displacement
+--UV Deformer
+--Alignment on Splines
+--Curve Rolling
+--Attribute Voronoi
+--Collision Deformer
+-Collision on Surface
+--Delay Falloff
+--Face Dimension
+--Face Neighbor Index
+--Index Reverse
+-*Is inside Volume.
+	-Points requires 0,0,1 Vector instead of normal.
+--Layered Proximity Falloff
+--Remap Vector to Bounds
+--Tangent Normal Cross Product
+--Solidify
+--Step Extrusion
+--Vertex Rotation
+
+Attribute Island
+-Island Count Not Neccessary because of Split to Instances?
+	-Many Downsides with Split to Instances
+		-Position reset.
+		-Attribute lost.
+
+Default Limit Change
+-Noise 3D -Freq.
+-Sin function & Sin Unit -Freq
+-Proximity Falloff -Scale Offset
+
+Inertial Offset
+-add Rotation socket.
+
+Temporal Sampling
+-add Rotation Socket.
+
+Face Points
+-Weighing Edge by Default
+
+Randomness
+-Var. Only Mode Fix for Vector
+
+Point Instance Geometry
+-Adding Custom Points Socket
+-Add Implicit Position
+
+Add: Solidified Outline
+
+Origin Offset
+-Add Left, Up, Right
+
+Dynamic Surface Sampling, Dynamic Curve Sampling
+-Add Selection Input
+
+Freeze Geometry
+-Add Selection Input
+
+Origin Offset
+-Add Front & Back
+
+Curve Extrapolate 
+-Investigate Wrong Connections
+	-it doesn't work if curves don't have the same point counts.
+	-Rewrite with Extrude
+
+Controller
+-Hide Scale Sections.
+
+Add: Curve Interconnection
+
+Layered Proximity Falloff
+-Iterating all if limit value is -1
+
+Solidified Outline
+-Variance in thickness?
+-Known: Inhereted variance due to different normal and solidify...
+
+Reset Spline Cyclic
+-Rewrite with Extrude?
+	-no. Errors and performance either minimally better or worse.
+
+Bounding Box Falloff
+-Clean up.
+-not implementing Center Mode
+	-needs to add a new socket of expansion.
+	-not sure if it's worth so to take extra space.
+	-also too complicate when working with instances.
+
+Delete: Object Control
+-Doesn't seem necessary and less used overall.
+
+Directional Falloff
+-Use Rotate Vector to replace Vector Rotate.
+	-Origin issue done by subtract and add back the location offset.
+
+Set Curve Tilt Alignment
+-Add: Guide by Camera
+
+Add: Align Rotation to Camera
+
+Collision Deformer
+-Menu Switch.
+-Remove Noise remnant.
+	-can be applied outside with falloff
+-Keep Falloff Set position and Smooth Position.
+	-for speed up of regular workflow.
+
+Curve Linear
+-Default Count Clamp Value Change
+
+Animate
+-Originally it contains a driver to animate.
+	-shown in the outliner; was accidentally deleted by me.
+	-Fix by Replacing with Time info.
+
+Random Transform
+-Fix Noise 3D used inside.
+-Fix Evolution Setting.
+
+Noise 3D
+-Allow Evolution to work in 3D mode on Z-axis.
+
+Freeze Geometry
+-Fix Selection Input
+
+Attribute Instance
+-Panel Section for Custom Float and Vector.
+
+Curve Split
+-Enable Default Select All
+
+Is Inside View
+-Use Active Camera & Add options to use custom Camera.
+
+Origin Offset
+-add vector Offset
+
+Motion Variance
+-Put Loop option above.
+
+Time Falloff
+-Add Delay time inside.
+
+Collision Deformer
+-Implicit geometry is on when only edge is presented for falloff evaluation; the result becomes 1 for all.
+	-Fix by using face count only.
+
+Multi Switch Needed:
+--Group Per Domain
+	-Why this method is important.
+	-allowing different values inside each group. such as island, instances, etc.
+		-Index Randomize
+		-Offset Field List
+			-remove field; output index only.
+			-coupled with evaluate at Index.
+		-Fade Falloff
+--Curve Deformer
+	-Update Offset A and B relative to bounding box.
+	-Default value from 0 to 0.5
+
+Multi Switch Needed:
+--Remap Vector to Bounds
+--3D Viewer
+
+Add: Accelerator?
+-No.
+-Set Acceleration and Start Time and output Velocity for Simulation Zone.
+	-am not interested in actual acceleration and math.
+
+Collision Deformer
+-Implicit Geometry Using face count becomes an incredible multiplier destruction.
+	-solved by compare >0.
+
+Noise 3D, Voronoi 3D
+-Add Evolution to 1D method too.
+
+Set particle Parameter
+-enable var. by default.
+-Direction Var. by number than degree.
+-Use % in Var.
+
+Sample in Proximity
+-Support Curve
+-Different mode for falloff multiplier
+
+Multi-Switch
+-Add description to socket for socket name.
+
+Sample in Proximity
+-Capture Curve Parameter when curve to mesh.
+
+Point Instance Geometry
+-add Advanced Panel
+
+Delete: Attribute Viewer
+
+Index Randomize
+-Add "Target Repeat" to divide max Index.
+
+Delay Falloff
+-Previous Var. in Step is too minimal to be noticeable.
+	-New Var. on Duration use Internal Randomness.
+		-Really Ideal and necessary?
+	-Step Var. too risky as it has butterfly effect and not able to accumulate itself.
+
+Delay Falloff
+-Remove Duration Var. and all Advanced Function.
+
+Follow Spline
+-Curve Attribute Lost during curve to points.
+	-Capture Attribute at spline domain.
+
+Add: Mesh Rolling
+
+Align Rotation to Camera
+-Try to preserve Original Rotation?
+	-The other axis is set by "Tangent". no need more implementation
+
+Bend Deform
+-Add Plane Axis
+
+Add: Screw Deformer
+-Add Height
+-Add Merge.
+	-Optimize Merge to only merge Start, End & Center origin.
+-Add Support to Curve.
+-Capture UV Map before merge.
+
+Origin Offset
+-fix
+
+Center Geometry.
+-Improve performance by removing position attribute usage.
+
+Warp
+-Rename: Warp Deformer
+
+Bend Deform
+-Rename: Bend Deformer
+
+Screw Deformer
+-Fix View Index Out of Range
+
+**Adding All to Asset Library
+
+Cloud Shadow
+-Fix Modifier Version with Default Attribute position
+-Internal use Noise 3D. Support Menu.
+
+Temporal Sampling
+-Add Sampling Mode with Index & Nearest in case Geo created from Volume.
+
+Add: Plane Remesh
+
+Scale Selection
+-Output Needs to be evaluated on Point/Face.
+	-face corner won't be taken in blur attribute.
+	-Decide on Points only. Others can be re-evaluated outside manually.
+
+Align Rotation to Camera
+-Custom Tangent -> secondary axis
+
+Plane Remesh
+-Optimize in case geometry not supported.
+	-keep warning sign with extrude geometry.
+
+Rotation Offset into Quaternion
+--Alignment on Splines
+--Align Rotation to Camera
+
+***
+Custom Position -> Position
+Custom ID -> ID
+Custom Index -> ID
+Custom Normal -> Normal
+--Cloud Shadow
+--Vector Seed
+--Proximity Falloff
+--Directional Falloff
+--Radial Falloff
+--Curl Noise Turbulence
+--BoundingBox Falloff
+--Vector Noise
+--Translate Position
+--Noise 3D
+--Normal Displacement
+--Vector Noise
+--Voronoi 3D
+--Translate Position
+--Index Randomize
+--Delay Falloff
+--Index Converge
+--Randomness
+--UV Transfer -> Get UVMap
+--Viewer 3D -> 3D Viewer
+--Get Index
+--Warp
+--Index List Length
+--Bend Deform
+--Random Color
+--Normalize Vector Bounds
+--Sample in Proximity
+--Index Mask Falloff
+--Mesh Falloff
+--Append Point to Curve
+
+--Normal Displacement
+--UV Deformer
+--Alignment on Splines
+--Curve Rolling
+--Attribute Voronoi
+--Collision Deformer
+-Collision on Surface
+--Delay Falloff
+--Face Dimension
+--Face Neighbor Index
+--Index Reverse
+-*Is inside Volume.
+	-Points requires 0,0,1 Vector instead of normal.
+--Layered Proximity Falloff
+--Remap Vector to Bounds
+--Tangent Normal Cross Product
+--Solidify
+--Step Extrusion
+--Vertex Rotation
+
+Add: Cumulative Attribute
+
+Delay Falloff
+-Based on Index to avoid effect from Point Distribute
+
+Alignment on Spline
+--Fix Bevel Curve
+-Array on Spline
+	-waiting Axes to Rotation
+--Tree Generator
+
+Layered Proximity Falloff
+-Capture Point Attribute inside.
+-Iteration Limit <0 to trigger whole.
+-Add Interpolation
+-Add Scale for decay-like function.
+-SubStep Function seems questionable.
+	-only meaningful at static frame. In Animation it seems a bad idea?
+****************************************************************************************************
+To Do:
+Motion Variance Re-design?
+
+Scale Selection
+-Use Float, and Clamp Iteration Values?
+
+Mesh Rolling
+-Support Empty and Vector?
+
+Field to Constant
+-Redesign?
+-Add Rotation Socket.
+
+Collision Deformer
+-In Island & Internal Collision, the strength to self should be 0.5.
+
+Investigate: is inside view & curve split?
+
+Add: Accelerator?
+-Set Acceleration and Start Time and output Velocity for Simulation Zone.
+
+Add: Simulation Value
+-Customizable Scene Time Frame.
+
+Points to Curve.
+-Does it improve Curve Connect?
+
+Temporal Value
+-Not Functioning
+
+Curve Deformer
+-Normalize Flow?
+
+UV Deformer
+-Unlock Limitation of UV Min/Max?
+
+Trim Curve Normalize / Normalize Curve Length
+********************************************************
+*Geometry Type Node
+-Index Viewer?
+
+*Loop Index Node
+-Solver
+-Set Branch Radius
+-Layered Proximity Falloff
+-
+
+4.3:
+**Hash Node
+-help generate ID in Set Particle Parameter
+
+Parallel Loop
+-Measurement
+-Attribute Viewer
+-
+
+Axes to Rotation
+-Alignment on Splines
+-Follow Splines
+-Dynamic Surface Sampling
+-Dynamic Curve Sampling
+
+**Domain Support
+-Normalize Field
+-Group Per Domain
+-3D Viewer
+-Remap Vector to Bounds
+****************************************************************************************************
+GN-Known Issue:
+Solidify
+-Merge by Distance is merging other points too.
+	-no way to resolve it.
+
+Hair on Surface
+-Proximity targets differently for each point in complex geometry
+
+Dynamic Space Sampling
+-Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry.
+****************************************************************************************************
+Investigation:
+Curve Deformer
+-Investigate Necessity of Vector Remap.
+
+Bend Deform
+-Angle Check?
+
+Capture Velocity
+-Is it really working as expected?
+
+Curl Noise Turbulence
+-Particle generation Jaggyness investigate.
+
+Instance Bounding Box
+-known using local axis.
+	-Split to Instances can reset axis to global.
+		-the question is what group ID to use. what's the common use case?
+
+Reset Instance Origin.
+-Use Bounding Box?
+
+Add: Recalculate Normal
+-Face normal comparing to Vertex & Edge Normal method?
+	-Split edge will offset all local information. all normal to be 0,0,1.
+	-flipped face normal leads to flipped vertex normal.
+****************************************************************************************************
+**General rule of design:
+Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
