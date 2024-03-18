@@ -495,6 +495,13 @@ Layered Proximity Falloff
 -Add Scale for decay-like function.
 -SubStep Function seems questionable.
 	-only meaningful at static frame. In Animation it seems a bad idea?
+
+Add: Surface Friction Falloff
+
+Add: Bounce on Surface
+
+Collision on Surface
+-Rewrite, WIP
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
