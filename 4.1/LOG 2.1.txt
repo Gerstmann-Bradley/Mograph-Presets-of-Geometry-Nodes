@@ -492,6 +492,9 @@ Layered Proximity Falloff
 -Capture Point Attribute inside.
 -Iteration Limit <0 to trigger whole.
 -Add Interpolation
+-Add Scale for decay-like function.
+-SubStep Function seems questionable.
+	-only meaningful at static frame. In Animation it seems a bad idea?
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
