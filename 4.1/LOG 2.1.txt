@@ -491,6 +491,7 @@ Alignment on Spline
 Layered Proximity Falloff
 -Capture Point Attribute inside.
 -Iteration Limit <0 to trigger whole.
+-Add Interpolation
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
@@ -518,9 +519,6 @@ Add: Simulation Value
 
 Points to Curve.
 -Does it improve Curve Connect?
-
-Layered Proximity
--Interpolation inside the repeat zone?
 
 Temporal Value
 -Not Functioning
