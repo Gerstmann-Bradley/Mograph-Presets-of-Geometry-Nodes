@@ -487,6 +487,10 @@ Alignment on Spline
 -Array on Spline
 	-waiting Axes to Rotation
 --Tree Generator
+
+Layered Proximity Falloff
+-Capture Point Attribute inside.
+-Iteration Limit <0 to trigger whole.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
