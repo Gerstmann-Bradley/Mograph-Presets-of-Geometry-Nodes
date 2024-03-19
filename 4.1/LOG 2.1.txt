@@ -502,6 +502,16 @@ Add: Bounce on Surface
 
 Collision on Surface
 -Rewrite, WIP
+
+Add: Rod
+
+Add: Align Rotation to Velocity
+
+Record Velocity
+-Add Inside/Outside Simulation
+
+NOT Add: Plane Geo
+-No, it may sounds great to add initially, but more importantly
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
