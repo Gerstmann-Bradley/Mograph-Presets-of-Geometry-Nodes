@@ -512,6 +512,10 @@ Record Velocity
 
 NOT Add: Plane Geo
 -No, it may sounds great to add initially, but more importantly
+
+Collision on Surface
+-Fix Velocity Over addition issue.
+-Fix Default value in Velocity vector input causing jumping at first frame.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
