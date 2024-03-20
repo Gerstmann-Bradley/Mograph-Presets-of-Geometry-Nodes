@@ -516,6 +516,12 @@ NOT Add: Plane Geo
 Collision on Surface
 -Fix Velocity Over addition issue.
 -Fix Default value in Velocity vector input causing jumping at first frame.
+
+Add: Align Vector Rotation
+
+Add: Local Vector Scale
+
+Add: Is Enclosed Geometry
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
