@@ -529,6 +529,10 @@ Instance Bounding Box
 Scale Selection
 -Use Float, and Clamp Iteration Values?
 	-No, can be replaced by blur attribute outside.
+
+Collision on Surface
+-Gravity before Surface Physics and into Velocity.
+-Surface Friction Falloff output Not inside volume check.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
