@@ -534,6 +534,7 @@ Collision on Surface
 -Gravity before Surface Physics and into Velocity.
 -Surface Friction Falloff output Not inside volume check.
 -Proximity Position if inside volume. To prevent stuck of points inside.
+	-Offset by Detection Margin for triggering next bounce.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
