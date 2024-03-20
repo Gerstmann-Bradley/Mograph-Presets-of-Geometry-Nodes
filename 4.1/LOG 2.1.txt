@@ -522,12 +522,16 @@ Add: Align Vector Rotation
 Add: Local Vector Scale
 
 Add: Is Enclosed Geometry
-****************************************************************************************************
-To Do:
-Motion Variance Re-design?
+
+Instance Bounding Box
+-Add Local Vs. Global Option.
 
 Scale Selection
 -Use Float, and Clamp Iteration Values?
+	-No, can be replaced by blur attribute outside.
+****************************************************************************************************
+To Do:
+Motion Variance Re-design?
 
 Mesh Rolling
 -Support Empty and Vector?
@@ -540,9 +544,6 @@ Collision Deformer
 -In Island & Internal Collision, the strength to self should be 0.5.
 
 Investigate: is inside view & curve split?
-
-Add: Accelerator?
--Set Acceleration and Start Time and output Velocity for Simulation Zone.
 
 Add: Simulation Value
 -Customizable Scene Time Frame.
