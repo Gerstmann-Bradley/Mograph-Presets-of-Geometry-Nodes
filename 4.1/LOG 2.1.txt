@@ -538,6 +538,9 @@ Collision on Surface
 -When it's in plane, always check on not inside volume.
 
 Add: Center Falloff
+
+Array on Splines
+-Add: Vector Sampling
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
