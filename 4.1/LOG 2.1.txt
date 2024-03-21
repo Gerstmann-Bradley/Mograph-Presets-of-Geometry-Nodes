@@ -541,6 +541,7 @@ Add: Center Falloff
 
 Array on Splines
 -Add: Vector Sampling
+	-Revert: Curve tangent & normal can be obtained from rotation.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
