@@ -536,6 +536,8 @@ Collision on Surface
 -Proximity Position if inside volume. To prevent stuck of points inside.
 	-Offset by Detection Margin for triggering next bounce.
 -When it's in plane, always check on not inside volume.
+
+Add: Center Falloff
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
