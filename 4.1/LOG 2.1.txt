@@ -555,7 +555,10 @@ Set Branch Parameter
 
 Curve Branching
 -rename: Add Curve Branch
--Fix Index Switch
+
+Bevel Curve
+-Add: Round Vs. Flat Option as profile Curve
+-Custom Bevel -> Custom Profile
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
