@@ -559,6 +559,13 @@ Curve Branching
 Bevel Curve
 -Add: Round Vs. Flat Option as profile Curve
 -Custom Bevel -> Custom Profile
+
+Set Shade Autosmooth
+-Add: autosmooth check.
+-becomes modifier.
+-remove edge split algorithm, use edge smooth algorithm.
+
+Add: Voronoi Debris
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
