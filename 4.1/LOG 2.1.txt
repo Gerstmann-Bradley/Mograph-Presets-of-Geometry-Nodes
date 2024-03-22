@@ -510,7 +510,7 @@ Add: Align Rotation to Velocity
 Record Velocity
 -Add Inside/Outside Simulation
 
-NOT Add: Plane Geo
+Add: Plane Geo?
 -No, it may sounds great to add initially, but more importantly
 
 Collision on Surface
@@ -542,6 +542,19 @@ Add: Center Falloff
 Array on Splines
 -Add: Vector Sampling
 	-Revert: Curve tangent & normal can be obtained from rotation.
+
+Filled Mesh Circle
+-Offset UV to make UV centered.
+
+Set Curve Tilt Alignment
+-Align to camera by -90degrees for positive normal towards the camera
+
+Set Branch Parameter
+-Multi Switch
+-Fix menu in Randomness
+
+Curve Branching
+-rename: Add Curve Branch
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
