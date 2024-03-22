@@ -555,6 +555,7 @@ Set Branch Parameter
 
 Curve Branching
 -rename: Add Curve Branch
+-Fix Index Switch
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
