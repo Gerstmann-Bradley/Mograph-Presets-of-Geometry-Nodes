@@ -566,6 +566,21 @@ Set Shade Autosmooth
 -remove edge split algorithm, use edge smooth algorithm.
 
 Add: Voronoi Debris
+
+Index Converge
+-by Group ID?
+	-not possible unless sample by group ID is available.
+
+Translate Position
+-output name to be Position
+
+Motion Variance
+-New Start Variance
+	-Keep Clamp in case in a loop?
+-Custom ID to ID
+
+Set Curve Tilt Alignment
+-Use angle instead of radius.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
