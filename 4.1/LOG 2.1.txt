@@ -584,6 +584,12 @@ Set Curve Tilt Alignment
 
 Fill Volume & Normal Displacement
 -Clamp Displacement from -1
+
+Random Transform
+-Remove Location Scale Rotation.
+	-Outputs are already exposed in blender attribute.
+		-or can controlled by various transform instances operation.
+	-also never being used.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
