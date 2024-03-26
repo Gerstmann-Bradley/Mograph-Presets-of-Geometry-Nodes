@@ -581,6 +581,9 @@ Motion Variance
 
 Set Curve Tilt Alignment
 -Use angle instead of radius.
+
+Fill Volume & Normal Displacement
+-Clamp Displacement from -1
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
