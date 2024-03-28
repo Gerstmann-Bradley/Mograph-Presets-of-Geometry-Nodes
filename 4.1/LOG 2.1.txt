@@ -590,6 +590,9 @@ Random Transform
 	-Outputs are already exposed in blender attribute.
 		-or can controlled by various transform instances operation.
 	-also never being used.
+
+Add: Set Instances Scale
+Add: Set Instances Rotation
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
