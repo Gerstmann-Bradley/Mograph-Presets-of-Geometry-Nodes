@@ -598,6 +598,7 @@ Cumulative Force
 -Internal Store Named Attribute should also be controlled outside.
 -Falloff to Cancel Current new addition of velocity.
 	-velocity will decrease by decay.
+-Clear Default Velocity, add Velocity Offset
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
