@@ -599,6 +599,9 @@ Cumulative Force
 -Falloff to Cancel Current new addition of velocity.
 	-velocity will decrease by decay.
 -Clear Default Velocity, add Velocity Offset
+
+Float Range
+-Default value to negative, to allow for simple include end Stop mode.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
