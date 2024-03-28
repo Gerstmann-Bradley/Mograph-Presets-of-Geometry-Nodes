@@ -596,6 +596,8 @@ Add: Set Instances Rotation
 
 Cumulative Force
 -Internal Store Named Attribute should also be controlled outside.
+-Falloff to Cancel Current new addition of velocity.
+	-velocity will decrease by decay.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
