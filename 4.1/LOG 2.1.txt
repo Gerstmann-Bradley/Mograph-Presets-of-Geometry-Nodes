@@ -593,6 +593,9 @@ Random Transform
 
 Add: Set Instances Scale
 Add: Set Instances Rotation
+
+Cumulative Force
+-Internal Store Named Attribute should also be controlled outside.
 ****************************************************************************************************
 To Do:
 Motion Variance Re-design?
