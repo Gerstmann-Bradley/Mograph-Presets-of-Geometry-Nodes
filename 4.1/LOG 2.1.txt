@@ -606,6 +606,14 @@ Float Range
 Random Transform
 -Seed is not giving very random result.
 	-temporary solution with a multiply on index.
+
+Point Distribute
+-Automatic Setting of Density Max relative to Max Face Area
+	-New implementation successfully clamped generation regardless of size of grid.
+-Remove Position output
+	-never being used.
+-Remove Actual Amount output
+	-can be viewed with mouse viewer now.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
