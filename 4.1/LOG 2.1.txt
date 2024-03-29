@@ -602,12 +602,28 @@ Cumulative Force
 
 Float Range
 -Default value to negative, to allow for simple include end Stop mode.
+
+Random Transform
+-Seed is not giving very random result.
+	-temporary solution with a multiply on index.
 ****************************************************************************************************
 To Do:
-Motion Variance Re-design?
+Add: Clamp Force?
+
+Tree Generator
+-4D Noise Enum
+-check custom wiggle, etc.
 
 Mesh Rolling
 -Support Empty and Vector?
+
+Solidified Outline
+-Add Incompleteness of edge.
+
+Add: Shader Falloff
+
+S_Shader Displacement
+-Add: Reveal by Minimum?
 
 Field to Constant
 -Redesign?
@@ -644,13 +660,19 @@ Trim Curve Normalize / Normalize Curve Length
 -Layered Proximity Falloff
 -
 
-4.3:
+4.2:
+**Matrix Node
+Add: Offset to Camera
+
 **Hash Node
 -help generate ID in Set Particle Parameter
 
 Parallel Loop
 -Measurement
 -Attribute Viewer
+-
+
+Align Rotation to Vector
 -
 
 Axes to Rotation
@@ -675,6 +697,10 @@ Hair on Surface
 
 Dynamic Space Sampling
 -Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry.
+
+Seed not very variant.
+-Vector Seed
+-Index Seed
 ****************************************************************************************************
 Investigation:
 Curve Deformer
