@@ -615,6 +615,9 @@ Point Distribute
 -Remove Actual Amount output
 	-can be viewed with mouse viewer now.
 -Add Density Factor to control falloff in both mode.
+
+Center Falloff
+-Add Scale Offset
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
