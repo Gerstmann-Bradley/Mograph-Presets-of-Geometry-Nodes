@@ -621,6 +621,12 @@ Center Falloff
 
 Point Instance Geometry
 -Add Instance Index
+
+Random Transform
+-"SV" -> Scale Var.
+-Freq seems not very relevant to the node.
+	-the old implementation removes Freq effect in evolution settings.
+	-Freq itself make evolution rate very fast; can simply replaced by larger values.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
