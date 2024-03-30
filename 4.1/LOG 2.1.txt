@@ -618,6 +618,9 @@ Point Distribute
 
 Center Falloff
 -Add Scale Offset
+
+Point Instance Geometry
+-Add Instance Index
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
