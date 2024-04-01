@@ -627,6 +627,14 @@ Random Transform
 -Freq seems not very relevant to the node.
 	-the old implementation removes Freq effect in evolution settings.
 	-Freq itself make evolution rate very fast; can simply replaced by larger values.
+
+Random Transform
+-Rmoeve Rotation factor
+	-It's global.
+-Improve Noise Map range.
+	-remove roughness in noise.
+	-Clamp From Min & Max.
+-Improve Scale Var.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
@@ -640,6 +648,8 @@ Mesh Rolling
 
 Solidified Outline
 -Add Incompleteness of edge.
+
+Add: Record Time
 
 Add: Shader Falloff
 
@@ -752,3 +762,7 @@ Add: Recalculate Normal
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
 Statistic Mean is of the best performance.
+
+Randomness
+-Var. means range between full negative Var. & full positive Var.
+-Mid-Level Means 2X Positive/Negative.
