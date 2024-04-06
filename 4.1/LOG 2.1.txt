@@ -629,12 +629,14 @@ Random Transform
 	-Freq itself make evolution rate very fast; can simply replaced by larger values.
 
 Random Transform
--Rmoeve Rotation factor
+-Remove Rotation factor
 	-It's global.
 -Improve Noise Map range.
 	-remove roughness in noise.
 	-Clamp From Min & Max.
 -Improve Scale Var.
+-Revert Rotation Factor removal.
+	-as a starting point, it can only be global anyway, and can be useful.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
