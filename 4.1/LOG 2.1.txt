@@ -641,6 +641,11 @@ Random Transform
 Curve Deformer
 -relink "unknown" to map ranges.
 	-used to ensure the dimension correctness.
+
+Set Curve Tilt Alignment
+-Surface Normal and Vector should rotate +90 degree instead of -90 degree.
+	-if same direction as surface normal, then back face is towards the object surface.
+-reverse negative of align to camera instead, to make sure positive face normal to camera.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
