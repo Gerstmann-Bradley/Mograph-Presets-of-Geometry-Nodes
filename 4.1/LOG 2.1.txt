@@ -637,6 +637,10 @@ Random Transform
 -Improve Scale Var.
 -Revert Rotation Factor removal.
 	-as a starting point, it can only be global anyway, and can be useful.
+
+Curve Deformer
+-relink "unknown" to map ranges.
+	-used to ensure the dimension correctness.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
