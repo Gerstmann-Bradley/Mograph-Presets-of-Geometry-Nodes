@@ -646,6 +646,11 @@ Set Curve Tilt Alignment
 -Surface Normal and Vector should rotate +90 degree instead of -90 degree.
 	-if same direction as surface normal, then back face is towards the object surface.
 -reverse negative of align to camera instead, to make sure positive face normal to camera.
+
+Smooth Curve
+-Multi Switch
+-Bezier Mode is the same as Poly Count 1.
+-Limit Radius to be on by default.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
