@@ -651,6 +651,12 @@ Smooth Curve
 -Multi Switch
 -Bezier Mode is the same as Poly Count 1.
 -Limit Radius to be on by default.
+
+Sample in Proximity
+-Decrease Default distance value.
+
+Cumulative Force
+-Add "Selection", in case the initial input is all defined and emitting particle by trigger.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
