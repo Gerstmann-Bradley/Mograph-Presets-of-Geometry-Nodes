@@ -660,6 +660,10 @@ Cumulative Force
 
 Mesh Falloff
 -Remove Clamping of Scale Offset
+
+Animate
+-Default to use Duration instead of End Frame
+	-otherwise I have to change value everytime if I changed Start
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
