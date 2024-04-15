@@ -664,6 +664,14 @@ Mesh Falloff
 Animate
 -Default to use Duration instead of End Frame
 	-otherwise I have to change value everytime if I changed Start
+
+Solidify
+-Use only one extrude mesh node instead.
+	-Set position spent half of time than one extrude mesh.
+	-keep old solidify node for benchmark.
+	-Capture boolean not improving the speed.
+-still about 3X than single extrude node.
+	-it seems boolean output is not effecting the result.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
