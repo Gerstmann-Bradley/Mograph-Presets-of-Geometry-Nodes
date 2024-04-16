@@ -672,6 +672,8 @@ Solidify
 	-Capture boolean not improving the speed.
 -still about 3X than single extrude node.
 	-it seems boolean output is not effecting the result.
+
+Add: Sort Field to Index
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
