@@ -694,6 +694,11 @@ Add: Remap Vector Scale
 -Each Axis interpolate can be done by Separate XYZ & Combine XYZ.
 
 Add: Visualize UVMap
+
+Solidified Outline
+-Should cast no Shadow
+-Failed add Incompleteness of edge.
+	-seems to relying on subdvision and other factors.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
@@ -706,7 +711,7 @@ Mesh Rolling
 -Support Empty and Vector?
 
 Solidified Outline
--Add Incompleteness of edge.
+
 
 Add: Record Time
 
