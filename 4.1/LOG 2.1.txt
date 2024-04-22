@@ -684,6 +684,16 @@ Bevel Curve
 -UV Map better normalized to 0-1 -> Factor/Index mode.
 	-Add new output for length multiplier.
 	-Keep All 3 UV types for the moment.
+
+Add: Align Rotation to Point
+-Attraction and Repulsion Mixer should be done in terms of vector than rotation.
+
+Add: Remap Vector Scale
+-normalize existing vector.
+	-remap 0-1?
+-Each Axis interpolate can be done by Separate XYZ & Combine XYZ.
+
+Add: Visualize UVMap
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
