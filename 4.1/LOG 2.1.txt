@@ -699,6 +699,8 @@ Solidified Outline
 -Should cast no Shadow
 -Failed add Incompleteness of edge.
 	-seems to relying on subdvision and other factors.
+
+Viewport Render Switch -> Viewport Render Count
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
