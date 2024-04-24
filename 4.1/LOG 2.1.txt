@@ -671,7 +671,10 @@ Solidify
 	-keep old solidify node for benchmark.
 	-Capture boolean not improving the speed.
 -still about 3X than single extrude node.
-	-it seems boolean output is not effecting the result.
+	-note it seems boolean output is not effecting the result.
+		-removing them not improving.
+	-most performance is due to merge by distance.
+		-already optimized to best.
 
 Add: Sort Field to Index
 
@@ -700,7 +703,16 @@ Solidified Outline
 -Failed add Incompleteness of edge.
 	-seems to relying on subdvision and other factors.
 
-Viewport Render Switch -> Viewport Render Count
+Viewport Render Switch
+-Rename: Viewport Render Count
+
+Solidify
+-In low number grid, normal displacement get's interpolated with side to give uneven result.
+	-must displacing before merge by distance
+		-> necs offset original vertices of extruded geometry.
+	-New BenchMark.
+-Group Output domain in automatic viewer doesn't effect the default domain.
+	-it's effected with captured domain inside.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
