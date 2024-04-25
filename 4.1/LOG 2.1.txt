@@ -719,6 +719,9 @@ Cloud Shadow
 
 Curve Fill Fracture
 -Add Default Distribution
+
+Cloud Shadow
+-Add Set Material
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
