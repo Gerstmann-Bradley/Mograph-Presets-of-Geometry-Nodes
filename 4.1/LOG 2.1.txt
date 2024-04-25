@@ -713,6 +713,12 @@ Solidify
 	-New BenchMark.
 -Group Output domain in automatic viewer doesn't effect the default domain.
 	-it's effected with captured domain inside.
+
+Cloud Shadow
+-"uv_map" into "UVMap"
+
+Curve Fill Fracture
+-Add Default Distribution
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
