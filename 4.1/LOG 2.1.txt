@@ -729,7 +729,9 @@ Motion Variance
 Parenting
 -reorganize by adding "Component" and "Geometry parent"
 -add Parent to Geometry Function.
-	-include Alignment on Spline.
+-Add Tangent.
+	-have to statistics on both vector.
+	-Or statistic on rotation will cause error.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
