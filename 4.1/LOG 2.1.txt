@@ -718,6 +718,18 @@ Add: Sharp Edge Wireframe
 
 Rod
 -UVMap output into Face Corner Domain
+
+Motion Variance
+-"Clamp Start" -> "Clamp Negative"
+
+3D Viewer
+-Fix domain size switch when input is a single point.
+-Default output of marker when no Geometry input.
+
+Parenting
+-reorganize by adding "Component" and "Geometry parent"
+-add Parent to Geometry Function.
+	-include Alignment on Spline.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
@@ -794,6 +806,7 @@ Axes to Rotation
 -Follow Splines
 -Dynamic Surface Sampling
 -Dynamic Curve Sampling
+-Parenting
 
 **Domain Support
 -Normalize Field
