@@ -765,6 +765,26 @@ Set Particle Parameter
 
 Set Particle Parameter
 -1D White Noise, result scaling upto 10^6
+
+Point Distribute
+-Internally set new ID at magnitude of 10^6
+	-in case for id in noise texture?
+-reverse due to the neest update on vector seed and others.
+
+Add: Hash Seed
+-include negative possibilities
+	-switch based on white noise value.
+
+Vector Seed
+-Use Hash Seed
+	-Noise 3D now can take ID at magnitude of 10^5
+-doesn't cost performance.
+
+Index Seed
+-Use Hash Seed; 10^8
+
+Set Particle Parameter
+-Use Hash Seed; 10^8
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
