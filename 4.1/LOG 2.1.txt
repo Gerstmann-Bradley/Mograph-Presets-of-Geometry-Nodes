@@ -732,6 +732,11 @@ Parenting
 -Add Tangent.
 	-have to statistics on both vector.
 	-Or statistic on rotation will cause error.
+
+Set Particle Parameter
+-use "set ID" instead of named attribute.
+	-keep the "I" attribute for versioning for the moment.
+-Switch Vector rotate into Rotate Vector.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
