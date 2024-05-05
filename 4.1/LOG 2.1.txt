@@ -744,6 +744,12 @@ Collision on Surface
 Sharp Edge Wireframe
 -add a selection to wireframe for set material purposes?
 -add material slots.
+-use same material?
+	-in modifier, just do it manually.
+	-in node tree, just set material outside.
+
+Rod
+-Fix bevel curve becomes flat mode
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
