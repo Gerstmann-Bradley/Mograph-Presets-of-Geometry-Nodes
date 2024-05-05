@@ -750,6 +750,21 @@ Sharp Edge Wireframe
 
 Rod
 -Fix bevel curve becomes flat mode
+
+Set Particle Parameter
+-Change the way how ID is generated.
+	-use Amplified White noise.
+	-add index instead of multiply.
+
+**Index Seed
+-Rewrite using a single 3D White Noise
+	-upper limit to +/-10^9 on each 3 axis.
+-RGB only contains 3 values. Float = R.
+	-4th Seed by B+1.
+-Noise result scaling upto 10^5.
+
+Set Particle Parameter
+-1D White Noise, result scaling upto 10^6
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
