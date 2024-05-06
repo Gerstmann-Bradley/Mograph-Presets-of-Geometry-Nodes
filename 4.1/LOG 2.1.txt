@@ -777,7 +777,7 @@ Add: Hash Seed
 
 Vector Seed
 -Use Hash Seed
-	-Noise 3D now can take ID at magnitude of 10^5
+	-Noise 3D now can take ID at magnitude of 10^4
 -doesn't cost performance.
 
 Index Seed
@@ -785,9 +785,30 @@ Index Seed
 
 Set Particle Parameter
 -Use Hash Seed; 10^8
+
+Hash Seed
+-Remove Default position input in Vector
+-Remove Extra XYZ combination.
+-add rounding to float.
+
+Vector Seed
+-ID magnitude down to 10^4
+	-in tree generator causing float point precision issue causing strong wiggling in tangent.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
+
+Add: Collection to Points?
+
+Add: Store Delta Time?
+
+Check if All index node are using implicit index attribute than ID/Index.
+
+Add: Cumulative Field
+-for float instead of vector in the previous Cumulative Force?
+
+Investigate: Bevel Curve
+-if 2-point curve, custom cap tilt not working somehow?
 
 Tree Generator
 -4D Noise Enum
@@ -796,10 +817,7 @@ Tree Generator
 Mesh Rolling
 -Support Empty and Vector?
 
-Solidified Outline
-
-
-Add: Record Time
+Add: Record Time?
 
 Add: Shader Falloff
 
@@ -856,6 +874,8 @@ Parallel Loop
 Align Rotation to Vector
 -
 
+**Header Change
+
 Axes to Rotation
 -Alignment on Splines
 -Follow Splines
@@ -883,6 +903,11 @@ Dynamic Space Sampling
 Seed not very variant.
 -Vector Seed
 -Index Seed
+
+Tracer
+-Dynamic Attribute such as age and falloff will be lost before.
+	-This is unavoidable because these attribute are captured upon join.
+	-Curve Age is implemented, others requires sample Index.
 ****************************************************************************************************
 Investigation:
 Curve Deformer
