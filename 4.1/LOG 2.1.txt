@@ -812,7 +812,8 @@ Self Object Seed
 -ID to 10^5
 
 Local Offset
--change to Forward & Turning Factor
+-remove forward & turning factor
+	-can just multiply with offset vector.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
