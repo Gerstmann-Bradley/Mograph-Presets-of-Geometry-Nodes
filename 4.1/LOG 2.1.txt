@@ -792,7 +792,7 @@ Hash Seed
 -add rounding to float.
 
 Vector Seed
--ID magnitude down to 10^4
+-ID magnitude down to 10^3
 	-in tree generator causing float point precision issue causing strong wiggling in tangent.
 
 Random Rotation
