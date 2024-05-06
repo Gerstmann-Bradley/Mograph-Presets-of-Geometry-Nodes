@@ -810,6 +810,9 @@ Add: Delta Time
 
 Self Object Seed
 -ID to 10^5
+
+Local Offset
+-change to Forward & Turning Factor
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
