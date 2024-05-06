@@ -794,13 +794,27 @@ Hash Seed
 Vector Seed
 -ID magnitude down to 10^4
 	-in tree generator causing float point precision issue causing strong wiggling in tangent.
+
+Random Rotation
+-Clip XY component to range 0-tau; same as the Z axis.
+
+Noise 3D
+-add 0.001 into frequency.
+-evolution is always divided by frequency for better resolution?
+
+Random Transform
+-remove 0.001 addition.
+-remove evolution division.
+
+Add: Delta Time
+
+Self Object Seed
+-ID to 10^5
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
 
 Add: Collection to Points?
-
-Add: Store Delta Time?
 
 Check if All index node are using implicit index attribute than ID/Index.
 
