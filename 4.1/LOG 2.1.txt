@@ -843,6 +843,10 @@ Force
 Delta Time
 -use non-simulated method.
 -constant by default, more stable, accept field
+
+Add: Frame Rate?
+-removed. I don't see usefullness of this node.
+	-it can also but integrated as apart in Delta Time if justified.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
