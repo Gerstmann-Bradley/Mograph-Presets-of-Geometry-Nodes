@@ -833,6 +833,16 @@ Value Precision
 Force
 -Add Clock On
 	-into advanced Settings.
+
+Force
+-remove Clock on
+	-can not take attribute trigger.
+-Add custom time.
+	-can take attribute trigger.
+
+Delta Time
+-use non-simulated method.
+-constant by default, more stable, accept field
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
