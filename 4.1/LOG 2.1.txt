@@ -823,6 +823,16 @@ Add: Force
 Add: Gravity
 -Gravity is just a specific Force.
 -proven accurate by comparing with rigid body substep 1, solver iteration 1.
+
+Value Precision
+-Remove "Add from 1".
+	-only because I want to keep node small.
+-add "on Delta Time"
+	-is it really useful? won't the value becomes too small?
+
+Force
+-Add Clock On
+	-into advanced Settings.
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
@@ -961,6 +971,8 @@ Add: Recalculate Normal
 -Face normal comparing to Vertex & Edge Normal method?
 	-Split edge will offset all local information. all normal to be 0,0,1.
 	-flipped face normal leads to flipped vertex normal.
+
+Clock on can be field or?
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
