@@ -856,8 +856,23 @@ Add: Set Stable ID
 Set Particle Parameter
 -use "ID".
 -remove "set ID"
+
+Sample in Proximity
+-Distance clamp change.
+-Sample Vector to be Sample Color.
+
+Normal Displacement
+-Displacement into meter, & clamp change.
+
+Tree Generator
+-Custom Wiggle becomes Rotation.
+-remove noise Seed.
+-Remove Dimension and Evolution
 ****************************************************************************************************
 To Do:
+Tracer
+-Add new way to lock on ID?
+
 Add: Clamp Force?
 
 Add: Collection to Points?
@@ -869,10 +884,6 @@ Add: Cumulative Field
 
 Investigate: Bevel Curve
 -if 2-point curve, custom cap tilt not working somehow?
-
-Tree Generator
--4D Noise Enum
--check custom wiggle, etc.
 
 Mesh Rolling
 -Support Empty and Vector?
@@ -950,24 +961,17 @@ Axes to Rotation
 -Remap Vector to Bounds
 ****************************************************************************************************
 GN-Known Issue:
-Solidify
--Merge by Distance is merging other points too.
-	-no way to resolve it.
-
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
 Dynamic Space Sampling
 -Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry.
 
-Seed not very variant.
--Vector Seed
--Index Seed
-
 Tracer
 -Dynamic Attribute such as age and falloff will be lost before.
 	-This is unavoidable because these attribute are captured upon join.
 	-Curve Age is implemented, others requires sample Index.
+-If Points are Deleted, tracer will be disrupted.
 ****************************************************************************************************
 Investigation:
 Curve Deformer
@@ -994,8 +998,6 @@ Add: Recalculate Normal
 -Face normal comparing to Vertex & Edge Normal method?
 	-Split edge will offset all local information. all normal to be 0,0,1.
 	-flipped face normal leads to flipped vertex normal.
-
-Clock on can be field or?
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
