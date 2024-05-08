@@ -847,6 +847,9 @@ Delta Time
 Add: Frame Rate?
 -removed. I don't see usefullness of this node.
 	-it can also but integrated as apart in Delta Time if justified.
+
+Mesh Falloff
+-Clamp the Animation Factor result
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
