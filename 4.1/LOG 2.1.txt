@@ -850,6 +850,12 @@ Add: Frame Rate?
 
 Mesh Falloff
 -Clamp the Animation Factor result
+
+Add: Set Stable ID
+
+Set Particle Parameter
+-use "ID".
+-remove "set ID"
 ****************************************************************************************************
 To Do:
 Add: Clamp Force?
