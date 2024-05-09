@@ -868,6 +868,37 @@ Tree Generator
 -Custom Wiggle becomes Rotation.
 -remove noise Seed.
 -Remove Dimension and Evolution
+
+Cumulative Force
+-make the Cumulative method fit to real physics.
+	-the Vector input now behaves like acceleration.
+	-somehow it's delta time * power.
+		-> one delta time built inside the node.
+		-> the other one built outside with value precision.
+-Old decay function now becomes too extreme even at 1%.
+	-also multiplier with Delta Time.
+
+Add: Join Particles
+-to simplify join particle & store age workflow.
+	-modulo should happen before Store named attribute to reduce amount of unnecessary ID?
+		-or built in Modulo in Set Particle Parameter?
+-Optimize Age Storing to only overwrite age on new particles?
+	-removed. Age is a dynamic property that needs to be calculated every frame.
+	-> removal causes reduction of both attribute and extra storage.
+-If we remove Birth Time Attribute, it will keep give warning.
+	-downside to keep the birth time attribute?
+-Add "Join Per Frame" Function.
+
+Add: Particle Age
+
+Time Falloff
+-Use birth time to calculate Particle Age.
+	-previously, what other places is time falloff used?
+
+Set Particle Parameter
+-Use single "Hash Seed" to replace "Index Seed".
+	-magnitude upto 10^8
+-It now uses timed Seed automatically.
 ****************************************************************************************************
 To Do:
 Tracer
