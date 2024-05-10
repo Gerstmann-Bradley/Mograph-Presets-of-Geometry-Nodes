@@ -908,6 +908,9 @@ Cumulative Force
 Attribute Voronoi
 -Voronoi in 3D is giving space far away from the mesh surface
 	-sampling the position back to surface
+
+Set Stable ID
+-default input with ID
 ****************************************************************************************************
 To Do:
 Attribute Voronoi
