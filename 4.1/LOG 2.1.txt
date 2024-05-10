@@ -899,8 +899,24 @@ Set Particle Parameter
 -Use single "Hash Seed" to replace "Index Seed".
 	-magnitude upto 10^8
 -It now uses timed Seed automatically.
+
+Cumulative Force
+-Multiplying Decay made 100% decay doesn't really cancel the remaining velocity.
+	-moving decay to newly added velocity doesn't.
+	-> rename to Decay Constant
+
+Attribute Voronoi
+-Voronoi in 3D is giving space far away from the mesh surface
+	-sampling the position back to surface
 ****************************************************************************************************
 To Do:
+Attribute Voronoi
+-Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
+	-add a domain to fix it?
+
+Collision on Surface
+-New Gravity Implementation
+
 Tracer
 -Add new way to lock on ID?
 
@@ -965,16 +981,13 @@ Trim Curve Normalize / Normalize Curve Length
 **Matrix Node
 Add: Offset to Camera
 
-**Hash Node
--help generate ID in Set Particle Parameter
-
 Parallel Loop
 -Measurement
 -Attribute Viewer
 -
 
-Align Rotation to Vector
--
+Align Rotation to Vector?
+
 
 **Header Change
 
