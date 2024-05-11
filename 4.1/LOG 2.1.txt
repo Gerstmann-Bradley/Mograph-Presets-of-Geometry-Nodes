@@ -911,6 +911,10 @@ Attribute Voronoi
 
 Set Stable ID
 -default input with ID
+
+Add: Reset Self Object Transform
+-meant to remove the effect of self object transform on the node tree.
+-Ori/Rel needed as to be compatible with different types of "Object info".
 ****************************************************************************************************
 To Do:
 Attribute Voronoi
@@ -983,6 +987,7 @@ Trim Curve Normalize / Normalize Curve Length
 4.2:
 **Matrix Node
 Add: Offset to Camera
+Reset Self Object Transform?
 
 Parallel Loop
 -Measurement
@@ -1006,6 +1011,9 @@ Axes to Rotation
 -Group Per Domain
 -3D Viewer
 -Remap Vector to Bounds
+
+**Multiple Attribute Captures
+-various attribute info?
 ****************************************************************************************************
 GN-Known Issue:
 Hair on Surface
