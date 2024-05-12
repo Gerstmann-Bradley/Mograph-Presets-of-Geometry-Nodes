@@ -915,6 +915,17 @@ Set Stable ID
 Add: Reset Self Object Transform
 -meant to remove the effect of self object transform on the node tree.
 -Ori/Rel needed as to be compatible with different types of "Object info".
+
+Set Particle Parameter
+Join Particles
+Cumulative Force
+-add: V on delta time
+	-decide to expose this option instead of being in advanced settings.
+	-meant to alert people it's existence and remove necessity of on Delta time in value precision and scaling.
+
+value precision
+-add back "Add From 1"
+-add advanced panel to hide "Add from 1" and "on Delta Time".
 ****************************************************************************************************
 To Do:
 Attribute Voronoi
@@ -931,8 +942,6 @@ Add: Clamp Force?
 
 Add: Collection to Points?
 
-Check if All index node are using implicit index attribute than ID/Index.
-
 Add: Cumulative Field
 -for float instead of vector in the previous Cumulative Force?
 
@@ -941,8 +950,6 @@ Investigate: Bevel Curve
 
 Mesh Rolling
 -Support Empty and Vector?
-
-Add: Record Time?
 
 Add: Shader Falloff
 
@@ -963,9 +970,6 @@ Add: Simulation Value
 
 Points to Curve.
 -Does it improve Curve Connect?
-
-Temporal Value
--Not Functioning
 
 Curve Deformer
 -Normalize Flow?
@@ -1020,13 +1024,16 @@ Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
 Dynamic Space Sampling
--Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry.
+-Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry?
 
 Tracer
 -Dynamic Attribute such as age and falloff will be lost before.
 	-This is unavoidable because these attribute are captured upon join.
 	-Curve Age is implemented, others requires sample Index.
 -If Points are Deleted, tracer will be disrupted.
+
+Temporal Value
+-Not Functioning now because for field it requires geometry.
 ****************************************************************************************************
 Investigation:
 Curve Deformer
@@ -1061,3 +1068,5 @@ Statistic Mean is of the best performance.
 Randomness
 -Var. means range between full negative Var. & full positive Var.
 -Mid-Level Means 2X Positive/Negative.
+
+Check if All index node are using implicit index attribute than ID/Index.
