@@ -948,6 +948,9 @@ Vector Noise
 	-no. Vector Noise position is also responsible for the position output.
 	-evolution option is used as a Custom Vector in addition to default position.
 	-replaced with "Noise Position" instead, for cases such as scaling noise dimension.
+
+Collision in Ray
+-Default margin to 0.3m
 ****************************************************************************************************
 To Do:
 Attribute Voronoi
