@@ -938,6 +938,9 @@ Join Particles
 Collision in Ray
 Cumulative Force
 -Default Attribute "V"
+
+Join Perticles
+-Join Per frame -> Join Interval
 ****************************************************************************************************
 To Do:
 Attribute Voronoi
