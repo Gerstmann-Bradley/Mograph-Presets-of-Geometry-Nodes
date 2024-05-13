@@ -926,11 +926,26 @@ Cumulative Force
 value precision
 -add back "Add From 1"
 -add advanced panel to hide "Add from 1" and "on Delta Time".
+
+Set Particle Parameter
+Join Particles
+-If Particle "id" already exist such as due to Point Distribute.
+	-do not rewrite the id.
+
+Join Particles
+-If join per frame = 0, do not join particles
+
+Collision in Ray
+Cumulative Force
+-Default Attribute "V"
 ****************************************************************************************************
 To Do:
 Attribute Voronoi
 -Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
 	-add a domain to fix it?
+
+Join Particles
+-Investigate: why joining 2/frame has more hits than joining 1/frame?
 
 Collision on Surface
 -New Gravity Implementation
@@ -944,6 +959,7 @@ Add: Collection to Points?
 
 Add: Cumulative Field
 -for float instead of vector in the previous Cumulative Force?
+	-a different way of "Trigger" system?
 
 Investigate: Bevel Curve
 -if 2-point curve, custom cap tilt not working somehow?
@@ -1038,20 +1054,25 @@ Temporal Value
 Investigation:
 Curve Deformer
 -Investigate Necessity of Vector Remap.
+	-solved: to make sure correct offset along curve, bounding box is required.
 
-Bend Deform
--Angle Check?
-
-Capture Velocity
+Record Velocity
 -Is it really working as expected?
-
-Curl Noise Turbulence
--Particle generation Jaggyness investigate.
+	-solved: many examples such as align rotation to velocity proves.
 
 Instance Bounding Box
 -known using local axis.
 	-Split to Instances can reset axis to global.
 		-the question is what group ID to use. what's the common use case?
+-solved by adding global axis now.
+
+Bend Deform
+-Angle Check?
+
+Curl Noise Turbulence
+-Particle generation Jaggyness investigate?
+	-solved: possibly related to float point precision of Seed?
+
 
 Reset Instance Origin.
 -Use Bounding Box?
