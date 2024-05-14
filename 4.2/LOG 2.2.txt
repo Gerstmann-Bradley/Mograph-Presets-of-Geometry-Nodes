@@ -3,24 +3,94 @@ Hexagonal Distribution
 -Fix
 
 **Unknown Color Tag
--Index Reverse
--Scale selection
--Offset Field List
--Trigger
-	-Dark Blue; blur attribute also doesn't need Geometry input.
--Stretch Falloff
--Temporal Geometry
+--Index Reverse
+	-Red; ref "index"
+--Index Randomize
+	-Red; ref "index".
+--Scale selection
+	-Dark Blue; ref "blur Attribute"
+--Offset Field List
+	-Dark Blue; ref "blur attribute".
+		-as an operation to modify the existing attribute.
+--Trigger
+	-Dark Blue; ref "blur attribute".
+--Stretch Falloff
+	-Green; ref "Bounding Box"
+--Mesh Falloff
+	-Green; ref "Bounding Box"
+-Temporal Geometry info
+	-Green; ref "Bounding Box"
 -Index Mask Falloff
-	-Red; just like "Index" node.
+	-Red; ref "Index" node.
 -Modulo Falloff
-	-Red; just like "Scene Time" node.
--Layered Proximity Falloff
--Collision in Radius
--Mesh Falloff
-	-Purple; Vector Distance?
--Center falloff
+	-Red; ref "Scene Time" node.
+--Layered Proximity Falloff
+	-Blue; ref Capture Attribute
+--Collision in Ray
+	-Green; ref RayCast
+--Collision in Radius
+	-Red; ref true/false
+--Center falloff
+	-Green; ref Bounding box
+--Aligned Surface Tangent
+	-Red; ref "normal"
+--Delay Falloff
+	-Red; ref Scene Time
+--Controller
+	-Red; ref Object info
+--Proximity Falloff
+	-Green; ref Geometry Proximity
+--Spline Falloff
+	-Green; ref Sample Nearest
+--Directional Falloff
+	-Purple; ref Vector math Distance
+--Radial Falloff
+	-Purple; ref vector math?
+--Normalize Field
+	-Dark Blue; ref attribute Statistic
+--Time Falloff
+	-Blue; ref "Map range"
+--Is Inside Volume
+	-Green; ref RayCast
+--Motion Variance
+	-Red; ref value Input.
+--Animate
+	-Red; ref scene time
+--Fade Falloff
+	-Red; ref Index & spline parameter
+--Random Color
+	-Blue; ref Random Value, Combine Color
+--Remap Vector to Bounds
+	-Dark Blue; ref Store named Attribute
+--Is Enclosed Geometry
+	-Green; ref Bounding Box, RayCast
+--Sort Field to Index
+	-Dark Blue;
+--Index Converge
+	-Red; ref Index, face of corner.
+
+**Align Rotation to Vector
+**Axes to Rotation
+--Alignment on Splines
+	--Array on Spline
+	--Tree Generator
+--Follow Splines
+--Dynamic Surface Sampling
+--Dynamic Curve Sampling
+--Align Rotation to Camera
+--Align Rotation to Velocity
+--Align Vector Rotation
+--Align Rotation to Point
+--Parenting
+--Local Offset
 ****************************************************************************************************
 To Do:
+Vertex Rotation
+-Multiple Modes & Methods?
+
+Index Reverse
+-Rewrite to make it use accumulative Field?
+
 Attribute Voronoi
 -Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
 	-add a domain to fix it?
@@ -34,6 +104,7 @@ Collision on Surface
 
 Tracer
 -Add new way to lock on ID?
+	-needs Sample by ID especially its vailid output
 
 Add: Clamp Force?
 
@@ -64,7 +135,7 @@ Collision Deformer
 Investigate: is inside view & curve split?
 
 Add: Simulation Value
--Customizable Scene Time Frame.
+-Customizable Scene Time Frame?
 
 Points to Curve.
 -Does it improve Curve Connect?
@@ -91,24 +162,10 @@ Trim Curve Normalize / Normalize Curve Length
 Add: Offset to Camera
 Reset Self Object Transform?
 
-Parallel Loop
+**Parallel Loop
 -Measurement
 -Attribute Viewer
 -
-
-Align Rotation to Vector?
---Align Rotation to Velocity
-
-**Header Change
-
-Axes to Rotation
--Alignment on Splines
--Follow Splines
--Dynamic Surface Sampling
--Dynamic Curve Sampling
--Parenting
--Local Offset
-ZD_09b
 
 **Domain Support
 -Normalize Field
@@ -118,6 +175,9 @@ ZD_09b
 
 **Multiple Attribute Captures
 -various attribute info?
+
+**Vector Rotate
+-Mesh Rolling
 ****************************************************************************************************
 GN-Known Issue:
 Hair on Surface
@@ -136,12 +196,6 @@ Temporal Value
 -Not Functioning now because for field it requires geometry.
 ****************************************************************************************************
 Investigation:
-Instance Bounding Box
--known using local axis.
-	-Split to Instances can reset axis to global.
-		-the question is what group ID to use. what's the common use case?
--solved by adding global axis now.
-
 Bend Deform
 -Angle Check?
 
