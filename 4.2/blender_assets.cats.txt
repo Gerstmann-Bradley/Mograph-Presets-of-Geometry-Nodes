@@ -1,0 +1,28 @@
+# This is an Asset Catalog Definition file for Blender.
+#
+# Empty lines and lines starting with `#` will be ignored.
+# The first non-ignored line should be the version indicator.
+# Other lines are of the format "UUID:catalog/path/for/assets:simple catalog name"
+
+VERSION 1
+
+b58ad9e3-8d22-41e5-9069-a38b99d26d50:Bradley GN Presets:Bradley GN Presets
+1dad0d0f-afd4-408f-91f0-2f1226926d66:Bradley GN Presets/Add Modifier:Bradley GN Presets-Add Modifier
+cc1ae45b-5b0e-425f-95bb-581ba66ec38e:Bradley GN Presets/Attribute:Bradley GN Presets-Attribute
+6878a9c6-3254-4da9-a09b-b0fbd66cbfc5:Bradley GN Presets/Curves:Bradley GN Presets-Curves
+8e88483b-51ee-48a7-94a8-9e235dd2bd1a:Bradley GN Presets/Distribution:Bradley GN Presets-Distribution
+33b99457-a2de-42dd-a6bc-34299ab899b2:Bradley GN Presets/Falloff:Bradley GN Presets-Falloff
+daf37994-6f23-48fe-aaef-e35927f7704c:Bradley GN Presets/Falloff/Selection:Bradley GN Presets-Falloff-Selection
+3db8c9c4-96c1-4aec-a25a-1d046a64d371:Bradley GN Presets/Geometry Utility:Bradley GN Presets-Geometry Utility
+a1846d0f-1449-46b8-a734-921983cd30e3:Bradley GN Presets/Index:Bradley GN Presets-Index
+026cea9e-f574-4f7d-859f-88c32025271f:Bradley GN Presets/Math:Bradley GN Presets-Math
+35be3101-27bf-4d1f-97ff-331bc35cbbaf:Bradley GN Presets/Modifier Deformer:Bradley GN Presets-Modifier Deformer
+ba1cadf9-5781-4f17-a97e-2e7d2fc51112:Bradley GN Presets/Preset Building:Bradley GN Presets-Preset Building
+f00c1c92-7541-49bc-8551-79de1998d86d:Bradley GN Presets/Preset Building/Seed:Bradley GN Presets-Preset Building-Seed
+0751173a-655d-495d-8438-3426ca633ea4:Bradley GN Presets/Primitive:Bradley GN Presets-Primitive
+6334e6bb-7e69-4c50-b078-1375c1de01e1:Bradley GN Presets/Randomize:Bradley GN Presets-Randomize
+2c290193-2c29-4ea1-9973-8b0f399463a1:Bradley GN Presets/Repeats:Bradley GN Presets-Repeats
+087685d4-87ee-41f8-8e5e-6ba68ce25469:Bradley GN Presets/Rotation:Bradley GN Presets-Rotation
+48915095-f283-4cc6-869c-dbbe9b90db69:Bradley GN Presets/Simulations:Bradley GN Presets-Simulations
+5ed06f9a-da99-439d-b753-ec5df18027bb:Bradley GN Presets/Simulations/Branching:Bradley GN Presets-Simulations-Branching
+eb2052a3-30e8-4930-a5c7-80caeb1c0be8:Bradley GN Presets/Simulations/Info:Bradley GN Presets-Simulations-Info
