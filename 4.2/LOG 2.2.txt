@@ -85,6 +85,13 @@ Hexagonal Distribution
 --Local Offset
 
 Add: Sort Edges of Corner
+
+Sort Field to Index
+-rename: Sort to Index
+
+Sort to Index
+-Fix, sample nearest should be on respective domain too.
+-if separated geometry, the index requires a different mapping than sample nearest.
 ****************************************************************************************************
 To Do:
 Loop Index
@@ -171,12 +178,6 @@ UV Deformer
 -Unlock Limitation of UV Min/Max?
 
 Trim Curve Normalize / Normalize Curve Length
-
-Sort Field to Index
--rename: Sort to Index
-
-Sort to Index
--Fix, sample nearest should be on respective domain too.
 ********************************************************
 *Geometry Type Node
 -Index Viewer?
