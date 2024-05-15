@@ -171,6 +171,9 @@ UV Deformer
 -Unlock Limitation of UV Min/Max?
 
 Trim Curve Normalize / Normalize Curve Length
+
+Sort Field to Index
+-rename: Sort to Index
 ********************************************************
 *Geometry Type Node
 -Index Viewer?
