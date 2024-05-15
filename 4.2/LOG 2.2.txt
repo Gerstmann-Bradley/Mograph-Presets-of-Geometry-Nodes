@@ -85,11 +85,33 @@ Hexagonal Distribution
 --Local Offset
 ****************************************************************************************************
 To Do:
+Loop Index
+	-Red?
+
 Vertex Rotation
 -Multiple Modes & Methods?
 
 Index Reverse
 -Rewrite to make it use accumulative Field?
+
+Index List Length
+-Domain.
+
+Add: Exploded View
+-in order to visualize overlaped polygon.
+
+Add: Pick Edges of Corner
+
+Join Particles
+-internally switch should be boolean instead of integer
+
+Tracer
+-Should output birth Time for age now.
+
+Grid Distribution
+-X and Y count should not be negative.
+
+3D Viewer Rotation Tangent?
 
 Attribute Voronoi
 -Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
