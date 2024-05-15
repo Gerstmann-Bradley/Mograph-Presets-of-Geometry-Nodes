@@ -92,6 +92,9 @@ Sort Field to Index
 Sort to Index
 -Fix, sample nearest should be on respective domain too.
 -if separated geometry, the index requires a different mapping than sample nearest.
+
+Add: Exploded View
+-help to separate overlapped polygons.
 ****************************************************************************************************
 To Do:
 Loop Index
