@@ -83,6 +83,8 @@ Hexagonal Distribution
 --Align Rotation to Point
 --Parenting
 --Local Offset
+
+Add: Sort Edges of Corner
 ****************************************************************************************************
 To Do:
 Loop Index
