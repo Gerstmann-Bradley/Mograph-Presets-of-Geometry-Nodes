@@ -136,6 +136,9 @@ Attribute Viewer
 
 Iteration Count per Domain
 -index should +1 for iteration.
+
+Exploded View
+-Add Randomness based on Domain for separation in exact overlap.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
