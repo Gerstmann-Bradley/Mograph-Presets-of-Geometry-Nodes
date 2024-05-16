@@ -68,6 +68,8 @@ Hexagonal Distribution
 	-Dark Blue;
 --Index Converge
 	-Red; ref Index, face of corner.
+Loop Index
+	-Red;
 
 **Align Rotation to Vector
 **Axes to Rotation
@@ -95,33 +97,46 @@ Sort to Index
 
 Add: Exploded View
 -help to separate overlapped polygons.
-****************************************************************************************************
-To Do:
-Loop Index
-	-Red?
-
-Vertex Rotation
--Multiple Modes & Methods?
-
-Index Reverse
--Rewrite to make it use accumulative Field?
 
 Index List Length
 -Domain.
 
-Add: Exploded View
--in order to visualize overlaped polygon.
+Index Reverse
+-Rewrite to make it use accumulative Field?
+	-what if I want to use Group Domain?
+	-Issus see Offset Field List.
+-Using Sort to Index method.
 
-Add: Pick Edges of Corner
+Offset Field List
+-rename: Index Offset
+-fix accumulation for Group ID.
 
 Join Particles
 -internally switch should be boolean instead of integer
 
-Tracer
--Should output birth Time for age now.
-
 Grid Distribution
 -X and Y count should not be negative.
+
+3D Viewer
+-Add Rotation and Scale Panel.
+-Move Axis out from panel.
+-Internally use Axes to Rotation and Align Rotation to Vector.
+****************************************************************************************************
+To Do:
+Add: Serial Accumulate Field?
+-instead of group ID in a group.
+	-grouping and accumulate sequentially?
+
+Vertex Rotation
+-Multiple Modes & Methods?
+
+Exploded View
+-Different Modes
+
+Tracer
+-Should output birth Time for age now.
+-Add new way to lock on ID?
+	-needs Sample by ID especially its vailid output
 
 3D Viewer Rotation Tangent?
 
@@ -135,10 +150,6 @@ Join Particles
 
 Collision on Surface
 -New Gravity Implementation
-
-Tracer
--Add new way to lock on ID?
-	-needs Sample by ID especially its vailid output
 
 Add: Clamp Force?
 
