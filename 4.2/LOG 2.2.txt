@@ -121,6 +121,11 @@ Grid Distribution
 -Add Rotation and Scale Panel.
 -Move Axis out from panel.
 -Internally use Axes to Rotation and Align Rotation to Vector.
+
+Add: Attribute Viewer
+-in case multiple stuff needs to be viewed at the same time.
+
+Add: Iteration Count per Domain.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
