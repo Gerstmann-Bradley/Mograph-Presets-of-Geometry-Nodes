@@ -139,6 +139,9 @@ Iteration Count per Domain
 
 Exploded View
 -Add Randomness based on Domain for separation in exact overlap.
+
+Helical Connections
+-Add Pair Index & Spline Index
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
