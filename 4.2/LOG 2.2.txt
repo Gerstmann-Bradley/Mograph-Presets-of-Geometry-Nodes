@@ -126,6 +126,15 @@ Add: Attribute Viewer
 -in case multiple stuff needs to be viewed at the same time.
 
 Add: Iteration Count per Domain.
+
+Exploded View
+-add Split Edge Option.
+
+Attribute Viewer
+-Support Index by Default.
+
+Iteration Count per Domain
+-index should +1 for iteration.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
