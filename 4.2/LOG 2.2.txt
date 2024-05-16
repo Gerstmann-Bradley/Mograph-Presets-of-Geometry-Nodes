@@ -132,6 +132,7 @@ Exploded View
 
 Attribute Viewer
 -Support Index by Default.
+-N-gon Fill than Triangular
 
 Iteration Count per Domain
 -index should +1 for iteration.
