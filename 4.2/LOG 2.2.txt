@@ -145,14 +145,16 @@ Helical Connections
 
 Tangent Normal CrossProduct
 -Add Tangent and Normal Output in case people want to investigate different values
+
+Vertex Rotation
+-Multiple Modes & Methods.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
 
-Vertex Rotation
--Multiple Modes & Methods?
+Combine 3D Viewer and Attribute Viewer?
 
 Exploded View
 -Different Modes
@@ -162,15 +164,9 @@ Tracer
 -Add new way to lock on ID?
 	-needs Sample by ID especially its vailid output
 
-3D Viewer Rotation Tangent?
-
 Attribute Voronoi
 -Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
 	-add a domain to fix it?
-
-Join Particles
--Investigate: why joining 2/frame has more hits than joining 1/frame?
-	-seems to only happen if using temporal object info? 
 
 Collision on Surface
 -New Gravity Implementation
@@ -275,6 +271,10 @@ Add: Recalculate Normal
 -Face normal comparing to Vertex & Edge Normal method?
 	-Split edge will offset all local information. all normal to be 0,0,1.
 	-flipped face normal leads to flipped vertex normal.
+
+Join Particles
+-Investigate: why joining 2/frame has more hits than joining 1/frame?
+	-seems to only happen if using temporal object info? 
 ****************************************************************************************************
 **General rule of design:
 Boolean Yes/No - Check=yes, uncheck=no.
