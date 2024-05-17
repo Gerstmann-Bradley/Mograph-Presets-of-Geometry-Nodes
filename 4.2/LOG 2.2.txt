@@ -142,6 +142,9 @@ Exploded View
 
 Helical Connections
 -Add Pair Index & Spline Index
+
+Tangent Normal CrossProduct
+-Add Tangent and Normal Output in case people want to investigate different values
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
