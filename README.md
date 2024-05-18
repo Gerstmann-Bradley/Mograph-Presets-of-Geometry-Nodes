@@ -12,176 +12,176 @@ The Manual of these presets are under establishment, it will take a very long ti
 Please don't expect it anytime soon. <br>
 If you have questions/are willing to contribute to the manual, please contact in the discord server: https://discord.gg/TzuN6sPxQU <br>
 
-Documented Total node List:
-3D Viewer
-Align Rotation to Camera
-Aligned Surface Tangent
-Alignment on Splines
-Alternating Solver
-Animate
-Append Point to Curves
-Array on Splines
-Attribute Instance
-Attribute Island
-Attribute Mesh Info
-Attribute Spline
-Attribute Voronoi
-Bend Deformer
-Bevel Curve
-Boundary Selection
-Bounding Box Falloff
-Braid
-Branch Gradient
-Center Geometry
-Cloud Shadow
-Collision Deformer
-Collision Detection in Radius
-Collision on Surface
-Combine Euler Rotation
-Controller
-Count per island
-Curl Noise turbulence
-Curve Branching
-Curve Connect
-Curve Curvature
-Curve Deformer
-Curve Extrapolation
-Curve Fill Fracturing
-Curve Interconnection
-Curve Intersection Detection
-Curve Linear
-Curve Points Preview
-Curve Rolling
-Curve Split
-Decay Function
-Delay Falloff
-Directional Falloff
-Dynamic Curve Sampling
-Dynamic Radius Simulation
-Dynamic Radius Solver
-Dynamic Space Sampling
-Dynamic Surface Sampling
-Ease Ease
-Edge Distance
-Edges of Face
-Face Dimension
-Face Neighbor Index
-Face Points
-Fade Falloff
-Fibonacci Spiral
-Field to Constant
-Fill Curve Tube
-Fill Volume
-Filled Mesh Circle
-Float range
-Folded Surface Detection
-Follow Splines
-Freeze Geometry
-Get Index
-Get UV Seam
-Get UVMap
-Grid Distribution
-Group Index
-Group per Domain
-Hair on Surface
-Helical Connections
-Hexagon Distribution
-Implicit Attribute
-Implicit Geometry
-Index Converge
-Index List Length
-Index Mask Falloff
-Index Randomize
-Index Reverse
-Index Seed
-Inertial Deformer
-Inertial Offset
-Instance Bounding Box
-Is Inside View
-Is Sharp Angle
-Iteration Switch
-Knit
-Layered Proximity Falloff
-Local Offset
-Loop Index
-Measurement
-Merge Distance Curve
-Mesh Falloff
-Mesh Rolling
-Modulo Falloff
-Motion Variance
-Negati
-Noise 3D
-Normal Displacement
-Normalize Field
-Normalize Vector Bounds
-Offset Field List
-Origin Offset
-Parenting
-Pi Factor
-Point Instance Geometry
-Points Distribute
-Power Scaling
-Proximity Falloff
-Radial Falloff
-Random Color
-Random Helices Distribution
-Random Rotation
-Random Transform
-Randomness
-Record Event
-Record Velocity
-Relaxation Solver
-Remap 0-1
-Remap Vector to Bounds
-Reset Spline Cyclic
-Rotation to Vector
-Sample in Proximity
-Scale Selection
-Screw Deformer
-Self Object Seed
-Set branch parameter
-Set Branch Radius
-Set Curve Tilt Alignment
-Set Particle Parameter
-Set Shade autosmooth
-Show in render
-Simulation switch
-Sin Function
-Smooth Curve
-Smooth Position
-Snap Function
-Solidified Outline
-Solidify
-Spherical Geo
-Spline Falloff
-Spline info
-Step Extrusion
-Store UVMap
-Stretch Falloff
-Tangent Normal Cross Product
-Temporal Geometry Info
-Temporal Object Info
-Temporal Sampling
-Temporal Smooth position
-Temporal Value
-Text Mesh
-Time Falloff
-Time Info
-To Bounding Box
-To Curve Points
-Tracer
-Translate Position
-Tree Generator
-Tree Wiggle
-Trigger
-Trim Curve Normalized
-UV Deformer
-Value Precision
-Vector Noise
-Vector Seed
-Viewport Render Switch
-Voronoi 3D
+Documented Total node List:<br>
+3D Viewer<br>
+Align Rotation to Camera<br>
+Aligned Surface Tangent<br>
+Alignment on Splines<br>
+Alternating Solver<br>
+Animate<br>
+Append Point to Curves<br>
+Array on Splines<br>
+Attribute Instance<br>
+Attribute Island<br>
+Attribute Mesh Info<br>
+Attribute Spline<br>
+Attribute Voronoi<br>
+Bend Deformer<br>
+Bevel Curve<br>
+Boundary Selection<br>
+Bounding Box Falloff<br>
+Braid<br>
+Branch Gradient<br>
+Center Geometry<br>
+Cloud Shadow<br>
+Collision Deformer<br>
+Collision Detection in Radius<br>
+Collision on Surface<br>
+Combine Euler Rotation<br>
+Controller<br>
+Count per island<br>
+Curl Noise turbulence<br>
+Curve Branching<br>
+Curve Connect<br>
+Curve Curvature<br>
+Curve Deformer<br>
+Curve Extrapolation<br>
+Curve Fill Fracturing<br>
+Curve Interconnection<br>
+Curve Intersection Detection<br>
+Curve Linear<br>
+Curve Points Preview<br>
+Curve Rolling<br>
+Curve Split<br>
+Decay Function<br>
+Delay Falloff<br>
+Directional Falloff<br>
+Dynamic Curve Sampling<br>
+Dynamic Radius Simulation<br>
+Dynamic Radius Solver<br>
+Dynamic Space Sampling<br>
+Dynamic Surface Sampling<br>
+Ease Ease<br>
+Edge Distance<br>
+Edges of Face<br>
+Face Dimension<br>
+Face Neighbor Index<br>
+Face Points<br>
+Fade Falloff<br>
+Fibonacci Spiral<br>
+Field to Constant<br>
+Fill Curve Tube<br>
+Fill Volume<br>
+Filled Mesh Circle<br>
+Float range<br>
+Folded Surface Detection<br>
+Follow Splines<br>
+Freeze Geometry<br>
+Get Index<br>
+Get UV Seam<br>
+Get UVMap<br>
+Grid Distribution<br>
+Group Index<br>
+Group per Domain<br>
+Hair on Surface<br>
+Helical Connections<br>
+Hexagon Distribution<br>
+Implicit Attribute<br>
+Implicit Geometry<br>
+Index Converge<br>
+Index List Length<br>
+Index Mask Falloff<br>
+Index Randomize<br>
+Index Reverse<br>
+Index Seed<br>
+Inertial Deformer<br>
+Inertial Offset<br>
+Instance Bounding Box<br>
+Is Inside View<br>
+Is Sharp Angle<br>
+Iteration Switch<br>
+Knit<br>
+Layered Proximity Falloff<br>
+Local Offset<br>
+Loop Index<br>
+Measurement<br>
+Merge Distance Curve<br>
+Mesh Falloff<br>
+Mesh Rolling<br>
+Modulo Falloff<br>
+Motion Variance<br>
+Negati<br>
+Noise 3D<br>
+Normal Displacement<br>
+Normalize Field<br>
+Normalize Vector Bounds<br>
+Offset Field List<br>
+Origin Offset<br>
+Parenting<br>
+Pi Factor<br>
+Point Instance Geometry<br>
+Points Distribute<br>
+Power Scaling<br>
+Proximity Falloff<br>
+Radial Falloff<br>
+Random Color<br>
+Random Helices Distribution<br>
+Random Rotation<br>
+Random Transform<br>
+Randomness<br>
+Record Event<br>
+Record Velocity<br>
+Relaxation Solver<br>
+Remap 0-1<br>
+Remap Vector to Bounds<br>
+Reset Spline Cyclic<br>
+Rotation to Vector<br>
+Sample in Proximity<br>
+Scale Selection<br>
+Screw Deformer<br>
+Self Object Seed<br>
+Set branch parameter<br>
+Set Branch Radius<br>
+Set Curve Tilt Alignment<br>
+Set Particle Parameter<br>
+Set Shade autosmooth<br>
+Show in render<br>
+Simulation switch<br>
+Sin Function<br>
+Smooth Curve<br>
+Smooth Position<br>
+Snap Function<br>
+Solidified Outline<br>
+Solidify<br>
+Spherical Geo<br>
+Spline Falloff<br>
+Spline info<br>
+Step Extrusion<br>
+Store UVMap<br>
+Stretch Falloff<br>
+Tangent Normal Cross Product<br>
+Temporal Geometry Info<br>
+Temporal Object Info<br>
+Temporal Sampling<br>
+Temporal Smooth position<br>
+Temporal Value<br>
+Text Mesh<br>
+Time Falloff<br>
+Time Info<br>
+To Bounding Box<br>
+To Curve Points<br>
+Tracer<br>
+Translate Position<br>
+Tree Generator<br>
+Tree Wiggle<br>
+Trigger<br>
+Trim Curve Normalized<br>
+UV Deformer<br>
+Value Precision<br>
+Vector Noise<br>
+Vector Seed<br>
+Viewport Render Switch<br>
+Voronoi 3D<br>
 Voronoi Fracture
 Voxel Remesh
 Vertex Rotation
