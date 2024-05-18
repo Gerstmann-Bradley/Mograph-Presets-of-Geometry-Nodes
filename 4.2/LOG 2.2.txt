@@ -148,6 +148,14 @@ Tangent Normal CrossProduct
 
 Vertex Rotation
 -Multiple Modes & Methods.
+
+Add: Separate Element by Index
+
+Sharp Edge Wireframe
+-Fix Sharp Edge Calculation
+	-why did I put a not filter?
+-UVMap should be on wireframe.
+	-adding original mesh UV to final UV output.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
@@ -155,6 +163,10 @@ Add: Serial Accumulate Field?
 	-grouping and accumulate sequentially?
 
 Combine 3D Viewer and Attribute Viewer?
+
+Polygon Unfolding
+-Can't Work With Island
+-ST attribute should be a boolean.
 
 Exploded View
 -Different Modes
