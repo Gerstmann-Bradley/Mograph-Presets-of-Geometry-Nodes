@@ -164,6 +164,9 @@ Separate Geometry by Index
 
 Scale Selection
 -previously on point domain, making face domain evaluation 0.
+
+Particle Age
+-Use Custom Time, Remove Exist.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
