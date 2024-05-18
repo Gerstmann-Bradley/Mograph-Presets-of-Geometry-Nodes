@@ -157,6 +157,13 @@ Sharp Edge Wireframe
 	-why did I put a not filter?
 -UVMap should be on wireframe.
 	-adding original mesh UV to final UV output.
+
+Separate Geometry by Index
+-add Scale Selection.
+-add boolean for Extra Selection
+
+Scale Selection
+-previously on point domain, making face domain evaluation 0.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
