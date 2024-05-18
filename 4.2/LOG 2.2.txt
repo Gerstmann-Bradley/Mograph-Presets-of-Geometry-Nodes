@@ -150,6 +150,7 @@ Vertex Rotation
 -Multiple Modes & Methods.
 
 Add: Separate Element by Index
+-rename: Separate Geometry by Index
 
 Sharp Edge Wireframe
 -Fix Sharp Edge Calculation
