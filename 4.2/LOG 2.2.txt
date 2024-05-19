@@ -190,9 +190,6 @@ Add: Serial Accumulate Field?
 
 Combine 3D Viewer and Attribute Viewer?
 
-Polygon Unfolding
--Can't Work With Island
--ST attribute should be a boolean.
 
 Exploded View
 -Different Modes
