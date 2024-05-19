@@ -178,7 +178,7 @@ Pi Factor
 Time Falloff
 	-red; ref Scene Time.
 Particle Age
--rename: BirthTime to Age
+-rename: Time to Age
 ****************************************************************************************************
 To Do:
 Particle Age
