@@ -71,6 +71,7 @@ Hexagonal Distribution
 Loop Index
 	-Red;
 
+
 **Align Rotation to Vector
 **Axes to Rotation
 --Alignment on Splines
@@ -167,8 +168,22 @@ Scale Selection
 
 Particle Age
 -Use Custom Time, Remove Exist.
+
+Rod
+-allow resolution 2 for plane.
+
+Pi Factor
+-Red color tag
+
+Time Falloff
+	-red; ref Scene Time.
+Particle Age
+-rename: BirthTime to Age
 ****************************************************************************************************
 To Do:
+Particle Age
+-rename: Birth Time to Age
+
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
