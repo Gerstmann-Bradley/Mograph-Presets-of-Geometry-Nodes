@@ -181,6 +181,7 @@ Particle Age
 -rename: Time to Age
 
 Add: Cell Fracture
+-Add New Face, allow modifier mode, allow material index.
 ****************************************************************************************************
 To Do:
 Particle Age
