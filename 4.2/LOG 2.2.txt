@@ -193,6 +193,9 @@ Exploded View
 Is Inside View
 -investigation finding: it works for Curves Split.
 	-works for both edge & curve.
+
+Cell Fracture
+-Add Counter on right upper corner.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
