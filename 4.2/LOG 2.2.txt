@@ -86,6 +86,8 @@ Loop Index
 --Align Rotation to Point
 --Parenting
 --Local Offset
+--Vertex Rotation
+--Face Points
 
 Add: Sort Edges of Corner
 
@@ -182,19 +184,22 @@ Particle Age
 
 Add: Cell Fracture
 -Add New Face, allow modifier mode, allow material index.
+
+Exploded View
+-Support Island
+-Support Instance, Splines...
+-Put Split Edges into indivisual Boolean.
+
+Is Inside View
+-investigation finding: it works for Curves Split.
+	-works for both edge & curve.
 ****************************************************************************************************
 To Do:
-Particle Age
--rename: Birth Time to Age
-
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
 
 Combine 3D Viewer and Attribute Viewer?
-
-Exploded View
--Different Modes
 
 Tracer
 -Should output birth Time for age now.
