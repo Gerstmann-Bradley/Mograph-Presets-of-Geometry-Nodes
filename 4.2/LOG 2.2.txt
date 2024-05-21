@@ -196,6 +196,7 @@ Is Inside View
 
 Cell Fracture
 -Add Counter on right upper corner.
+-Redesign.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
