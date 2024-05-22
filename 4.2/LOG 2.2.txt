@@ -210,6 +210,16 @@ Add: Serial Accumulate Field?
 
 Combine 3D Viewer and Attribute Viewer?
 
+Loop Index
+-Element may also needs to be based on domain?
+
+Edge of Face
+-without Geometry?
+-Optimization workflow?
+
+Add: Mesh Tangent?
+-How to make sure between vertex & face tangent?
+
 Tracer
 -Should output birth Time for age now.
 -Add new way to lock on ID?
@@ -221,6 +231,8 @@ Attribute Voronoi
 
 Collision on Surface
 -New Gravity Implementation
+	-add new Bounce Attribute.
+		-every collision decreases the energy of bounce and finally stops.
 
 Add: Clamp Force?
 
@@ -244,17 +256,20 @@ S_Shader Displacement
 Field to Constant
 -Redesign?
 -Add Rotation Socket.
+	-statistic node doesn't have rotation?
+	-what if stay on vector?
+-what if using Sample node instead of statistic?
 
 Collision Deformer
 -In Island & Internal Collision, the strength to self should be 0.5.
 
-Investigate: is inside view & curve split?
-
 Add: Simulation Value
 -Customizable Scene Time Frame?
 
-Points to Curve.
--Does it improve Curve Connect?
+Curve Connect
+-Does Points to Curve improve the algorithm?
+
+
 
 Curve Deformer
 -Normalize Flow?
@@ -310,6 +325,10 @@ Tracer
 
 Temporal Value
 -Not Functioning now because for field it requires geometry.
+
+Polygon Unfolding
+-has some minor rotation of transform to prevent bug.
+-
 ****************************************************************************************************
 Investigation:
 Bend Deform
