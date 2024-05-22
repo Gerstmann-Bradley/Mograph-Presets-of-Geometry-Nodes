@@ -197,6 +197,11 @@ Is Inside View
 Cell Fracture
 -Add Counter on right upper corner.
 -Redesign.
+
+Time Falloff
+-Reorganize order of implicit attribute.
+	-when T present, use T instead of Scene Time.
+	-if External time input in float, use external time input.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
