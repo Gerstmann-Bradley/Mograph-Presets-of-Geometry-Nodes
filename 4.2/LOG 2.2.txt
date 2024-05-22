@@ -202,6 +202,19 @@ Time Falloff
 -Reorganize order of implicit attribute.
 	-when T present, use T instead of Scene Time.
 	-if External time input in float, use external time input.
+
+Add: Islands to Instances
+-Output to be instances
+
+Cell Fracture
+-Built in Islands to Instances.
+-Remove Counter.
+
+Point Distribute
+-Selection input in Distribute Point node is applied after the whole operation.
+	-equivalent to "select point" at the end.
+		-and thus its outputing count isn't the same as the designed.
+	-fixed by separate geometry on face before.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
