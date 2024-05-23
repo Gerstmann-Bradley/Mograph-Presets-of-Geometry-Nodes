@@ -215,6 +215,10 @@ Point Distribute
 	-equivalent to "select point" at the end.
 		-and thus its outputing count isn't the same as the designed.
 	-fixed by separate geometry on face before.
+
+Islands to Instances
+Cell Fracture
+-Add Offset to Origin
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
