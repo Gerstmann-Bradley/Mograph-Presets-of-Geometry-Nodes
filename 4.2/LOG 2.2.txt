@@ -219,6 +219,12 @@ Point Distribute
 Islands to Instances
 Cell Fracture
 -Add Offset to Origin
+
+Cumulative Force
+-Decay Constant -> Decay
+	-use real % decay. Clamp between 0-1.
+
+Add: Resistance Force
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
