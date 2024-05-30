@@ -225,6 +225,15 @@ Cumulative Force
 	-use real % decay. Clamp between 0-1.
 
 Add: Resistance Force
+
+Tracer
+-Keep Curve Age because not all objects contains T attribute.
+-Add new way to lock on ID
+	-can be simplified if Sample by ID.
+-potential issue of ID epsilon in comparison.
+
+Record Velocity
+-if the attribute doesn't exist yet, just keep velocity 0 instead of using the position-0.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
@@ -236,17 +245,24 @@ Combine 3D Viewer and Attribute Viewer?
 Loop Index
 -Element may also needs to be based on domain?
 
+Parenting
+-Clean up the algorithm.
+-Fully separate Object Parenting with Geometry Parenting?
+
 Edge of Face
 -without Geometry?
 -Optimization workflow?
 
+Set Particle Parameter
+-Should Inheret the previous velocity?
+	-currently the velocity must be newly written.
+
 Add: Mesh Tangent?
 -How to make sure between vertex & face tangent?
 
-Tracer
--Should output birth Time for age now.
--Add new way to lock on ID?
-	-needs Sample by ID especially its vailid output
+Add: Dynamic Epsilon?
+-for epsilon used in large number comparison, such as ID.
+	should be based on how many digits to have?
 
 Attribute Voronoi
 -Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
@@ -256,8 +272,6 @@ Collision on Surface
 -New Gravity Implementation
 	-add new Bounce Attribute.
 		-every collision decreases the energy of bounce and finally stops.
-
-Add: Clamp Force?
 
 Add: Collection to Points?
 
@@ -291,8 +305,6 @@ Add: Simulation Value
 
 Curve Connect
 -Does Points to Curve improve the algorithm?
-
-
 
 Curve Deformer
 -Normalize Flow?
