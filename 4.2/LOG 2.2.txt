@@ -234,6 +234,7 @@ Tracer
 
 Record Velocity
 -if the attribute doesn't exist yet, just keep velocity 0 instead of using the position-0.
+	-The attribute exist will be transferred to all when joining geometry.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
