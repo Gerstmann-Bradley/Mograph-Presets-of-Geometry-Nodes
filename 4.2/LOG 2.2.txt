@@ -235,6 +235,25 @@ Tracer
 Record Velocity
 -if the attribute doesn't exist yet, just keep velocity 0 instead of using the position-0.
 	-The attribute exist will be transferred to all when joining geometry.
+
+**Multiple Attribute Captures
+--Attribute Mesh
+--Attribute Spline
+--Attribute Instance
+-Attribute Island
+	-had no multi capture.
+--Curve Deformer
+	-contains one loop of capture, and thus not all into one.
+--Fill Volume
+--Attribute Voronoi
+--Append Point to Curves
+
+Temporal Object Info
+-Add Start Position at Frame 1
+
+Sharp Edge Wireframe
+-Allow Additional Selection.
+-Use Material Index in Modifier.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
@@ -243,12 +262,30 @@ Add: Serial Accumulate Field?
 
 Combine 3D Viewer and Attribute Viewer?
 
+Bounding Box Falloff
+-Remove Geometry Output?
+	-Use Sample Method?
+	-What if need to use Bounding Box Falloff to far distance?
+
+**Multiple Attribute Capture
+-In terms of performance benefits.
+
+Sample in Proximity
+-Doesn't sounds to be a good design honestly?
+
+Attribute Spline
+-Use the nwest algorithm without sampling.
+
+Add: Transform on Spline
+
+Viewport Render Count
+-Output addition switch for other use.
+
+Randomness
+-Check Randomness on Scale
+
 Loop Index
 -Element may also needs to be based on domain?
-
-Parenting
--Clean up the algorithm.
--Fully separate Object Parenting with Geometry Parenting?
 
 Edge of Face
 -without Geometry?
@@ -263,7 +300,7 @@ Add: Mesh Tangent?
 
 Add: Dynamic Epsilon?
 -for epsilon used in large number comparison, such as ID.
-	should be based on how many digits to have?
+	-should be based on how many digits to have?
 
 Attribute Voronoi
 -Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
@@ -273,6 +310,8 @@ Collision on Surface
 -New Gravity Implementation
 	-add new Bounce Attribute.
 		-every collision decreases the energy of bounce and finally stops.
+Colliion in Ray
+-Backaround Collision Detection Implementation?
 
 Add: Collection to Points?
 
@@ -327,6 +366,7 @@ Trim Curve Normalize / Normalize Curve Length
 4.2:
 **Matrix Node
 Add: Offset to Camera
+	-Needs Camera Info Also though.
 Reset Self Object Transform?
 
 **Parallel Loop
@@ -340,10 +380,7 @@ Reset Self Object Transform?
 -3D Viewer
 -Remap Vector to Bounds
 
-**Multiple Attribute Captures
--various attribute info?
-
-**Vector Rotate
+**Vector Rotate into Rotate Vector
 -Mesh Rolling
 ****************************************************************************************************
 GN-Known Issue:
