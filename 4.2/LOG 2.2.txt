@@ -71,7 +71,6 @@ Hexagonal Distribution
 Loop Index
 	-Red;
 
-
 **Align Rotation to Vector
 **Axes to Rotation
 --Alignment on Splines
@@ -247,6 +246,7 @@ Record Velocity
 --Fill Volume
 --Attribute Voronoi
 --Append Point to Curves
+--Bevel Curve
 
 Temporal Object Info
 -Add Start Position at Frame 1
@@ -254,6 +254,20 @@ Temporal Object Info
 Sharp Edge Wireframe
 -Allow Additional Selection.
 -Use Material Index in Modifier.
+
+Bevel Curve
+-Length Multipler should use Spline Length instead of Spline parameter.
+
+Store UVMap
+-add a multiplier socket
+
+Voxel Remesh
+	-Green
+
+Reset Self Object Transform
+-Add Reset Transform output for position.
+-Change Default to Ori.
+	-Reason to keep Rel as to make sure cases like "Parenting Rel"?
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
