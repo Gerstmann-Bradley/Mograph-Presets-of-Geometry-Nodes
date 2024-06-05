@@ -268,6 +268,11 @@ Reset Self Object Transform
 -Add Reset Transform output for position.
 -Change Default to Ori.
 	-Reason to keep Rel as to make sure cases like "Parenting Rel"?
+
+Add: Object Instancer
+
+Islands to Instances
+-rename: Group to Instances
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
