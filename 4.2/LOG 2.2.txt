@@ -273,6 +273,16 @@ Add: Object Instancer
 
 Islands to Instances
 -rename: Group to Instances
+
+Self Object Seed
+-add custom object switch.
+
+Group to Instances
+-Add Origin Offset
+
+Bend Deformer
+-Why default axis on Z?
+	-set to Y for bending object on Z
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
