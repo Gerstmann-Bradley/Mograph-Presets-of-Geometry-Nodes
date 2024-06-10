@@ -294,6 +294,11 @@ Solidify
 ->Separate Component.
 	-If Mesh, use single Solidify Method.
 	-If Instance, use Double Solidify Method.
+-De Shade Smooth
+
+Pi Factor
+-Pi and Half Exponent should be added separately.
+-Add Tau Factor
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
