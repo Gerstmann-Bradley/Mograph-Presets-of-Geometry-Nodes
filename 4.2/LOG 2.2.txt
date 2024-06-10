@@ -294,11 +294,14 @@ Solidify
 ->Separate Component.
 	-If Mesh, use single Solidify Method.
 	-If Instance, use Double Solidify Method.
--De Shade Smooth
+-remove Shade-Smooth added by extrude node
 
 Pi Factor
 -Pi and Half Exponent should be added separately.
 -Add Tau Factor
+
+Inertial Offset
+-Use Implicit Geometry Input and Sample Index to output constant.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
