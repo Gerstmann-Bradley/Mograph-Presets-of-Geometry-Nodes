@@ -288,6 +288,12 @@ Solidify
 -Normal Displacement method not good for instances?
 	-When sampling offseted starting vertices, domain matters.
 	-Separage Component of mesh and instance and extrude respectively and join together.
+-The Single Solidify Method on Instance Mode, has no midlevel functionality.
+	-set position is working on instance domain instead of per vertices
+	-Normal isn't preserved anywhere as well.
+->Separate Component.
+	-If Mesh, use single Solidify Method.
+	-If Instance, use Double Solidify Method.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
