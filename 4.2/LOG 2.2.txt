@@ -283,6 +283,11 @@ Group to Instances
 Bend Deformer
 -Why default axis on Z?
 	-set to Y for bending object on Z
+
+Solidify
+-Normal Displacement method not good for instances?
+	-When sampling offseted starting vertices, domain matters.
+	-Separage Component of mesh and instance and extrude respectively and join together.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
