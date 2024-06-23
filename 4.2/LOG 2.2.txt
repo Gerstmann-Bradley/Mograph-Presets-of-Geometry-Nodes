@@ -302,6 +302,9 @@ Pi Factor
 
 Inertial Offset
 -Use Implicit Geometry Input and Sample Index to output constant.
+
+Random Color
+-use Abs. Randomness for Hue since it's loopable with fraction.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
