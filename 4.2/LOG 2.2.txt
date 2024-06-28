@@ -305,6 +305,10 @@ Inertial Offset
 
 Random Color
 -use Abs. Randomness for Hue since it's loopable with fraction.
+-Saturation also Abs.
+
+UV Deformer
+-Add UVMap output.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
