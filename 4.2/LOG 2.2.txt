@@ -309,8 +309,52 @@ Random Color
 
 UV Deformer
 -Add UVMap output.
+
+UV Deformer
+-Optimize Sample UV Surface with Capture Attribute.
+	-Less Sample Normal -> 2X faster
+	-Sample Position will not be improved if no points Deleted.
+
+Viewport Render Count
+-a different name for Switch -> Switch Status
+
+Bevel Curve
+-Sphere Cap can't take negative radius
+	-Statistic was using greater than 0.
+		->abs value greater than 0.
+
+Combine 3D Viewer and Attribute Viewer?
+-For now no. Combination likely will result in a very large node.
+
+Bounding Box Falloff
+-Remove Geometry Output?
+	-Use Sample Method?
+	-What if need to use Bounding Box Falloff to far distance?
+		-better to capture immediately.
+
+Implicit Geometry
+-use geometry to instance & instance to point method instead of domain size method?
+	-NO, geometry to instance currently will even make empty geometry into instance.
+
+Remap Vector to Bounds
+-Should Include set for custom Min-Max of bounding box.
+
+Index Seed
+-Seed clamp no longer needs to be non-0.
+
+Add: Mirror Modifier
+-What was the expectation?
+	-reference point on world origin.
+		-not relying on other object for centering.
+-Complete Bisecting when over-cross?
+	-note Actual Modifier doesn't has bisect evaluation when overcrossed.
+		-Current Implementation is because boolean is not unlimited enlarged?
+	-Remove the Implementation of Over-cross.
 ****************************************************************************************************
 To Do:
+Mirror Modifier
+-Support Curve and Points, etc.
+
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
