@@ -351,6 +351,9 @@ Add: Mirror Modifier
 		-Current Implementation is because boolean is not unlimited enlarged?
 	-Remove the Implementation of Over-cross.
 -Support Mesh, Curve, Point Clouds.
+-Add Default Axis
+-Boolean Transform not useful for plane.
+-Boolean Transform not useful if one axis starting on 0.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
