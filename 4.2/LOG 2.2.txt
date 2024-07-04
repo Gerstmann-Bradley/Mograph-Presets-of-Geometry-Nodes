@@ -350,35 +350,50 @@ Add: Mirror Modifier
 	-note Actual Modifier doesn't has bisect evaluation when overcrossed.
 		-Current Implementation is because boolean is not unlimited enlarged?
 	-Remove the Implementation of Over-cross.
+-Support Mesh, Curve, Point Clouds.
 ****************************************************************************************************
 To Do:
-Mirror Modifier
--Support Curve and Points, etc.
-
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
 
-Combine 3D Viewer and Attribute Viewer?
-
-Bounding Box Falloff
--Remove Geometry Output?
-	-Use Sample Method?
-	-What if need to use Bounding Box Falloff to far distance?
+Reset Self Object Transform.
+-What if for normal?
+-Is there a better way that can exert everything before?
+	-Tree Tilt example.
 
 **Multiple Attribute Capture
--In terms of performance benefits.
+-In terms of performance benefits?
+	-Bevel Curve?
+
+Add: Follow Path Modifier?
+-what's the purpose?
+
+Add: Fill Cup node?
+-when have an top-open cylinder, fill volume inside for liquid.
+
+Attribute Mesh
+-Can only capture once, and evaluate on domain twice instead?
+
+Tree Generator
+-Using Power Decay instead of Decay Function?
+
+Investigate: Why Bevel Curve Custom fill cap requires realize instance?
+
+Modulo Falloff
+-is based on integer.
+-What if I want to be based on float?
 
 Sample in Proximity
 -Doesn't sounds to be a good design honestly?
 
 Attribute Spline
--Use the nwest algorithm without sampling.
+-Use the newst algorithm without Sampling.
 
-Add: Transform on Spline
-
-Viewport Render Count
--Output addition switch for other use.
+Add: Follow on Splines
+-for Transform Geometry.
+	-Sample Index on all outputs?
+	-why not just instance on points even for single geometry?
 
 Randomness
 -Check Randomness on Scale
@@ -481,6 +496,18 @@ Reset Self Object Transform?
 
 **Vector Rotate into Rotate Vector
 -Mesh Rolling
+
+For 5.0+:
+Falloff Animation Design.
+-Should be in range from 0-1.
+	-before 5.0 it's set to 0-2 with soft clamp at 1.
+		This is to ensure it's easy to change the value and reset value.
+	-from 4.2, reset value can be done directly to default value instead of 0.
+		I think the clamp shouldn't be so in the future.
+	-change delayed for integrity of many tutorials.
+-Proximity Falloff
+-Center Falloff
+-Mesh Falloff
 ****************************************************************************************************
 GN-Known Issue:
 Hair on Surface
@@ -497,10 +524,17 @@ Tracer
 
 Temporal Value
 -Not Functioning now because for field it requires geometry.
+-Too lazy to fix now.
 
 Polygon Unfolding
 -has some minor rotation of transform to prevent bug.
 -
+
+Float Range
+-Only working on Point Domain.
+
+Solidify
+-In Instance Mode, Merge by Distance Not Working.
 ****************************************************************************************************
 Investigation:
 Bend Deform
