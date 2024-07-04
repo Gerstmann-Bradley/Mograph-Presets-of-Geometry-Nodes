@@ -354,6 +354,24 @@ Add: Mirror Modifier
 -Add Default Axis
 -Boolean Transform not useful for plane.
 -Boolean Transform not useful if one axis starting on 0.
+
+Attribute Spline
+-Use the newst algorithm without Sampling.
+
+Add: Follow on Splines
+-for Transform Geometry.
+	-Sample Index on all outputs?
+	-why not just instance on points even for single geometry?
+
+Randomness
+-Investigate Randomness Vector on Scale
+	-The Avg was multiplied with another normalized randomness.
+		-and thus even if Var. 0, Avg still cause randomness regardless of Mid-Level.
+	->removing this algorithm.
+
+Add: Follow Path Constraint.
+-what's the purpose?
+	-Original Follow Path Constraint can't read GN modified Curve.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
@@ -368,9 +386,6 @@ Reset Self Object Transform.
 **Multiple Attribute Capture
 -In terms of performance benefits?
 	-Bevel Curve?
-
-Add: Follow Path Modifier?
--what's the purpose?
 
 Add: Fill Cup node?
 -when have an top-open cylinder, fill volume inside for liquid.
@@ -389,17 +404,6 @@ Modulo Falloff
 
 Sample in Proximity
 -Doesn't sounds to be a good design honestly?
-
-Attribute Spline
--Use the newst algorithm without Sampling.
-
-Add: Follow on Splines
--for Transform Geometry.
-	-Sample Index on all outputs?
-	-why not just instance on points even for single geometry?
-
-Randomness
--Check Randomness on Scale
 
 Loop Index
 -Element may also needs to be based on domain?
@@ -442,7 +446,7 @@ Investigate: Bevel Curve
 Mesh Rolling
 -Support Empty and Vector?
 
-Add: Shader Falloff
+Add: Shader Falloff?
 
 S_Shader Displacement
 -Add: Reveal by Minimum?
