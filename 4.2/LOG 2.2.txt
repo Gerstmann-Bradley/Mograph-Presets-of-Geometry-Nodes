@@ -378,11 +378,27 @@ Investigate: Bevel Curve
 	-seem to be fixed in 4.2 now; related to previous negative value bug?
 
 Add All Shader Presets.
+
+S_Mix Translucent
+S_Time Info
+S_Normal Distortion
+-Add Noise Vector control
+...
+
+
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
+
+Tracer
+-I think there are cases you don't want to delete trace when they are deleted?
+-I think there should be sample Index on Point domain by Spline Index to transfer some att.
+
+Freeze Geometry
+-what if different geometry requiring different status of freeze?
+	-switch node can't accept Field.
 
 Reset Self Object Transform.
 -What if for normal?
@@ -448,6 +464,8 @@ Add: Cumulative Field
 
 Mesh Rolling
 -Support Empty and Vector?
+
+Add: Shader Falloff?
 
 S_Shader Displacement
 -Add: Reveal by Minimum?
