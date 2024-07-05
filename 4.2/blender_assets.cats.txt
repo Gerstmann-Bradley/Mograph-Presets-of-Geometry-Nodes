@@ -27,3 +27,4 @@ f00c1c92-7541-49bc-8551-79de1998d86d:Bradley GN Presets/Preset Building/Seed:Bra
 48915095-f283-4cc6-869c-dbbe9b90db69:Bradley GN Presets/Simulations:Bradley GN Presets-Simulations
 5ed06f9a-da99-439d-b753-ec5df18027bb:Bradley GN Presets/Simulations/Branching:Bradley GN Presets-Simulations-Branching
 eb2052a3-30e8-4930-a5c7-80caeb1c0be8:Bradley GN Presets/Simulations/Info:Bradley GN Presets-Simulations-Info
+6dec2d9e-1413-4261-96c4-3958158c5c96:Bradley Shader Presets:Bradley Shader Presets

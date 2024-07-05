@@ -372,6 +372,12 @@ Randomness
 Add: Follow Path Constraint.
 -what's the purpose?
 	-Original Follow Path Constraint can't read GN modified Curve.
+
+Investigate: Bevel Curve
+-if 2-point curve, custom cap tilt not working somehow?
+	-seem to be fixed in 4.2 now; related to previous negative value bug?
+
+Add All Shader Presets.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
@@ -432,7 +438,7 @@ Collision on Surface
 	-add new Bounce Attribute.
 		-every collision decreases the energy of bounce and finally stops.
 Colliion in Ray
--Backaround Collision Detection Implementation?
+-Backwards Collision Detection Implementation?
 
 Add: Collection to Points?
 
@@ -440,13 +446,8 @@ Add: Cumulative Field
 -for float instead of vector in the previous Cumulative Force?
 	-a different way of "Trigger" system?
 
-Investigate: Bevel Curve
--if 2-point curve, custom cap tilt not working somehow?
-
 Mesh Rolling
 -Support Empty and Vector?
-
-Add: Shader Falloff?
 
 S_Shader Displacement
 -Add: Reveal by Minimum?
