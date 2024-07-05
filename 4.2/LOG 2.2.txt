@@ -381,6 +381,8 @@ Add All Shader Presets.
 
 S_Mix Translucent
 S_Time Info
+S_Noise Displacem
+S_Voronoi Dsiplacem
 S_Normal Distortion
 -Add Noise Vector control
 ...
