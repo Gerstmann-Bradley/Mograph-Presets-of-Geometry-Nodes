@@ -404,6 +404,14 @@ Attribute Mesh
 	-Store Point Domain to Face domain require extra cost.
 		-this cost will be reflected on whichever parts eventually.
 	-> evaluate on domain won't really help anything.
+
+Curve Deformer
+-regarding the change of unknown since 4.1.
+	-the unknown part is used to normalize the scale of input object into max 1 while keeping the dimension ratio.
+		-thus, no mater how big is the geometry,
+			it will be in the view of entire curve length due to normalization.
+		-this is very helpful for extremely huge object.
+	-now it's made into a toggle with default on.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
