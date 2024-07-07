@@ -389,6 +389,15 @@ S_Normal Distortion
 
 Mirror Modifier
 -if No Height & [Not Points], top part of selected mesh can be taken for mirroring.
+
+Point Distribute
+-Add Seed Per Frame
+
+Animate
+-Add Time output in case for further manipulation.
+
+S_Value Precision
+-tag.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
