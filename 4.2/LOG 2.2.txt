@@ -412,6 +412,13 @@ Curve Deformer
 			it will be in the view of entire curve length due to normalization.
 		-this is very helpful for extremely huge object.
 	-now it's made into a toggle with default on.
+
+Tracer
+-Sample Index on Point Domain by Spline Index.
+	-to Transfer some attribute?
+		-if it's named attribute, hard to determine type.
+	-currently transfer float & vector.
+		-in the future should Sample by ID in case points are deleted?
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
@@ -425,7 +432,6 @@ Tilt Alignment
 
 Tracer
 -I think there are cases you don't want to delete trace when they are deleted?
--I think there should be sample Index on Point domain by Spline Index to transfer some att.
 
 S_Polar Coordinate
 -Remove Seam
@@ -448,7 +454,6 @@ Reset Self Object Transform.
 
 Add: Fill Cup node?
 -when have an top-open cylinder, fill volume inside for liquid.
-
 
 Tree Generator
 -Using Power Decay instead of Decay Function?
