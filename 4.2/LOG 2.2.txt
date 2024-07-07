@@ -387,7 +387,8 @@ S_Normal Distortion
 -Add Noise Vector control
 ...
 
-
+Mirror Modifier
+-if No Height & [Not Points], top part of selected mesh can be taken for mirroring.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
