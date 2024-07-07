@@ -398,19 +398,36 @@ Animate
 
 S_Value Precision
 -tag.
+
+Attribute Mesh
+-Can only capture once, and evaluate on domain twice instead?
+	-Store Point Domain to Face domain require extra cost.
+		-this cost will be reflected on whichever parts eventually.
+	-> evaluate on domain won't really help anything.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
 
+Add: Clock Template
+
+Tilt Alignment
+-When towards camera, should also consider screenspace so slent tilt has variations.
+
 Tracer
 -I think there are cases you don't want to delete trace when they are deleted?
 -I think there should be sample Index on Point domain by Spline Index to transfer some att.
 
+S_Polar Coordinate
+-Remove Seam
+	-seem not possible.
+-Add ways to rotate the coordinate upstream.
+
 Freeze Geometry
 -what if different geometry requiring different status of freeze?
 	-switch node can't accept Field.
+	-Separate Geometry for Freeze?
 
 Reset Self Object Transform.
 -What if for normal?
@@ -424,8 +441,6 @@ Reset Self Object Transform.
 Add: Fill Cup node?
 -when have an top-open cylinder, fill volume inside for liquid.
 
-Attribute Mesh
--Can only capture once, and evaluate on domain twice instead?
 
 Tree Generator
 -Using Power Decay instead of Decay Function?
