@@ -425,18 +425,23 @@ S_Voronoi Displacem
 -add Seed
 
 S_
-Add: Index Seed.
+Add: Hash Seed.
 Add: Vector Seed
+
+Inertial Offset
+-Implicit Point in Simulation Joint Particles when there's none being needed yet.
+	-what to do? -> move points to miles away.
+
+S_Transparent Shadow Ray
+-Add Transparency Slider.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
 
-Add: Clock Template
-
 Tilt Alignment
--When towards camera, should also consider screenspace so slent tilt has variations.
+-When towards camera, should also consider screenspace so slent tilt for variations.
 
 Tracer
 -I think there are cases you don't want to delete trace when they are deleted?
