@@ -419,6 +419,14 @@ Tracer
 		-if it's named attribute, hard to determine type.
 	-currently transfer float & vector.
 		-in the future should Sample by ID in case points are deleted?
+
+S_Noise Displacem
+S_Voronoi Displacem
+-add Seed
+
+S_
+Add: Index Seed.
+Add: Vector Seed
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
