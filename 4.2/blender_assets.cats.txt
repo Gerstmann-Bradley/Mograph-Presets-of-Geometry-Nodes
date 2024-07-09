@@ -28,3 +28,9 @@ f00c1c92-7541-49bc-8551-79de1998d86d:Bradley GN Presets/Preset Building/Seed:Bra
 5ed06f9a-da99-439d-b753-ec5df18027bb:Bradley GN Presets/Simulations/Branching:Bradley GN Presets-Simulations-Branching
 eb2052a3-30e8-4930-a5c7-80caeb1c0be8:Bradley GN Presets/Simulations/Info:Bradley GN Presets-Simulations-Info
 6dec2d9e-1413-4261-96c4-3958158c5c96:Bradley Shader Presets:Bradley Shader Presets
+0b9d651f-8bf5-4327-b3d6-e8d9d52926e1:Bradley Shader Presets/Coordinate Utility:Bradley Shader Presets-Coordinate Utility
+f3309f19-40ca-4fc7-8283-31af16ed7064:Bradley Shader Presets/Falloff:Bradley Shader Presets-Falloff
+9179201c-ea16-48d2-874f-7b7fa0b519b2:Bradley Shader Presets/Math:Bradley Shader Presets-Math
+340aa06a-192f-4890-9020-9e4322065780:Bradley Shader Presets/Preset Building:Bradley Shader Presets-Preset Building
+c1e39cd4-bb4a-49ae-947e-9b75f81543d9:Bradley Shader Presets/Preset Building/Seed:Bradley Shader Presets-Preset Building-Seed
+2a535be9-c59f-4f82-8629-c394b7637e67:Bradley Shader Presets/Shader Utility:Bradley Shader Presets-Shader Utility
