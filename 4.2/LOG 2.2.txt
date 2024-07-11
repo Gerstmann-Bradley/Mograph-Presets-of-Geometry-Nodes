@@ -434,6 +434,11 @@ Inertial Offset
 
 S_Transparent Shadow Ray
 -Add Transparency Slider.
+
+Mirror Modifier
+-Possible to Support Instance?
+	-can remove the effect of bisect, or automatic realize instance?
+	-Currently using Instance to Points and Points to Instance Method.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
