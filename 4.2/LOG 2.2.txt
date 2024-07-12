@@ -454,6 +454,9 @@ Add: Track to Constraint.
 Curve Extrapolation
 -Curve to Mesh & Mesh to Curve will eliminate all Curve Radius
 	-fix by Capture & Set Curve Radius again.
+
+Spherical Geo
+-Add: Dual Mesh Icosahedral method
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
