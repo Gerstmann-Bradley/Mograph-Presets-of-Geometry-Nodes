@@ -457,11 +457,18 @@ Curve Extrapolation
 
 Spherical Geo
 -Add: Dual Mesh Icosahedral method
+
+S_Vector Seed
+-Vector should not be input into Hash-Seed
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
+
+Mirror Modifier
+-Current Instance Implementation of Instance is using points.
+	-it doesn't respect the orientation.
 
 Tilt Alignment
 -When towards camera, should also consider screenspace so slent tilt for variations.
@@ -622,7 +629,9 @@ Tracer
 -Dynamic Attribute such as age and falloff will be lost before.
 	-This is unavoidable because these attribute are captured upon join.
 	-Curve Age is implemented, others requires sample Index.
+		-> Implemented.
 -If Points are Deleted, tracer will be disrupted.
+	-Temporary Sample by ID is implemented.
 
 Temporal Value
 -Not Functioning now because for field it requires geometry.
@@ -637,6 +646,10 @@ Float Range
 
 Solidify
 -In Instance Mode, Merge by Distance Not Working.
+
+S_Vector Seed
+-Currently Seed all Positive Value.
+	-Too lazy to build the Switch.
 ****************************************************************************************************
 Investigation:
 Bend Deform
