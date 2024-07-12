@@ -439,6 +439,8 @@ Mirror Modifier
 -Possible to Support Instance?
 	-can remove the effect of bisect, or automatic realize instance?
 	-Currently using Instance to Points and Points to Instance Method.
+		-> it doesn't respect the orientation.
+	-Use Instance instead of Points.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
