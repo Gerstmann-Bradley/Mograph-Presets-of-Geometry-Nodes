@@ -441,6 +441,19 @@ Mirror Modifier
 	-Currently using Instance to Points and Points to Instance Method.
 		-> it doesn't respect the orientation.
 	-Use Instance instead of Points.
+
+Add: Track to Constraint.
+-Blender Constraint can't take evaluated curve.
+	-neither mesh curve nor geometry curve, in fact no modifier evaluation at all.
+	-Empty can't take Follow Path Constraint.
+	-Geometry Can't be Aligned to Geometry.
+-Support Align to Point on Curve.
+-Normal Object Don't need to worry about it?
+	-how to better design the need of Follow Curve Mode Vs. Target Object Mode?
+
+Curve Extrapolation
+-Curve to Mesh & Mesh to Curve will eliminate all Curve Radius
+	-fix by Capture & Set Curve Radius again.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
