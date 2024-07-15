@@ -460,6 +460,8 @@ Spherical Geo
 
 S_Vector Seed
 -Vector should not be input into Hash-Seed
+
+Add: S_Dot Product Cartoon
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
