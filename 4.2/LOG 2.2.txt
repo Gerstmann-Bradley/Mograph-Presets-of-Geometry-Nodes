@@ -462,6 +462,10 @@ S_Vector Seed
 -Vector should not be input into Hash-Seed
 
 Add: S_Dot Product Cartoon
+
+Proximity Falloff
+-The Falloff Animation was accidentally set default to 0.5.
+	-should only be done until next LTS.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
