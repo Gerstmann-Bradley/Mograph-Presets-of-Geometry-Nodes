@@ -466,15 +466,44 @@ Add: S_Dot Product Cartoon
 Proximity Falloff
 -The Falloff Animation was accidentally set default to 0.5.
 	-should only be done until next LTS.
+
+Add: Snap to Surface
+
+Bevel Curve
+-Allow Mesh input?
+
+Relaxation Solver
+-need to work on instances
+	-Instance to Point -> relax and Sample Position.
+
+Fill Volume
+-Displace Clamp Change.
+
+Not Add: Simulation Value?
+-Customizable Scene Time Frame?
+	-should be more a template instead of a group node.
+	especially if float curve/color ramp not accesible.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
 
-Mirror Modifier
--Current Instance Implementation of Instance is using points.
-	-it doesn't respect the orientation.
+Add: S_Self Object Seed
+-Implicit Object Coordinate + Object Location.
+	-need output both coordinate & Seed.
+
+
+Dynamic Radius Solver
+Dynamic Radius Simulation
+-Support Instance just like Relaxation Solver.
+
+Add: Array Instancer
+
+Offset Origin
+-Not working for curves?
+-add transform so that it can help transform?
+
 
 Tilt Alignment
 -When towards camera, should also consider screenspace so slent tilt for variations.
@@ -485,7 +514,8 @@ Tracer
 S_Polar Coordinate
 -Remove Seam
 	-seem not possible.
--Add ways to rotate the coordinate upstream.
+-Add ways to rotate the coordinate upstream
+	-math node downstream.
 
 Freeze Geometry
 -what if different geometry requiring different status of freeze?
@@ -569,9 +599,6 @@ Field to Constant
 Collision Deformer
 -In Island & Internal Collision, the strength to self should be 0.5.
 
-Add: Simulation Value
--Customizable Scene Time Frame?
-
 Curve Connect
 -Does Points to Curve improve the algorithm?
 
@@ -611,6 +638,9 @@ Reset Self Object Transform?
 
 **Vector Rotate into Rotate Vector
 -Mesh Rolling
+
+In case Sample Node into Multiple Linkages:
+
 
 For 5.0+:
 Falloff Animation Design.
