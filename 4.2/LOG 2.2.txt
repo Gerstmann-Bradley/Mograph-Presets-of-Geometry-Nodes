@@ -483,6 +483,16 @@ Not Add: Simulation Value?
 -Customizable Scene Time Frame?
 	-should be more a template instead of a group node.
 	especially if float curve/color ramp not accesible.
+
+Remove: Cloud Shadow
+-move into my own GN Asset library.
+
+S_Time Info
+-Offset was 0.5, needs to be 0.
+
+Add: S_Self Object Seed
+-Implicit Object Coordinate + Object Location.
+	-need output both coordinate & Seed.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
