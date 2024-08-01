@@ -493,6 +493,9 @@ S_Time Info
 Add: S_Self Object Seed
 -Implicit Object Coordinate + Object Location.
 	-need output both coordinate & Seed.
+
+Bevel Curve
+-Previous Separate Component forgot "Instance" domain.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
