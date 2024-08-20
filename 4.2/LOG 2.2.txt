@@ -497,6 +497,9 @@ Add: S_Self Object Seed
 Bevel Curve
 -Previous Separate Component forgot "Instance" domain.
 -Turns into A modifier too.
+
+Remap 0-1
+-Input value to be a slider for 0-1 range.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
