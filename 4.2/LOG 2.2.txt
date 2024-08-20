@@ -496,6 +496,7 @@ Add: S_Self Object Seed
 
 Bevel Curve
 -Previous Separate Component forgot "Instance" domain.
+-Turns into A modifier too.
 ****************************************************************************************************
 To Do:
 Add: Serial Accumulate Field?
