@@ -500,27 +500,58 @@ Bevel Curve
 
 Remap 0-1
 -Input value to be a slider for 0-1 range.
+
+Curve Deformer
+-Upon Instance for Each, it's important to know the instance index.
+
+Set Curve Tilt Alignment
+-use Default Tilt unless otherwise indicated?
+	->There's a cost of attribute statistic check in geometry switch.
+		-Cost of add a new boolean to this node?
+	-Is it really necessary?
+		-> Otherwise will have to swap between with tilt.
+-> Can use selection on Set Curve Normal.
+
+S_Noiser
+-Rename: S_Vector Noise for consistency.
 ****************************************************************************************************
 To Do:
+Investigate the use of Separate geometry by Index
+
+Add: Randomize Instance Order?
+-Instance on Point + Random Value + Instance Index
+
+Add: S_Sin Function
+
+***Random Transform
+-In large scale of Translation
+	the wiggling happens in local area with high frequency instead of floating far away.
+-In high count, many instances are Spawned at the same location
+-Seed is not giving random Position for High Count
+
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
 
-Add: S_Self Object Seed
--Implicit Object Coordinate + Object Location.
-	-need output both coordinate & Seed.
-
+Mirror Modiifer
+-the duplicated geo not inheret material?
 
 Dynamic Radius Solver
 Dynamic Radius Simulation
 -Support Instance just like Relaxation Solver.
+
+Curve Deformer
+-Flow% is based on % and sometimes causes a delay because of length difference.
+	-add an option to normalize the length.
+	-also to consider the effect of start length.
+Add: View Transform
+-Measure 
 
 Add: Array Instancer
 
 Offset Origin
 -Not working for curves?
 -add transform so that it can help transform?
-
 
 Tilt Alignment
 -When towards camera, should also consider screenspace so slent tilt for variations.
