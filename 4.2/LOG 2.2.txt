@@ -514,6 +514,9 @@ Set Curve Tilt Alignment
 
 S_Noiser
 -Rename: S_Vector Noise for consistency.
+
+Viewport Render Count
+-Switch Status -> "Is Render"
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
