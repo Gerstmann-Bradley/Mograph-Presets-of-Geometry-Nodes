@@ -42,6 +42,11 @@ Done:
 --Proximity Falloff
 --Center Falloff
 --Mesh Falloff
+
+Tree Generator
+-Seed should be Single value not accepting Field.
+
+Add: Grass Generator
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
