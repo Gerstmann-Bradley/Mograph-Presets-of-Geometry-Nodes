@@ -47,6 +47,12 @@ Tree Generator
 -Seed should be Single value not accepting Field.
 
 Add: Grass Generator
+
+Grass generator
+-Every single grass needs its ID for color variations
+
+Bounding Box Falloff
+-to be a modifier to output Falloff by Default.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
