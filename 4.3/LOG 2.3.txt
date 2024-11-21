@@ -53,6 +53,12 @@ Grass generator
 
 Bounding Box Falloff
 -to be a modifier to output Falloff by Default.
+
+Mirror Modifier
+-Mirrored Geometry will have their faces flipped
+	-fix by adding flips to every mirror.
+	-Investigate: Instances with transform scale -1 will not flip its face.
+		-report in #130680
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
