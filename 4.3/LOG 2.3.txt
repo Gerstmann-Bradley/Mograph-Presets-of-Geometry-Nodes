@@ -59,6 +59,14 @@ Mirror Modifier
 	-fix by adding flips to every mirror.
 	-Investigate: Instances with transform scale -1 will not flip its face.
 		-report in #130680
+
+Follow Path Constraint
+-Are Curve Extrapolation working?
+	-Extrapolation is not limiting the distance, and distance is overriding extrapolation.
+	-Removed.
+-Fix duplicated object because geometry to instance receiving the original object.
+-The extrapolation factor is the exact distance entered. while 0-1 covers length of a curve.
+	-fix to make sure relative to the whole curve length. 
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
