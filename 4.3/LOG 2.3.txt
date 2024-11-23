@@ -66,7 +66,16 @@ Follow Path Constraint
 	-Removed.
 -Fix duplicated object because geometry to instance receiving the original object.
 -The extrapolation factor is the exact distance entered. while 0-1 covers length of a curve.
-	-fix to make sure relative to the whole curve length. 
+	-fix to make sure relative to the whole curve length.
+
+Random Helices Distribution
+-Default Whole Rotation to be 6.28?
+	-Randomness Node group has disrupted settings due to menu swtich.
+	-the whole rotation settings change to abs mode to make default whole rotation var. 6.28.
+		-while whole rotation 0 as default value while available to rotate.
+
+Follow Path Constraints
+-should have a input for rotation.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
