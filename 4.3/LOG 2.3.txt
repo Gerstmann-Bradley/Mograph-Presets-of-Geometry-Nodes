@@ -79,6 +79,7 @@ Follow Path Constraints
 
 Bounding Box Falloff
 -geometry has to be on the top to make modifier version work.
+-position without "default attribute" won't be used in the modifier.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
