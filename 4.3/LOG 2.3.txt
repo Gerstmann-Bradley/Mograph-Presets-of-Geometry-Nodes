@@ -76,6 +76,9 @@ Random Helices Distribution
 
 Follow Path Constraints
 -should have a input for rotation.
+
+Bounding Box Falloff
+-geometry has to be on the top to make modifier version work.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
