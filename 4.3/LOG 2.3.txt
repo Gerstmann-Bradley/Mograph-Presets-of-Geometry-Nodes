@@ -99,6 +99,21 @@ Curve Split
 Tree Generator
 -Decay Function input do not subtract 1.
 	-the decay fuction will now subject to iteration 1 branches.
+
+Tree Generator
+-Length End should just be removed.
+	-there may be case it may be useful, but generally no and undesired effect?
+-Set Length Start?
+	-remove trunk Length.
+	-Length Start and End use percentage method.
+-Why the tip branches sometimes are longer than the main branches?
+	-over parameter method is not inhereted across generation.
+-Known issue: Noises displacement is displacing branches out of way.
+-known issue: need a better interpolation for "over parameter" method.
+
+Add: Interpolate Function
+	-for tree generator over parameter method.
+	-not yet merged for tree generator due to time and design?
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
