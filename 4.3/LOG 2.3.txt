@@ -95,6 +95,10 @@ Curve Split
 -Disable warning of Curve to mesh when input is mesh.
 	-not causing error, is bypassed. no need extra nodes?
 -simplify to use single capture attribute.
+
+Tree Generator
+-Decay Function input do not subtract 1.
+	-the decay fuction will now subject to iteration 1 branches.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
