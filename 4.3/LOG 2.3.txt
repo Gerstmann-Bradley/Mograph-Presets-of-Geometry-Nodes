@@ -80,6 +80,21 @@ Follow Path Constraints
 Bounding Box Falloff
 -geometry has to be on the top to make modifier version work.
 -position without "default attribute" won't be used in the modifier.
+
+Tree Generator
+-Resample End is not working.
+	-fix
+-Resample End method using Map range from min -1. to make sure gradient of resampling.
+	-probability end method still using from min 0 instead.
+
+Bevel Curve
+-radius should not be overridden with negative value
+	-use max 0
+
+Curve Split
+-Disable warning of Curve to mesh when input is mesh.
+	-not causing error, is bypassed. no need extra nodes?
+-simplify to use single capture attribute.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
