@@ -114,6 +114,12 @@ Tree Generator
 Add: Interpolate Function
 	-for tree generator over parameter method.
 	-not yet merged for tree generator due to time and design?
+
+Tree Generator
+-inspection index should be removed to 0.
+
+Random Transform
+-Add Instance Index; default use "Index".
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
