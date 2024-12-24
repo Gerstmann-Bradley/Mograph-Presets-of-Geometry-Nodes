@@ -120,6 +120,19 @@ Tree Generator
 
 Random Transform
 -Add Instance Index; default use "Index".
+
+Is inside volume
+-Distance needs to be longer.
+
+Add Curve Branch
+-Add ways to input index instead of frames.
+	-Remove Seed Over time, add detection if index has its input instead of default.
+	-> "Custom Frame"
+
+Radial Instancer
+-not working properly in low resolution for rotation.
+	-seems related to endpoint fusion issue.
+	-> use cyclic curve.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
