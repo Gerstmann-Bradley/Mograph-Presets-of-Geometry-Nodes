@@ -133,6 +133,15 @@ Radial Instancer
 -not working properly in low resolution for rotation.
 	-seems related to endpoint fusion issue.
 	-> use cyclic curve.
+
+Get UVMap
+-should use 2D vector or else it's not recognized by texture coordinate node.
+
+Track to Constraint
+-is outputting Instance; should be able to be realized.
+
+Spline Info
+-Add Parameter Factor
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
