@@ -150,6 +150,9 @@ Track to Constraint
 
 radial instancer
 -should have options to realize instance
+
+Rod
+-Subdivision was not used; a mistake linkage, should be in curve linear?
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
