@@ -153,12 +153,56 @@ radial instancer
 
 Rod
 -Subdivision was not used; a mistake linkage, should be in curve linear?
-****************************************************************************************************
-To Do:
-Investigate the use of Separate geometry by Index
+
+known issue: Attribute Voronoi
+-Voronoi on UV will result in UV coordinate between (0,0) & (1,1).
+	-it's sampling the position in 3D space instead of the UV Map.
 
 Mirror Modiifer
 -the duplicated geo not inheret material?
+	-not replicable now?
+
+Bend Deformer
+-into a modifier; better than simple deform with custom changes.
+-add an origin offset.
+
+Snap to Surface
+-Needs Realize Instance.
+	-realize depth 1 to recover the original geometry mesh
+****************************************************************************************************
+To Do:
+Randomness
+-In vector case, should to have option to synchronize X and Y scale?
+
+Add: Tool_Snap to object surface based on view transform?
+-for GP drawing like?
+
+Snap to Surface
+-advanced mode for geometry instead of?
+	-As instance? Vs. As Geometry
+		-> Snap to Surface Vs. Wrap to Surface?
+
+Spline Falloff
+-Should I prepare two Falloff Animation Settings?
+
+Add: Loft Curve node?
+
+Investigate the use of Separate geometry by Index
+
+Investigate Curve Rolling
+
+Radial Instancer
+-Can I make an ability for 2?
+
+Time falloff
+-think about case using trigger.
+
+Is Inside Volume
+-Broken?
+
+Tree Generator
+-In serial, needs to update hierarchy number?
+-Resample should work on the custom curve?
 
 Dynamic Radius Solver
 Dynamic Radius Simulation
@@ -190,10 +234,6 @@ Edge of Face
 Add: Dynamic Epsilon?
 -for epsilon used in large number comparison, such as ID.
 	-should be based on how many digits to have?
-
-Attribute Voronoi
--Voronoi on UV surface will result in UV coordinate between (0,0) & (1,1)
-	-add a domain to fix it?
 
 Collision on Surface
 -New Gravity Implementation
@@ -249,6 +289,10 @@ Trim Curve Normalize / Normalize Curve Length
 Add: Serial Accumulate Field?
 -instead of group ID in a group.
 	-grouping and accumulate sequentially?
+
+4.4:
+normal change.
+-how does it effect exactly?
 ----------------------------------
 ***For 5.0+:
 **Vector Rotate into Rotate Vector
@@ -271,6 +315,10 @@ Tilt Alignment
 **In case Sample Node into Multiple Linkages:
 ****************************************************************************************************
 GN-Known Issue:
+Tree Generator
+-Noises displacement is displacing branches out of way.
+-need a better interpolation for "over parameter" method.
+
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
@@ -338,6 +386,10 @@ Add: Recalculate Normal
 Join Particles
 -Investigate: why joining 2/frame has more hits than joining 1/frame?
 	-seems to only happen if using temporal object info?
+
+Bevel Curve
+-Why Bevel Curve requires additional Set material node?
+	-because of Mesh to Curve Node will cause lose of materials.
 ***************************************************************************************************
 Still Considering Necessity:
 Add: Array Instancer?
