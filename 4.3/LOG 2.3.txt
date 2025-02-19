@@ -169,6 +169,9 @@ Bend Deformer
 Snap to Surface
 -Needs Realize Instance.
 	-realize depth 1 to recover the original geometry mesh
+
+To Bounding Box
+rename: Bounding Box Preview
 ****************************************************************************************************
 To Do:
 Randomness
