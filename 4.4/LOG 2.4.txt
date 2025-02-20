@@ -1,4 +1,5 @@
 Done:
+Add: Loft Curve
 ****************************************************************************************************
 To Do:
 Randomness
@@ -7,8 +8,6 @@ Randomness
 Add: Tool_Snap to object surface based on view transform?
 -for GP drawing like?
 
-Add: Landscape Template
-
 Snap to Surface
 -advanced mode for geometry instead of?
 	-As instance? Vs. As Geometry
@@ -16,14 +15,6 @@ Snap to Surface
 
 Spline Falloff
 -Should I prepare two Falloff Animation Settings?
-
-Add: Loft Curve
-
-Radial Instancer
--Can I make an ability for 2?
-
-Time Falloff
--think about usage with trigger.
 
 Tree Generator
 -In serial, needs to update hierarchy number?
@@ -39,9 +30,6 @@ Reset Self Object Transform.
 -Is there a better way that can exert everything before?
 	-Tree Tilt example.
 
-Add: Fill Cup node?
--when have an top-open cylinder, fill volume inside for liquid.
-
 Sample in Proximity
 -Doesn't sounds to be a good design honestly?
 
@@ -53,14 +41,10 @@ Collision on Surface
 -New Gravity Implementation
 	-add new Bounce Attribute.
 		-every collision decreases the energy of bounce and finally stops.
-Colliion in Ray
--Backwards Collision Detection Implementation?
 
 Add: Cumulative Field
 -for float instead of vector in the previous Cumulative Force?
 	-a different way of "Trigger" system?
-
-Add: Shader Falloff?
 
 Collision Deformer
 -In Island & Internal Collision, the strength to self should be 0.5.
