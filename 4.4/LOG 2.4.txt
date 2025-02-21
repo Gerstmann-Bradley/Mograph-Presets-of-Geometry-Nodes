@@ -1,7 +1,14 @@
 Done:
 Add: Loft Curve
 
-Add: T_Wrap to Surface
+Add: T_Wrap to Surface from View
+
+Spline Falloff
+-Simplify with two falloff animation settings.
+	-trim Curve Vs. Falloff Animation.
+
+Proximity Falloff
+-add some notations.
 ****************************************************************************************************
 To Do:
 Randomness
@@ -14,9 +21,6 @@ Snap to Surface
 -advanced mode for geometry instead of?
 	-As instance? Vs. As Geometry
 		-> Snap to Surface Vs. Wrap to Surface?
-
-Spline Falloff
--Should I prepare two Falloff Animation Settings?
 
 Tree Generator
 -In serial, needs to update hierarchy number?
