@@ -9,13 +9,26 @@ Spline Falloff
 
 Proximity Falloff
 -add some notations.
+
+Group to Instance
+-output separated geometry or some additional sampling?
+	-in case there are some more parameters needed.
+
+Loft Curve
+Rename: Loft Curves
 ****************************************************************************************************
 To Do:
 Randomness
 -In vector case, should to have option to synchronize X and Y scale?
+	-differences be done by the scale factor?
 
-Add: Tool_Snap to object surface based on view transform?
--for GP drawing like?
+Temporal Object info
+-it's only reading the location, without rotation and scale.
+-should get an geometry velocity too?
+
+T_Wrap to Surface
+-in case of orthographic view.
+-In case modes other than using view?
 
 Snap to Surface
 -advanced mode for geometry instead of?
@@ -58,6 +71,13 @@ Collision Deformer
 Trim Curve Normalize / Normalize Curve Length
 ********************************************************
 4.5:
+set mesh normal node: pulls/132583
+-Add: Mix Normal in Proximity
+
+Dynamic Socket Vsibility
+-Point Distribute
+-Attribute Voronoi
+
 ----------------------------------
 
 ****************************************************************************************************
