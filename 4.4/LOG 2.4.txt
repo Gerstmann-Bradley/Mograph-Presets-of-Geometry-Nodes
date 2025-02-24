@@ -16,6 +16,13 @@ Group to Instance
 
 Loft Curve
 Rename: Loft Curves
+
+Loft Curves
+-Length Multiplier not respond to actual length.
+	-because it was created at the moment of bevel curve.
+	-fixed by sampling afterwards.
+-Grid method should be faster in most cases than bevel curve method.
+	-but bevel curve method useable important for cyclic case.
 ****************************************************************************************************
 To Do:
 Randomness
