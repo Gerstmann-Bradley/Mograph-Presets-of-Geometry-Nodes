@@ -23,6 +23,7 @@ Loft Curves
 	-fixed by sampling afterwards.
 -Grid method should be faster in most cases than bevel curve method.
 	-but bevel curve method useable important for cyclic case.
+-a-cyclic curves if cyclic curve combined with a-cyclic curves
 ****************************************************************************************************
 To Do:
 Randomness
