@@ -24,17 +24,34 @@ Loft Curves
 -Grid method should be faster in most cases than bevel curve method.
 	-but bevel curve method useable important for cyclic case.
 -a-cyclic curves if cyclic curve combined with a-cyclic curves
-****************************************************************************************************
-To Do:
+
+T_Wrap to Surface from View
+-must not be a modifier.
+
+Follow Spline
+-Spline Capture on random scale setting.
+	-can be proven with spline index into the scale.
+		-the original doesn't work, capture will work.
+
+Curve Linear
+-"value" rename to "length".
+
+Bounding Box Falloff
+-Use Single Value for settings.
+
 Randomness
 -In vector case, should to have option to synchronize X and Y scale?
 	-differences be done by the scale factor?
 
+Various Settings into single value.
+****************************************************************************************************
 Temporal Object info
 -it's only reading the location, without rotation and scale.
 -should get an geometry velocity too?
 
-T_Wrap to Surface
+Add: Posterize Time
+
+T_Wrap to Surface from View
 -in case of orthographic view.
 -In case modes other than using view?
 
@@ -59,17 +76,15 @@ Reset Self Object Transform.
 
 Sample in Proximity
 -Doesn't sounds to be a good design honestly?
-
-Add: Dynamic Epsilon?
--for epsilon used in large number comparison, such as ID.
-	-should be based on how many digits to have?
+	-Vector Mixing is a nightmare.
+	-it should always be Color that indicates the end product from the Coordinate.
 
 Collision on Surface
 -New Gravity Implementation
 	-add new Bounce Attribute.
 		-every collision decreases the energy of bounce and finally stops.
 
-Add: Cumulative Field
+Add: Cumulative Float
 -for float instead of vector in the previous Cumulative Force?
 	-a different way of "Trigger" system?
 
