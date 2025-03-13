@@ -34,7 +34,7 @@ Follow Spline
 		-the original doesn't work, capture will work.
 
 Curve Linear
--"value" rename to "length".
+-"Value" rename to "Length".
 
 Bounding Box Falloff
 -Use Single Value for settings.
@@ -43,13 +43,55 @@ Randomness
 -In vector case, should to have option to synchronize X and Y scale?
 	-differences be done by the scale factor?
 
-Various Settings into single value.
+Various Socket Settings into single value.
+
+**Remove: Get UV Seam?
+-UV seam is an available attribute now.
+-decide not remove.
+	-the UV seam attribute is reading the seam explicitly set by the user.
+		not the ones actually splitting the UV islands.
+
+Curve Extrapolate
+-In fan project, the radius is set to 0 during the process.
+	-Optimize with single capture attribute.
+
+Loft Curves
+-Optimize the transverse connection of curves using spline parameter-index on Points of Curve?
+	-also it requires capture attribute due to points to curve transformation.
+	-feels unnecessary and chaotic without "connections to curve" addition?
+-Add ways to subdivide the amount of curves?
+	-Spawn Curves in between and followed by Sort Element to re-order curves?
+		-connect between points, resample curve, re-connect between points?
+	-how to name two ways of sampling.
+
+Curve Points Preview
+-increase node length.
 ****************************************************************************************************
+To Do:
+Inertial Deformer
+-Made into Modifier
+	-Support Falloff Using attribute.
+	-If used as a Modifier, it has to support detecting object mode movement.
+-External Oscillator should be removed.
+	but for compatibility I am still keeping it till 4.6?
+
+Add: Connections to Curve?
+-Points to Curves requires point.
+	-it requires curve to points and mesh to points accordinly.
+-how to capture attribute?
+	-what if using spline parameter for such index?
+
+Loft Curves
+-Fill Cyclic Caps.
+	-as an approach for "fill cup" nodes?
+	-UV based on Bounding Box?
+
 Temporal Object info
 -it's only reading the location, without rotation and scale.
 -should get an geometry velocity too?
 
 Add: Posterize Time
+-as an additional function from Freeze Geometry?
 
 T_Wrap to Surface from View
 -in case of orthographic view.
@@ -97,11 +139,15 @@ Trim Curve Normalize / Normalize Curve Length
 set mesh normal node: pulls/132583
 -Add: Mix Normal in Proximity
 
-Dynamic Socket Vsibility
--Point Distribute
--Attribute Voronoi
+Curve to Mesh: now on it's using "Scale".
+-the radius no longer effects the thickness.
+	-versioning is using the radius to prevent breaking tutorials.
+-when to break the old tutorial? how to set it up?
 
 ----------------------------------
+5.0+: Dynamic Socket Vsibility
+-Point Distribute
+-Attribute Voronoi
 
 ****************************************************************************************************
 GN-Known Issue:
@@ -203,3 +249,9 @@ Randomness
 Check if All index node are using implicit index attribute than ID/Index.
 
 Advanced= Advanced Settings
+
+Search Terms used in LOG:
+Add:
+Failed Add:
+Rename:
+Remove:
