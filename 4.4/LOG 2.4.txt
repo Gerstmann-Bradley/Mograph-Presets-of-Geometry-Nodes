@@ -66,6 +66,22 @@ Loft Curves
 
 Curve Points Preview
 -increase node length.
+
+Float Range
+-investigate when stop is 0, what's going on?
+	-the output will be only dependent on the step value.
+		-I added notes and description in case I forgot again.
+
+Loft Curves
+-Fill Cyclic Caps.
+	-as an approach to replace "fill cup" nodes?
+-Add Warning for Fill Cap only if Cyclic Curves.
+	-otherwise it will just result in weird geometry appearance.
+	-a-cyclic curve also not applicable, because endpoint joins the start point.
+-Cap UV based on Bounding Box?
+	-Bevel Curve cap has UV range from 0-1.
+	-center UV can be done separately.
+-Caps only generated on start and end spline.
 ****************************************************************************************************
 To Do:
 Inertial Deformer
@@ -81,17 +97,13 @@ Add: Connections to Curve?
 -how to capture attribute?
 	-what if using spline parameter for such index?
 
-Loft Curves
--Fill Cyclic Caps.
-	-as an approach for "fill cup" nodes?
-	-UV based on Bounding Box?
-
 Temporal Object info
 -it's only reading the location, without rotation and scale.
 -should get an geometry velocity too?
 
 Add: Posterize Time
 -as an additional function from Freeze Geometry?
+	-why don't I just do it in AE?
 
 T_Wrap to Surface from View
 -in case of orthographic view.
@@ -144,6 +156,13 @@ Curve to Mesh: now on it's using "Scale".
 	-versioning is using the radius to prevent breaking tutorials.
 -when to break the old tutorial? how to set it up?
 
+Remove Named Attribute from Curve to Mesh Change
+-Helical Connections
+-
+
+Boolean Toggle of Panel.
+-Loft Curves
+	-Advanced Options for Caps.
 ----------------------------------
 5.0+: Dynamic Socket Vsibility
 -Point Distribute
@@ -253,5 +272,6 @@ Advanced= Advanced Settings
 Search Terms used in LOG:
 Add:
 Failed Add:
+Not Add:
 Rename:
 Remove:
