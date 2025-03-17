@@ -82,20 +82,33 @@ Loft Curves
 	-Bevel Curve cap has UV range from 0-1.
 	-center UV can be done separately.
 -Caps only generated on start and end spline.
-****************************************************************************************************
-To Do:
+
 Inertial Deformer
 -Made into Modifier
 	-Support Falloff Using attribute.
 	-If used as a Modifier, it has to support detecting object mode movement.
--External Oscillator should be removed.
-	but for compatibility I am still keeping it till 4.6?
 
+Curve Extrapolation
+-Support Negative Distance and Factor?
+	-Curve Extrapolation is adding new points at the end of a curve.
+	-> support negative will mean a 180d turn which is unexpected.
+->Not Add; just use trim.
+
+Loft Curves
+-When input Instance
+	-Points to Curve will run warning of "unsupported type curve"
+-> disable points to curve warning.
+	-replace with custom warnings.
+****************************************************************************************************
+To Do:
 Add: Connections to Curve?
 -Points to Curves requires point.
 	-it requires curve to points and mesh to points accordinly.
 -how to capture attribute?
 	-what if using spline parameter for such index?
+
+Inertial Deformer
+-Removing External Oscillator.
 
 Temporal Object info
 -it's only reading the location, without rotation and scale.
