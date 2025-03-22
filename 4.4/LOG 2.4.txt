@@ -102,6 +102,15 @@ Loft Curves
 
 Inertial Deformer
 -Removing External Oscillator.
+-Falloff doesn't needs to be sampled
+
+To Curve Points
+-wider nodes
+
+Bevel Curve
+-Disable Node Warning of Unsupported Mesh
+	-No, the warning is because mesh hidden inside instance.
+-> keep it. I can't realize instance randomly, so better to warn.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
