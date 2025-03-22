@@ -99,6 +99,9 @@ Loft Curves
 	-Points to Curve will run warning of "unsupported type curve"
 -> disable points to curve warning.
 	-replace with custom warnings.
+
+Inertial Deformer
+-Removing External Oscillator.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
@@ -106,9 +109,6 @@ Add: Connections to Curve?
 	-it requires curve to points and mesh to points accordinly.
 -how to capture attribute?
 	-what if using spline parameter for such index?
-
-Inertial Deformer
--Removing External Oscillator.
 
 Temporal Object info
 -it's only reading the location, without rotation and scale.
@@ -168,6 +168,8 @@ Curve to Mesh: now on it's using "Scale".
 -the radius no longer effects the thickness.
 	-versioning is using the radius to prevent breaking tutorials.
 -when to break the old tutorial? how to set it up?
+	-> not to break the tutorial; still using the radius.
+-> change from practice, the Scale should now accept a field; multiplied by radius.
 
 Remove Named Attribute from Curve to Mesh Change
 -Helical Connections
@@ -176,6 +178,20 @@ Remove Named Attribute from Curve to Mesh Change
 Boolean Toggle of Panel.
 -Loft Curves
 	-Advanced Options for Caps.
+		-grid subdivsion for caps?
+	-index output?
+
+*Scene Info.
+-improve Animate interpolation?
+	-but curves are not possible.
+
+*Camera Info
+-Is Inside View can be more automatic.
+
+Loft Curves
+-Guide Resampling rename -> Guide Count
+-Cross Resampling rename -> Cross Count
+
 ----------------------------------
 5.0+: Dynamic Socket Vsibility
 -Point Distribute
