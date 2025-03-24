@@ -106,11 +106,15 @@ Inertial Deformer
 
 Inertial Deformer
 -Factor should allow attribute?
+	-yes
 -Freq Damp should only allow single value?
+	-yes
 
 Temporal Object Info
 -if it's self object, it has to be Ori Instead of Rel.
--Add a switch for self object?
+	-Add a switch for self object?
+-> Use internal switch.
+	-when Obj info input as Instance. Only a valid input will be "Instance" count 1
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
