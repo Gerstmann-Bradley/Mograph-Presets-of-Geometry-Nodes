@@ -108,7 +108,8 @@ Inertial Deformer
 -Factor should allow attribute?
 	-yes
 -Freq Damp should only allow single value?
-	-yes
+	-no?
+	-seems interesting in noisy example?
 
 Temporal Object Info
 -if it's self object, it has to be Ori Instead of Rel.
