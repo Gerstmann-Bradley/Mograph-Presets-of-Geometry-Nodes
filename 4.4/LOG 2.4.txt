@@ -116,6 +116,29 @@ Temporal Object Info
 	-Add a switch for self object?
 -> Use internal switch.
 	-when Obj info input as Instance. Only a valid input will be "Instance" count 1
+
+**Proximity Falloff
+-Abs Range has a bug to output 1 at 0?
+	-The function is added in 4.0 without notes.
+-> Redefine design and add descriptions:
+	-Abs Range should align with the effect with Rel Range.
+		-> Abs Minimum method.
+	-Abs Minimum rename to "Abs Reverse".
+-Rel Range is running in range between 0-1.
+-Abs Range is not and has default effect since Obj scale.
+	-> Difference of operators based on if there's an existing object.
+-The Range should not override the Falloff Animation in any way.
+	-needs clamp.
+-Falloff Animation Is broken if no Obj and in low Scale.
+-If the input Obj is an empty, both Obj & Custom Mesh has input.
+	-Use "As Instance" detection method to switch btw Obj Mesh & Custom Mesh.
+
+Inertial Deformer
+-If the object start at non-0 location, it should not use inertia?
+	-I used wrong GN Input
+
+Temporal Sampling
+-should be more clear about Sampled Previous Vs. Current Velocity.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
