@@ -140,7 +140,9 @@ Inertial Deformer
 Temporal Sampling
 -should be more clear about Sampled Previous Vs. Current Velocity.
 -it should require a Sampled Position for position in the first frame.
-	-use Default in Group Input.
+	-use Default in Group Input?
+	-> No, Revert. The position is stored in Geometry, so what geometry, what result.
+->Investigate the difference of method in Inertial Test?
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
