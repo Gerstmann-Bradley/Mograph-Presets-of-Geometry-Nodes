@@ -139,6 +139,8 @@ Inertial Deformer
 
 Temporal Sampling
 -should be more clear about Sampled Previous Vs. Current Velocity.
+-it should require a Sampled Position for position in the first frame.
+	-use Default in Group Input.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
