@@ -142,7 +142,14 @@ Temporal Sampling
 -it should require a Sampled Position for position in the first frame.
 	-use Default in Group Input?
 	-> No, Revert. The position is stored in Geometry, so what geometry, what result.
-->Investigate the difference of method in Inertial Test?
+
+Curve Rolling
+-Rewrite.
+-> Using Float Range Method.
+	-To Simplify from copy, remove Stop Mode.
+	-Intergrate Threshold setting.
+	-expose multiplier in case needs larger rotation.
+-> update Inertial Deformer Demo too to see.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
