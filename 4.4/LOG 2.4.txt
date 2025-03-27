@@ -150,6 +150,9 @@ Curve Rolling
 	-Intergrate Threshold setting.
 	-expose multiplier in case needs larger rotation.
 -> update Inertial Deformer Demo too to see.
+
+Float Range
+-Remove Geometry Input; use evaluate at Index instead.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
