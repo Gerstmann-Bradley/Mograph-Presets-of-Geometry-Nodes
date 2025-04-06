@@ -152,7 +152,25 @@ Curve Rolling
 -> update Inertial Deformer Demo too to see.
 
 Float Range
--Remove Geometry Input; use evaluate at Index instead.
+-Remove Geometry Input.
+	-use evaluate at Index instead of Sample Index to get step value.
+
+Curve Curvature
+-Not working, investigate.
+	-fix offset mechanism; the selection was inverted.
+-add normalize limit to map the output.
+
+Add: Curve Resampling
+-Issues of normal Curve Resampling method.
+	-it should not be even.
+-Step (resample interval) Vs. Stop Mode (override Parameter)
+
+Follow Splines
+-why it contains scale randomness?
+	-it should contain information of curves at spline domain.
+-add: Rel to Resolution.
+	-should it be a boolean or integer?
+	-even if I cut curves, it doesn't help preview the curve points density?
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
