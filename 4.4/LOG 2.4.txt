@@ -183,6 +183,15 @@ Smooth Position
 -Border Smooth to support Curves too.
 	-separate component and rejoin
 	-> not support volume, Points, Clouds, etc?
+
+Curve Resampling
+-the failure of accumulation method.
+	-the weight can be disconnected to the real proportion.
+	-at 40% straight + 20% curvature + 20% straight + 20% curvature.
+		-the sparse in straight may occur at 20% because it's not proportion.
+
+Fix Curve Curvature
+-it was wrongly renamed to be nodetree.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
