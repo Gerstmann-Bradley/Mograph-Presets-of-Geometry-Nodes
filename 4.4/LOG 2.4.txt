@@ -171,6 +171,18 @@ Follow Splines
 -add: Rel to Resolution.
 	-should it be a boolean or integer?
 	-even if I cut curves, it doesn't help preview the curve points density?
+
+Curve Resampling
+-remove "Reverse"
+	-in the past to remap power from start & end.
+	-now it will only reverse the entire parameter and not respect actual curve geo.
+-Curvature method sometimes work other times doesn't?
+	-fixing WIP; change method?
+
+Smooth Position
+-Border Smooth to support Curves too.
+	-separate component and rejoin
+	-> not support volume, Points, Clouds, etc?
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
@@ -178,6 +190,9 @@ Add: Connections to Curve?
 	-it requires curve to points and mesh to points accordinly.
 -how to capture attribute?
 	-what if using spline parameter for such index?
+
+Smooth Position
+-Border Smooth to support edges
 
 Temporal Object info
 -it's only reading the location, without rotation and scale.
