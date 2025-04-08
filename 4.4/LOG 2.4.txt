@@ -189,6 +189,13 @@ Remove: Curve Resampling
 
 Follow Splines
 -Curve Attribute should be captured on point in Rel to Resolution.
+
+Curve Points Preview
+-Support Mesh.
+	-by separate component now.
+
+Smooth Position
+-Border Smooth to support edges
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
@@ -196,9 +203,6 @@ Add: Connections to Curve?
 	-it requires curve to points and mesh to points accordinly.
 -how to capture attribute?
 	-what if using spline parameter for such index?
-
-Smooth Position
--Border Smooth to support edges
 
 Temporal Object info
 -it's only reading the location, without rotation and scale.
