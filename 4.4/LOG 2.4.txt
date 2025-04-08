@@ -184,14 +184,11 @@ Smooth Position
 	-separate component and rejoin
 	-> not support volume, Points, Clouds, etc?
 
-Curve Resampling
--the failure of accumulation method.
-	-the weight can be disconnected to the real proportion.
-	-at 40% straight + 20% curvature + 20% straight + 20% curvature.
-		-the sparse in straight may occur at 20% because it's not proportion.
+Remove: Curve Resampling
+-not doing what I want; too difficult, should just give up.
 
-Fix Curve Curvature
--it was wrongly renamed to be nodetree.
+Follow Splines
+-Curve Attribute should be captured on point in Rel to Resolution.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
