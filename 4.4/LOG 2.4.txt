@@ -202,9 +202,12 @@ Reset Self Object Transform.
 -Is there a better way that can exert everything before?
 	-Tree Tilt example.
 
-Curve Curvature
--same direction rename tob "flat" selection.
-	-add threshold.
+Curve Resampling
+-Should I use Linear Scape goat?
+	-yes the attribute needs to be re-sampled regardless.
+-Support Cyclic Curve?
+	-the second round resample to add points will reverse captured attribute.
+	-right now linear seems to work if cut 1
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
@@ -216,6 +219,9 @@ Add: Connections to Curve?
 Temporal Object info
 -it's only reading the location, without rotation and scale.
 -should get an geometry velocity too?
+
+Float Range
+-what if you want the leading output from the float range?
 
 Add: Posterize Time
 -as an additional function from Freeze Geometry?
