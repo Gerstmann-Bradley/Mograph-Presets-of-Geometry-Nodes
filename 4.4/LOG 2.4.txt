@@ -208,6 +208,17 @@ Curve Resampling
 -Support Cyclic Curve?
 	-the second round resample to add points will reverse captured attribute.
 	-right now linear seems to work if cut 1
+
+Curve Resampling
+-catalogue
+-Should add ability to preview the points generated.
+
+Curve Extrapolation
+-when end factor 0, curve is reversed somehow.
+	-If only extrude start, the index is set in order of Max-0-(Max-1)
+	-> needs to reverse curve after mesh to curve
+-End factor is not working properly with attribute.
+	-Curve Attribute lost at curve to mesh
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
@@ -216,12 +227,11 @@ Add: Connections to Curve?
 -how to capture attribute?
 	-what if using spline parameter for such index?
 
+
+
 Temporal Object info
 -it's only reading the location, without rotation and scale.
 -should get an geometry velocity too?
-
-Float Range
--what if you want the leading output from the float range?
 
 Add: Posterize Time
 -as an additional function from Freeze Geometry?
@@ -291,6 +301,8 @@ Boolean Toggle of Panel.
 	-Advanced Options for Caps.
 		-grid subdivsion for caps?
 	-index output?
+-Curve Resampling
+	-Points Preview toggle; for radius, use radius...
 
 *Scene Info.
 -improve Animate interpolation?
@@ -324,10 +336,15 @@ Loft Curves
 	-Fill Caps?
 -Curve Rolling
 	-Stop Mode Vs. Threshold & Clamp?
+-Curve Resampling
+	-Resolution Vs. Count mode?
+-Float Range
+	-Step Vs. Stop Mode?
+	-Stop include end or not.
 
 **In Line Socket
 -Reselt Self Object Transform
--
+-Curve Extrapolation
 
 ****************************************************************************************************
 GN-Known Issue:
