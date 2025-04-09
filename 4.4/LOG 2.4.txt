@@ -196,6 +196,15 @@ Curve Points Preview
 
 Smooth Position
 -Border Smooth to support edges
+
+Reset Self Object Transform.
+-What if for normal?
+-Is there a better way that can exert everything before?
+	-Tree Tilt example.
+
+Curve Curvature
+-same direction rename tob "flat" selection.
+	-add threshold.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
@@ -211,6 +220,15 @@ Temporal Object info
 Add: Posterize Time
 -as an additional function from Freeze Geometry?
 	-why don't I just do it in AE?
+
+Temporal Smooth Position
+-can it be a modifier?
+
+Mesh Rolling
+-what about this method in Curve Rolling?
+	-which one to choose, which one should stay?
+		-both have to be different, because mesh can't recognize its segment.
+-what's wrong with the first few segments?
 
 T_Wrap to Surface from View
 -in case of orthographic view.
@@ -230,16 +248,6 @@ Curve Deformer
 	-add an option to normalize the length.
 	-also to consider the effect of start length.
 
-Reset Self Object Transform.
--What if for normal?
--Is there a better way that can exert everything before?
-	-Tree Tilt example.
-
-Sample in Proximity
--Doesn't sounds to be a good design honestly?
-	-Vector Mixing is a nightmare.
-	-it should always be Color that indicates the end product from the Coordinate.
-
 Collision on Surface
 -New Gravity Implementation
 	-add new Bounce Attribute.
@@ -256,18 +264,21 @@ Trim Curve Normalize / Normalize Curve Length
 ********************************************************
 4.5:
 set mesh normal node: pulls/132583
--Add: Mix Normal in Proximity
+-Add: Mix Mesh Normal in Proximity
 
-Curve to Mesh: now on it's using "Scale".
+**Curve to Mesh: now on it's using "Scale".
 -the radius no longer effects the thickness.
 	-versioning is using the radius to prevent breaking tutorials.
 -when to break the old tutorial? how to set it up?
 	-> not to break the tutorial; still using the radius.
--> change from practice, the Scale should now accept a field; multiplied by radius.
+-> change from practice, the Scale should now accept a field; multiplied by radius.	
 
 Remove Named Attribute from Curve to Mesh Change
+	-replace with radius node.
 -Helical Connections
--
+-Bevel Curves
+-Curve Extrapolate?
+	-if radius doesn't exist, radius node attribute by itself will just be 0.
 
 Boolean Toggle of Panel.
 -Loft Curves
@@ -277,7 +288,7 @@ Boolean Toggle of Panel.
 
 *Scene Info.
 -improve Animate interpolation?
-	-but curves are not possible.
+	-but curves are not accessible.
 
 *Camera Info
 -Is Inside View can be more automatic.
@@ -286,10 +297,31 @@ Loft Curves
 -Guide Resampling rename -> Guide Count
 -Cross Resampling rename -> Cross Count
 
+**Set GP color
+-for XYZ color indication of 3D viewer.
+
+**Field Statistic node
+-to replace many statistic which requires geometry input.
+	-**Get Index
+		-will need geometry input anyway.
+	-Index List Length
+	-is enclosed geometry
+		-but what about the value? should be a constant or field?
+	-Iteration Count per Domain
+	-Point Distribute
+	-Branch Gradient
 ----------------------------------
 5.0+: Dynamic Socket Vsibility
 -Point Distribute
 -Attribute Voronoi
+-Bevel Curve
+	-Fill Caps?
+-Curve Rolling
+	-Stop Mode Vs. Threshold & Clamp?
+
+**In Line Socket
+-Reselt Self Object Transform
+-
 
 ****************************************************************************************************
 GN-Known Issue:
@@ -348,6 +380,9 @@ Add: Mesh Tangent?
 
 Tracer
 -I think there are cases you don't want to delete trace when they are deleted?
+
+Float Range
+-Stop Mode is not used at 0, but it's still shown as occupied.
 ****************************************************************************************************
 Investigation:
 Bend Deform
@@ -372,6 +407,10 @@ Bevel Curve
 Investigate the use of Separate geometry by Index
 
 Investigate Curve Rolling
+
+Curve Points Preview
+-Curve to Points is not working for instances regardless
+	-https://projects.blender.org/blender/blender/issues/137163
 ***************************************************************************************************
 Still Considering Necessity:
 Add: Array Instancer?
