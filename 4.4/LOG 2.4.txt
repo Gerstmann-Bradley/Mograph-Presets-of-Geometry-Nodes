@@ -219,6 +219,29 @@ Curve Extrapolation
 	-> needs to reverse curve after mesh to curve
 -End factor is not working properly with attribute.
 	-Curve Attribute lost at curve to mesh
+
+Radial Instancer
+-Support Count at 2.
+
+Temporal Smooth Position
+-can it be a modifier?
+	-yes, needs to support rest_position?
+-test for particles system.
+	-how to prove it works?
+	-newly joined geo detection function: [index - (sampled index + 1)]
+
+Add: Posterize Time
+-as an additional function from Freeze Geometry?
+	-why don't I just do it in AE?
+	-> as a way to preview what's really being output?
+		-Can render the non-posterize version for post-edit.
+	-or different segment has different rate.
+-when used as modifier without rest_position, it's shrinking size.
+	-because rest_position at 0 overwrite the condition of -1.
+		-implicit attribute doesn't help because it skip it too.
+	-> element comparison to make sure it's not 0 or -1.
+-Remove, merged into "Freeze Geometry" as Fps.
+	-threshold is no longer needed.
 ****************************************************************************************************
 To Do:
 Add: Connections to Curve?
@@ -226,16 +249,6 @@ Add: Connections to Curve?
 	-it requires curve to points and mesh to points accordinly.
 -how to capture attribute?
 	-what if using spline parameter for such index?
-
-
-
-Temporal Object info
--it's only reading the location, without rotation and scale.
--should get an geometry velocity too?
-
-Add: Posterize Time
--as an additional function from Freeze Geometry?
-	-why don't I just do it in AE?
 
 Temporal Smooth Position
 -can it be a modifier?
