@@ -242,16 +242,24 @@ Add: Posterize Time
 	-> element comparison to make sure it's not 0 or -1.
 -Remove, merged into "Freeze Geometry" as Fps.
 	-threshold is no longer needed.
-****************************************************************************************************
-To Do:
-Add: Connections to Curve?
--Points to Curves requires point.
-	-it requires curve to points and mesh to points accordinly.
--how to capture attribute?
-	-what if using spline parameter for such index?
 
-Temporal Smooth Position
--can it be a modifier?
+Not Add: Cumulative Field
+-a float form of "Cumulative Force"
+-> now it should just be cumulative force node
+	ntl someday with dynamic socket visibility or so
+		to make vector socket a float on condition.
+
+Self Object Seed
+-rename: Object Seed
+
+Reset Self Object Transform
+-rename: Reset Local Transform
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_10.
+To Do:
+Temporal Object info
+-it's only reading the location, without rotation and scale.
+-should get an geometry velocity too?
 
 Mesh Rolling
 -what about this method in Curve Rolling?
@@ -259,37 +267,10 @@ Mesh Rolling
 		-both have to be different, because mesh can't recognize its segment.
 -what's wrong with the first few segments?
 
-T_Wrap to Surface from View
--in case of orthographic view.
--In case modes other than using view?
-
-Snap to Surface
--advanced mode for geometry instead of?
-	-As instance? Vs. As Geometry
-		-> Snap to Surface Vs. Wrap to Surface?
-
-Tree Generator
--In serial, needs to update hierarchy number?
--Resample should work on the custom curve?
-
 Curve Deformer
 -Flow% is based on % and sometimes causes a delay because of length difference.
 	-add an option to normalize the length.
 	-also to consider the effect of start length.
-
-Collision on Surface
--New Gravity Implementation
-	-add new Bounce Attribute.
-		-every collision decreases the energy of bounce and finally stops.
-
-Add: Cumulative Float
--for float instead of vector in the previous Cumulative Force?
-	-a different way of "Trigger" system?
-
-Collision Deformer
--In Island & Internal Collision, the strength to self should be 0.5.
-
-Trim Curve Normalize / Normalize Curve Length
 ********************************************************
 4.5:
 set mesh normal node: pulls/132583
@@ -341,6 +322,9 @@ Loft Curves
 	-Iteration Count per Domain
 	-Point Distribute
 	-Branch Gradient
+
+**Is Single Value
+-?
 ----------------------------------
 5.0+: Dynamic Socket Vsibility
 -Point Distribute
@@ -447,6 +431,10 @@ Investigate Curve Rolling
 Curve Points Preview
 -Curve to Points is not working for instances regardless
 	-https://projects.blender.org/blender/blender/issues/137163
+
+Tracer
+-if to use the newly joined geo detection function
+	-[index - (sampled index + 1)]
 ***************************************************************************************************
 Still Considering Necessity:
 Add: Array Instancer?
