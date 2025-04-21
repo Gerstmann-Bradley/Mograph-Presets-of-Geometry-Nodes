@@ -261,8 +261,9 @@ Radial Instancer
 
 Radial Instancer
 -Allow Fibonacci?
+-Fibonacci should be disabled by default.
 ****************************************************************************************************
-The Newest Test Demo Tree: ZF_10.
+The Newest Test Demo Tree: ZF_09.
 To Do:
 Curve Resampling
 -into a modifier
