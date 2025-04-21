@@ -258,6 +258,9 @@ Reset Self Object Transform
 Radial Instancer
 -Instance index should use index/ID?
 	-use index. although I don't know why not ID/index.
+
+Radial Instancer
+-Allow Fibonacci?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
@@ -313,6 +316,8 @@ Boolean Toggle of Panel.
 	-index output?
 -Curve Resampling
 	-Points Preview toggle; for radius, use radius...
+-Radial Instancer
+	-Fibonacci Spiral
 
 *Scene Info.
 -improve Animate interpolation?
