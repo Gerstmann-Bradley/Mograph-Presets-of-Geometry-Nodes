@@ -262,6 +262,10 @@ Radial Instancer
 Radial Instancer
 -Allow Fibonacci?
 -Fibonacci should be disabled by default.
+
+Instancer to use ID/Index
+--radial instancer
+--point instance geometry
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_09.
 To Do:
@@ -317,8 +321,6 @@ Boolean Toggle of Panel.
 	-index output?
 -Curve Resampling
 	-Points Preview toggle; for radius, use radius...
--Radial Instancer
-	-Fibonacci Spiral
 
 *Scene Info.
 -improve Animate interpolation?
@@ -364,6 +366,11 @@ Loft Curves
 **In Line Socket
 -Reselt Self Object Transform
 -Curve Extrapolation
+
+Closure and Bundles
+-Instance for each element?
+	-save the point node and index input?
+-curve Interpolate?
 
 ****************************************************************************************************
 GN-Known Issue:
@@ -472,6 +479,9 @@ Randomness
 Check if All index node are using implicit index attribute than ID/Index.
 During Instance and Pick Instance
 	-Instance Index should use Index instead of ID?
+		-should use ID/Index instead.
+	-for example if using Is inside View to select point.
+		-instance index will glitch, while ID won't.
 
 Advanced= Advanced Settings
 
