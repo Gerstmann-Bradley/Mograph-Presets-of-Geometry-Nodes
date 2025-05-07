@@ -266,19 +266,35 @@ Radial Instancer
 Instancer to use ID/Index
 --radial instancer
 --point instance geometry
+
+Index Randomize
+-internally Use integer math divide round.
+
+**Sin Function
+-separate Constant Phase & Rel Phase.
+
+Braid
+-Remove Rel Phase Factor
+	-it's not 100% procedural.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_09.
 To Do:
 Curve Resampling
--into a modifier
--evaluate beforehand? behavior in case of nurbs path?
+-into a modifier in case of path constraint?
+-behavior in case of nurbs path?
 
 Separate Geometry by Index
 -rename: separate geometry by ID?
 
+Proximity Falloff
+-support GP object in "separate component".
+	-GP can join curve to mesh.
+
 follow path constraint
 -needs use resolution.
 -use follow Splines method
+
+Add: S_Voronoi Scatter
 
 Temporal Object info
 -it's only reading the location, without rotation and scale.
@@ -295,7 +311,8 @@ Curve Deformer
 	-add an option to normalize the length.
 	-also to consider the effect of start length.
 ********************************************************
-4.5:
+4.5: Rewrite Reading Upto ZA_19
+
 set mesh normal node: pulls/132583
 -Add: Mix Mesh Normal in Proximity
 
@@ -313,6 +330,13 @@ Remove Named Attribute from Curve to Mesh Change
 -Bevel Curves
 -Curve Extrapolate?
 	-if radius doesn't exist, radius node attribute by itself will just be 0.
+-Proximity Falloff
+	-there is a curve to mesh inside.
+
+**Instance Bounds
+-Instance Bounding Box...
+
+
 
 Boolean Toggle of Panel.
 -Loft Curves
@@ -324,10 +348,11 @@ Boolean Toggle of Panel.
 
 *Scene Info.
 -improve Animate interpolation?
-	-but curves are not accessible.
+	-but curves are not accessible?
+		-closure and bundles.
 
 *Camera Info
--Is Inside View can be more automatic.
+-"Is Inside View" can be more automatic now.
 
 Loft Curves
 -Guide Resampling rename -> Guide Count
@@ -346,12 +371,18 @@ Loft Curves
 	-Iteration Count per Domain
 	-Point Distribute
 	-Branch Gradient
+-Field Average
+	-Islands instance
 
-**Is Single Value
--?
+**Grease Pencil GP support
+-
 ----------------------------------
 5.0+: Dynamic Socket Vsibility
--Point Distribute
+x-Point Distribute
+	-No, since only Poisson Distance will be hidden by Menu Switch.
+	-add a Density Factor test
+		-it's in random mode in case for selecting area and screw the distribution?
+	-Re-arrange the node.
 -Attribute Voronoi
 -Bevel Curve
 	-Fill Caps?
@@ -362,15 +393,54 @@ Loft Curves
 -Float Range
 	-Step Vs. Stop Mode?
 	-Stop include end or not.
+-Proximity Falloff
+	-advanced mode should use 3 different float because rel for %, others abs.
+	-probably no change to the object & Mesh mode.
+-Noise 3D
+	-evolution can have different input?
+--Randomness
+	-it's already working as expected without updating anything.
+-Point Instance Geometry
+	-by Count or by Custom & advanced Mode?
 
-**In Line Socket
+**Expanded Enum Socket.
+	-it's an enum but suitable for two item and dyanmic socket visibility.
+-Attribute Voronoi?
+-Mesh Falloff
+-Index Converge
+-Value Precition
+-Get UVMap
+	-enum visibility to switch between modes?
+	-Obj Vs. Custom Geometry
+
+**InLine Socket
 -Reselt Self Object Transform
 -Curve Extrapolation
+x--Time Falloff
+	-better to separate the meaning of Time & Falloff
+x--Attribute Mesh?
+	-has split edge so better to separate the meaning?
+-Motion Variance
+x-
+-Follow Path
+-Bevel Curve Fill Cap
 
-Closure and Bundles
+**Inline Socket Need Design.
+-Helical Connections
+-Fill Volume
+-Curve Deformer
+
+**Inline Socket Breaking
+-remap 0-1
+-Random Rotation
+-Curve Extrapolation?
+-
+
+**Closure and Bundles
 -Instance for each element?
 	-save the point node and index input?
--curve Interpolate?
+-support curve Interpolate function outside group?
+
 
 ****************************************************************************************************
 GN-Known Issue:
@@ -491,3 +561,5 @@ Failed Add:
 Not Add:
 Rename:
 Remove:
+--: means item task in the list has been completed.
+x--: means item task is rejected
