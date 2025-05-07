@@ -275,7 +275,14 @@ Index Randomize
 
 Braid
 -Remove Rel Phase Factor
-	-it's not 100% procedural.
+	-it's now 100% procedural.
+
+Proximity Falloff
+-support GP object in "separate component".
+	-GP can join curve to mesh.
+
+Implicit Geometry
+-Support GP
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_09.
 To Do:
@@ -285,10 +292,6 @@ Curve Resampling
 
 Separate Geometry by Index
 -rename: separate geometry by ID?
-
-Proximity Falloff
--support GP object in "separate component".
-	-GP can join curve to mesh.
 
 follow path constraint
 -needs use resolution.
