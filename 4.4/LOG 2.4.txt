@@ -283,6 +283,15 @@ Proximity Falloff
 
 Implicit Geometry
 -Support GP
+
+Proximity Falloff
+-disrupted Object Mesh Mode
+	-because Object Info was using "Instance"
+		-was the way to detect if input geometry is empty/others.
+	-> not to use instance.
+
+Update ZA_01_Falloff Test
+Update ZA_02_Noise Test
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_09.
 To Do:
@@ -339,8 +348,6 @@ Remove Named Attribute from Curve to Mesh Change
 **Instance Bounds
 -Instance Bounding Box...
 
-
-
 Boolean Toggle of Panel.
 -Loft Curves
 	-Advanced Options for Caps.
@@ -379,6 +386,17 @@ Loft Curves
 
 **Grease Pencil GP support
 -
+
+**Expanded Enum Socket.
+	-it's an enum but suitable for two item and dyanmic socket visibility.
+-Attribute Voronoi?
+-Mesh Falloff
+-Index Converge
+-Value Precition
+-Get UVMap
+	-enum visibility to switch between modes?
+	-Obj Vs. Custom Geometry
+-Grid Distribution
 ----------------------------------
 5.0+: Dynamic Socket Vsibility
 x-Point Distribute
@@ -406,15 +424,7 @@ x-Point Distribute
 -Point Instance Geometry
 	-by Count or by Custom & advanced Mode?
 
-**Expanded Enum Socket.
-	-it's an enum but suitable for two item and dyanmic socket visibility.
--Attribute Voronoi?
--Mesh Falloff
--Index Converge
--Value Precition
--Get UVMap
-	-enum visibility to switch between modes?
-	-Obj Vs. Custom Geometry
+
 
 **InLine Socket
 -Reselt Self Object Transform
@@ -437,6 +447,7 @@ x-
 -remap 0-1
 -Random Rotation
 -Curve Extrapolation?
+-Store UVMap
 -
 
 **Closure and Bundles
