@@ -3,7 +3,7 @@ Loft Curves
 -Guide Resampling rename -> Guide Count
 -Cross Resampling rename -> Cross Count
 
-3D Viewer
+**3D Viewer
 -use Set GP Color
 	-Width tob Radius.
 -Fix Default Axis Enum Issue
@@ -128,10 +128,12 @@ x-Mix Normals by Proximity
 --Center Falloff
 --Mesh Falloff
 --Spline Falloff?
+
+Float Range
+-Support Different Domains
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
-Rewrite Reading Upto ZE_37
 
 **Expanded Enum Socket
 -Index Converge
