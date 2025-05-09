@@ -1,0 +1,404 @@
+Done:
+Loft Curves
+-Guide Resampling rename -> Guide Count
+-Cross Resampling rename -> Cross Count
+
+3D Viewer
+-use Set GP Color
+	-Width tob Radius.
+-Fix Default Axis Enum Issue
+-slow GP render if too many layers.
+	-merge layers also slow.
+	-> conversion after instances to keep into single layer.
+-Mesh method is a little faster in nodes, but rendering is slower
+
+**Curve to Mesh: now on it's using "Scale".
+-the radius no longer effects the thickness.
+	-versioning is using the radius to prevent breaking tutorials.
+-when to break the old tutorial? how to set it up?
+	-> not to break the tutorial; still using the radius.
+		-in the future add a use radius option.
+-> change from practice, the Scale should now accept a field; multiplied by radius.
+
+Bevel Curve
+-Scale now supports field. Radius Compatibility ensured.
+-Length Multiplier not working with scale well.
+	-because the the Profile Length is a fixed number now.
+-UV by Length Can be Removed due to Length Multiplier
+	-done
+-Improve the Cap UV auto-scaling.
+-clean up & add comment.
+
+Add: Mix Normals by Proximity
+	-set mesh normal node: pulls/132583
+
+**Is inside View
+-Update setting
+-remove Use Camera Option; by using Instance implicit Geo method.
+
+Knit
+-fix
+
+Step Extrusion
+-support Step & Stop.
+
+Text Mesh
+-update and integrate with Step Extrusion Method
+
+**Expanded Enum Socket.
+	-it's an enum but suitable for two item and dyanmic socket visibility.
+--Mesh Falloff
+	-Expand & Shrink.
+--Value Precision
+--Grid Distribution
+--Bevel Curve
+	-Profile
+	-Cap Shape
+	x-UV by Factor & Index
+--Float Range
+	-Step Selection can be removed.
+		-It was more of a clear way to make sure input in Selection socket.
+	-Exclude Ednpoint must not be inlined with previous step selection.
+		-will cause confusion of input and output value.
+--Curve Linear
+	-Step & Stop
+	-XYZ
+--Animate
+	-End & Duration
+--3D viewer
+	-All, XYZ
+--Directional Falloff
+	-XYZ
+--Radial Falloff
+	-Plane Axis
+--Attribute Voronoi
+--Bend Deformer
+	-axis
+x--Smooth Curve
+	-too long.
+--random Color
+--Append Point to Curves
+--Bounding Box Fallloff
+	-XYZ
+--Scale Selection
+--Combine Euler Rotation
+--Curve Deformer
+	-only completing XYZ now.
+	-other mode needs to be considered?
+--Step Extrusion
+--Rod
+--Align Rotation to Point
+--Parenting
+	-Original Vs. Relative
+--Reset Local Transform
+	-original Vs.relative.
+	-can't deal wth geometry & Vector; since output can't be hidden.
+
+Remove Named Attribute from Curve to Mesh Change
+	-replaced with radius node.
+	-previously, radius has to be passed for Bevel Curve.
+		-but not it's no longer required?
+		-keep for versioning, since Bevel Curve is still counting radius.
+--Helical Connections
+	-yes able to?
+	-re-arrange Capture Attribute for both index and radius.
+x--Bevel Curves
+	-removed one, keep others for now. end result is the same.
+x--Curve Extrapolate?
+	-if radius doesn't exist, radius node attribute by itself will just be 0.
+--Proximity Falloff
+	-there is a curve to mesh inside; removable'
+--Curve Split
+--Sample in Proximity
+
+**New Instance Bounds node
+	-at the moment seems broken: issues/138598?
+		->not broken, but local needs instance transform.
+--Instance Bounding Box.
+	-about 2X faster than before.
+-Bounding Box Falloff
+	-unfortunately no prominent places that can improve the design
+
+**Proximity Falloff Updates
+	-right now advanced contains 3 separate Range.
+		-although bad for maintainence.
+		-but 3 parameters likely will need completely different settings.
+x-Mix Normals by Proximity
+	-exclude from advanced setting because likely not needed.
+--Center Falloff
+--Mesh Falloff
+--Spline Falloff?
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_10.
+To Do:
+Rewrite Reading Upto ZE_37
+
+**Expanded Enum Socket
+-Index Converge
+-Get UVMap
+	-enum visibility to switch between modes?
+		-Obj Vs. Custom Geometry
+	-doesn't simplify anything.
+	-needs to make into a modifier.
+-Modulo Falloff
+-Local Offset
+	-not very important now, do it later?
+-Record Velocity
+	-?
+
+Add: Offset to Camera
+-needs to be a modifier
+
+**Bounding Box is using Radius Now
+	-generally not changing anything, but still to remove some in case?
+-UV Deformer
+	-remove radius
+-Bounding Box Falloff
+	-remove.
+-Mirror Modifier on Mesh
+
+**Field Statistic node
+-need a new performance test.
+	-Mostly faster than attribute statistic
+-to replace many statistic which requires geometry input.
+	-Get Index
+		-but still need geometry input anyway.
+	-Index List Length
+	-is enclosed geometry
+		-but what about the value? should be a constant or field?
+	-Iteration Count per Domain
+	-Point Distribute
+	-Branch Gradient
+	-Islands instance
+	-Group to Instance
+	x-Is Enclosed Geometry
+		-slower than attribute statistic
+
+Curve Resampling
+-into a modifier in case of path constraint?
+-behavior in case of nurbs path?
+
+Separate Geometry by Index
+-rename: separate geometry by ID?
+
+follow path constraint
+-needs use resolution.
+-use follow Splines method
+
+Add: S_Voronoi Scatter
+
+Temporal Object info
+-it's only reading the location, without rotation and scale.
+-should get an geometry velocity too?
+
+Mesh Rolling
+-what about this method in Curve Rolling?
+	-which one to choose, which one should stay?
+		-both have to be different, because mesh can't recognize its segment.
+-what's wrong with the first few segments?
+
+Curve Deformer
+-Flow% is based on % and sometimes causes a delay because of length difference.
+	-add an option to normalize the length.
+	-also to consider the effect of start length.
+********************************************************
+4.5:
+Boolean Toggle of Panel.
+-Loft Curves
+	-Advanced Options for Caps.
+		-grid subdivsion for caps?
+	-index output?
+-Curve Resampling
+	-Points Preview toggle; for radius, use radius...
+
+*Scene Info.
+-improve Animate interpolation?
+	-but curves are not accessible?
+		-closure and bundles.
+-Is Inside View Still has resolution X and Y issue.
+----------------------------------
+5.0:
+Dynamic Socket Vsibility.
+x--Point Distribute
+	-No, since only Poisson Distance will be hidden by Menu Switch.
+	-add a Density Factor test
+		-it's in random mode in case for selecting area and screw the distribution?
+	-Re-arrange the node.
+--Bevel Curve
+x--Curve Rolling
+	-Stop Mode Vs. Threshold & Clamp?
+x--Curve Resampling
+	-Resolution Vs. Count mode?
+--Proximity Falloff
+	-advanced mode should use 3 different float because rel for %, others abs.
+	-probably no change to the object & Mesh mode.
+x--Noise 3D
+	-evolution can have different input?
+--Randomness
+	-it's already working as expected without updating anything.
+-Point Instance Geometry
+	-by Count or by Custom & advanced Mode?
+--Proximity Falloff
+--**Text Mesh
+--Step Extrusion
+--Text Mesh
+x-Spherical Geo
+	-the current design is already ok imo
+
+**InLine Socket
+-Reselt Self Object Transform
+-Curve Extrapolation
+x--Time Falloff
+	-better to separate the meaning of Time & Falloff
+x--Attribute Mesh?
+	-has split edge so better to separate the meaning?
+-Motion Variance
+-Follow Path
+-Bevel Curve Fill Cap
+-Curve Extrapolation
+-reset spline cyclic
+-float range
+-Snap Function
+-Get UVMap
+-Join Particles
+-Tracer
+	-Sample Attribute
+-Freeze Geometry
+
+**Inline Socket Need Design.
+-Helical Connections
+-Fill Volume
+-Curve Deformer
+
+**Inline Socket Breaking
+-remap 0-1
+-Random Rotation
+-Curve Extrapolation?
+-Store UVMap
+-
+
+**Closure and Bundles
+-Instance for each element?
+	-save the point node and index input?
+-support curve Interpolate function outside group?
+	-Remap Vector Scale
+****************************************************************************************************
+GN-Known Issue:
+Tree Generator
+-Noises displacement is displacing branches out of way.
+-need a better interpolation for "over parameter" method.
+
+Hair on Surface
+-Proximity targets differently for each point in complex geometry
+
+Dynamic Space Sampling
+-Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry?
+
+Tracer
+-Dynamic Attribute such as age and falloff will be lost before.
+	-This is unavoidable because these attribute are captured upon join.
+	-Curve Age is implemented, others requires sample Index.
+		-> Implemented.
+-If Points are Deleted, tracer will be disrupted.
+	-Temporary Sample by ID is implemented.
+
+Temporal Value
+-Not Functioning now because for field it requires geometry.
+-Too lazy to fix now.
+
+Polygon Unfolding
+-has some minor rotation of transform to prevent bug.
+-
+
+Float Range
+-Only working on Point Domain.
+
+Solidify
+-In Instance Mode, Merge by Distance Not Working.
+
+S_Vector Seed
+-Currently Seed all Positive Value.
+	-Too lazy to build the Switch.
+
+Freeze Geometry
+-what if different geometry requiring different status of freeze?
+	-switch node can't accept Field.
+	-Separate Geometry for Freeze?
+		-if the index is changing, what to do?
+
+Set Particle Parameter
+-Should Inheret the previous velocity?
+	-currently the velocity must be newly written.
+
+Add: Mesh Tangent?
+-How to make sure between vertex & face tangent?
+
+Tracer
+-I think there are cases you don't want to delete trace when they are deleted?
+
+Float Range
+-Stop Mode is not used at 0, but it's still shown as occupied.
+
+Step Extrusion
+-The stop mode currently doesn't support attribute for multiple polygons.
+****************************************************************************************************
+Investigation:
+Bend Deform
+-Angle Check?
+
+Reset Instance Origin.
+-Use Bounding Box?
+
+Add: Recalculate Normal
+-Face normal comparing to Vertex & Edge Normal method?
+	-Split edge will offset all local information. all normal to be 0,0,1.
+	-flipped face normal leads to flipped vertex normal.
+
+Join Particles
+-Investigate: why joining 2/frame has more hits than joining 1/frame?
+	-seems to only happen if using temporal object info?
+
+Bevel Curve
+-Why Bevel Curve requires additional Set material node?
+	-because of Mesh to Curve Node will cause lose of materials.
+
+Curve Points Preview
+-Curve to Points is not working for instances regardless
+	-https://projects.blender.org/blender/blender/issues/137163
+
+Tracer
+-if to use the newly joined geo detection function?
+	-[index - (sampled index + 1)]
+***************************************************************************************************
+Still Considering Necessity:
+Add: Array Instancer?
+
+Add: Randomize Instance Order?
+-Instance on Point + Random Value + Instance Index
+-Is this extra nodes really necessary?
+****************************************************************************************************
+**General rule of design:
+Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
+
+Randomness
+-Var. means range between full negative Var. & full positive Var.
+-Mid-Level Means 2X Positive/Negative.
+
+Check if All index node are using implicit index attribute than ID/Index.
+During Instance and Pick Instance
+	-Instance Index should use Index instead of ID?
+		-should use ID/Index instead.
+	-for example if using Is inside View to select point.
+		-instance index will glitch, while ID won't.
+
+Advanced= Advanced Settings
+
+Search Terms used in LOG:
+Add:
+Failed Add:
+Not Add:
+Rename:
+Remove:
+--: means item task in the list has been completed.
+x--: means item task is rejected
