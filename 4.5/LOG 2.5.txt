@@ -191,6 +191,59 @@ Float Range
 
 3D Viewer
 -Boolean Toggle for Rotation
+
+attribute Mesh
+-split edges are too slow, off by default. and support field.
+
+**Field Statistic node
+--need a new performance test.
+	-Mostly faster than attribute statistic
+-to replace many statistic which requires geometry input.
+	-Get Index
+		-but still need geometry input anyway.
+	x-Index List Length
+		-it's also important to get a single value.
+		-sample index is costy.
+	x-is enclosed geometry
+		-but what about the value? should be a constant or field?
+	--Iteration Count per Domain
+		-it's only used in attribute viewer.
+		-not requiring sophisticated code.
+		-replace statistic wth domain size.
+	x-Point Distribute
+		-sum is replicable by accumulate field.
+			-same performance as statistic
+		-but it still requires a single value.
+	--Branch Gradient
+		-used in tree generator
+	-Group to Instance
+		-different modes include using Bounding Box Center?
+			-how to get bounds before split to instance?
+	x-Is Enclosed Geometry
+		-slower than attribute statistic
+
+**Bounding Box is using Radius Now
+	-generally not changing anything, but still to remove some in case?
+--UV Deformer
+	-remove radius
+--Bounding Box Falloff
+	-remove.
+--Mirror Modifier on Mesh
+
+test: ZA_11A
+-deleted, it was made before instance attribute is supported
+	-so index converge is needed.
+
+mirror modifier
+-there's a warning for point cloud due to flip face.
+	-disable it since the output won't change.
+-for point clouds, flip works, bisect not?
+	-build test for is inside volume.
+
+is inside volume
+-the direction input shouldn't be normlaized.
+	-it can used to calculate length.
+-> base multiplier of length by 1000 now.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
