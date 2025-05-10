@@ -249,6 +249,21 @@ is inside volume
 UV Deformer
 -update test & Z-axis factor.
 	-don't know why using pi in negati but seems working.
+
+Edge Distance
+-rename: Edge Length
+	-length is a term used more.
+
+Knit
+-change order and default parameters.
+	-the reason it uses stop because very difficult for small value?
+
+Curve Split
+-can't reove edge parameter.
+	-curve segment length value on per point instead of per segment.
+
+hexagonal distribution
+-fix curve linear change internally.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
