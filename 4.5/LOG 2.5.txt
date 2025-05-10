@@ -131,36 +131,58 @@ x-Mix Normals by Proximity
 
 Float Range
 -Support Different Domains
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_10.
-To Do:
+
+Modulo Falloff
+-write to replace map range method.
+-threshold method improvement
+-compare still has to be float to support threshold.
 
 **Expanded Enum Socket
--Index Converge
--Get UVMap
+x-Modulo Falloff
+	-even splitting to integer & float mode, map range is still float?
+--Attribute Viewer
+x-Get UVMap
 	-enum visibility to switch between modes?
 		-Obj Vs. Custom Geometry
 	-doesn't simplify anything.
-	-needs to make into a modifier.
--Modulo Falloff
+	-if into a modifier, not meaningful to switch enum.
+--Index Converge
+	-is used in "array on Spline"
+		-duplicate element can't be used because its index is serial instead a group.
+--Curve Connect
+	-not very important?
+	-done serial and parallel.
+	-but likely needs a complete rewrite and re-design.
+		-how to define how many curves in parallel?
+
+**Curve Connect
+-rewrite with Points to Curve
+	-remember to keep radius
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_10.
+To Do:
+Rewrite Reading Upto..
+
+**Expanded Enum Socket
 -Local Offset
 	-not very important now, do it later?
 -Record Velocity
 	-?
 
-Add: Offset to Camera
+
+Add: Offset towards Camera
 -needs to be a modifier
 
 **Bounding Box is using Radius Now
 	-generally not changing anything, but still to remove some in case?
--UV Deformer
+--UV Deformer
 	-remove radius
--Bounding Box Falloff
+--Bounding Box Falloff
 	-remove.
--Mirror Modifier on Mesh
+--Mirror Modifier on Mesh
 
 **Field Statistic node
--need a new performance test.
+--need a new performance test.
 	-Mostly faster than attribute statistic
 -to replace many statistic which requires geometry input.
 	-Get Index
