@@ -244,6 +244,11 @@ is inside volume
 -the direction input shouldn't be normlaized.
 	-it can used to calculate length.
 -> base multiplier of length by 1000 now.
+	so that normalized factor can be 1000 meter.
+
+UV Deformer
+-update test & Z-axis factor.
+	-don't know why using pi in negati but seems working.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
