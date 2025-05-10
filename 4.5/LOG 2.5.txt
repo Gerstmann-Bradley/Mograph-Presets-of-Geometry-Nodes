@@ -158,6 +158,39 @@ x-Get UVMap
 **Curve Connect
 -rewrite with Points to Curve
 	-remember to keep radius
+
+**Expanded Enum Socket
+x--Record Velocity
+	-made into Menu, but not expand it.
+
+Loft Curves
+x-index output?
+	-if it's just index value arranged differently. what's the point?
+
+Boolean Toggle of Panel.
+x-Loft Curves
+	-Advanced Options for Caps.
+		-grid subdivsion for caps?
+		-how to do that? not even done in Bevel Curve for custom profile.
+x-Curve Resampling
+	-Points Preview toggle; for radius, use radius?
+	-not yet important.
+
+Tracer: removed from known issue
+--Dynamic Attribute such as age and falloff will be lost before.
+	-This is unavoidable because these attribute are captured upon join.
+	->Curve Age is implemented, others requires sample Index.
+		-> Implemented.
+--If Points are Deleted, tracer will be disrupted.
+	->Temporary Sample by ID is implemented.
+
+Float Range
+--Stop Mode is not used at 0, but it's still shown as occupied.
+	-resolved in new.
+-> Removed from known issue.
+
+3D Viewer
+-Boolean Toggle for Rotation
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
@@ -166,12 +199,11 @@ Rewrite Reading Upto..
 **Expanded Enum Socket
 -Local Offset
 	-not very important now, do it later?
--Record Velocity
-	-?
-
 
 Add: Offset towards Camera
 -needs to be a modifier
+
+Add: Screen on Camera
 
 **Bounding Box is using Radius Now
 	-generally not changing anything, but still to remove some in case?
@@ -200,6 +232,7 @@ Add: Offset towards Camera
 
 Curve Resampling
 -into a modifier in case of path constraint?
+	-required for speed variation upon moving.
 -behavior in case of nurbs path?
 
 Separate Geometry by Index
@@ -227,18 +260,10 @@ Curve Deformer
 	-also to consider the effect of start length.
 ********************************************************
 4.5:
-Boolean Toggle of Panel.
--Loft Curves
-	-Advanced Options for Caps.
-		-grid subdivsion for caps?
-	-index output?
--Curve Resampling
-	-Points Preview toggle; for radius, use radius...
-
 *Scene Info.
--improve Animate interpolation?
+x-improve Animate interpolation?
 	-but curves are not accessible?
-		-closure and bundles.
+		-closure and bundles?
 -Is Inside View Still has resolution X and Y issue.
 ----------------------------------
 5.0:
@@ -316,15 +341,13 @@ Hair on Surface
 -Proximity targets differently for each point in complex geometry
 
 Dynamic Space Sampling
--Curve Tangent/grid edge tangent method is not working because they aren't stable relative to geometry?
+-Curve Tangent/grid edge tangent method is not working
+	-because they aren't stable relative to geometry?
+-basic setup is working.
+	-but somehow moving as a whole in complex scene. why?
 
 Tracer
--Dynamic Attribute such as age and falloff will be lost before.
-	-This is unavoidable because these attribute are captured upon join.
-	-Curve Age is implemented, others requires sample Index.
-		-> Implemented.
--If Points are Deleted, tracer will be disrupted.
-	-Temporary Sample by ID is implemented.
+-I think there are cases you don't want to delete trace when they are deleted?
 
 Temporal Value
 -Not Functioning now because for field it requires geometry.
@@ -334,11 +357,9 @@ Polygon Unfolding
 -has some minor rotation of transform to prevent bug.
 -
 
-Float Range
--Only working on Point Domain.
-
 Solidify
 -In Instance Mode, Merge by Distance Not Working.
+-not possible to integrate with step extrusion, because output socket visible.
 
 S_Vector Seed
 -Currently Seed all Positive Value.
@@ -356,12 +377,6 @@ Set Particle Parameter
 
 Add: Mesh Tangent?
 -How to make sure between vertex & face tangent?
-
-Tracer
--I think there are cases you don't want to delete trace when they are deleted?
-
-Float Range
--Stop Mode is not used at 0, but it's still shown as occupied.
 
 Step Extrusion
 -The stop mode currently doesn't support attribute for multiple polygons.
