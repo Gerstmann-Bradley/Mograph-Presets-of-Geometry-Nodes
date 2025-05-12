@@ -264,6 +264,10 @@ Curve Split
 
 hexagonal distribution
 -fix curve linear change internally.
+
+Float Range
+-Stop Default at 1
+-Step should allow negative value now.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
