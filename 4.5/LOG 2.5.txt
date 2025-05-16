@@ -195,33 +195,6 @@ Float Range
 attribute Mesh
 -split edges are too slow, off by default. and support field.
 
-**Field Statistic node
---need a new performance test.
-	-Mostly faster than attribute statistic
--to replace many statistic which requires geometry input.
-	-Get Index
-		-but still need geometry input anyway.
-	x-Index List Length
-		-it's also important to get a single value.
-		-sample index is costy.
-	x-is enclosed geometry
-		-but what about the value? should be a constant or field?
-	--Iteration Count per Domain
-		-it's only used in attribute viewer.
-		-not requiring sophisticated code.
-		-replace statistic wth domain size.
-	x-Point Distribute
-		-sum is replicable by accumulate field.
-			-same performance as statistic
-		-but it still requires a single value.
-	--Branch Gradient
-		-used in tree generator
-	-Group to Instance
-		-different modes include using Bounding Box Center?
-			-how to get bounds before split to instance?
-	x-Is Enclosed Geometry
-		-slower than attribute statistic
-
 **Bounding Box is using Radius Now
 	-generally not changing anything, but still to remove some in case?
 --UV Deformer
@@ -272,44 +245,108 @@ Float Range
 Expanded Enum Socket
 --Is Sharp Angle
 	-test again for why is not working for text mesh
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_10.
-To Do:
-Rewrite Reading Upto..
+
+Normalize Field.
+-field min max...
+	-no need for geometry now.
+-support domain.
 
 **Expanded Enum Socket
--Local Offset
-	-not very important now, do it later?
+x-Local Offset
+	-no, but can support menu.
+--Is Sharp Angle
+	-test again for why is not working for text mesh
 
-Add: Offset towards Camera
--needs to be a modifier
-
-Add: Screen on Camera
-
-**Bounding Box is using Radius Now
-	-generally not changing anything, but still to remove some in case?
---UV Deformer
-	-remove radius
---Bounding Box Falloff
-	-remove.
---Mirror Modifier on Mesh
+Relaxation Solver
+-rename: Relaxing Points
 
 **Field Statistic node
 --need a new performance test.
 	-Mostly faster than attribute statistic
 -to replace many statistic which requires geometry input.
-	-Get Index
-		-but still need geometry input anyway.
-	-Index List Length
-	-is enclosed geometry
+	x-attribute island.
+		-used to put value into a constant.
+	--Branch Gradient
+		-used in tree generator
+	x-curve deformer
+		-dtm cyclic
+	x-curve extrapolation
+		-dtm cyclic
+	--curve rolling
+		-used field max to resolve per-spline issue in test 4
+	--Dynamic Point Radius
+	x-fill curve tube
+		-only need to calculate the minimum points.
+	x-fill volume
+		-remove one and replaced with domain size.
+		-keep for capturing purposes. but not sure.	
+	x-Get Index
+		-keep for now but still need geometry input anyway.
+	--Group to Instance
+		-different modes include using Bounding Box Center?
+			-how to get bounds before split to instance?
+	--index converge
+		-used in curve connect & array on Splines
+		-replaced by domain size.
+		-geometry input needed to specific geometry.
+			-add domain support by iteration count per domain.
+	x-Index List Length
+		-it's also important to get a single value.
+		-sample index is costy.
+	x-index offset
+		-feel a bit lost with this design.
+		-max is used for group index (ID) for iteration in repeat zone.
+	x-is enclosed geometry
 		-but what about the value? should be a constant or field?
-	-Iteration Count per Domain
-	-Point Distribute
-	-Branch Gradient
-	-Islands instance
-	-Group to Instance
+	--Iteration Count per Domain
+		-it's only used in attribute viewer.
+		-not requiring sophisticated code.
+		-replace statistic wth domain size.
 	x-Is Enclosed Geometry
 		-slower than attribute statistic
+	x-layered proximity falloff
+		-not important and useful in the moment.
+	x-loft curves
+	x-parenting
+		-require a constant for transform node.
+	x-Point Distribute
+		-sum is replicable by accumulate field.
+			-same performance as statistic
+		-but it still requires a single value.
+	x-relaxing Point
+		-need a constant for switch.
+	x-reset spline cyclic
+		-need constant for switch.
+	x-set branch radius
+		-hierarchy constant for iteration count.
+	x-solidified outline
+		-switch for menu.
+	?-stretch falloff
+		-removed.
+		-compress not working??
+	x-tracer
+		-for switch.
+	--trim curve normalized
+
+reset spline cyclic
+-clean up.
+	-the performance test show no difference.
+		-in multiple Vs. single curve mode.
+-very limited room of improvement.
+
+set curve tilt alignment
+-3 modes are chaotic at this moment.
+	-can I use menu switch to clarify things better?
+-> improved the management, but don't depoly ntl hide inputs available.
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_10.
+To Do:
+Rewrite Reading Upto..
+
+Add: Offset towards Camera
+-needs to be a modifier
+
+Add: Screen on Camera
 
 Curve Resampling
 -into a modifier in case of path constraint?
@@ -340,38 +377,47 @@ Curve Deformer
 	-add an option to normalize the length.
 	-also to consider the effect of start length.
 ********************************************************
-4.5:
+4.5+:
 *Scene Info.
 x-improve Animate interpolation?
 	-but curves are not accessible?
 		-closure and bundles?
 -Is Inside View Still has resolution X and Y issue.
+
+**Separator
+	-more of a simple UI thing.
+-
 ----------------------------------
 5.0:
 Dynamic Socket Vsibility.
+	-technically this is automatic, but require some implementations to use this feature.
 x--Point Distribute
 	-No, since only Poisson Distance will be hidden by Menu Switch.
 	-add a Density Factor test
-		-it's in random mode in case for selecting area and screw the distribution?
-	-Re-arrange the node.
---Bevel Curve
-x--Curve Rolling
+		-it was already there.
+	-Re-arrange the node to make poisson the last.
+x-Randomness
+	-Abs & Abs Var. Only method may better require a different input subtype?
+		x-too breaking for my file?
+		-the UX will be troublesome due to resetting values?
+	-> not worth it.
+x--Bevel Curve
+	-no inputs can be hidden on different modes.
+x-Curve Rolling
 	-Stop Mode Vs. Threshold & Clamp?
-x--Curve Resampling
+x-Curve Resampling
 	-Resolution Vs. Count mode?
 --Proximity Falloff
 	-advanced mode should use 3 different float because rel for %, others abs.
+		-resetting value is fine since Abs & Abs reverse must not share value.
 	-probably no change to the object & Mesh mode.
-x--Noise 3D
+		-it's easier to keep them exposed without manipulating menu.
+x-Noise 3D
 	-evolution can have different input?
---Randomness
-	-it's already working as expected without updating anything.
 -Point Instance Geometry
 	-by Count or by Custom & advanced Mode?
---Proximity Falloff
 --**Text Mesh
 --Step Extrusion
---Text Mesh
 x-Spherical Geo
 	-the current design is already ok imo
 
@@ -399,8 +445,10 @@ x--Attribute Mesh?
 -Helical Connections
 -Fill Volume
 -Curve Deformer
+-UV Deformer
+	-custom bounding box Vs. Bounds Preview
 
-**Inline Socket Breaking
+**Inline Socket Breaking?
 -remap 0-1
 -Random Rotation
 -Curve Extrapolation?
@@ -412,6 +460,15 @@ x--Attribute Mesh?
 	-save the point node and index input?
 -support curve Interpolate function outside group?
 	-Remap Vector Scale
+
+**Dynamic Socket Type: effect nodes requiring multiple types.
+-Sample in Proximity.
+-Inertial Offset
+-...
+********************************************************
+**Remove Trash Code
+-UV Deformer
+-Mirror Modifier
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
@@ -429,10 +486,6 @@ Dynamic Space Sampling
 
 Tracer
 -I think there are cases you don't want to delete trace when they are deleted?
-
-Temporal Value
--Not Functioning now because for field it requires geometry.
--Too lazy to fix now.
 
 Polygon Unfolding
 -has some minor rotation of transform to prevent bug.
@@ -489,6 +542,12 @@ Curve Points Preview
 Tracer
 -if to use the newly joined geo detection function?
 	-[index - (sampled index + 1)]
+
+Unknown Nodes:
+-Group Index, Count Per Island.
+-Group per Domain
+-Iteration Count per Domain.
+	-used to be for repeat zone. but currently questionable.
 ***************************************************************************************************
 Still Considering Necessity:
 Add: Array Instancer?
@@ -511,6 +570,8 @@ During Instance and Pick Instance
 		-should use ID/Index instead.
 	-for example if using Is inside View to select point.
 		-instance index will glitch, while ID won't.
+
+Named UVMap should Above Vector input UVMap
 
 Advanced= Advanced Settings
 
