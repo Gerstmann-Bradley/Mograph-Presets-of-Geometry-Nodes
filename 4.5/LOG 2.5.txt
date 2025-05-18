@@ -338,6 +338,9 @@ set curve tilt alignment
 -3 modes are chaotic at this moment.
 	-can I use menu switch to clarify things better?
 -> improved the management, but don't depoly ntl hide inputs available.
+
+set curve tilt alignment
+-vector mode as Input as Target option.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
@@ -514,6 +517,10 @@ Add: Mesh Tangent?
 
 Step Extrusion
 -The stop mode currently doesn't support attribute for multiple polygons.
+
+Bevel Curve
+-give warning in Mesh Instances.
+	-curve to mesh will work in curve instances wtho realization.
 ****************************************************************************************************
 Investigation:
 Bend Deform
