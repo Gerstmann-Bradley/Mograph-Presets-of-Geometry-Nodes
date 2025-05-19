@@ -341,6 +341,29 @@ set curve tilt alignment
 
 set curve tilt alignment
 -vector mode as Input as Target option.
+
+Center Falloff
+-somehow the advanced panel opened up.
+
+Text Mesh
+-Iteration should have a better name.
+-Extrusion depth is different between Fast and Heavy Remesh.
+	-because mode 2 & 3 are extruded double sided.
+-No Remesh need also step extrusion?
+	-done.
+-Heavy Remesh is down if Extrusion=0
+	-fixed.
+-**expanded menu for triangles/N-gons...
+
+Mix Normal by Proximity
+-Set Mesh Normal relys on Domain.
+	-face domain is better than face corner?
+	-seems arguable
+-> expose domain.
+
+Mix Normals by Proximity
+-rename: Mix Mesh Normals by Proximity.
+	-this will show up in the search.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
