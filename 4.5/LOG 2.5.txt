@@ -364,13 +364,29 @@ Mix Normal by Proximity
 Mix Normals by Proximity
 -rename: Mix Mesh Normals by Proximity.
 	-this will show up in the search.
+
+Set Curve Tilt Alignment
+-falloff tob tilt falloff
+-separate vector in Vector and Surface guide.
+-Input as Target made into "Target" object.
+
+Fill Volume
+-add Value Precision.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
 Rewrite Reading Upto..
 
+Implicit Attribute
+-is not an asset, but implicit geometry is?
+
 Add: Offset towards Camera
 -needs to be a modifier
+
+Add: Dot Product Falloff?
+-a modifier version to global position?
+-geometry nodes or ?
+-normalization needed.
 
 Add: Screen on Camera
 
@@ -412,7 +428,12 @@ x-improve Animate interpolation?
 
 **Separator
 	-more of a simple UI thing.
--
+-array on Splines
+-Attribute Viewer
+-Braid
+-Fill Volume
+-Sharp Edge wireframe
+-Step Extrusion
 ----------------------------------
 5.0:
 Dynamic Socket Vsibility.
