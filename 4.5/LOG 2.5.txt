@@ -376,6 +376,8 @@ Fill Volume
 Hash Seed
 -10's exponent
 	-rename: Power of 10
+-Expose Vector output
+	-easier to store W seed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
