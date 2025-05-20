@@ -372,6 +372,10 @@ Set Curve Tilt Alignment
 
 Fill Volume
 -add Value Precision.
+
+Hash Seed
+-10's exponent
+	-rename: Power of 10
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
