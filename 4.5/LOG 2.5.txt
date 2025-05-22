@@ -381,6 +381,9 @@ Hash Seed
 
 Randomness
 -use Abs Variation & add all tooltips.
+
+Mix Mesh Normals in Proximity
+-fix default 0 normal case.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
