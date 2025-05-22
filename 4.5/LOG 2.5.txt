@@ -378,6 +378,9 @@ Hash Seed
 	-rename: Power of 10
 -Expose Vector output
 	-easier to store W seed.
+
+Randomness
+-use Abs Variation & add all tooltips.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
