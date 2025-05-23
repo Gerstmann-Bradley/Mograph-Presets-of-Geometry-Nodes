@@ -396,6 +396,19 @@ Point Instance Geometry
 -Re-ordering.
 -expanded menu to hide sockets.
 -panel toggle for pick instance.
+
+Text Mesh
+-Fix the dependency issue for dynamic socket visibility.
+	-it's not ideal to have .sub group, but I guess no other ways before bundles.
+-Fast Remesh.
+	-rename: Planar Remesh.
+-Heavy Remesh.
+	-rename: Voxel Remesh.
+-> the name change is basically because the performance cost was not obvious.
+
+Step Extrusion
+-rename: Step Extrude
+	-so that showing on the search.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
@@ -468,9 +481,17 @@ x-improve Animate interpolation?
 -Sharp Edge wireframe
 -Step Extrusion
 
-**Inline Toggle
+**Inline Toggles.
 -Mirror Modifier
-
+-Voxel?
+-nodes with Decimal Shift now?
+	-Fill Volume.
+	-Array on Splines
+	-Step Extrusion.
+	-braid?
+-Solidify
+	-Expose Merge by Distance.
+		-it will largely improve the performance.
 ----------------------------------
 5.0:
 Dynamic Socket Vsibility.
