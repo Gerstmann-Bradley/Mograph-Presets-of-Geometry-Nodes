@@ -384,6 +384,13 @@ Randomness
 
 Mix Mesh Normals in Proximity
 -fix default 0 normal case.
+
+Proximity Falloff
+-clean up, re-arrangem.
+-Mesh be renamed to "Geo" since it supports all other types too.
+-use points domain in case mixed input that contain no face.
+x-a different scale offset for Geo modes.
+	-I can't solve the inferencing aspects of it so rather not to add complexity.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
