@@ -409,6 +409,10 @@ Text Mesh
 Step Extrusion
 -rename: Step Extrude
 	-so that showing on the search.
+
+Mix Mesh Normals in Proximity
+-support tangent space.
+	-not sure the use case but it respond to deformation.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
