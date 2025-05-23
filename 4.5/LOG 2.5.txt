@@ -391,6 +391,11 @@ Proximity Falloff
 -use points domain in case mixed input that contain no face.
 x-a different scale offset for Geo modes.
 	-I can't solve the inferencing aspects of it so rather not to add complexity.
+
+Point Instance Geometry
+-Re-ordering.
+-expanded menu to hide sockets.
+-panel toggle for pick instance.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
@@ -398,6 +403,15 @@ Rewrite Reading Upto..
 
 Implicit Attribute
 -is not an asset, but implicit geometry is?
+
+Loft Curves
+-Attribute captured can't be passed.
+	-known issue, because the resultant was actually a different mesh.
+	-need panels for sampling...
+
+Motion Variance
+-due to start Var. and Clamp Negative, it's only going positive region.
+	-> speed variation only, the start variation can be done by delay falloff?
 
 Add: Offset towards Camera
 -needs to be a modifier
@@ -453,12 +467,16 @@ x-improve Animate interpolation?
 -Fill Volume
 -Sharp Edge wireframe
 -Step Extrusion
+
+**Inline Toggle
+-Mirror Modifier
+
 ----------------------------------
 5.0:
 Dynamic Socket Vsibility.
 	-technically this is automatic, but require some implementations to use this feature.
 x--Point Distribute
-	-No, since only Poisson Distance will be hidden by Menu Switch.
+	-No, because only Poisson Distance will be hidden by Menu Switch.
 	-add a Density Factor test
 		-it was already there.
 	-Re-arrange the node to make poisson the last.
@@ -466,7 +484,8 @@ x-Randomness
 	-Abs & Abs Var. Only method may better require a different input subtype?
 		x-too breaking for my file?
 		-the UX will be troublesome due to resetting values?
-	-> not worth it.
+	-> not worth it
+		-decided to do it.
 x--Bevel Curve
 	-no inputs can be hidden on different modes.
 x-Curve Rolling
