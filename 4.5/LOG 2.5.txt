@@ -413,6 +413,12 @@ Step Extrusion
 Mix Mesh Normals in Proximity
 -support tangent space.
 	-not sure the use case but it respond to deformation.
+
+Add: Dot Product Falloff
+-a modifier version to global position?
+	-will be done more personally because it will require a Geo input.
+-geometry nodes for now.
+-normalization needed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
@@ -432,11 +438,6 @@ Motion Variance
 
 Add: Offset towards Camera
 -needs to be a modifier
-
-Add: Dot Product Falloff?
--a modifier version to global position?
--geometry nodes or ?
--normalization needed.
 
 Add: Screen on Camera
 
