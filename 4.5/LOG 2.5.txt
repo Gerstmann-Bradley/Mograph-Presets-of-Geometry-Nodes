@@ -419,6 +419,10 @@ Add: Dot Product Falloff
 	-will be done more personally because it will require a Geo input.
 -geometry nodes for now.
 -normalization needed.
+
+Float Range
+-Step Mode add a decimal shift
+	-default 0 for compatibility.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
