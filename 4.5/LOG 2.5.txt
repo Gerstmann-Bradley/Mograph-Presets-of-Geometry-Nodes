@@ -334,7 +334,7 @@ reset spline cyclic
 		-in multiple Vs. single curve mode.
 -very limited room of improvement.
 
-set curve tilt alignment
+**set curve tilt alignment
 -3 modes are chaotic at this moment.
 	-can I use menu switch to clarify things better?
 -> improved the management, but don't depoly ntl hide inputs available.
@@ -425,7 +425,16 @@ Float Range
 	-default 0 for compatibility.
 
 Add: G_Instance Bounds
--make it global, otherwise too pointless to use local Bounds
+-make it global, otherwise too pointless to use native local Bounds
+
+Set Curve Tilt Alignment
+-separate Vector and Target Mode.
+-the original design of default status will be changed.
+
+Layered Proximity Falloff
+-fix Falloff Animation Default Value from 1 to 0.5
+-add Comment...
+-substep into a panel...
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
@@ -439,12 +448,25 @@ Loft Curves
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
 
+Temporal Sampling
+-only on Point Domain
+
 Motion Variance
 -due to start Var. and Clamp Negative, it's only going positive region.
 	-> speed variation only, the start variation can be done by delay falloff?
+-Start Variance broken with Randomness.
 
 Add: Offset towards Camera
 -needs to be a modifier
+
+Set Shade AutoSmooth
+-use single value for booleans.
+
+
+Add: Dot Product Falloff?
+-a modifier version to global position?
+-geometry nodes or ?
+-normalization needed.
 
 Add: Screen on Camera
 
@@ -478,12 +500,6 @@ Curve Deformer
 	-also to consider the effect of start length.
 ********************************************************
 4.5+:
-*Scene Info.
-x-improve Animate interpolation?
-	-but curves are not accessible?
-		-closure and bundles?
--Is Inside View Still has resolution X and Y issue.
-
 **Separator
 	-more of a simple UI thing.
 -array on Splines
@@ -492,18 +508,6 @@ x-improve Animate interpolation?
 -Fill Volume
 -Sharp Edge wireframe
 -Step Extrusion
-
-**Inline Toggles.
--Mirror Modifier
--Voxel?
--nodes with Decimal Shift now?
-	-Fill Volume.
-	-Array on Splines
-	-Step Extrusion.
-	-braid?
--Solidify
-	-Expose Merge by Distance.
-		-it will largely improve the performance.
 ----------------------------------
 5.0:
 Dynamic Socket Vsibility.
@@ -573,11 +577,32 @@ x--Attribute Mesh?
 -Store UVMap
 -
 
+*Scene Info.
+x-improve Animate interpolation?
+	-but curves are not accessible?
+		-closure and bundles?
+-Is Inside View Still has resolution X and Y issue.
+-Delta Time better using inversed frame rate than current calculation.
+	otherwise it will cause divide by 0 error.
+
+**Inline Toggles.
+-Mirror Modifier
+-Voxel?
+-nodes with Decimal Shift now?
+	-Fill Volume.
+	-Array on Splines
+	-Step Extrusion.
+	-braid?
+-Solidify
+	-Expose Merge by Distance.
+		-it will largely improve the performance.
+
 **Closure and Bundles
 -Instance for each element?
 	-save the point node and index input?
--support curve Interpolate function outside group?
+**support curve Interpolate function outside group using Closure & Bundles.
 	-Remap Vector Scale
+-layered proximity falloff
 
 **Dynamic Socket Type: effect nodes requiring multiple types.
 -Sample in Proximity.
@@ -630,7 +655,7 @@ Set Particle Parameter
 Add: Mesh Tangent?
 -How to make sure between vertex & face tangent?
 
-Step Extrusion
+Step Extrude
 -The stop mode currently doesn't support attribute for multiple polygons.
 
 Bevel Curve
