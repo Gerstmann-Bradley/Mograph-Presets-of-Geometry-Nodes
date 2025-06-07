@@ -435,13 +435,21 @@ Layered Proximity Falloff
 -fix Falloff Animation Default Value from 1 to 0.5
 -add Comment...
 -substep into a panel...
+
+Implicit Attribute
+-is not an asset, but implicit geometry is?
+	-it's mostly supported in node groups already, so no need to be an asset.
+
+Bevel Curve
+-Custom Profile into "Free Mode".
+	-to hide options that are not effective in Custom Case. 
+-Fill Caps into a boolean.
+	-Cap Segments default into 1 from now on.
+-"Round" renamed to "Circle" 
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
 Rewrite Reading Upto..
-
-Implicit Attribute
--is not an asset, but implicit geometry is?
 
 Loft Curves
 -Attribute captured can't be passed.
@@ -461,7 +469,6 @@ Add: Offset towards Camera
 
 Set Shade AutoSmooth
 -use single value for booleans.
-
 
 Add: Dot Product Falloff?
 -a modifier version to global position?
