@@ -487,18 +487,24 @@ follow path constraint
 -needs use resolution.
 -use follow Splines method
 	-is slower, but for now it's fine.
+
+Noise Texture
+-Dimension renamed to Dimensions
+	-as in voronoi 3D.
+
+Add: Displace
+-position needs to be exposed in case of UV displacement.
+
+Warp Deformer
+-renamed: Warp
+-add a falloff option in addition to the factor?
+	-no.
+-into a modifier?
+	-no. difficult in design. need some texture for fac & falloff?
+		-in future design, need nodes to edit falloff & textures?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
-**Separator
-	-more of a simple UI thing.
--array on Splines
--Attribute Viewer
--Braid
--Fill Volume
--Sharp Edge wireframe
--Step Extrude
-
 Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
@@ -523,6 +529,9 @@ Add: S_Voronoi Scatter
 **Remove Trash Code
 -UV Deformer
 -Mirror Modifier
+
+**Socket Shape Struct
+	-it would be better if many nodes' socket structure being re-defined.
 
 **InLine Socket
 -Reselt Self Object Transform
@@ -589,6 +598,16 @@ x-improve Animate interpolation?
 -Sample in Proximity.
 -Inertial Offset
 -...
+
+**Separator
+	-more of a simple UI thing.
+-array on Splines
+-Attribute Viewer
+-Braid
+-Fill Volume
+-Sharp Edge wireframe
+-Step Extrude
+-Displace Deformer
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
