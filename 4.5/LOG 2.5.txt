@@ -445,78 +445,8 @@ Bevel Curve
 	-to hide options that are not effective in Custom Case. 
 -Fill Caps into a boolean.
 	-Cap Segments default into 1 from now on.
--"Round" renamed to "Circle" 
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_10.
-To Do:
-Rewrite Reading Upto..
+-"Round" renamed to "Circle"
 
-Loft Curves
--Attribute captured can't be passed.
-	-known issue, because the resultant was actually a different mesh.
-	-need panels for sampling...
-
-Temporal Sampling
--only on Point Domain
-
-Motion Variance
--due to start Var. and Clamp Negative, it's only going positive region.
-	-> speed variation only, the start variation can be done by delay falloff?
--Start Variance broken with Randomness.
-
-Add: Offset towards Camera
--needs to be a modifier
-
-Set Shade AutoSmooth
--use single value for booleans.
-
-Add: Dot Product Falloff?
--a modifier version to global position?
--geometry nodes or ?
--normalization needed.
-
-Add: Screen on Camera
-
-Curve Resampling
--into a modifier in case of path constraint?
-	-required for speed variation upon moving.
--behavior in case of nurbs path?
-
-Separate Geometry by Index
--rename: separate geometry by ID?
-
-follow path constraint
--needs use resolution.
--use follow Splines method
-
-Add: S_Voronoi Scatter
-
-Temporal Object info
--it's only reading the location, without rotation and scale.
--should get an geometry velocity too?
-
-Mesh Rolling
--what about this method in Curve Rolling?
-	-which one to choose, which one should stay?
-		-both have to be different, because mesh can't recognize its segment.
--what's wrong with the first few segments?
-
-Curve Deformer
--Flow% is based on % and sometimes causes a delay because of length difference.
-	-add an option to normalize the length.
-	-also to consider the effect of start length.
-********************************************************
-4.5+:
-**Separator
-	-more of a simple UI thing.
--array on Splines
--Attribute Viewer
--Braid
--Fill Volume
--Sharp Edge wireframe
--Step Extrusion
-----------------------------------
-5.0:
 Dynamic Socket Vsibility.
 	-technically this is automatic, but require some implementations to use this feature.
 x--Point Distribute
@@ -524,11 +454,11 @@ x--Point Distribute
 	-add a Density Factor test
 		-it was already there.
 	-Re-arrange the node to make poisson the last.
-x-Randomness
+--Randomness
 	-Abs & Abs Var. Only method may better require a different input subtype?
 		x-too breaking for my file?
 		-the UX will be troublesome due to resetting values?
-	-> not worth it
+	-> not worth it?
 		-decided to do it.
 x--Bevel Curve
 	-no inputs can be hidden on different modes.
@@ -546,9 +476,53 @@ x-Noise 3D
 -Point Instance Geometry
 	-by Count or by Custom & advanced Mode?
 --**Text Mesh
---Step Extrusion
+--Step Extrude
 x-Spherical Geo
 	-the current design is already ok imo
+
+Set Shade AutoSmooth
+-use single value for booleans.
+
+follow path constraint
+-needs use resolution.
+-use follow Splines method
+	-is slower, but for now it's fine.
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_10.
+To Do:
+**Separator
+	-more of a simple UI thing.
+-array on Splines
+-Attribute Viewer
+-Braid
+-Fill Volume
+-Sharp Edge wireframe
+-Step Extrude
+
+Loft Curves
+-Attribute captured can't be passed.
+	-known issue, because the resultant was actually a different mesh.
+	-need panels for sampling...
+
+Temporal Sampling
+-known issue: only on Point Domain
+
+Motion Variance
+-due to start Var. and Clamp Negative, it's only going positive region.
+	-> speed variation only, the start variation can be done by delay falloff?
+-Start Variance broken with Randomness.
+
+Add: Offset towards Camera
+-needs to be a modifier
+
+Add: Screen on Camera
+
+Add: S_Voronoi Scatter
+********************************************************
+5.0:
+**Remove Trash Code
+-UV Deformer
+-Mirror Modifier
 
 **InLine Socket
 -Reselt Self Object Transform
@@ -615,10 +589,6 @@ x-improve Animate interpolation?
 -Sample in Proximity.
 -Inertial Offset
 -...
-********************************************************
-**Remove Trash Code
--UV Deformer
--Mirror Modifier
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
