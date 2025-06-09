@@ -497,11 +497,20 @@ Add: Displace
 
 Warp Deformer
 -renamed: Warp
+	-G_ will distinguish my presets and blender nodes anyway.
+	-deformer name is stated in menu.
+		-or can be used in case blender dev decision or others...
 -add a falloff option in addition to the factor?
 	-no.
 -into a modifier?
 	-no. difficult in design. need some texture for fac & falloff?
 		-in future design, need nodes to edit falloff & textures?
+
+Random Color
+-fix Randomness Var.
+
+Append Point to Curves
+-mistake in menu switch items.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
