@@ -511,6 +511,12 @@ Random Color
 
 Append Point to Curves
 -mistake in menu switch items.
+
+Solidify
+-Add value precision inside.
+
+Normal Displacement
+-add value precision inside.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_10.
 To Do:
