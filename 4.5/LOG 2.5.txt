@@ -574,9 +574,12 @@ Add: S_Voronoi Scatter
 -Set particle parameters
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
 
-Float Range
--Step mode decimal shift default should be 1
-	-it was set in 4.5 for compatibility.
+Decimal Shift
+	-some default is set to 0 for compatibility.
+-Float Range.
+	-1
+-Bevel Curve
+	-1
 
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
