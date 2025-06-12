@@ -517,21 +517,48 @@ Solidify
 
 Normal Displacement
 -add value precision inside.
+
+Fill Volume
+-Displacement shouldn't allow negative range.
+
+Bevel Curve
+-Support Decimal Shift
+	-update tooltips.
+
+**Decimal Shift in Nodes
+	--Bevel Curve
+	--Braid
+	--Array on Splines
+	--Normal Displacement
+	--Fill Volume
+	--Solidify
+	--Curve Linear
+	--Randomness
+	--Displace
+
+Bevel Curve
+-scale float subtype should not be distance anymore.
+
+Curve Linear
+-Length subtype in meter?
+
+Animate
+-Add Warning if End Frame is smaller than Start Frame.
+	-should no warning in Duration Mode.
+-EndFrame becomes single value due to requirement for active warning.
+
+Motion Variance
+-due to start Var. and Clamp Negative, it's only going positive region.
+	-> speed variation only, the start variation can be done by delay falloff?
+-> currently removing Start Var. and Clamp.
+	-perhaps one day to add it...
 ****************************************************************************************************
-The Newest Test Demo Tree: ZF_10.
+The Newest Test Demo Tree: ZF_11.
 To Do:
 Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
-
-Temporal Sampling
--known issue: only on Point Domain
-
-Motion Variance
--due to start Var. and Clamp Negative, it's only going positive region.
-	-> speed variation only, the start variation can be done by delay falloff?
--Start Variance broken with Randomness.
 
 Add: Offset towards Camera
 -needs to be a modifier
@@ -544,11 +571,18 @@ Add: S_Voronoi Scatter
 **Remove Trash Code
 -UV Deformer
 -Mirror Modifier
+-Set particle parameters
+	-this node should be completely ungrouped and removed to be replaced by Join Particles.
+
+Float Range
+-Step mode decimal shift default should be 1
+	-it was set in 4.5 for compatibility.
 
 **Socket Shape Struct
-	-it would be better if many nodes' socket structure being re-defined.
+	-it would be better if many nodes' socket structure being re-defined instead of automatic.
+	-otherwise confusion between dynamic & single value & field value.
 
-**InLine Socket
+**InLine output
 -Reselt Self Object Transform
 -Curve Extrapolation
 x--Time Falloff
@@ -568,14 +602,14 @@ x--Attribute Mesh?
 	-Sample Attribute
 -Freeze Geometry
 
-**Inline Socket Need Design.
+**Inline output Need Design.
 -Helical Connections
 -Fill Volume
 -Curve Deformer
 -UV Deformer
 	-custom bounding box Vs. Bounds Preview
 
-**Inline Socket Breaking?
+**Inline output Breaking?
 -remap 0-1
 -Random Rotation
 -Curve Extrapolation?
@@ -601,10 +635,16 @@ x-improve Animate interpolation?
 -Solidify
 	-Expose Merge by Distance.
 		-it will largely improve the performance.
+-Loft Curves
+	-Count -1 was used for default...
+-Value Precision.
+	-merge lots of boolean?
 
 **Closure and Bundles
+-Add loop & noise.
 -Instance for each element?
 	-save the point node and index input?
+	-how to output attribute without store named attribute?
 **support curve Interpolate function outside group using Closure & Bundles.
 	-Remap Vector Scale
 -layered proximity falloff
@@ -732,6 +772,9 @@ During Instance and Pick Instance
 Named UVMap should Above Vector input UVMap
 
 Advanced= Advanced Settings
+
+Decimal Shift:
+Shifts the decimal point of the above value by powers of 10. Applies division. For example: 2 → divide by 100
 
 Search Terms used in LOG:
 Add:
