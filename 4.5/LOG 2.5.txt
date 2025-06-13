@@ -552,6 +552,15 @@ Motion Variance
 	-> speed variation only, the start variation can be done by delay falloff?
 -> currently removing Start Var. and Clamp.
 	-perhaps one day to add it...
+
+Proximity Falloff
+-If there's no input for any Geo mode, invalid distance 0 will cause falloff 1.
+	-fix for falloff 0, and add warning.
+
+Animate
+-End Frame will allow field now
+	-internally using attribute statistic constant method.
+		-cv: field to constant is using sample index 0 method.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
