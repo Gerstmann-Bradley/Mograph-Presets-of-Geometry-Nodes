@@ -561,6 +561,9 @@ Animate
 -End Frame will allow field now
 	-internally using attribute statistic constant method.
 		-cv: field to constant is using sample index 0 method.
+
+S_Hash Seed
+-new algorithm to support negative seed range.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -568,6 +571,11 @@ Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
+
+Field to Constant
+-Sample node and statistic node may not differ from performance?
+-mean method may be good?
+	-differemt modes to change between method?
 
 Add: Offset towards Camera
 -needs to be a modifier
@@ -583,19 +591,23 @@ Add: S_Voronoi Scatter
 -Set particle parameters
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
 
-Decimal Shift
-	-some default is set to 0 for compatibility.
+**Decimal Shift
+	-some default is currently set to 0 for versioning old files.
 -Float Range.
 	-1
 -Bevel Curve
 	-1
+
+G_Hash Seed
+-a better method can be used, but should only be done in 5.0 because of breaking changes.
+	-then it will break with Seed change in 5.0
 
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
 	-otherwise confusion between dynamic & single value & field value.
 
 **InLine output
--Reselt Self Object Transform
+-Reset Self Object Transform
 -Curve Extrapolation
 x--Time Falloff
 	-better to separate the meaning of Time & Falloff
@@ -700,10 +712,6 @@ Polygon Unfolding
 Solidify
 -In Instance Mode, Merge by Distance Not Working.
 -not possible to integrate with step extrusion, because output socket visible.
-
-S_Vector Seed
--Currently Seed all Positive Value.
-	-Too lazy to build the Switch.
 
 Freeze Geometry
 -what if different geometry requiring different status of freeze?
