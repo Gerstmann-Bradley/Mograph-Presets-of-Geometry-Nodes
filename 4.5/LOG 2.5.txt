@@ -569,6 +569,9 @@ Proximity Falloff
 -location offset allow field?
 	-in case of field average, randomness...
 	-cv: although accepting field, but still bound by the "Object info", etc.
+
+G_Screw Deformer
+-renamed to Screw
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
