@@ -572,6 +572,9 @@ Proximity Falloff
 
 G_Screw Deformer
 -renamed to Screw
+
+Proximity Falloff
+-Add warning for scale offset 0 when Geo mode.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
