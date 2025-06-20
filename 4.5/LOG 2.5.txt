@@ -575,6 +575,17 @@ G_Screw Deformer
 
 Proximity Falloff
 -Add warning for scale offset 0 when Geo mode.
+
+Animate
+-End Frame Warning needs to be on other geometry.
+	-currently using Curve
+
+Proximity Falloff
+-5.0 updates, but keep the 4.5 version for compatibility of tutorials.
+
+Falloff Animation
+-rename: Animaiton.
+	-influence may be also good, but 0.5 influence sounds un-intuitive.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -703,6 +714,10 @@ GN-Known Issue:
 Tree Generator
 -Noises displacement is displacing branches out of way.
 -need a better interpolation for "over parameter" method.
+
+Animate
+-is having a curve scape goat inside for warning evaluation.
+
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
