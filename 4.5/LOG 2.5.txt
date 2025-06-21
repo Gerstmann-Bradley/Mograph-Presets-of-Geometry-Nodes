@@ -586,6 +586,14 @@ Proximity Falloff
 Falloff Animation
 -rename: Animaiton.
 	-influence may be also good, but 0.5 influence sounds un-intuitive.
+
+Tree Generator
+-fix rotation issue due to randomness change.
+
+Decay Function
+-UI change, add panel
+-re-test function, change default parameter
+-it should be driven mostly by index instead of a larger value.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -593,6 +601,10 @@ Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
+
+Randomness
+-needs a smaller Var.
+	-20%.
 
 Field to Constant
 -Sample node and statistic node may not differ from performance?
@@ -685,6 +697,7 @@ x-improve Animate interpolation?
 	-Count -1 was used for default...
 -Value Precision.
 	-merge lots of boolean?
+-parenting
 
 **Closure and Bundles
 -Add loop & noise.
