@@ -594,6 +594,12 @@ Decay Function
 -UI change, add panel
 -re-test function, change default parameter
 -it should be driven mostly by index instead of a larger value.
+
+Helical Connections
+-Add Decimal Shift for radius
+
+Float Range
+-Dicimal Shift for step...
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -605,6 +611,7 @@ Loft Curves
 Randomness
 -needs a smaller Var.
 	-20%.
+
 
 Field to Constant
 -Sample node and statistic node may not differ from performance?
@@ -629,7 +636,11 @@ Add: S_Voronoi Scatter
 	-some default is currently set to 0 for versioning old files.
 -Float Range.
 	-1
+-Curve Linear
+	-1
 -Bevel Curve
+	-1
+-Helical Connections
 	-1
 
 G_Hash Seed
@@ -730,7 +741,6 @@ Tree Generator
 
 Animate
 -is having a curve scape goat inside for warning evaluation.
-
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
