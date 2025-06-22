@@ -609,6 +609,15 @@ UV Deformer
 
 Face Points
 -Add option to join Vertex Points
+
+Randomness
+-needs a smaller Var.
+	-25%.
+
+Face Points
+-separate menu structures.
+-always split edges.
+-add warning when no available UV are detected.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -616,11 +625,6 @@ Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
-
-Randomness
--needs a smaller Var.
-	-20%.
-
 
 Field to Constant
 -Sample node and statistic node may not differ from performance?
@@ -750,6 +754,14 @@ Tree Generator
 
 Animate
 -is having a curve scape goat inside for warning evaluation.
+
+Face Points
+-Join Vertices Points will cause evaluation disturbance.
+	-likely due to sample index disturbance?
+-> perhaps better solved by closure to duplicate functions.
+	-for now it seems working or not working anyway. pending.
+-Dual Mesh doesn't mean the exact vertices location.
+	-as avg. point to form polygon for face points can be bad at low subd.
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
