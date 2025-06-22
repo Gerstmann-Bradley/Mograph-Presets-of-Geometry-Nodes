@@ -600,6 +600,12 @@ Helical Connections
 
 Float Range
 -Dicimal Shift for step...
+
+Knit
+-Fix
+
+UV Deformer
+-add Decimal Shift
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
