@@ -606,6 +606,9 @@ Knit
 
 UV Deformer
 -add Decimal Shift
+
+Face Points
+-Add option to join Vertex Points
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
