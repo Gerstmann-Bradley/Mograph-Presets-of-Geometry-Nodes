@@ -622,6 +622,9 @@ Face Points
 Proximity Falloff
 -Scale Offset needs decimal shift
 	-same with center falloff, mesh falloff
+
+Curve Deformer
+-Added a custom bounding box test.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -630,8 +633,11 @@ Loft Curves
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
 
-Curve Deformer
--how to deal with cases where a rope animation happens?
+Modulo Falloff
+-Support Float & Integer with menu?
+
+Sin Function
+-Oscillator using Boolean method?
 
 Field to Constant
 -Sample node and statistic node may not differ from performance?
@@ -652,6 +658,11 @@ Add: S_Voronoi Scatter
 -Set particle parameters
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
 
+**Curve Deformer
+-Clean up for better design?
+	-how was instance mode determined?
+	-if Extrapolation can be done in path constraint, why not in deformer?
+
 **Decimal Shift
 	-some default is currently set to 0 for versioning old files.
 -Float Range.
@@ -670,6 +681,14 @@ G_Hash Seed
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
 	-otherwise confusion between dynamic & single value & field value.
+
+**Node Output Visibility
+-Bounding Box Falloff
+-Sin Funciton
+-Decay Function?
+-Reset Local Transform
+	-the geometry & field can be separated into each mode.
+-
 
 **InLine output
 -Reset Self Object Transform
