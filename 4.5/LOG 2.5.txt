@@ -618,6 +618,10 @@ Face Points
 -separate menu structures.
 -always split edges.
 -add warning when no available UV are detected.
+
+Proximity Falloff
+-Scale Offset needs decimal shift
+	-same with center falloff, mesh falloff
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -625,6 +629,9 @@ Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
+
+Curve Deformer
+-how to deal with cases where a rope animation happens?
 
 Field to Constant
 -Sample node and statistic node may not differ from performance?
