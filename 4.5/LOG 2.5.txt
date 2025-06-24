@@ -625,6 +625,10 @@ Proximity Falloff
 
 Curve Deformer
 -Added a custom bounding box test.
+
+Add: Polygon Unfolding
+-prototype was broken...
+-needs more comment and testing.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
