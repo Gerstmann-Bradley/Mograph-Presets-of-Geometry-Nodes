@@ -629,6 +629,33 @@ Curve Deformer
 Add: Polygon Unfolding
 -prototype was broken...
 -needs more comment and testing.
+
+Attribute Viewer
+-Add decimal Shift to scale
+
+Face Points
+--Add Scale Multiplier
+-Join Verties Position seems just not working?
+	-capture seems to be difficult?
+-> test must be done in 3D Viewer.
+	-regular instancing can be very misleading when only X-axis matter.
+
+Curve Points Preview
+-Add Decimal Shift
+
+Remap Vector to Bounds
+-broken
+	-rewrite with index switch & others.
+-rename: Match Size
+	-name taken from Houdini.
+
+Knit
+-rewrite, redesign.
+	-support level
+	-better preset settings.
+
+Group to Instances
+-support Spline info as group ID by default too.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
@@ -661,6 +688,7 @@ Add: S_Voronoi Scatter
 -Mirror Modifier
 -Set particle parameters
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
+-Knit Old ref.
 
 **Curve Deformer
 -Clean up for better design?
@@ -692,7 +720,10 @@ G_Hash Seed
 -Decay Function?
 -Reset Local Transform
 	-the geometry & field can be separated into each mode.
--
+-Match Size
+	-right now the output is in face corner domain.
+		-the domain is set by interface and not exposed for changes.
+	-> best to have 2 outputs and swapped by conditions.
 
 **InLine output
 -Reset Self Object Transform
@@ -713,6 +744,8 @@ x--Attribute Mesh?
 -Tracer
 	-Sample Attribute
 -Freeze Geometry
+-Match Size
+	-Geometry & Vector...
 
 **Inline output Need Design.
 -Helical Connections
@@ -776,6 +809,12 @@ x-improve Animate interpolation?
 -Sharp Edge wireframe
 -Step Extrude
 -Displace Deformer
+
+**Interface Order
+	-panel used to be only possible at bottom of all.
+-Match Size.
+	-want to add an custom input option if it's possible.
+		-in case of dynamic function that requires a bigger bounding box.
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
