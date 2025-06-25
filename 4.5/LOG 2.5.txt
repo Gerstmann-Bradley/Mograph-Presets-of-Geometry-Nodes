@@ -660,8 +660,23 @@ Group to Instances
 Knit
 -a better function for sine function.
 	-more organized, less locking, but great visual as by unit method.
+
+**Value Precision
+-Remove Delta Time
+	-Scene time will cause re-evaluation of node tree.
+-> needs to check cumulative force, join particles, etc.
+--Set Particle Parameter
+	-is using delta time already.
+--cumulative Force
+--Resistance Force
+-> 4.5 is an important milestone.
+	although it's not disastreous in my project yet?
+	it's also not frequently used given the current issues.
+-> removal of delta time granted withn value precision.
+	-currently replaced with 0.03333 in 29.976 cases.
+	-full removal will be in 5.0
 ****************************************************************************************************
-The Newest Test Demo Tree: ZF_11.
+The Newest Test Demo Tree: ZF_12.
 To Do:
 Loft Curves
 -Attribute captured can't be passed.
@@ -699,12 +714,17 @@ Add: S_Voronoi Scatter
 	-how was instance mode determined?
 	-if Extrapolation can be done in path constraint, why not in deformer?
 
+*Value Precision.
+-remove on delta time.
+
 **Decimal Shift
 	-some default is currently set to 0 for versioning old files.
 -Float Range.
 	-1
 -Curve Linear
 	-1
+	-need set curve radius at 0.005?
+		-but reason it effect bevel curve because of radius support.
 -Bevel Curve
 	-1
 -Helical Connections
