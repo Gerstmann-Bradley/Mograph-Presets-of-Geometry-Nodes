@@ -656,6 +656,10 @@ Knit
 
 Group to Instances
 -support Spline info as group ID by default too.
+
+Knit
+-a better function for sine function.
+	-more organized, less locking, but great visual as by unit method.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_11.
 To Do:
