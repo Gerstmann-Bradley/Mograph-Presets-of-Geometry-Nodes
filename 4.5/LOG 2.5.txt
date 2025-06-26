@@ -681,6 +681,17 @@ UV Deformer
 
 Track to Constraint
 -Updates with expanded menu & separate target support
+
+Track to
+-add support to active camera.
+
+Viewport Render Count
+-limit the slider.
+	-no, because it can be for Point Distribute.
+
+Knit
+-Level needs a reroute to combine linkages.
+	-in case it's needed to be un-grouped.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_12.
 To Do:
@@ -688,6 +699,11 @@ Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
+
+Negati
+-support vector.
+	-also need to support dif axis?
+-> needs to be done after the fix of issues/119923
 
 Modulo Falloff
 -Support Float & Integer with menu?
@@ -816,6 +832,8 @@ x-improve Animate interpolation?
 -Value Precision.
 	-merge lots of boolean?
 -parenting
+-Knit
+	-may add an vector output for non-center vector?
 
 **Closure and Bundles
 -Add loop & noise.
