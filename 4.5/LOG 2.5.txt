@@ -692,6 +692,9 @@ Viewport Render Count
 Knit
 -Level needs a reroute to combine linkages.
 	-in case it's needed to be un-grouped.
+
+Align Rotation to Point
+-expose the position setting.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_12.
 To Do:
