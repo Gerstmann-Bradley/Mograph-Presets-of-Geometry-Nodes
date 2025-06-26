@@ -675,6 +675,9 @@ Knit
 -> removal of delta time granted withn value precision.
 	-currently replaced with 0.03333 in 29.976 cases.
 	-full removal will be in 5.0
+
+UV Deformer
+-Allow additional Sampling.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_12.
 To Do:
@@ -770,6 +773,7 @@ x--Attribute Mesh?
 -Freeze Geometry
 -Match Size
 	-Geometry & Vector...
+-UV Deformer
 
 **Inline output Need Design.
 -Helical Connections
