@@ -695,18 +695,49 @@ Knit
 
 Align Rotation to Point
 -expose the position setting.
+
+Grass Generator
+-fix randomness
+
+Random Helices Distribution
+-fix randomness
+
+Add: Hair on Curves
+-displace the hair on top of curve radius.
+-test support with Dynamic Curves Sampling
+	-should it be made inside or?
+-> It's the issue of input curves, not the modifier.
+	-it's also difficult to fix design for set curve tilt aligment.
+
+Hair on Curves
+-rename: Hair on Geometry
+	-support both Mesh & Curves automatically with Sep Component now.
+
+Noise 3D
+-Add Value Precision
+
+Displace
+-fix the extra value precision settings internally.
+
+Knit
+-rename: Knit Surface
 ****************************************************************************************************
-The Newest Test Demo Tree: ZF_12.
+The Newest Test Demo Tree: ZF_13.
 To Do:
 Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
 
+Add: is New Face
+-to detect new faces generated since the operation?
+	-for example to help assign material after mesh boolean...
+
 Negati
 -support vector.
 	-also need to support dif axis?
 -> needs to be done after the fix of issues/119923
+	-otherwise it will be more difficult to use.
 
 Modulo Falloff
 -Support Float & Integer with menu?
@@ -872,6 +903,10 @@ GN-Known Issue:
 Tree Generator
 -Noises displacement is displacing branches out of way.
 -need a better interpolation for "over parameter" method.
+
+Add Curve Branch
+-this one is broken now due to hierarchy issue?
+	-Use different modes for Inside Simulation Vs. Inside Loop.
 
 Animate
 -is having a curve scape goat inside for warning evaluation.
