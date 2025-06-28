@@ -721,6 +721,20 @@ Displace
 
 Knit
 -rename: Knit Surface
+
+Hair on Geometry
+-need to add material
+-Add falloff
+-separate Mesh and Curve mode for better falloff managem.
+
+Voxel Remesh
+-remove interior band Width.
+	-seems forming bad results only.
+-need a modifier version?
+	-we have remesh modifier...
+-support mesh only.
+
+Add: Select Inside View
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
@@ -764,6 +778,8 @@ Add: S_Voronoi Scatter
 -Set particle parameters
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
 -Knit Old ref.
+-Hair on Surface
+	-integrate into Hair on Geometry?
 
 **Curve Deformer
 -Clean up for better design?
@@ -933,7 +949,13 @@ Tracer
 
 Polygon Unfolding
 -has some minor rotation of transform to prevent bug.
--
+	-is it still happening in 4.5???
+
+Array on Splines
+-every now and then it requires special handling of attribute on this curve.
+	-it's also causing headache in case like Hair on Geometry.
+-> how to better solve it?
+	-need ways to store named attribute?
 
 Solidify
 -In Instance Mode, Merge by Distance Not Working.
