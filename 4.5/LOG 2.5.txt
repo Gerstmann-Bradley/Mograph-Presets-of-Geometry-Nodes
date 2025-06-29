@@ -735,6 +735,20 @@ Voxel Remesh
 -support mesh only.
 
 Add: Select Inside View
+
+Directional Falloff
+Bounding Box Falloff
+-name consistency
+	-rename: Flip Direction.
+
+Face Points
+-expose UV outside panel?
+	-it's needed anyway.
+-use ZY orientation instead of ZX.
+	-it's more common to use ZY instead of ZX.
+
+Knit Surface
+-Level default upon ungroup can be improved.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
