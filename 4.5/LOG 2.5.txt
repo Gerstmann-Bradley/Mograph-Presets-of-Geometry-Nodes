@@ -749,6 +749,14 @@ Face Points
 
 Knit Surface
 -Level default upon ungroup can be improved.
+
+Face Points
+-add a warning if no face.
+
+Solidified Outline
+-UVMap is greyed out.
+	-why? it's not working?
+-> it's in-use only if Variance for noise is on.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
