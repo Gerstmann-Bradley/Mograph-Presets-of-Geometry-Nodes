@@ -757,6 +757,10 @@ Solidified Outline
 -UVMap is greyed out.
 	-why? it's not working?
 -> it's in-use only if Variance for noise is on.
+
+Set Curve Tilt Alignment
+-rename: Set Curve Tilt by Normal
+-keep the original copy for compatibility.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
@@ -802,6 +806,8 @@ Add: S_Voronoi Scatter
 -Knit Old ref.
 -Hair on Surface
 	-integrate into Hair on Geometry?
+-Set Curve Tilt Alignment
+	-complete removal; replaced by Set Curve Tilt by Normal
 
 **Curve Deformer
 -Clean up for better design?
