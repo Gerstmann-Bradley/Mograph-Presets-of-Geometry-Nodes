@@ -761,6 +761,13 @@ Solidified Outline
 Set Curve Tilt Alignment
 -rename: Set Curve Tilt by Normal
 -keep the original copy for compatibility.
+
+Set Curve Tilt by Normal
+-should expose normal and not to use default attribute
+
+Smooth Curve
+-add mode for smooth position.
+	-anyway we don't have swap operator
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
