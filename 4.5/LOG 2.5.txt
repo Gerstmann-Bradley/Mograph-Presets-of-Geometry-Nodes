@@ -783,7 +783,12 @@ Array on Splines
 -> Output points
 	-Add spline parameter output.
 
-
+Random Helices Distribution
+	-rename: Random Spirals
+-if Count=1, enable self object seed?
+-move rot Offset out from panel?
+-be able to sync Start & End Radius?
+-single values
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
