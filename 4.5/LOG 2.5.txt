@@ -768,6 +768,22 @@ Set Curve Tilt by Normal
 Smooth Curve
 -add mode for smooth position.
 	-anyway we don't have swap operator
+
+Random Helices Distribution
+-made into modifier.
+	-to support single spiral.
+-Variance made into a boolean toggle.
+	-for better control in case of modifier.
+
+Array on Splines
+-why it was outputting curves?
+	-the change was made in 2.0, but explanation was not enough.
+	-spline index is already an output.
+	-normal and tangent won't be good as well because the curve can be quite random?
+-> Output points
+	-Add spline parameter output.
+
+
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
