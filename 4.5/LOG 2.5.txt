@@ -785,10 +785,21 @@ Array on Splines
 
 Random Helices Distribution
 	-rename: Random Spirals
--if Count=1, enable self object seed?
 -move rot Offset out from panel?
--be able to sync Start & End Radius?
+x-be able to sync Start & End Radius?
+	-hard to design.
 -single values
+
+Add: Random Spirals
+-renamed version of random helices distributio.
+-if Count=1, enable self object seed.
+
+Array on Splines
+-Curve to Points is disrupting sampled result from sample curve node.
+	-sampling result should all captured before Curve to Points process?
+		-the custom parameter is not captured. but default has captured index.
+-> can Sample Curve done outside the node group with Spline Index & Parameter?
+	-there's no curve for the sampe curve.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_13.
 To Do:
@@ -800,6 +811,26 @@ Loft Curves
 Add: is New Face
 -to detect new faces generated since the operation?
 	-for example to help assign material after mesh boolean...
+
+Curve Deformer
+-Offset test.
+	-some scaling seems wrong.
+
+Fill Curve Tube
+-made into modifier?
+	-iteration is on top so not possible?
+
+**Face Points
+-Join Vertex Points function needs some more thoughts.
+	-while it's working on basic case.
+	-dynamic case require sampling and capture on respective domain.
+		-which is not exposed and has to be done outside.
+-> add a geometry input for sampling.
+	-add a boolean for "Deformation"?
+-cv: if sampling process are included in,
+	attribute are still required to be exposed for process?
+-> no, in fact if think about those, these issue should be resolved with UV method?
+	-how to unwrap and layout UV in designed way?
 
 Negati
 -support vector.
@@ -836,6 +867,7 @@ Add: S_Voronoi Scatter
 	-integrate into Hair on Geometry?
 -Set Curve Tilt Alignment
 	-complete removal; replaced by Set Curve Tilt by Normal
+-Random Helices Distribution
 
 **Curve Deformer
 -Clean up for better design?
@@ -1006,12 +1038,6 @@ Tracer
 Polygon Unfolding
 -has some minor rotation of transform to prevent bug.
 	-is it still happening in 4.5???
-
-Array on Splines
--every now and then it requires special handling of attribute on this curve.
-	-it's also causing headache in case like Hair on Geometry.
--> how to better solve it?
-	-need ways to store named attribute?
 
 Solidify
 -In Instance Mode, Merge by Distance Not Working.
