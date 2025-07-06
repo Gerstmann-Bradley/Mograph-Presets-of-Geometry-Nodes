@@ -800,8 +800,38 @@ Array on Splines
 		-the custom parameter is not captured. but default has captured index.
 -> can Sample Curve done outside the node group with Spline Index & Parameter?
 	-there's no curve for the sampe curve.
+
+S_Value Precision
+-decimal shift & tooltip
+
+Add: Woven Surface
+
+Add: S_Animate
+
+Add: Align Rotation on Curves
+-to replace Alignment on Splines
+-add different axis
+
+Trim Curve Normalized
+-rename: Trim Curve
+-field max "point domain" into "spline domain".
+	-practically no difference, just change for better practice?
+
+Array on Splines
+--normalize the offset speed by Curve Length?
+--normlized at count 1 with bug.
+--offset loop needs implementation.
+
+Add: Array on Curves
+-rename from Array on Splines.
+
+Spline Falloff
+-rename: Curve Falloff
+
+Add Deprecation Warning
+-at ZF_14
 ****************************************************************************************************
-The Newest Test Demo Tree: ZF_13.
+The Newest Test Demo Tree: ZF_14.
 To Do:
 Loft Curves
 -Attribute captured can't be passed.
@@ -819,6 +849,11 @@ Curve Deformer
 Fill Curve Tube
 -made into modifier?
 	-iteration is on top so not possible?
+
+UV Deformer
+-option to keep dimension or not.
+	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
+-mapping preview sometimes may need validity.
 
 **Face Points
 -Join Vertex Points function needs some more thoughts.
@@ -866,8 +901,17 @@ Add: S_Voronoi Scatter
 -Hair on Surface
 	-integrate into Hair on Geometry?
 -Set Curve Tilt Alignment
-	-complete removal; replaced by Set Curve Tilt by Normal
+	-Set Curve Tilt by Normal
 -Random Helices Distribution
+	-Random Spirals
+-Array on Splines
+	-Array on Curves
+-Alignment on Splines
+	-align rotation on Curves
+-Spline Info
+	-Curve Info
+-Follow Splines
+	-Follow Curves
 
 **Curve Deformer
 -Clean up for better design?
