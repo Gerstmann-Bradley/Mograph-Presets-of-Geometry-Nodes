@@ -836,6 +836,17 @@ Woven Surface
 
 Curve Info
 -output name changes.
+-I notice it's in lower affinity than the built in curve info.
+	-but practically they are doing the same so doesn't matter?
+
+Array on Curves
+-Normalized Parameter is not within 0-1 range.
+	-have to sample it, other methods failed.
+	-guess related with capture attribute issue?
+
+Deprecation
+-remove for the moment.
+	-re-enable once the change is affirmative.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
