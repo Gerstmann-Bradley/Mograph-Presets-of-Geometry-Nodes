@@ -830,6 +830,12 @@ Spline Falloff
 
 Add Deprecation Warning
 -at ZF_14
+
+Woven Surface
+-output Curves.
+
+Curve Info
+-output name changes.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
