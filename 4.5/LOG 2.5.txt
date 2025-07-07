@@ -844,9 +844,17 @@ Array on Curves
 	-have to sample it, other methods failed.
 	-guess related with capture attribute issue?
 
-Deprecation
+Deprecation warning
 -remove for the moment.
 	-re-enable once the change is affirmative.
+
+**Negati
+-Mid-level reverse.
+	-in Blender displace modifier. Mid-level 0 means to expand, mid-level 1 means to shrink.
+	-it's also more intuitive to say the average is at minimum/maximum.
+--Randomness.
+--Noise 3D, it's already like this.
+--Voronoi 3D, already.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
