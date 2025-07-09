@@ -899,6 +899,9 @@ Bevel Curve
 
 Curve Deformer
 -added a test for instance index for sampling.
+
+Bevel Curve
+-profile curve should stay with its static parameter.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
