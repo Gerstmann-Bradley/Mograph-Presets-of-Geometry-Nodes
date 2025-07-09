@@ -875,30 +875,10 @@ Curve Deformer
 	-Flow 0 becomes object out, 1 becomes object in.
 -> to me it seems un-intuitive.
 	-add math to reverse the relationship specific for Curve Deformer.
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_14.
-To Do:
-Loft Curves
--Attribute captured can't be passed.
-	-known issue, because the resultant was actually a different mesh.
-	-need panels for sampling...
 
-Add: is New Face
--to detect new faces generated since the operation?
-	-for example to help assign material after mesh boolean...
-
-Curve Deformer
--Offset test.
-	-some scaling seems wrong.
-
-Fill Curve Tube
--made into modifier?
-	-iteration is on top so not possible?
-
-UV Deformer
--option to keep dimension or not.
-	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
--mapping preview sometimes may need validity.
+Hair on Geometry
+-Mesh Island Index start with 0. so output disappears for single mesh.
+	-use Island Count instead; statistic is still required.
 
 **Face Points
 -Join Vertex Points function needs some more thoughts.
@@ -911,6 +891,36 @@ UV Deformer
 	attribute are still required to be exposed for process?
 -> no, in fact if think about those, these issue should be resolved with UV method?
 	-how to unwrap and layout UV in designed way?
+
+Bevel Curve
+-If curve is dynamically being deleted/created, Length will change.
+	-even legnth is stable, UV factor & other will change.
+-> need some more general capture.
+
+Curve Deformer
+-added a test for instance index for sampling.
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_14.
+To Do:
+Loft Curves
+-Attribute captured can't be passed.
+	-known issue, because the resultant was actually a different mesh.
+	-need panels for sampling...
+
+Add: is New Face
+-to detect new faces generated since the operation?
+	-for example to help assign material after mesh boolean...
+
+
+
+Fill Curve Tube
+-made into modifier?
+	-iteration is on top so not possible?
+
+UV Deformer
+-option to keep dimension or not.
+	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
+-mapping preview sometimes may need validity.
 
 Negati
 -support vector.
@@ -997,6 +1007,10 @@ G_Hash Seed
 	-right now the output is in face corner domain.
 		-the domain is set by interface and not exposed for changes.
 	-> best to have 2 outputs and swapped by conditions.
+-Curve Deformer
+	-Instance Index should be exposed. it's good for sampling.
+	-need to rewrite mode for Single Vs. Instances?
+
 
 **InLine output
 -Reset Self Object Transform
@@ -1111,6 +1125,10 @@ Face Points
 	-for now it seems working or not working anyway. pending.
 -Dual Mesh doesn't mean the exact vertices location.
 	-as avg. point to form polygon for face points can be bad at low subd.
+-Join Vertex Points function needs some more thoughts.
+	-while it's working on basic case.
+	-dynamic case require sampling and capture on respective domain.
+		-which is not exposed and has to be done outside.
 
 Hair on Surface
 -Proximity targets differently for each point in complex geometry
@@ -1207,8 +1225,11 @@ Named UVMap should Above Vector input UVMap
 
 Advanced= Advanced Settings
 
+tooltips
+-use first person for verbs as Blender did.
+
 Decimal Shift:
-Shifts the decimal point of the above value by powers of 10. Applies division. For example: 2 → divide by 100
+Shift the decimal point of the above value by powers of 10. Applies division. For example: 2 → divide by 100
 
 Search Terms used in LOG:
 Add:
