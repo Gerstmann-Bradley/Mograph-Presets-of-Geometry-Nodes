@@ -902,6 +902,17 @@ Curve Deformer
 
 Bevel Curve
 -profile curve should stay with its static parameter.
+
+Hair on Surface
+-it should include random rotation & random scale.
+-how this will work with dynamic surface sampling?
+
+Dynamic Surface Sampling
+-why is it outputing the newest position?
+-shouldn't it output previous position for post-sampling?
+	-no, because it will need geometry input and capturing process as well.
+-> add some more ways of sampling?
+	-regardless, not helping hair on surface...
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -913,8 +924,6 @@ Loft Curves
 Add: is New Face
 -to detect new faces generated since the operation?
 	-for example to help assign material after mesh boolean...
-
-
 
 Fill Curve Tube
 -made into modifier?
