@@ -913,6 +913,17 @@ Dynamic Surface Sampling
 	-no, because it will need geometry input and capturing process as well.
 -> add some more ways of sampling?
 	-regardless, not helping hair on surface...
+
+Hair on Geometry
+-in Curve case, need a multiplier on radius
+	x-also add decimal shift.
+		-node will be big, & as a factor not good?
+-> add Radius Offset instead.
+	-add decimal estimation so decimal shift can be hidden
+
+Value Precision
+-decimal shift accept field for decimal estimation.
+	-not need to be done with other nodes yet.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -924,6 +935,9 @@ Loft Curves
 Add: is New Face
 -to detect new faces generated since the operation?
 	-for example to help assign material after mesh boolean...
+
+Helical Connections
+-is it possible to auto-detect the decimals?
 
 Fill Curve Tube
 -made into modifier?
@@ -1022,7 +1036,6 @@ G_Hash Seed
 -Curve Deformer
 	-Instance Index should be exposed. it's good for sampling.
 	-need to rewrite mode for Single Vs. Instances?
-
 
 **InLine output
 -Reset Self Object Transform
