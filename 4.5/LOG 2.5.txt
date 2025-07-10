@@ -924,6 +924,9 @@ Hair on Geometry
 Value Precision
 -decimal shift accept field for decimal estimation.
 	-not need to be done with other nodes yet.
+
+Array on Curves
+-Sample Color instead of float. so it can cover more dimensions, etc.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
