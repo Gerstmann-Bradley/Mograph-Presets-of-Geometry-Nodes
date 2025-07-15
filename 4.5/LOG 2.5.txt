@@ -931,6 +931,7 @@ Array on Curves
 Bevel Curve
 -UV by index has mistake.
 -Flat mode should not allow any caps.
+-Round Caps should have default shade smooth.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
