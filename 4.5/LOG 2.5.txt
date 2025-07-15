@@ -932,6 +932,7 @@ Bevel Curve
 -UV by index has mistake.
 -Flat mode should not allow any caps.
 -Round Caps should have default shade smooth.
+-add warning if custom profile fill caps but not cyclic.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -1044,6 +1045,9 @@ G_Hash Seed
 -Curve Deformer
 	-Instance Index should be exposed. it's good for sampling.
 	-need to rewrite mode for Single Vs. Instances?
+-Bevel Curve
+	-should add an "Are Caps" option.
+		-but need to hide in flat mode because no fill caps in flat.
 
 **InLine output
 -Reset Self Object Transform
