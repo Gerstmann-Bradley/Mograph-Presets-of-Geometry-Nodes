@@ -927,6 +927,9 @@ Value Precision
 
 Array on Curves
 -Sample Color instead of float. so it can cover more dimensions, etc.
+
+Bevel Curve
+-UV by index has mistake.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
