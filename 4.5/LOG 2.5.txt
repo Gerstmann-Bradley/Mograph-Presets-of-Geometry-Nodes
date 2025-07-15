@@ -930,6 +930,7 @@ Array on Curves
 
 Bevel Curve
 -UV by index has mistake.
+-Flat mode should not allow any caps.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -942,12 +943,12 @@ Add: is New Face
 -to detect new faces generated since the operation?
 	-for example to help assign material after mesh boolean...
 
-Helical Connections
--is it possible to auto-detect the decimals?
-
 Fill Curve Tube
 -made into modifier?
 	-iteration is on top so not possible?
+
+Array on Curves
+-investigate possibility to resample on length?
 
 UV Deformer
 -option to keep dimension or not.
@@ -1200,10 +1201,20 @@ Step Extrude
 Bevel Curve
 -give warning in Mesh Instances.
 	-curve to mesh will work in curve instances wtho realization.
+-when used as a modifier for mesh, it will cause lose of material.
+	-because of Mesh to Curve step.
 ****************************************************************************************************
 Investigation:
-Bend Deform
+x-Bend Deform
 -Angle Check?
+	-didn't check, forgot what's the issue.
+	-but so many iteration and changes are being done.
+		-this can be closed untl next call.
+
+Bevel Curve
+-investigate UV Length Multiplier.
+	-seems if field is in scale it will be as if it's determined with statistic?
+	-but generally still working.
 
 Reset Instance Origin.
 -Use Bounding Box?
@@ -1211,6 +1222,10 @@ Reset Instance Origin.
 Join Particles
 -Investigate: why joining 2/frame has more hits than joining 1/frame?
 	-seems to only happen if using temporal object info?
+
+Helical Connections
+-is it possible to auto-detect the decimals when connecting in chains?
+	-difficult, so far no success.
 
 x-Bevel Curve
 -Why Bevel Curve requires additional Set material node?
