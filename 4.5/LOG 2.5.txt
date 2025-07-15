@@ -933,6 +933,7 @@ Bevel Curve
 -Flat mode should not allow any caps.
 -Round Caps should have default shade smooth.
 -add warning if custom profile fill caps but not cyclic.
+	-if no input profile yet, not need to have warning.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
