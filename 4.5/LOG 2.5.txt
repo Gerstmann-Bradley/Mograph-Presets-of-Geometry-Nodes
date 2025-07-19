@@ -934,6 +934,13 @@ Bevel Curve
 -Round Caps should have default shade smooth.
 -add warning if custom profile fill caps but not cyclic.
 	-if no input profile yet, not need to have warning.
+
+Rod
+-Fix Caps
+-add Decimal Shift
+
+Attribute Spline
+-rename: Attribute Curve
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -945,6 +952,15 @@ Loft Curves
 Add: is New Face
 -to detect new faces generated since the operation?
 	-for example to help assign material after mesh boolean...
+
+Hair on Geometry
+-integrate Hair on Surface into.
+	-should also support both Mesh & Curve?
+
+Collision in Ray
+	--the node is used in shield tutorial; need to think about versioning consequence.
+-should switch not depending on attribute existence but implicit vector input.
+-position should have some offset towards direction?
 
 Fill Curve Tube
 -made into modifier?
