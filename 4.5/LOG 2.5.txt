@@ -941,6 +941,9 @@ Rod
 
 Attribute Spline
 -rename: Attribute Curve
+
+Radial Instancer
+-rename: Radial Array
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
