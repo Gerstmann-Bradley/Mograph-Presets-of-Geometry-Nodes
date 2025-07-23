@@ -944,6 +944,20 @@ Attribute Spline
 
 Radial Instancer
 -rename: Radial Array
+
+Grid Distribution
+-rename: Grid Array
+-add instance input option.
+
+Radial Array
+-Add default points output.
+
+Remap 0-1
+-add single decimal shift for outputs.
+
+Tracer
+-investigate if it's still working for new generation.
+	-can't reproduce any issue, likely due to bad random ID.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -959,6 +973,10 @@ Add: is New Face
 Hair on Geometry
 -integrate Hair on Surface into.
 	-should also support both Mesh & Curve?
+
+Join Particles
+-better non-random particle ID generation system?
+	-based on statistics of the largest ID from the group?
 
 Collision in Ray
 	--the node is used in shield tutorial; need to think about versioning consequence.
@@ -1162,6 +1180,12 @@ x-improve Animate interpolation?
 -Match Size.
 	-want to add an custom input option if it's possible.
 		-in case of dynamic function that requires a bigger bounding box.
+
+**exposed enum sockets
+-??
+
+**Curve & Color Ramp Panel.
+	-shouldn't be on most nodes, for the sake of re-usibility.
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
