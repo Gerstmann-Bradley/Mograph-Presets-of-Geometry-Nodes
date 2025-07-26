@@ -958,6 +958,14 @@ Remap 0-1
 Tracer
 -investigate if it's still working for new generation.
 	-can't reproduce any issue, likely due to bad random ID.
+
+Origin Offset
+-doesn't work for curve
+	-because bounding box was calculated.
+-use expanded menu
+
+Follow Splines
+-Scale var. default value
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
