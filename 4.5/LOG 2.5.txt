@@ -966,6 +966,10 @@ Origin Offset
 
 Follow Splines
 -Scale var. default value
+
+Text Mesh
+-Extrusion 0 is broken.
+	-need to solve both socket visibility issue and clamp min on Extrusion.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
