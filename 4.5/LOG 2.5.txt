@@ -971,6 +971,9 @@ Text Mesh
 -Extrusion 0 is broken.
 	-need to solve both socket visibility issue and clamp min on Extrusion.
 -if Extrusion 0, segments should be dimmed to suggest it's not effecting output
+
+Bevel Curve
+-profile cyclic warning on fill cap should only be triggered if need to fill cap
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
