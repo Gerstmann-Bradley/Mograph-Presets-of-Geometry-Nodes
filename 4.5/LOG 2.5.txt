@@ -974,6 +974,14 @@ Text Mesh
 
 Bevel Curve
 -profile cyclic warning on fill cap should only be triggered if need to fill cap
+
+Float Range
+-why New Float Range is different from old float range in new rope condition.
+	-capture and non-capture will cause difference
+-> issue in helical connections?
+	-a bug in upstream blender. fixed in July.30 5.0
+	-but still buggy in 4.5.1; suspecting issue #412202
+-> add a capture in Helical Connections for tilt as a downstream fix.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -1005,6 +1013,10 @@ Fill Curve Tube
 
 Array on Curves
 -investigate possibility to resample on length?
+	-add different modes: Count, Length, Free
+-possibility to be a modifier?
+	-It's problematic, because so many parameters can be added in between the process of instancing.
+	-may need a new node for simple task. what are common workflow? what are needed?
 
 UV Deformer
 -option to keep dimension or not.
@@ -1175,6 +1187,7 @@ x-improve Animate interpolation?
 **support curve Interpolate function outside group using Closure & Bundles.
 	-Remap Vector Scale
 -layered proximity falloff
+-all ease ease function...
 
 **Dynamic Socket Type: effect nodes requiring multiple types.
 -Sample in Proximity.
