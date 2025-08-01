@@ -982,6 +982,9 @@ Float Range
 	-a bug in upstream blender. fixed in July.30 5.0
 	-but still buggy in 4.5.1; suspecting issue #412202
 -> add a capture in Helical Connections for tilt as a downstream fix.
+
+Curve Deformer
+-remove influence of radius on curve & points.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
