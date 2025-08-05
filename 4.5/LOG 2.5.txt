@@ -989,6 +989,9 @@ Curve Deformer
 Mesh Falloff
 center falloff
 -add Menu switch for Object & Geo Mesh...
+
+Mix Translucent
+-add decimal shift to factor
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
