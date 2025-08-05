@@ -1009,6 +1009,12 @@ Mix Translucent
 Curve Rolling
 -should support negative step to invert the normal.
 	-therefore possible to flip direction
+
+Curve Rolling
+-annotate the sign function, etc.
+
+Sun Function
+-Amp necs Decimal Shift
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
