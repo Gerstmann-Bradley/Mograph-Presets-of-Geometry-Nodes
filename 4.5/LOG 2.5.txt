@@ -1125,6 +1125,8 @@ Add: S_Voronoi Scatter
 	-1
 -Helical Connections
 	-1
+-Sin Function
+	-1
 
 G_Hash Seed
 -a better method can be used, but should only be done in 5.0 because of breaking changes.
