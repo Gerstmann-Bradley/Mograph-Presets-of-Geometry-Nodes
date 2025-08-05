@@ -992,6 +992,16 @@ center falloff
 
 Mix Translucent
 -add decimal shift to factor
+
+Smooth Position
+-input point cloud will cause empty output.
+	-need fix / warning.
+
+Follow Curves
+-add decimal shift
+
+Radial Array
+-support angle in resolution 2.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
