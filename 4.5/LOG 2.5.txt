@@ -1002,6 +1002,13 @@ Follow Curves
 
 Radial Array
 -support angle in resolution 2.
+Mix Translucent
+-decimal shift should support 0
+-factor should not be bound by 0-1 range anymore.
+
+Curve Rolling
+-should support negative step to invert the normal.
+	-therefore possible to flip direction
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_14.
 To Do:
@@ -1009,6 +1016,9 @@ Loft Curves
 -Attribute captured can't be passed.
 	-known issue, because the resultant was actually a different mesh.
 	-need panels for sampling...
+
+Grid Array
+-support X,Y,Z alignment
 
 Add: is New Face
 -to detect new faces generated since the operation?
@@ -1134,6 +1144,18 @@ G_Hash Seed
 -Bevel Curve
 	-should add an "Are Caps" option.
 		-but need to hide in flat mode because no fill caps in flat.
+-Radial Array
+	-fibonacci mode has its falloff output.
+	-right now it's a boolean, but perhaps better as a mode?
+
+**Curve Deformer
+-rewrite for mode: Axis Vs. Bounding Box.
+	-the existing workflow are based on bounding box.
+-need to have an output to preview curve.
+-axis mode needs to have automatic elongation.
+	-what about same for bounding box mode?
+-axis mode must be using length, because no bounding box to define length.
+	-only in bounding box to downgrade it to factor mode?
 
 **InLine output
 -Reset Self Object Transform
