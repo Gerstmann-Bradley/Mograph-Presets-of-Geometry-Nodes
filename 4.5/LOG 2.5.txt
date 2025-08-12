@@ -1035,6 +1035,22 @@ Grid Array
 
 Add: is New Geometry
 -to detect new point on mesh, curve, points...
+
+Array on Curves
+-investigate possibility to resample on length?
+	-add different modes: Count, Length, Free
+	-> the problem, For count it's easy to know starting from which point it's ok to go on to next curve.
+		-but for length it's not known which point will go to next curve.
+	-> the issue becomes extremely important if custom interval?
+		-so length mode must operate in a pre-defined way?
+		-what about free mode? free mode has to live based on the count mode.
+			-it will be a sub-mode of the count?
+x-possibility to be a modifier?
+	-It's problematic, because so many parameters can be added in between the process of instancing.
+	-may need a new node for simple task. what are common workflow? what are needed?
+
+Sin Function
+-Oscillator using Boolean method?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -1046,6 +1062,16 @@ Hair on Geometry
 -integrate Hair on Surface into.
 	-should also support both Mesh & Curve?
 
+UV Deformer
+-option to keep dimension or not.
+	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
+-mapping preview sometimes may need validity.
+
+Field to Constant
+-Sample node and statistic node may not differ from performance?
+-mean method may be good?
+	-differemt modes to change between method?
+
 Join Particles
 -better non-random particle ID generation system?
 	-based on statistics of the largest ID from the group?
@@ -1056,37 +1082,9 @@ Collision in Ray
 -position should have some offset towards direction?
 
 Fill Curve Tube
--made into modifier?
+x-made into modifier?
 	-iteration is on top so not possible?
-
-Array on Curves
--investigate possibility to resample on length?
-	-add different modes: Count, Length, Free
--possibility to be a modifier?
-	-It's problematic, because so many parameters can be added in between the process of instancing.
-	-may need a new node for simple task. what are common workflow? what are needed?
-
-UV Deformer
--option to keep dimension or not.
-	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
--mapping preview sometimes may need validity.
-
-Negati
--support vector.
-	-also need to support dif axis?
--> needs to be done after the fix of issues/119923
-	-otherwise it will be more difficult to use.
-
-Modulo Falloff
--Support Float & Integer with menu?
-
-Sin Function
--Oscillator using Boolean method?
-
-Field to Constant
--Sample node and statistic node may not differ from performance?
--mean method may be good?
-	-differemt modes to change between method?
+	-> it doesn't pass material attribute by itself.
 
 Loft Curves
 -Attribute captured can't be passed.
@@ -1094,9 +1092,12 @@ Loft Curves
 	-need panels for sampling...
 
 Add: Offset towards Camera
--needs to be a modifier
+-needs to be a modifier?
+x-may need to work if inputting collection?
+	-but then will need to assign distance by list?
 
 Add: Screen on Camera
+	-easy to make, but if want to transform other unit to it, need some transform matrix?
 
 Add: S_Voronoi Scatter
 ********************************************************
@@ -1128,7 +1129,7 @@ Add: S_Voronoi Scatter
 	-if Extrapolation can be done in path constraint, why not in deformer?
 
 *Value Precision.
--remove on delta time.
+-remove "on delta time".
 
 **Decimal Shift
 	-some default is currently set to 0 for versioning old files.
@@ -1145,7 +1146,7 @@ Add: S_Voronoi Scatter
 -Sin Function
 	-1
 
-G_Hash Seed
+**G_Hash Seed
 -a better method can be used, but should only be done in 5.0 because of breaking changes.
 	-then it will break with Seed change in 5.0
 
@@ -1172,6 +1173,11 @@ G_Hash Seed
 -Radial Array
 	-fibonacci mode has its falloff output.
 	-right now it's a boolean, but perhaps better as a mode?
+-Negati
+	-support vector; also need to support dif axis?
+	-but will need to be able to hide sockets.
+Modulo Falloff
+	-Support Float & Integer with menu?
 
 **Curve Deformer
 -rewrite for mode: Axis Vs. Bounding Box.
@@ -1214,6 +1220,8 @@ x-improve Animate interpolation?
 -Instance for each element?
 	-save the point node and index input?
 	-how to output attribute without store named attribute?
+-Sin Function
+	-can remove Sin Unit.
 **support curve Interpolate function outside group using Closure & Bundles.
 	-Remap Vector Scale
 -layered proximity falloff
@@ -1245,7 +1253,8 @@ x-improve Animate interpolation?
 -??
 
 **Curve & Color Ramp Panel.
-	-shouldn't be on most nodes, for the sake of re-usibility.
+	-shouldn't be on most nodes, for the sake of remap 0-1 re-usibility.
+
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
