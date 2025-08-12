@@ -1018,20 +1018,29 @@ Sin Function
 
 Woven Surface
 -broken due to Sin Fun
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_14.
-To Do:
-Loft Curves
--Attribute captured can't be passed.
-	-known issue, because the resultant was actually a different mesh.
-	-need panels for sampling...
+
+Add: Shift Cyclic Start
+-regenerate curve but to have a different starting seam?
+
+Bevel Curve
+-custom parameter can be used to offset starting seam in cyclic.
+	-should it have a built-in floor modulo since parameter will be in range anyway?
+	-very good, but seems to create extra seam.
+		what's the cause?
+-> for the moment replaced by "Shift Cyclic Start"
+	-so no need to further implement or fix.
 
 Grid Array
 -support X,Y,Z alignment
 
-Add: is New Face
--to detect new faces generated since the operation?
-	-for example to help assign material after mesh boolean...
+Add: is New Geometry
+-to detect new point on mesh, curve, points...
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_16.
+To Do:
+Offset Origin
+Center Geoemtry
+-should also output a transform so that invert operation can be possible?
 
 Hair on Geometry
 -integrate Hair on Surface into.
@@ -1078,6 +1087,11 @@ Field to Constant
 -Sample node and statistic node may not differ from performance?
 -mean method may be good?
 	-differemt modes to change between method?
+
+Loft Curves
+-Attribute captured can't be passed.
+	-known issue, because the resultant was actually a different mesh.
+	-need panels for sampling...
 
 Add: Offset towards Camera
 -needs to be a modifier
@@ -1168,43 +1182,6 @@ G_Hash Seed
 -axis mode must be using length, because no bounding box to define length.
 	-only in bounding box to downgrade it to factor mode?
 
-**InLine output
--Reset Self Object Transform
--Curve Extrapolation
-x--Time Falloff
-	-better to separate the meaning of Time & Falloff
-x--Attribute Mesh?
-	-has split edge so better to separate the meaning?
--Motion Variance
--Follow Path
--Bevel Curve Fill Cap
--Curve Extrapolation
--reset spline cyclic
--float range
--Snap Function
--Get UVMap
--Join Particles
--Tracer
-	-Sample Attribute
--Freeze Geometry
--Match Size
-	-Geometry & Vector...
--UV Deformer
-
-**Inline output Need Design.
--Helical Connections
--Fill Volume
--Curve Deformer
--UV Deformer
-	-custom bounding box Vs. Bounds Preview
-
-**Inline output Breaking?
--remap 0-1
--Random Rotation
--Curve Extrapolation?
--Store UVMap
--
-
 *Scene Info.
 x-improve Animate interpolation?
 	-but curves are not accessible?
@@ -1241,6 +1218,7 @@ x-improve Animate interpolation?
 	-Remap Vector Scale
 -layered proximity falloff
 -all ease ease function...
+-Add: Curve Parameter Interpolate.
 
 **Dynamic Socket Type: effect nodes requiring multiple types.
 -Sample in Proximity.
