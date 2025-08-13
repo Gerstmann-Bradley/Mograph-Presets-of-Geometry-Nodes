@@ -1051,12 +1051,19 @@ x-possibility to be a modifier?
 
 Sin Function
 -Oscillator using Boolean method?
+
+Hexagon Distribution
+-fix due to curve linear decimal shift
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
+
+Hexagon Distribution
+-rename: Hexagon Array
+	-possibility to support instance output and automatic scales?
 
 Hair on Geometry
 -integrate Hair on Surface into.
@@ -1088,11 +1095,6 @@ UV Deformer
 	-Curve Info
 -Follow Splines
 	-Follow Curves
-
-**Curve Deformer
--Clean up for better design?
-	-how was instance mode determined?
-	-if Extrapolation can be done in path constraint, why not in deformer?
 
 *Value Precision.
 -remove "on delta time".
@@ -1145,15 +1147,6 @@ UV Deformer
 Modulo Falloff
 	-Support Float & Integer with menu?
 
-**Curve Deformer
--rewrite for mode: Axis Vs. Bounding Box.
-	-the existing workflow are based on bounding box.
--need to have an output to preview curve.
--axis mode needs to have automatic elongation.
-	-what about same for bounding box mode?
--axis mode must be using length, because no bounding box to define length.
-	-only in bounding box to downgrade it to factor mode?
-
 *Scene Info.
 x-improve Animate interpolation?
 	-but curves are not accessible?
@@ -1188,6 +1181,23 @@ x-improve Animate interpolation?
 	-how to output attribute without store named attribute?
 -Sin Function
 	-can remove Sin Unit.
+
+**Curve Deformer
+	-better to rewrite with closure to remove repetition.
+-Clean up for better design?
+	-how was instance mode determined?
+	-if Extrapolation can be done in path constraint, why not in deformer?
+-rewrite for mode: Axis Vs. Bounding Box.
+	-the existing workflow are based on bounding box.
+-need to have an output to preview curve.
+-axis mode needs to have automatic elongation.
+	-what about same for bounding box mode?
+-axis mode must be using length, because no bounding box to define length.
+	-only in bounding box to downgrade it to factor mode?
+-Instance for Each Vs. Mapping Instance for Each.
+	-automatic detection, instance on point method?
+
+
 **support curve Interpolate function outside group using Closure & Bundles.
 	-Remap Vector Scale
 -layered proximity falloff
