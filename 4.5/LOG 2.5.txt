@@ -1054,16 +1054,19 @@ Sin Function
 
 Hexagon Distribution
 -fix due to curve linear decimal shift
+
+Hexagon Distribution
+-rename: Hexagon Array
+-support instance & scaling
+
+Point Distribute
+-support Volume
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
-
-Hexagon Distribution
--rename: Hexagon Array
-	-possibility to support instance output and automatic scales?
 
 Hair on Geometry
 -integrate Hair on Surface into.
@@ -1144,8 +1147,10 @@ UV Deformer
 -Negati
 	-support vector; also need to support dif axis?
 	-but will need to be able to hide sockets.
-Modulo Falloff
+-Modulo Falloff
 	-Support Float & Integer with menu?
+-Point Distribute
+	-output should be automatically hidden.
 
 *Scene Info.
 x-improve Animate interpolation?
