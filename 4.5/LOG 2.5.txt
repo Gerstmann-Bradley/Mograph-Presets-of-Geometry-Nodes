@@ -1064,6 +1064,9 @@ Point Distribute
 
 Attribute Viewer
 -allow viewer to show constant.
+
+Inertial Offset
+-vector output was built broken
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
