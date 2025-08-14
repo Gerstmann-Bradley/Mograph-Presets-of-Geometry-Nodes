@@ -1067,6 +1067,18 @@ Attribute Viewer
 
 Inertial Offset
 -vector output was built broken
+
+Bevel Curve
+-Fill Cap doesn't work for instances
+	-add warnings
+
+Points Distribute
+-investigate: density factor from bevel curve doesn't pass the captured spline parameter.
+	-because face-area mode is triggered to bypass density factor mode.
+-> also find that Face Area method is not improving much performance.
+	-the first distribution only cost 10 ms.
+	-& Face area method itself cost SOME.
+-> deprecating Face Area method, because it really doesn't show much benefit.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -1105,6 +1117,8 @@ UV Deformer
 -Follow Splines
 	-Follow Curves
 -ZC_10b_attribute viewer performance test
+-Points Distribute
+	-Face Area code
 
 *Value Precision.
 -remove "on delta time".
