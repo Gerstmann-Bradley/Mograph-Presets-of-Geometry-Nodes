@@ -1079,6 +1079,9 @@ Points Distribute
 	-the first distribution only cost 10 ms.
 	-& Face area method itself cost SOME.
 -> deprecating Face Area method, because it really doesn't show much benefit.
+
+Bevel Curve
+-flat mode add "Centered" option
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -1207,6 +1210,9 @@ x-improve Animate interpolation?
 	-how to output attribute without store named attribute?
 -Sin Function
 	-can remove Sin Unit.
+-Tree Generator
+	-is it possible for a more manual version using closure & bundles?
+	-what's the difference of it compared to the one by a group node?
 
 **Curve Deformer
 	-better to rewrite with closure to remove repetition.
@@ -1222,7 +1228,6 @@ x-improve Animate interpolation?
 	-only in bounding box to downgrade it to factor mode?
 -Instance for Each Vs. Mapping Instance for Each.
 	-automatic detection, instance on point method?
-
 
 **support curve Interpolate function outside group using Closure & Bundles.
 	-Remap Vector Scale
