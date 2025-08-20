@@ -1082,6 +1082,13 @@ Points Distribute
 
 Bevel Curve
 -flat mode add "Centered" option
+
+Mirror Modifier
+-fixed missing bisect because of bounding box use radius change.
+-investigate if use radius should on.
+	-0
+	-1 on required somehow?
+	-2 doesn't effect any.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
