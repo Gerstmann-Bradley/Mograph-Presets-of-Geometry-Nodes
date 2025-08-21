@@ -1,0 +1,353 @@
+Done:
+**Decimal Shift default value
+	-some default is currently set to 0 in 4.5 for versioning old files.
+-Float Range.
+	-1
+-Curve Linear
+	-1
+	-need set curve radius at 0.005?
+		-but reason it effect bevel curve because of radius support.
+-Bevel Curve
+	-1
+-Helical Connections
+	-1
+-Sin Function
+	-1
+
+**G_Hash Seed
+-a better method can be used, but should only be done in 5.0 because of breaking changes.
+	-then it will break with Seed change in 5.0
+
+Mirror Modifier
+-add Info-warning when bisecting instance, because it shouldn't work anyway.
+	-this is a tricky question, because it is actually bisecting.
+		-just not accessing the internal structure.
+-auto-hide not working on Custom Vs. Self Origin.
+	-it's not working, likely due to bad closure inference issues/144870
+
+**Closure and Bundles
+	-remove duplication of code
+--Mirror Modifier
+--Sin Function
+	-can remove Sin Unit.
+
+Warning review
+--proximity falloff
+	-warning
+--animate
+	-warning
+--face points
+	-warning
+--deprecation warning
+	-should be info but keeping as warning.
+--bevel Curve
+	-interesting example to show what should be info & warning each.
+--smooth position
+	-good example of info.
+
+*Value Precision.
+-remove "on delta time".
+	-questionable, since it's an approximation now, better to keep it.
+	-because scene info node is not down anyway.
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_16.
+To Do:
+Offset Origin
+Center Geoemtry
+-should also output a transform so that invert operation can be possible?
+
+Hair on Geometry
+-integrate Hair on Surface into.
+	-should also support both Mesh & Curve?
+
+Set Curve tilt by Normal
+-Camera tilt often has an issue that whole length can skew the result.
+	-may need an operation to only account for an average mid-point?
+
+**Closure and Bundles
+	-remove duplication of code
+-Add loop for noise.
+-Instance for each element?
+	-save the point node and index input?
+	-how to output attribute without store named attribute?
+-Tree Generator
+	-is it possible for a more manual version using closure & bundles?
+	-what's the difference of it compared to the one by a group node?
+-UV Deformer
+-Curve deformer, etc.
+
+**UV Deformer
+-option to keep dimension or not.
+	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
+-mapping preview sometimes may need validity.
+
+**Curve Deformer
+	-better to rewrite with closure to remove repetition.
+-Clean up for better design?
+	-how was instance mode determined?
+	-if Extrapolation can be done in path constraint, why not in deformer?
+-rewrite for mode: Axis Vs. Bounding Box.
+	-the existing workflow are based on bounding box.
+-need to have an output to preview curve.
+-axis mode needs to have automatic elongation.
+	-what about same for bounding box mode?
+-axis mode must be using length, because no bounding box to define length.
+	-only in bounding box to downgrade it to factor mode?
+-Instance for Each Vs. Mapping Instance for Each.
+	-automatic detection, instance on point method?
+
+**Remove Trash Code
+--UV Deformer
+	-but bounding box code from 3.5, because radius was effecting BBox.
+--Mirror Modifier
+
+Deprecation:
+--Array on Splines
+	-Array on Curves
+--Alignment on Splines
+	-align rotation on Curves
+--Follow Splines
+	-Follow Curves
+--ZC_10b_attribute viewer performance test
+-Points Distribute
+	--Face Area code
+********************************************************
+5.0:
+**Socket Shape Struct
+	-it would be better if many nodes' socket structure being re-defined instead of automatic.
+	-otherwise confusion between dynamic & single value & field value.
+
+**Node Output Visibility
+-Bounding Box Falloff
+-Sin Funciton
+-Decay Function?
+-Reset Local Transform
+	-the geometry & field can be separated into each mode.
+-Match Size
+	-right now the output is in face corner domain.
+		-the domain is set by interface and not exposed for changes.
+	-> best to have 2 outputs and swapped by conditions.
+-Curve Deformer
+	-Instance Index should be exposed. it's good for sampling.
+	-need to rewrite mode for Single Vs. Instances?
+-Bevel Curve
+	-should add an "Are Caps" option.
+		-but need to hide in flat mode because no fill caps in flat.
+-Radial Array
+	-fibonacci mode has its falloff output.
+	-right now it's a boolean, but perhaps better as a mode?
+-Negati
+	-support vector; also need to support dif axis?
+	-but will need to be able to hide sockets.
+-Modulo Falloff
+	-Support Float & Integer with menu?
+-Point Distribute
+	-output should be automatically hidden.
+
+*Scene Info.
+x-improve Animate interpolation?
+	-but curves are not accessible?
+		-closure and bundles?
+-Is Inside View Still has resolution X and Y issue.
+-Delta Time better using inversed frame rate than current calculation.
+	otherwise it will cause divide by 0 error.
+
+**Inline Toggles.
+-Mirror Modifier
+-Voxel?
+-nodes with Decimal Shift now?
+	-Fill Volume.
+	-Array on Splines
+	-Step Extrusion.
+	-braid?
+-Solidify
+	-Expose Merge by Distance.
+		-it will largely improve the performance.
+-Loft Curves
+	-Count -1 was used for default...
+-Value Precision.
+	-merge lots of boolean?
+-parenting
+-Knit
+	-may add an vector output for non-center vector?
+
+**Dynamic Socket Type: effect nodes requiring multiple types.
+-Sample in Proximity.
+-Inertial Offset
+-...
+
+**support curve Interpolate function outside group using Closure & Bundles.
+	-Remap Vector Scale
+-layered proximity falloff
+-all ease ease function...
+-Add: Curve Parameter Interpolate.
+
+**Separator
+	-more of a simple UI thing.
+-array on Splines
+-Attribute Viewer
+-Braid
+-Fill Volume
+-Sharp Edge wireframe
+-Step Extrude
+-Displace Deformer
+
+**Interface Order
+	-panel used to be only possible at bottom of all.
+-Match Size.
+	-want to add an custom input option if it's possible.
+		-in case of dynamic function that requires a bigger bounding box.
+
+**Curve & Color Ramp Panel.
+	-shouldn't be on most nodes, for the sake of remap 0-1 re-usibility.
+
+Deprecation 5.2 LTS:
+-Set Curve Tilt Alignment
+	-Set Curve Tilt by Normal
+-Random Helices Distribution
+	-Random Spirals
+-Set particle parameters
+	-this node should be completely ungrouped and removed to be replaced by Join Particles.
+-Hair on Surface
+	-integrate into Hair on Geometry?
+-Spline Info
+	-Curve Info
+****************************************************************************************************
+GN-Known Issue:
+Tree Generator
+-Noises displacement is displacing branches out of way.
+-need a better interpolation for "over parameter" method.
+
+Add Curve Branch
+-this one is broken now due to hierarchy issue?
+	-Use different modes for Inside Simulation Vs. Inside Loop.
+
+Animate
+-is having a curve scape goat inside for warning evaluation.
+
+Face Points
+-Join Vertices Points will cause evaluation disturbance.
+	-likely due to sample index disturbance?
+-> perhaps better solved by closure to duplicate functions.
+	-for now it seems working or not working anyway. pending.
+-Dual Mesh doesn't mean the exact vertices location.
+	-as avg. point to form polygon for face points can be bad at low subd.
+-Join Vertex Points function needs some more thoughts.
+	-while it's working on basic case.
+	-dynamic case require sampling and capture on respective domain.
+		-which is not exposed and has to be done outside.
+
+Hair on Surface
+-Proximity targets differently for each point in complex geometry
+
+Dynamic Space Sampling
+-Curve Tangent/grid edge tangent method is not working
+	-because they aren't stable relative to geometry?
+-basic setup is working.
+	-but somehow moving as a whole in complex scene. why?
+
+Tracer
+-I think there are cases you don't want to delete trace when they are deleted?
+
+Polygon Unfolding
+-has some minor rotation of transform to prevent bug.
+	-is it still happening in 4.5???
+
+Solidify
+-In Instance Mode, Merge by Distance Not Working.
+-not possible to integrate with step extrusion, because output socket visible.
+
+Freeze Geometry
+-what if different geometry requiring different status of freeze?
+	-switch node can't accept Field.
+	-Separate Geometry for Freeze?
+		-if the index is changing, what to do?
+
+Set Particle Parameter
+-Should Inheret the previous velocity?
+	-currently the velocity must be newly written.
+
+Add: Mesh Tangent?
+-How to make sure between vertex & face tangent?
+
+Step Extrude
+-The stop mode currently doesn't support attribute for multiple polygons.
+
+Bevel Curve
+-give warning in Mesh Instances.
+	-curve to mesh will work in curve instances wtho realization.
+-when used as a modifier for mesh, it will cause lose of material.
+	-because of Mesh to Curve step.
+****************************************************************************************************
+Investigation:
+Bevel Curve
+-investigate UV Length Multiplier.
+	-seems if field is in scale it will be as if it's determined with statistic?
+	-but generally still working.
+
+Reset Instance Origin.
+-Use Bounding Box?
+
+Join Particles
+-Investigate: why joining 2/frame has more hits than joining 1/frame?
+	-seems to only happen if using temporal object info?
+
+Helical Connections
+-is it possible to auto-detect the decimals when connecting in chains?
+	-difficult, so far no success.
+
+Tracer
+-if to use the newly joined geo detection function?
+	-[index - (sampled index + 1)]
+
+Unknown Nodes:
+-Group Index, Count Per Island.
+-Group per Domain
+-Iteration Count per Domain.
+	-used to be for repeat zone. but currently questionable.
+***************************************************************************************************
+Still Considering Necessity:
+Add: Array Instancer?
+
+Add: Randomize Instance Order?
+-Instance on Point + Random Value + Instance Index
+-Is this extra nodes really necessary?
+****************************************************************************************************
+**General rule of design:
+Boolean Yes/No - Check=yes, uncheck=no.
+Statistic Mean is of the best performance.
+
+Randomness
+-Var. means range between full negative Var. & full positive Var.
+-Mid-Level Means 2X Positive/Negative.
+
+Check if All index node are using implicit index attribute than ID/Index.
+During Instance and Pick Instance
+	-Instance Index should use Index instead of ID?
+		-should use ID/Index instead.
+	-for example if using Is inside View to select point.
+		-instance index will glitch, while ID won't.
+
+Named UVMap should Above Vector input UVMap
+
+Advanced= Advanced Settings
+
+tooltips
+-use first person for verbs as Blender did.
+
+Decimal Shift:
+Shift the decimal point of the above value by powers of 10. Applies division. For example: 2 → divide by 100
+
+Search Terms used in LOG:
+Add:
+Failed Add:
+Not Add:
+Rename:
+Remove:
+--: means item task in the list has been completed.
+x--: means item task is rejected
+
+Info Vs. Warning
+-Info is something done wrong but doesn't effect much result.
+	-such as bisecting instance won't work, but you can turn it on or whatever.
+-warning is when something is done incorrectly and should be told?
