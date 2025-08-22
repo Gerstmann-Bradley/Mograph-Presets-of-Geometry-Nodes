@@ -49,6 +49,36 @@ Warning review
 -remove "on delta time".
 	-questionable, since it's an approximation now, better to keep it.
 	-because scene info node is not down anyway.
+
+**Remove Trash Code
+--UV Deformer
+	-but bounding box code from 3.5, because radius was effecting BBox.
+--Mirror Modifier
+
+Deprecation:
+--Array on Splines
+	-Array on Curves
+--Alignment on Splines
+	-align rotation on Curves
+--Follow Splines
+	-Follow Curves
+--ZC_10b_attribute viewer performance test
+-Points Distribute
+	--Face Area code
+
+Reset Curve Cyclic
+-completely rewrite with Trim Curve at 0.9999.
+	-it will break the cyclicity but keep everything working.
+	-also extremely fast.
+
+Curve Extrapolation
+-Should provide options to break cyclic or not.
+-Add Selection
+-Distance output will no be field on each point instead of statistic.
+	-use signed distance.
+
+Attribute Viewer
+-View Value must be set to dynamic instead of Auto. seems a bug somewhere.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -63,6 +93,15 @@ Hair on Geometry
 Set Curve tilt by Normal
 -Camera tilt often has an issue that whole length can skew the result.
 	-may need an operation to only account for an average mid-point?
+
+Curve Linear
+-The curve has normal inherently facing downwards, why?
+
+Curve Extrapolation
+-it will disrupt the original curve normal.
+
+3D viewer
+-if no implicit input, it should output instances.
 
 **Closure and Bundles
 	-remove duplication of code
@@ -86,8 +125,18 @@ Set Curve tilt by Normal
 -Clean up for better design?
 	-how was instance mode determined?
 	-if Extrapolation can be done in path constraint, why not in deformer?
--rewrite for mode: Axis Vs. Bounding Box.
-	-the existing workflow are based on bounding box.
+-method: Relative/Normalized Mapping Vs. Absolute World Mapping.
+	-the existing workflow are based on relative.
+-Mode: Single Vs. Instances
+	-Single must be normalized to scale?
+	-Instances may be normalized to scale or not?
+-> it's found there's a point where for each element becomes more efficient.
+	-more complex the output geometry, more efficient it will be.
+		-about 168 Vs. 393 ms on 40,40,40 cubes at 2000 count.
+		-about 22 Vs. 3.2 ms on 2,2,2 cubes at 2000 count.
+	-Regular Suzanne at 2000 count, 41 Vs. 27 ms.
+		-subsurf 1, 59 Vs. 89 ms
+		-subsurf 2, 202 Vs. 382 ms
 -need to have an output to preview curve.
 -axis mode needs to have automatic elongation.
 	-what about same for bounding box mode?
@@ -95,28 +144,13 @@ Set Curve tilt by Normal
 	-only in bounding box to downgrade it to factor mode?
 -Instance for Each Vs. Mapping Instance for Each.
 	-automatic detection, instance on point method?
+	-should be different mode?
 
-**Remove Trash Code
---UV Deformer
-	-but bounding box code from 3.5, because radius was effecting BBox.
---Mirror Modifier
-
-Deprecation:
---Array on Splines
-	-Array on Curves
---Alignment on Splines
-	-align rotation on Curves
---Follow Splines
-	-Follow Curves
---ZC_10b_attribute viewer performance test
--Points Distribute
-	--Face Area code
-********************************************************
-5.0:
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
 	-otherwise confusion between dynamic & single value & field value.
-
+********************************************************
+5.0:
 **Node Output Visibility
 -Bounding Box Falloff
 -Sin Funciton
@@ -224,6 +258,9 @@ Add Curve Branch
 
 Animate
 -is having a curve scape goat inside for warning evaluation.
+
+Curve Extrapolation
+-can't completley bypass using selection, because curve to mesh must happen.
 
 Face Points
 -Join Vertices Points will cause evaluation disturbance.
