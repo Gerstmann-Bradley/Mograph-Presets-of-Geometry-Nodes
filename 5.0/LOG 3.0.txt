@@ -79,6 +79,12 @@ Curve Extrapolation
 
 Attribute Viewer
 -View Value must be set to dynamic instead of Auto. seems a bug somewhere.
+
+Curve Extrapolation
+-fix disruption of original curve normal.
+
+3D viewer
+-if no implicit input, it should output instances.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -97,12 +103,6 @@ Set Curve tilt by Normal
 Curve Linear
 -The curve has normal inherently facing downwards, why?
 
-Curve Extrapolation
--it will disrupt the original curve normal.
-
-3D viewer
--if no implicit input, it should output instances.
-
 **Closure and Bundles
 	-remove duplication of code
 -Add loop for noise.
@@ -120,6 +120,10 @@ Curve Extrapolation
 	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
 -mapping preview sometimes may need validity.
 
+Curve Extrapolation
+-add options to prevent cyclic curve breakage.
+-add options for distance relative to length
+
 **Curve Deformer
 	-better to rewrite with closure to remove repetition.
 -Clean up for better design?
@@ -127,6 +131,9 @@ Curve Extrapolation
 	-if Extrapolation can be done in path constraint, why not in deformer?
 -method: Relative/Normalized Mapping Vs. Absolute World Mapping.
 	-the existing workflow are based on relative.
+-need to have an output to preview curve.
+-integrated Curve Extrapolation.
+	-worked, although can't be bypassed because of "Curve to Mesh"
 -Mode: Single Vs. Instances
 	-Single must be normalized to scale?
 	-Instances may be normalized to scale or not?
@@ -134,17 +141,36 @@ Curve Extrapolation
 	-more complex the output geometry, more efficient it will be.
 		-about 168 Vs. 393 ms on 40,40,40 cubes at 2000 count.
 		-about 22 Vs. 3.2 ms on 2,2,2 cubes at 2000 count.
-	-Regular Suzanne at 2000 count, 41 Vs. 27 ms.
-		-subsurf 1, 59 Vs. 89 ms
-		-subsurf 2, 202 Vs. 382 ms
--need to have an output to preview curve.
--axis mode needs to have automatic elongation.
-	-what about same for bounding box mode?
--axis mode must be using length, because no bounding box to define length.
-	-only in bounding box to downgrade it to factor mode?
--Instance for Each Vs. Mapping Instance for Each.
-	-automatic detection, instance on point method?
-	-should be different mode?
+	-Regular Suzanne at 2000 count, 32 Vs. 26 ms.
+		-subsurf 1, 78 Vs. 93 ms
+		-subsurf 2, 133 Vs. 318 ms
+-> Single Vs. Instances Mode is not needed.
+	-it can be directly put into a for each element even for single curve.
+		-minimal performance impact.
+-Curve Extrapola can't be bypassed internally for cyclic curve.
+	-somehow there's a bug in Flow, tried to solve bu no success.
+		-anyway it's not required to solve.
+	-For each element can bypass it more directly using Geo Switch.
+-> However in actual integration these tanks miserably.
+	-even just use "Loop Index" will be deadly. looking for answer at issues/144972
+
+-Single Vs. Instances Mode.
+	-Single Mode may not be necessary.
+	-in 500,500,500 Cube, Single Vs. Instance doesn't differ much.
+		-10 Vs. 20 ms; not effected by the curve resolution.
+-> Single can be merged into Instances mode.
+-Duplicate Vs. Select per Curve
+	-Duplica per Curve is automated as previous Instance mode.
+	-what about Select per curve?
+		-what automation is expected? Per Island? NO.
+		-Pick Instance?
+			-use the same geometry input for convenience.
+			-but need to add warnings.
+-Sampling in Closure may be a bad idea.
+	-In case more samplings are required?
+	-2 types of Sampling in general.
+		-1 can sample outside for each whole curve, need to output an Index
+		-2 can sample along curve, can only be done inside.
 
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
@@ -342,49 +368,3 @@ Unknown Nodes:
 -Group per Domain
 -Iteration Count per Domain.
 	-used to be for repeat zone. but currently questionable.
-***************************************************************************************************
-Still Considering Necessity:
-Add: Array Instancer?
-
-Add: Randomize Instance Order?
--Instance on Point + Random Value + Instance Index
--Is this extra nodes really necessary?
-****************************************************************************************************
-**General rule of design:
-Boolean Yes/No - Check=yes, uncheck=no.
-Statistic Mean is of the best performance.
-
-Randomness
--Var. means range between full negative Var. & full positive Var.
--Mid-Level Means 2X Positive/Negative.
-
-Check if All index node are using implicit index attribute than ID/Index.
-During Instance and Pick Instance
-	-Instance Index should use Index instead of ID?
-		-should use ID/Index instead.
-	-for example if using Is inside View to select point.
-		-instance index will glitch, while ID won't.
-
-Named UVMap should Above Vector input UVMap
-
-Advanced= Advanced Settings
-
-tooltips
--use first person for verbs as Blender did.
-
-Decimal Shift:
-Shift the decimal point of the above value by powers of 10. Applies division. For example: 2 → divide by 100
-
-Search Terms used in LOG:
-Add:
-Failed Add:
-Not Add:
-Rename:
-Remove:
---: means item task in the list has been completed.
-x--: means item task is rejected
-
-Info Vs. Warning
--Info is something done wrong but doesn't effect much result.
-	-such as bisecting instance won't work, but you can turn it on or whatever.
--warning is when something is done incorrectly and should be told?
