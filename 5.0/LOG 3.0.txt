@@ -123,6 +123,8 @@ Curve Linear
 Curve Extrapolation
 -add options to prevent cyclic curve breakage.
 -add options for distance relative to length
+-need to test index swap.
+	-Mesh to Curve will Swap Index.
 
 **Curve Deformer
 	-better to rewrite with closure to remove repetition.
@@ -153,7 +155,6 @@ Curve Extrapolation
 	-For each element can bypass it more directly using Geo Switch.
 -> However in actual integration these tanks miserably.
 	-even just use "Loop Index" will be deadly. looking for answer at issues/144972
-
 -Single Vs. Instances Mode.
 	-Single Mode may not be necessary.
 	-in 500,500,500 Cube, Single Vs. Instance doesn't differ much.
@@ -166,6 +167,14 @@ Curve Extrapolation
 		-Pick Instance?
 			-use the same geometry input for convenience.
 			-but need to add warnings.
+-> into "Pick Instance".
+	-it has its warning too.
+--Different Flow
+	-it confuses me a lot, but basically only info read by Mesh needs Sampling.
+		-the captured Instance Index means 0 if the value is only read by Curve.
+--Different Scalings
+-Offset Flow is no longer needed? because anyway extrapola is integrated inside.
+	-can keep it since it doesn't hurt and properly documented.
 -Sampling in Closure may be a bad idea.
 	-In case more samplings are required?
 	-2 types of Sampling in general.
@@ -286,7 +295,8 @@ Animate
 -is having a curve scape goat inside for warning evaluation.
 
 Curve Extrapolation
--can't completley bypass using selection, because curve to mesh must happen.
+-can't completley bypass using selection, because curve to mesh has no selection and must happen.
+-in some dynamic cases it will switch the curve Index and thus point index too.
 
 Face Points
 -Join Vertices Points will cause evaluation disturbance.
