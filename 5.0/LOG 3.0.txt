@@ -85,40 +85,6 @@ Curve Extrapolation
 
 3D viewer
 -if no implicit input, it should output instances.
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_16.
-To Do:
-Offset Origin
-Center Geoemtry
--should also output a transform so that invert operation can be possible?
-
-Hair on Geometry
--integrate Hair on Surface into.
-	-should also support both Mesh & Curve?
-
-Set Curve tilt by Normal
--Camera tilt often has an issue that whole length can skew the result.
-	-may need an operation to only account for an average mid-point?
-
-Curve Linear
--The curve has normal inherently facing downwards, why?
-
-**Closure and Bundles
-	-remove duplication of code
--Add loop for noise.
--Instance for each element?
-	-save the point node and index input?
-	-how to output attribute without store named attribute?
--Tree Generator
-	-is it possible for a more manual version using closure & bundles?
-	-what's the difference of it compared to the one by a group node?
--UV Deformer
--Curve deformer, etc.
-
-**UV Deformer
--option to keep dimension or not.
-	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
--mapping preview sometimes may need validity.
 
 Curve Extrapolation
 -add options to prevent cyclic curve breakage.
@@ -180,6 +146,69 @@ Curve Extrapolation
 	-2 types of Sampling in general.
 		-1 can sample outside for each whole curve, need to output an Index
 		-2 can sample along curve, can only be done inside.
+-Absolute Mode Implementation:
+	-should completely bypass the need of Bounding Box & Remap?
+		-> No offset panel is needed, because it's done fully on the original axis.
+	-world origin 0 is the perfect starting point.
+		-distance on the selected x will cover the length of curve.
+	-> it relys on the bounding box, just no Normalize and Remap Process.
+-In relative mode, geometry is mapped within the range from -1 to +1.
+	-> extrapolation was controlled by the "Offset" subject to this region.
+-> In absolute mode, no virtual Offset is available.
+	-has to sample info from the Mesh.
+-Abs mode: can't figure out how to offset BBox & final position separately.
+	-it's easier to offset instance as a whole.
+	-to simplify the process, sample & capture at the most beginning.
+-for some reason, Abs mode has flipped normal on Y & Z and will clip on axis.
+	-requires negati in some binormal to work.
+-Add Instances Warning if Pick Instance is not on.
+-Proportional Scale toggle in Pick Instance.
+	-scale different instances based on the largest instances
+		-to keep relative scale of them. need attribute statistic?
+	-which axis to chose, or based on diagonal?
+		-based on forwarding axis.
+	-should be disabled in Abs mode.
+-Abs Pick bug when using random flow.
+	-sampling from Geo to Curve has issue because index doesn't match.
+		-solution Ref from Group to Instances.
+-Performance test on 40,40,40 Cube at 2000 Count.
+	-274 Vs. 360 ms
+	-no significant differences found between modes.
+		-Abs mode may fast as 200
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_16.
+To Do:
+Offset Origin
+Center Geoemtry
+-should also output a transform so that invert operation can be possible?
+
+Hair on Geometry
+-integrate Hair on Surface into.
+	-should also support both Mesh & Curve?
+
+Set Curve tilt by Normal
+-Camera tilt often has an issue that whole length can skew the result.
+	-may need an operation to only account for an average mid-point?
+
+Curve Linear
+-The curve has normal inherently facing downwards, why?
+
+**Closure and Bundles
+	-remove duplication of code
+-Add loop for noise.
+-Instance for each element?
+	-save the point node and index input?
+	-how to output attribute without store named attribute?
+-Tree Generator
+	-is it possible for a more manual version using closure & bundles?
+	-what's the difference of it compared to the one by a group node?
+-UV Deformer
+--Curve deformer, etc.
+
+**UV Deformer
+-option to keep dimension or not.
+	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
+-mapping preview sometimes may need validity.
 
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
