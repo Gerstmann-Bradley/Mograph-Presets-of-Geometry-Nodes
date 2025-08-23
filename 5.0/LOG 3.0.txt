@@ -171,6 +171,7 @@ Curve Extrapolation
 -Abs Pick bug when using random flow.
 	-sampling from Geo to Curve has issue because index doesn't match.
 		-solution Ref from Group to Instances.
+-Abs Cyclic based on the Max Length of Curve.
 -Performance test on 40,40,40 Cube at 2000 Count.
 	-274 Vs. 360 ms
 	-no significant differences found between modes.
