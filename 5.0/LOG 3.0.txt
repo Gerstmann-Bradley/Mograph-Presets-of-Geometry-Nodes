@@ -176,6 +176,21 @@ Curve Extrapolation
 	-274 Vs. 360 ms
 	-no significant differences found between modes.
 		-Abs mode may fast as 200
+
+Curve Deformer
+--Abs mode has a bug in Single Curve
+	-forgot to enable back the offset Min bounding box.
+--Relative Mode has completely broken Cyclic Curve
+	-fulled fixed with proper Sampling max Length on Spline Domain.
+--Abs mode on multiple cyclic seems to have bug.
+	-also only go positive and no negative.
+	-because when it's cyclic, it doesn't neeed offset.
+--When the targeted X contains 0, Proportionl scale can be broken.
+	-set math maximum at a small value.
+		-although it can still result in extreme case, will leave it now.
+
+Scale Selection
+-clean up with Closure.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -204,7 +219,6 @@ Curve Linear
 	-is it possible for a more manual version using closure & bundles?
 	-what's the difference of it compared to the one by a group node?
 -UV Deformer
---Curve deformer, etc.
 
 **UV Deformer
 -option to keep dimension or not.
