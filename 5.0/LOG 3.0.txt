@@ -191,6 +191,9 @@ Curve Deformer
 
 Scale Selection
 -clean up with Closure.
+
+Add: S_Gabor Flow
+Add: S_Edge Gradient
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
