@@ -194,6 +194,11 @@ Scale Selection
 
 Add: S_Gabor Flow
 Add: S_Edge Gradient
+
+Solidify
+-was not outputting curves.
+	-because of separate component.
+	-for the moment curve to mesh automatically.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -208,6 +213,50 @@ Hair on Geometry
 Set Curve tilt by Normal
 -Camera tilt often has an issue that whole length can skew the result.
 	-may need an operation to only account for an average mid-point?
+
+Bevel Curve
+-Free Profile has resolution dependency.
+	-known bug upstream in Blender.
+	-/issues/145103
+
+**Bend Deformer
+	-rewrite
+--Confirm of original modifier behavior.
+	-only work on XY-plane, Z-axis geometry.
+		-whole X/Y fold on X/Y Axis.
+		-Z-axis, only XZ plane folded on two sides. YZ stays.
+--Origin Offset has relevant and irrelevant part.
+	-needs to be selected for each mode.
+-want to add ability masking the effect.
+	-right now offset the origin will bump the other side as well.
+	-Origin Offset and such threshold is essentially the same magnitude?
+		-it should still work for all types more than just curves
+-> the current method is a sharp transition.
+	-smooth transition is not possible because it works on the entire geometry.
+	-so input will be rather a toggle?
+--why XY-Z working for XY test mesh, but not for YZ test mesh?
+	-XY test Mesh is moved on X, but YZ test mesh hasn't been moved.
+		-so their gradient has been drawn differently.
+	-> needs to capture the mixed bounds after movement.
+x-give up on flipping the direction while keeping the same offset for the same effect.
+	-maybe technically easy, but it may take too many switches for different offset
+-support Rotation Value always relative to the bounding box length on axis.
+	-for 4m length line, angle pi/2 is enough for a full circle.
+		-the multiplication makes it enough for 2 pi circle.
+	-> 
+-support Rotate the axis of bending.
+
+
+
+-> should it offset based on the bounding box or absolute value?
+	-relative Vs. Absolute mode in offset.
+-but general bending must be absolute due to algorithm?
+	-The current algorithm require geometry to stay on the world origin.
+		-need a method to offset the geometry to world origin and reverse the offset?
+-Object Offset Must be absolute?
+-Offset & Clamp should be separated.
+
+Add: S_View Angle Transparency
 
 Curve Linear
 -The curve has normal inherently facing downwards, why?
@@ -232,7 +281,7 @@ Curve Linear
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
 	-otherwise confusion between dynamic & single value & field value.
 ********************************************************
-5.0:
+5.1:
 **Node Output Visibility
 -Bounding Box Falloff
 -Sin Funciton
@@ -292,6 +341,8 @@ x-improve Animate interpolation?
 -Inertial Offset
 -...
 
+**Curve & Color Ramp Panel.
+	-shouldn't be on most nodes, for the sake of remap 0-1 re-usibility.
 **support curve Interpolate function outside group using Closure & Bundles.
 	-Remap Vector Scale
 -layered proximity falloff
@@ -314,8 +365,8 @@ x-improve Animate interpolation?
 	-want to add an custom input option if it's possible.
 		-in case of dynamic function that requires a bigger bounding box.
 
-**Curve & Color Ramp Panel.
-	-shouldn't be on most nodes, for the sake of remap 0-1 re-usibility.
+Remove Trash Code:
+-cleaning up ZA_19 Curve Deformers
 
 Deprecation 5.2 LTS:
 -Set Curve Tilt Alignment
