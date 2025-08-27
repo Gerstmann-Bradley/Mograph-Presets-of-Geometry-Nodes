@@ -199,25 +199,6 @@ Solidify
 -was not outputting curves.
 	-because of separate component.
 	-for the moment curve to mesh automatically.
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_16.
-To Do:
-Offset Origin
-Center Geoemtry
--should also output a transform so that invert operation can be possible?
-
-Hair on Geometry
--integrate Hair on Surface into.
-	-should also support both Mesh & Curve?
-
-Set Curve tilt by Normal
--Camera tilt often has an issue that whole length can skew the result.
-	-may need an operation to only account for an average mid-point?
-
-Bevel Curve
--Free Profile has resolution dependency.
-	-known bug upstream in Blender.
-	-/issues/145103
 
 **Bend Deformer
 	-rewrite
@@ -251,20 +232,34 @@ x-give up on flipping the direction while keeping the same offset for the same e
 	-map range requires a larger gradient for smoother transition.
 		-but it also makes the result dramatically different from normal state.
 	-overall I think it's fine now.
+--need to add a viewer system to indicate location and orientation of bending.
+	-viewer axis is tricky, but finally decided to use plane-CP-axis
+	-multi-viewer markers are confirmed.
+	-known issue: viewer marker is done by GP.
+		-1. it has to be rendered by GP.
+		-2. attribute overlay must be on to give it color.
+x-support object absolute offset.
+	-no plan for the moment.
+	-it should be easy to do, but seem far less productive compared to procedural offset & rot.
+****************************************************************************************************
+The Newest Test Demo Tree: ZF_16.
+To Do:
+Offset Origin
+Center Geoemtry
+-should also output a transform so that invert operation can be possible?
 
--need to add a viewer system to indicate location and orientation of bending.
-	-single viewer first.
-	-
--support object absolute offset.
+Hair on Geometry
+-integrate Hair on Surface into.
+	-should also support both Mesh & Curve?
 
+Set Curve tilt by Normal
+-Camera tilt often has an issue that whole length can skew the result.
+	-may need an operation to only account for an average mid-point?
 
--> should it offset based on the bounding box or absolute value?
-	-relative Vs. Absolute mode in offset.
--but general bending must be absolute due to algorithm?
-	-The current algorithm require geometry to stay on the world origin.
-		-need a method to offset the geometry to world origin and reverse the offset?
--Object Offset Must be absolute?
--Offset & Clamp should be separated.
+Bevel Curve
+-Free Profile has resolution dependency.
+	-known bug upstream in Blender.
+	-/issues/145103
 
 Add: S_View Angle Transparency
 
