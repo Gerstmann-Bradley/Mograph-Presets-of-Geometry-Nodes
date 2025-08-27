@@ -240,12 +240,22 @@ Bevel Curve
 	-> needs to capture the mixed bounds after movement.
 x-give up on flipping the direction while keeping the same offset for the same effect.
 	-maybe technically easy, but it may take too many switches for different offset
--support Rotation Value always relative to the bounding box length on axis.
+--support Rotation Value always relative to the bounding box length on axis.
 	-for 4m length line, angle pi/2 is enough for a full circle.
 		-the multiplication makes it enough for 2 pi circle.
-	-> 
--support Rotate the axis of bending.
+--support Rotate the axis of bending.
+	-need 3rd set of axis which influence bend only if axis rotated.
+	-currently using "Rotating instance after offset to origin" method.
+		-a bit simpler than rotating position on 2 stages separately.
+->it has issue if clampping + rotating more than 90 degree.
+	-map range requires a larger gradient for smoother transition.
+		-but it also makes the result dramatically different from normal state.
+	-overall I think it's fine now.
 
+-need to add a viewer system to indicate location and orientation of bending.
+	-single viewer first.
+	-
+-support object absolute offset.
 
 
 -> should it offset based on the bounding box or absolute value?
