@@ -255,6 +255,17 @@ x-support object absolute offset.
 Curve Split
 -it only output curves, input other geometry are ignored.
 	-should have warnings
+
+Sin Function
+	-fix issue from decimal shift
+--Knit Unit
+--Knit Surface
+--Braid
+--Tree Generator
+--Woven Surface
+
+Proximity Falloff
+-using new
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:

@@ -1089,6 +1089,14 @@ Mirror Modifier
 	-0
 	-1 on required somehow?
 	-2 doesn't effect any.
+
+Sin Function
+	-fix issue from decimal shift
+--Knit Unit
+--Knit Surface
+--Braid
+--Tree Generator
+--Woven Surface
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
