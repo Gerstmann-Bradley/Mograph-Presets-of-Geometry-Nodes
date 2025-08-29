@@ -278,6 +278,35 @@ Hair on Geometry
 
 Woven Surface
 -needs spline index on each axis
+
+Curve Deformer
+-why sampling Spline Parameter not working?
+	-seems working as intended.
+
+default value when sampling on color
+	-should make sure black start.
+--curve deformer
+--array on curves
+	-fine already.
+--Follow Curves
+	-float to color
+
+UV Deformer
+-what about capture the vector map value trying to save performance?
+	-not improving any performance.
+		-also not seem to change any result.
+	-will leave it there.
+
+Bevel Curve
+-Free Profile has resolution dependency.
+	-known bug upstream in Blender.
+	-/issues/145103
+		-closed
+
+Hair on Geometry
+-better to re-arrange some layout.
+	-radius better exposed.
+	-default value of XY-rot
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -285,14 +314,12 @@ Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
 
+Index Reverse
+-when inputting curve, will have unsupported type mesh...
+
 Set Curve tilt by Normal
 -Camera tilt often has an issue that whole length can skew the result.
 	-may need an operation to only account for an average mid-point?
-
-Bevel Curve
--Free Profile has resolution dependency.
-	-known bug upstream in Blender.
-	-/issues/145103
 
 Add: S_View Angle Transparency
 
