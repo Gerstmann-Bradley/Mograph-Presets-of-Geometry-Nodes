@@ -266,16 +266,24 @@ Sin Function
 
 Proximity Falloff
 -using new
+
+Helical Connections
+-4.5.2 solves the bug. no need to capture tilt anymore.
+
+Hair on Geometry
+-integrate Hair on Surface into.
+	-should also support both Mesh & Curve?
+	-Surface Cling mode
+-use new bend deformer.
+
+Woven Surface
+-needs spline index on each axis
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
-
-Hair on Geometry
--integrate Hair on Surface into.
-	-should also support both Mesh & Curve?
 
 Set Curve tilt by Normal
 -Camera tilt often has an issue that whole length can skew the result.
