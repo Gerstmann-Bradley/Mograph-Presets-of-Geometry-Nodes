@@ -241,6 +241,20 @@ x-give up on flipping the direction while keeping the same offset for the same e
 x-support object absolute offset.
 	-no plan for the moment.
 	-it should be easy to do, but seem far less productive compared to procedural offset & rot.
+
+**UV Deformer
+-add options for Custom Bounding Box?
+	-Bounding box have input & output.
+-> input can be Vector & Geometry.
+-> output can be ???
+	-default from 0-1 & -/+Z.
+	x-mapped dimension seems barely used?
+-Decimal Shift value back to 0. Z-axis recovery should be correct now?
+	-may even remove decimal shift, but will keep for now.
+
+Curve Split
+-it only output curves, input other geometry are ignored.
+	-should have warnings
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -275,12 +289,9 @@ Curve Linear
 -Tree Generator
 	-is it possible for a more manual version using closure & bundles?
 	-what's the difference of it compared to the one by a group node?
--UV Deformer
 
-**UV Deformer
--option to keep dimension or not.
-	-some cases may be better to remap a 2:1 ratio into 1:1 UV map?
--mapping preview sometimes may need validity.
+Attribute Viewer
+-support face corner with better positioning of the existing vector.
 
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
@@ -370,10 +381,7 @@ x-improve Animate interpolation?
 	-want to add an custom input option if it's possible.
 		-in case of dynamic function that requires a bigger bounding box.
 
-Remove Trash Code:
--cleaning up ZA_19 Curve Deformers
-
-Deprecation 5.2 LTS:
+**Deprecation 5.2 LTS:
 -Set Curve Tilt Alignment
 	-Set Curve Tilt by Normal
 -Random Helices Distribution
@@ -384,6 +392,10 @@ Deprecation 5.2 LTS:
 	-integrate into Hair on Geometry?
 -Spline Info
 	-Curve Info
+
+**Remove Trash Code:
+-cleaning up ZA_19 Curve Deformers
+-UV deformer
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
