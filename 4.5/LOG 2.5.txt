@@ -1097,6 +1097,9 @@ Sin Function
 --Braid
 --Tree Generator
 --Woven Surface
+
+Fill Curve Tube
+-inner ring settings, etc.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:

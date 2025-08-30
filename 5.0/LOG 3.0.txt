@@ -312,6 +312,10 @@ UV Deformer
 -in custom bounding box mapping, if geometry is outside, it will be clamped to be included.
 	-> it must be in the targeted UVMap area and deletion is not working.
 -> remove clamping of Vector map range so it can extend outside.
+
+Fill Curve Tube
+-inner Ring tob a factor of outer ring.
+-add evenness setting
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
