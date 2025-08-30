@@ -307,6 +307,11 @@ Hair on Geometry
 -better to re-arrange some layout.
 	-radius better exposed.
 	-default value of XY-rot
+
+UV Deformer
+-in custom bounding box mapping, if geometry is outside, it will be clamped to be included.
+	-> it must be in the targeted UVMap area and deletion is not working.
+-> remove clamping of Vector map range so it can extend outside.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
