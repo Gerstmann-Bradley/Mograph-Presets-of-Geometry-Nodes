@@ -316,6 +316,18 @@ UV Deformer
 Fill Curve Tube
 -inner Ring tob a factor of outer ring.
 -add evenness setting
+
+Fill Curve Tube
+-different count in different rings?
+	-it's already doing it
+x-radius mode to set count based on radius?
+	-tried but didn't work well.
+
+Bend Deformer
+-due to split instance, the attribute didn't propagate well.
+	-need to sample & captured at Instance before realization.
+-> I wonder how many boolean options are needed.
+	-currently clamp tob single value, but flip direction is field.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
