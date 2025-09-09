@@ -328,15 +328,66 @@ Bend Deformer
 	-need to sample & captured at Instance before realization.
 -> I wonder how many boolean options are needed.
 	-currently clamp tob single value, but flip direction is field.
+
+Bend Deformer
+x-investigate possibility to shrink the endpoint
+	-a multiplier after (1-Angle) can shrink.
+		but generally not working well.
+		-also how to setup gradient?
+
+Curve Deformer
+x-the scale will disrupt the normal rule of flow from 0-1.
+	-should a factor be added to resolve it?
+-> flow dividing scale seems not to work in this case.
+	-I'm also not convinced the benefit of it.
+-> in fact, since it's mapped, then no matter the scale.
+	flow 0-1 to across the whole length of curve in relative.
+	-in absolute it doesn't work because geometry may not be centered on world origin.
+		-so it can never be guaranteed.
+
+Add: Set Curve Radius
+-only goal is to add decimal shift.
+
+Dynamic Surface Sampling
+-simplify.
+-add warning
+-update test
+
+Hair on Geometry
+-add tangent mode for rotation
+-add bend clamp.
+
+Random Rotation
+x-worth to make Z-only into a menu switch?
+	-so that extra XY can be hidden in non-Zonly mode?
+-> I think Extra XY is always useful.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
+Dynamic Curve Sampling
+-add warning as in DSS.
+
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
 
 Index Reverse
 -when inputting curve, will have unsupported type mesh...
+
+Add: Memory Falloff?
+-use closure?
+
+Mesh Rolling
+-it's working with mesh with thickness. but not plane
+	-smaller thickness, needs higher center to roll it.
+	-if the thickness is 0, center can't be elevated.
+-implement different axis?
+-investigate the initial portion.
+
+Follow Path Constraint
+-investigate its function with curve normal.
+	-may need to fix?
+-> Add ways to offset so it becomes more clear about the actual direction.
 
 Set Curve tilt by Normal
 -Camera tilt often has an issue that whole length can skew the result.
