@@ -364,13 +364,12 @@ x-worth to make Z-only into a menu switch?
 Helical Connections
 -set curve radius at the end to keep original curve radius.
 	-important for hair on geoemtry.
+
+Hair on Geometry
+-Surface options all into panel
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
-Hair on Geometry
--in knitting or rope, the hair is following the existing tangent.
-	-> support custom rotation &/ ask to have specific alignment.
-
 Dynamic Curve Sampling
 -add warning as in DSS.
 
