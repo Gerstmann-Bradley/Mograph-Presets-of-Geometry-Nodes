@@ -355,15 +355,22 @@ Dynamic Surface Sampling
 
 Hair on Geometry
 -add tangent mode for rotation
--add bend clamp.
 
 Random Rotation
 x-worth to make Z-only into a menu switch?
 	-so that extra XY can be hidden in non-Zonly mode?
 -> I think Extra XY is always useful.
+
+Helical Connections
+-set curve radius at the end to keep original curve radius.
+	-important for hair on geoemtry.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
+Hair on Geometry
+-in knitting or rope, the hair is following the existing tangent.
+	-> support custom rotation &/ ask to have specific alignment.
+
 Dynamic Curve Sampling
 -add warning as in DSS.
 

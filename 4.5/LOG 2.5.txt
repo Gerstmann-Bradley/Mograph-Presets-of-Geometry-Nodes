@@ -1100,6 +1100,10 @@ Sin Function
 
 Fill Curve Tube
 -inner ring settings, etc.
+
+Helical Connections
+-set curve radius at the end to keep original curve radius.
+	-important for hair on geoemtry.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
