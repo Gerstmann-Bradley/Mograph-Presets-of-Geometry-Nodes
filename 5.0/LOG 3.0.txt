@@ -368,11 +368,36 @@ Helical Connections
 Hair on Geometry
 -Surface options all into panel
 -improve falloff setup
+
+Curve Split
+-automatic set curve radius
+
+Proximity Falloff
+x-2nd Scale Offset input?
+	-better not, as for better instruction.
+
+**Sin Function
+-remap 0-1 is having conflict to Amp*0.1.
+	-make a new menu and parameter for modes?
+-> why insertion fails?
+	-because geometry output is considered.
+		-for now a known limitation in blender.
+
+Curve Deformer
+-absolute seems respond to deformation but why?
+	-it contains bounding box of the original geometry.
+	-it's used as kind of statistics?
+-> the issue is in the min-bounds used to offset flow?
+	-it was always using X instead of XYZ accordingly.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
 Dynamic Curve Sampling
 -add warning as in DSS.
+
+Hair on Geometry
+-does it make sense to have a mix vector for rotation?
+	-mix from where to where?
 
 Offset Origin
 Center Geoemtry
@@ -421,6 +446,12 @@ Attribute Viewer
 **Socket Shape Struct
 	-it would be better if many nodes' socket structure being re-defined instead of automatic.
 	-otherwise confusion between dynamic & single value & field value.
+
+**Menu Switch Selection output
+	-mainly to improve the maintainence
+-
+
+Check Sample Index Vs. Attribute statistic performance again.
 ********************************************************
 5.1:
 **Node Output Visibility
@@ -517,6 +548,11 @@ x-improve Animate interpolation?
 	-integrate into Hair on Geometry?
 -Spline Info
 	-Curve Info
+
+**Helical Connections
+-Default Vs. Custom mode
+	-Amount no longer useful when using custom mode?
+-> a sample is done. wait ntl future to depoly it.
 
 **Remove Trash Code:
 -cleaning up ZA_19 Curve Deformers
