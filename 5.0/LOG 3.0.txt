@@ -367,6 +367,7 @@ Helical Connections
 
 Hair on Geometry
 -Surface options all into panel
+-improve falloff setup
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
