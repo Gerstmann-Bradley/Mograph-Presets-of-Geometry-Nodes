@@ -418,6 +418,14 @@ Index Reverse
 
 Curve Deformer
 -add noramlzie flow rate based on the curve length.
+
+Hair on Geometry
+-when both deforming & surface cling, end tip should snap better.
+	-cv the group is getting complicate.
+	-may need rewrite for better design?
+
+Knit Surface
+-Mode A support output instances
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
