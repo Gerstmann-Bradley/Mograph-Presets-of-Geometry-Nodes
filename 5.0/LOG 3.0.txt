@@ -408,6 +408,16 @@ x-why is edge prominent?
 
 automatic resolution increment
 -Knit Surface
+
+Index Reverse
+-when inputting curve, will have unsupported type mesh...
+	-in fact it's completely broken
+-> how to resolve it?
+	-sort element supports spline, check how it looks first.
+-> fixed, but seems to have inherited problem.
+
+Curve Deformer
+-add noramlzie flow rate based on the curve length.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -421,13 +431,6 @@ Hair on Geometry
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
-
-Curve Deformer
--proportional flow rate based on the curve length.
-
-Index Reverse
--when inputting curve, will have unsupported type mesh...
-	-in fact it's completely broken
 
 Add: Memory Falloff?
 -use closure?
