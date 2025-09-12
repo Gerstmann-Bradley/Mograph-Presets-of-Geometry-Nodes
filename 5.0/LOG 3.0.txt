@@ -391,6 +391,23 @@ Curve Deformer
 	-it was always using X instead of XYZ accordingly.
 
 Add: S_Point Light BG
+
+Temporal Smooth position
+-initialize mixing by 0 since no input at beginning?
+	-> into a panel with panel toggle.
+
+hair on geometry
+-surface cling not working if noise displacem is disabled.
+	-because they share the same selection on set position
+
+
+Woven Surface
+-automatic resolution incremmeshent?
+x-why is edge prominent?
+	-because of smooth position.
+
+automatic resolution increment
+-Knit Surface
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -405,8 +422,12 @@ Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
 
+Curve Deformer
+-proportional flow rate based on the curve length.
+
 Index Reverse
 -when inputting curve, will have unsupported type mesh...
+	-in fact it's completely broken
 
 Add: Memory Falloff?
 -use closure?
@@ -431,6 +452,7 @@ Add: S_View Angle Transparency
 
 Curve Linear
 -The curve has normal inherently facing downwards, why?
+-should I set radius at low?
 
 **Closure and Bundles
 	-remove duplication of code
@@ -451,7 +473,9 @@ Attribute Viewer
 
 **Menu Switch Selection output
 	-mainly to improve the maintainence
--
+	-no functional change.
+--bevel curve
+--text mesh
 
 Check Sample Index Vs. Attribute statistic performance again.
 ********************************************************
