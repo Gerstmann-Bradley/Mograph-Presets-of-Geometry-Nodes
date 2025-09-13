@@ -426,6 +426,11 @@ Hair on Geometry
 
 Knit Surface
 -Mode A support output instances
+
+Hair on Geometry
+-problematic to have a single falloff to control both length & Radius.
+	-in case like surface cling, falloff on length will disrupt target.
+-> in fact why falloff on length? it's not visible if radius 0.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
