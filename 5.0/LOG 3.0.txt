@@ -431,6 +431,9 @@ Hair on Geometry
 -problematic to have a single falloff to control both length & Radius.
 	-in case like surface cling, falloff on length will disrupt target.
 -> in fact why falloff on length? it's not visible if radius 0.
+
+Sin Function
+-output Cos so that constant phase can be left clean.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
