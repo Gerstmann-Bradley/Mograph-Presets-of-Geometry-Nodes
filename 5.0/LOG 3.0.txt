@@ -434,11 +434,20 @@ Hair on Geometry
 
 Sin Function
 -output Cos so that constant phase can be left clean.
+
+Curve Falloff
+-Resample into a Panel
+-can size of proximity may accept field of a curve.
+-all input support field now
+
+Merge Distance Curve
+-output into expanded menu.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
 Dynamic Curve Sampling
 -add warning as in DSS.
+
 
 Hair on Geometry
 -does it make sense to have a mix vector for rotation?
@@ -495,6 +504,12 @@ Attribute Viewer
 	-no functional change.
 --bevel curve
 --text mesh
+
+**Deprecating due to existing Assets
+-Edge Length Deprecation.
+
+**Face Points
+-update to existing Instance on Element?
 
 Check Sample Index Vs. Attribute statistic performance again.
 ********************************************************
