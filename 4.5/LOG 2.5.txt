@@ -1105,6 +1105,8 @@ Helical Connections
 -set curve radius at the end to keep original curve radius.
 	-important for hair on geoemtry.
 -surface option all into panel
+
+Add: Point Light BG
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
