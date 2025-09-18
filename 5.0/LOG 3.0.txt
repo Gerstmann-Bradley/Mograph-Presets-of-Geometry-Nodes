@@ -442,12 +442,26 @@ Curve Falloff
 
 Merge Distance Curve
 -output into expanded menu.
+
+Add: View Angle Transparency
+x-layer weight facing already finishes it.
+	-would better to wait for color ramp in node group to solve issue.
+
+Add: Offset towards Camera
+-directly working on position will scale down geometry ntl it flips normal.
+	-working on offset in current way seems to be perfect
+
+Edge Gradient
+-including color ramp inside is really a bad idea.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
 Dynamic Curve Sampling
 -add warning as in DSS.
 
+Bend Deformer
+-Set a Normal Direction to determine the bending axis.
+	-broken by bug now so whatever.
 
 Hair on Geometry
 -does it make sense to have a mix vector for rotation?
@@ -476,7 +490,7 @@ Set Curve tilt by Normal
 -Camera tilt often has an issue that whole length can skew the result.
 	-may need an operation to only account for an average mid-point?
 
-Add: S_View Angle Transparency
+
 
 Curve Linear
 -The curve has normal inherently facing downwards, why?
