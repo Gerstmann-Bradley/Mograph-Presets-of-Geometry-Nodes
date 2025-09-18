@@ -453,6 +453,12 @@ Add: Offset towards Camera
 
 Edge Gradient
 -including color ramp inside is really a bad idea.
+
+S_Center UV
+-add a scale option
+
+Offset towards Camera
+-add decimal shift
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
