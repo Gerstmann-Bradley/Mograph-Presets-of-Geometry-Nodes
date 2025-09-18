@@ -459,6 +459,8 @@ S_Center UV
 
 Offset towards Camera
 -add decimal shift
+
+Add: S_Separate RGB
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
