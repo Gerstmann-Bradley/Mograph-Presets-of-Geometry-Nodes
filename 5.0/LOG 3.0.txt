@@ -464,6 +464,9 @@ Add: S_Separate RGB
 
 Align Rotation to Camera
 -expose position to allow single value
+
+Add: S_Polar Coordinate
+-use closure to resolve texture issues.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
