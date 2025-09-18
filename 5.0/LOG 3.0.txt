@@ -461,6 +461,9 @@ Offset towards Camera
 -add decimal shift
 
 Add: S_Separate RGB
+
+Align Rotation to Camera
+-expose position to allow single value
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
