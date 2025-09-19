@@ -467,6 +467,15 @@ Align Rotation to Camera
 
 Add: S_Polar Coordinate
 -use closure to resolve texture issues.
+
+Add: Wave Propagation
+-single Wave Vs. multiple wave?
+	-right now single wave only.
+-in multiple wave, clamp front?
+
+Following Curves
+-output parameter
+-sampling into panel
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -480,6 +489,13 @@ Bend Deformer
 Hair on Geometry
 -does it make sense to have a mix vector for rotation?
 	-mix from where to where?
+
+**S_ series node redesign.
+-Integer Seed is not for generic usage.
+	-float point precision on vector attribute is huge.
+-> seed in 2 form: float random Vs. Vector Offset
+-should offset before or after multiply?
+	-> offset after will be better so that less influenced by multiplier above maximum threshold.
 
 Offset Origin
 Center Geoemtry
@@ -503,8 +519,6 @@ Follow Path Constraint
 Set Curve tilt by Normal
 -Camera tilt often has an issue that whole length can skew the result.
 	-may need an operation to only account for an average mid-point?
-
-
 
 Curve Linear
 -The curve has normal inherently facing downwards, why?
