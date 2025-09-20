@@ -476,6 +476,13 @@ Add: Wave Propagation
 Following Curves
 -output parameter
 -sampling into panel
+
+S_Vector Noise
+-add implicit vector as UV
+
+Dot Product Falloff
+-Falloff Normalized to 0-1
+-Crude Dot Product output separately.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
