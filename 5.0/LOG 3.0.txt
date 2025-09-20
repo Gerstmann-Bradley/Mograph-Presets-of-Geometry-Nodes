@@ -485,6 +485,13 @@ Dot Product Falloff
 -Crude Dot Product output separately.
 
 Add: Store Attribute
+
+**Bend Deformer
+	-2nd rewrite
+-Mode. Single Vs. Instance
+
+3D viewer
+-outputting Point when no Geo input, should also rotated by input.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -494,10 +501,19 @@ Dynamic Curve Sampling
 Bend Deformer
 -Set a Normal Direction to determine the bending axis.
 	-broken by bug now so whatever.
+-> even if it's fixed, rotation has to be before set position.
+	and still difficult to manage the rest of node tree.
+
+Add: S_Random Color
 
 Hair on Geometry
 -does it make sense to have a mix vector for rotation?
 	-mix from where to where?
+
+G_Store Attribute
+-add warnings.
+	-missing object
+	-wrong domain.
 
 **S_ series node redesign.
 -Integer Seed is not for generic usage.
