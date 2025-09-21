@@ -500,12 +500,6 @@ To Do:
 Dynamic Curve Sampling
 -add warning as in DSS.
 
-Bend Deformer
--Set a Normal Direction to determine the bending axis.
-	-broken by bug now so whatever.
--> even if it's fixed, rotation has to be before set position.
-	and still difficult to manage the rest of node tree.
-
 Add: S_Random Color
 
 Hair on Geometry
