@@ -496,6 +496,30 @@ Add: Store Attribute
 Add: S_Radial Falloff
 
 Add: S_Flowery Mask
+
+**Translate position
+-becomes relative offset
+	-relative offset seems more constant to have a consistent speed.
+
+Add: S_Translate position
+-for simpler connection than the regular multiple vector math.
+
+Wave Propagate
+-forgot color ramp 0-1-0.
+
+Offset towards Camera
+-needs to be a modifier
+-use % factor; slide by holding shift.
+
+S_proximity falloff
+-implicit coordinate
+-add value precision
+
+Polar Coordinate
+-a more formal testing node tree.
+
+Add: S_Dissipation
+-still many issues in design, but will keep for now.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -504,9 +528,21 @@ Dynamic Curve Sampling
 
 Add: S_Random Color
 
+Align Rotation to Points
+-investiga rela btw point & normal.
+	-thought I defined them wrongly.
+
+Add: Remove Circular Seam ?
+-remove cylinder UV Seam.
+
 Hair on Geometry
 -does it make sense to have a mix vector for rotation?
 	-mix from where to where?
+
+Face Points
+-use face tangent vector method.
+	-capture subtraction of corner position on face.
+-to see how it works on weight?
 
 G_Store Attribute
 -add warnings.
