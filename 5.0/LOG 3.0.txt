@@ -520,6 +520,20 @@ Polar Coordinate
 
 Add: S_Dissipation
 -still many issues in design, but will keep for now.
+
+Bend Deformer
+-single XY-Y, XZ, ZY all broken?
+-Viewer XY-Y broken in single?
+-> important to know how XZ-Y is meant to work.
+	-all plane Axis-Z intended to be a middle ground?
+		-> no, not intuitive to know the actual axis.
+-> fixed for all axis now.
+
+Radial Instancer
+-fix plane rotation on 2
+
+Origin Offset
+-into a node tool
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -527,6 +541,10 @@ Dynamic Curve Sampling
 -add warning as in DSS.
 
 Add: S_Random Color
+
+Add: S_Tiling Coordinate
+
+Add: Semi Sphere?
 
 Align Rotation to Points
 -investiga rela btw point & normal.
