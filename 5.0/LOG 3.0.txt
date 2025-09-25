@@ -534,6 +534,9 @@ Radial Instancer
 
 Origin Offset
 -into a node tool
+
+Polar Coordinate
+-advanced options are useless and can cause issue.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
