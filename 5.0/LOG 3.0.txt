@@ -537,6 +537,12 @@ Origin Offset
 
 Polar Coordinate
 -advanced options are useless and can cause issue.
+
+Add: S_Venetian Blinds
+Add: S_Tiling
+
+Add: S_Tiling Converge
+-not yet made into an asset because unsure about practical workflow yet.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
@@ -544,8 +550,6 @@ Dynamic Curve Sampling
 -add warning as in DSS.
 
 Add: S_Random Color
-
-Add: S_Tiling Coordinate
 
 Add: Semi Sphere?
 
