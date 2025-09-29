@@ -546,6 +546,12 @@ Add: S_Tiling Converge
 
 Negati
 -add average setting
+
+Bend Deformer
+-add default angle value so it becomes more obvious about it's intended effect?
+
+S_center falloff
+-Z no need to be centered
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
