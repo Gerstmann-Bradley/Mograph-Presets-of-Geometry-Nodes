@@ -543,6 +543,9 @@ Add: S_Tiling
 
 Add: S_Tiling Converge
 -not yet made into an asset because unsure about practical workflow yet.
+
+Negati
+-add average setting
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
