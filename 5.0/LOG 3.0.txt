@@ -552,19 +552,67 @@ Bend Deformer
 
 S_center falloff
 -Z no need to be centered
+
+S_Normal Displacem
+-implicit coordinate
+
+Point Light BG
+-implicit coordinate.
+
+Smooth position
+-if only contains edges, it has been converted to a curve internally.
+	-for the purpose of weight on start & end?
+-> but i forgot to convert it back.
+
+Align Rotation to Points
+-investiga rela btw point & normal.
+	-thought I defined them wrongly.
+-> normal was used for point on attraction / repulsion.
+	-it's not used as 2` axis.
+-> add additional 2` axis control, expose axis too.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
+**Node Output Visibility
+	-it still relys on menu, even though it seems working for all boolean.
+--Bounding Box Falloff
+	-currently Bounding Box falloff still is modifier. so geometry output is kept.
+	-but separate them into 2, and keep realized instance...
+-Sin Funciton
+-Decay Function?
+-Reset Local Transform
+	-the geometry & field can be separated into each mode.
+--Match Size
+	-right now the output is in face corner domain.
+		-the domain is set by interface and not exposed for changes.
+	-> best to have 2 outputs and swapped by conditions.
+--Curve Deformer
+	-Instance Index should be exposed. it's good for sampling.
+	-need to rewrite mode for Single Vs. Instances?
+	-> was done before.
+--Bevel Curve
+	-should add an "Are Caps" option.
+		-but need to hide in flat mode because no fill caps in flat.
+x-Radial Array
+	-fibonacci mode has its falloff output.
+	-right now it's a boolean, but perhaps better as a mode?
+--Negati
+	-support vector; also need to support dif axis?
+	-but will need to be able to hide sockets.
+-Modulo Falloff
+	-Support Float & Integer with menu?
+--Point Distribute
+	-normal & rotation should only be available for faces mode.
+
 Dynamic Curve Sampling
 -add warning as in DSS.
 
 Add: S_Random Color
 
-Add: Semi Sphere?
+Origin Offset
+-into a node tool
 
-Align Rotation to Points
--investiga rela btw point & normal.
-	-thought I defined them wrongly.
+Add: Semi Sphere?
 
 Add: Remove Circular Seam ?
 -remove cylinder UV Seam.
@@ -597,6 +645,10 @@ Center Geoemtry
 Add: Memory Falloff?
 -use closure?
 
+Delay Falloff
+-a rewrite for new design?
+	-multiple delays, and add a new node for "Delay by Index"?
+
 Mesh Rolling
 -it's working with mesh with thickness. but not plane
 	-smaller thickness, needs higher center to roll it.
@@ -617,15 +669,6 @@ Curve Linear
 -The curve has normal inherently facing downwards, why?
 -should I set radius at low?
 
-**Closure and Bundles
-	-remove duplication of code
--Add loop for noise.
--Instance for each element?
-	-save the point node and index input?
-	-how to output attribute without store named attribute?
--Tree Generator
-	-is it possible for a more manual version using closure & bundles?
-	-what's the difference of it compared to the one by a group node?
 
 Attribute Viewer
 -support face corner with better positioning of the existing vector.
@@ -647,34 +690,19 @@ Attribute Viewer
 -update to existing Instance on Element?
 
 Check Sample Index Vs. Attribute statistic performance again.
+
+**Closure and Bundles
+	-remove duplication of code
+-Add loop for noise.
+-Instance for each element?
+	-save the point node and index input?
+	-how to output attribute without store named attribute?
+-Tree Generator
+	-is it possible for a more manual version using closure & bundles?
+	-what's the difference of it compared to the one by a group node?
 ********************************************************
 5.1:
-**Node Output Visibility
--Bounding Box Falloff
--Sin Funciton
--Decay Function?
--Reset Local Transform
-	-the geometry & field can be separated into each mode.
--Match Size
-	-right now the output is in face corner domain.
-		-the domain is set by interface and not exposed for changes.
-	-> best to have 2 outputs and swapped by conditions.
--Curve Deformer
-	-Instance Index should be exposed. it's good for sampling.
-	-need to rewrite mode for Single Vs. Instances?
--Bevel Curve
-	-should add an "Are Caps" option.
-		-but need to hide in flat mode because no fill caps in flat.
--Radial Array
-	-fibonacci mode has its falloff output.
-	-right now it's a boolean, but perhaps better as a mode?
--Negati
-	-support vector; also need to support dif axis?
-	-but will need to be able to hide sockets.
--Modulo Falloff
-	-Support Float & Integer with menu?
--Point Distribute
-	-output should be automatically hidden.
+
 
 *Scene Info.
 x-improve Animate interpolation?
