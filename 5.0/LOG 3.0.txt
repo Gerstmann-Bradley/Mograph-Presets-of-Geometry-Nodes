@@ -570,6 +570,9 @@ Align Rotation to Points
 -> normal was used for point on attraction / repulsion.
 	-it's not used as 2` axis.
 -> add additional 2` axis control, expose axis too.
+
+Tracer
+-add resampling option, to reduce total amount of points if possible.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
