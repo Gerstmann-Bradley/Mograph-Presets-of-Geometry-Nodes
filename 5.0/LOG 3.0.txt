@@ -573,9 +573,19 @@ Align Rotation to Points
 
 Tracer
 -add resampling option, to reduce total amount of points if possible.
-****************************************************************************************************
-The Newest Test Demo Tree: ZF_16.
-To Do:
+
+**Grid Nodes
+--Points Distribute to allow Grid.
+
+Points Distribute
+-fix Grid node warning
+-socket re-ordering
+
+Add: Sync Grid Transform
+-Grid Transform + Grid info
+
+Add: SDF Smooth
+
 **Node Output Visibility
 	-it still relys on menu, even though it seems working for all boolean.
 --Bounding Box Falloff
@@ -607,6 +617,26 @@ x-Radial Array
 --Point Distribute
 	-normal & rotation should only be available for faces mode.
 
+**Optional Label
+	-should be done to all object input
+--proximity falloff
+--direcitonal falloff
+--radial falloff
+--Center Falloff
+--Mesh Falloff
+--Hair on Geometry
+--Parenting
+
+Add: SDF offset
+
+Add: to Volume Grid
+****************************************************************************************************
+The Newest Test Demo Tree: ZG_02.
+To Do:
+**Don't Show Manage Panel
+	-only for modifier nodes
+	-only if related with bake and output attribute.
+
 Dynamic Curve Sampling
 -add warning as in DSS.
 
@@ -614,6 +644,8 @@ Add: S_Random Color
 
 Origin Offset
 -into a node tool
+
+Add: Project UV from View
 
 Add: Semi Sphere?
 
@@ -672,7 +704,6 @@ Curve Linear
 -The curve has normal inherently facing downwards, why?
 -should I set radius at low?
 
-
 Attribute Viewer
 -support face corner with better positioning of the existing vector.
 
@@ -687,7 +718,8 @@ Attribute Viewer
 --text mesh
 
 **Deprecating due to existing Assets
--Edge Length Deprecation.
+-G_Edge Length.
+-G_Boundary Selection
 
 **Face Points
 -update to existing Instance on Element?
@@ -705,8 +737,6 @@ Check Sample Index Vs. Attribute statistic performance again.
 	-what's the difference of it compared to the one by a group node?
 ********************************************************
 5.1:
-
-
 *Scene Info.
 x-improve Animate interpolation?
 	-but curves are not accessible?
