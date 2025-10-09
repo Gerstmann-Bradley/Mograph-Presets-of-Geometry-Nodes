@@ -630,6 +630,10 @@ x-Radial Array
 Add: SDF offset
 
 Add: to Volume Grid
+
+Erosion
+-rewrite to use volume grid?
+-looks fancy but doesn't seem to work really.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_02.
 To Do:
