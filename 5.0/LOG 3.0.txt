@@ -631,9 +631,18 @@ Add: SDF offset
 
 Add: to Volume Grid
 
-Erosion
--rewrite to use volume grid?
--looks fancy but doesn't seem to work really.
+Edge Damage
+-method A & B.
+-as old method better but less reliable.
+	-Vs. new method more reliable but seems dumb.
+-> not sure if this is really good to have this modifier.
+
+Resistance Force
+-the logic seems that a resistance force is accumulated and Vel keeps subtracted.
+	-issue: Vel will ultimately be 0.
+	-not possible to clamp Vel because requires to know the initial Vel?
+		-or what if I set a Ress higher than Vel?
+-> Add Min Force
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_02.
 To Do:
