@@ -643,8 +643,14 @@ Resistance Force
 	-not possible to clamp Vel because requires to know the initial Vel?
 		-or what if I set a Ress higher than Vel?
 -> Add Min Force
+
+Add: Volume Grid Output?
+-either store named Grid or Grid to Mesh
+
+Time Falloff
+-add time Vs. Birth Time
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_02.
+The Newest Test Demo Tree: ZG_04.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
