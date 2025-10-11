@@ -649,6 +649,16 @@ Add: Volume Grid Output?
 
 Time Falloff
 -add time Vs. Birth Time
+
+Voxel Remesh
+-rewrite using Grid
+-seems to be faster
+
+Planar Remesh
+-using new Voxel Remesh
+
+Text Mesh
+-using new Voxel Remesh
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
