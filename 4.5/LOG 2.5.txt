@@ -1107,6 +1107,10 @@ Helical Connections
 -surface option all into panel
 
 Add: Point Light BG
+
+Curve Linear
+-count rename to "Resolution"
+-output shouldn't be "Curves"
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:

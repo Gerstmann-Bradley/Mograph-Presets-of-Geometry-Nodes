@@ -659,6 +659,10 @@ Planar Remesh
 
 Text Mesh
 -using new Voxel Remesh
+
+Curve Linear
+-count rename to "Resolution"
+-output shouldn't be "Curves"
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
