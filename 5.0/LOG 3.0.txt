@@ -663,6 +663,13 @@ Text Mesh
 Curve Linear
 -count rename to "Resolution"
 -output shouldn't be "Curves"
+
+index mask falloff
+modulo falloff
+-should use floored modulo for negative region
+
+curve resampling
+-point preview should be advanced.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
