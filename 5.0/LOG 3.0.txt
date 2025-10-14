@@ -677,6 +677,11 @@ Bend Deformer
 
 Bevel Curve
 -remove curve at no length is failing when filling cap.
+
+Add: Simple Blind
+
+radial array
+-fix to enable count 2
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
