@@ -1111,6 +1111,12 @@ Add: Point Light BG
 Curve Linear
 -count rename to "Resolution"
 -output shouldn't be "Curves"
+
+curve resampling
+-point preview should be advanced.
+
+Bevel Curve
+-remove curve at no length is failing when filling cap.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:

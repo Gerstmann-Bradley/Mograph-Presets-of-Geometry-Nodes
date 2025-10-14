@@ -675,6 +675,8 @@ Bend Deformer
 -requires reset scale & rotation in global
 -but this is very rare in actual set instance scale & set instance rotation
 
+Bevel Curve
+-remove curve at no length is failing when filling cap.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
