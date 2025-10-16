@@ -684,6 +684,11 @@ radial array
 -fix to enable count 2
 
 Add: Random per Island
+
+Follow Path Constraint
+-curve preview
+-advanced option for flip start & end.
+-scale factor for geometry.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -694,9 +699,17 @@ To Do:
 Dynamic Curve Sampling
 -add warning as in DSS.
 
+Grid Statistics
+-if SDF grid is not closed, 
+
 Add: S_Random Color
 
 Add: Project UV from View
+
+Trigger
+-add evaluation gradient
+
+Add: Grid Viewer
 
 Add: Semi Sphere?
 
@@ -770,7 +783,7 @@ Attribute Viewer
 
 **Deprecating due to existing Assets
 -G_Edge Length.
--G_Boundary Selection
+
 
 **Face Points
 -update to existing Instance on Element?
@@ -827,6 +840,7 @@ x-improve Animate interpolation?
 -layered proximity falloff
 -all ease ease function...
 -Add: Curve Parameter Interpolate.
+-probability skew
 
 **Separator
 	-more of a simple UI thing.
@@ -855,6 +869,8 @@ x-improve Animate interpolation?
 	-integrate into Hair on Geometry?
 -Spline Info
 	-Curve Info
+-G_Boundary Selection
+	-warning only if 5.1
 
 **Helical Connections
 -Default Vs. Custom mode
