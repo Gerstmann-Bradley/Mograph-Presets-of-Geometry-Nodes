@@ -682,6 +682,8 @@ Add: Simple Blind
 
 radial array
 -fix to enable count 2
+
+Add: Random per Island
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
