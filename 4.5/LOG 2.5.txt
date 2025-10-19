@@ -1117,6 +1117,9 @@ curve resampling
 
 Bevel Curve
 -remove curve at no length is failing when filling cap.
+
+Join Particles
+-add deprecate warning of ID attribute rename.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
