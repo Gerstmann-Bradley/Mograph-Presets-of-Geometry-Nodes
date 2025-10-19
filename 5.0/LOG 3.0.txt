@@ -713,12 +713,49 @@ Grid Array
 -add new motion blur id generation system based on the largest number.
 	-keep old ID generation system for other random values.
 -ID attribute renamed to "Seed" for better clearity of its new use compared to "id".
+
+Polygon Unfolding
+-has some minor rotation of transform to prevent bug.
+	-is it still happening in 4.5???
+-> no I can't seem to find them.
+-remove from modifier, because edge cost needs external settings.
+	-although doable for sure, but what's the point?
+-> also need to support multiple islands for final release.
+
+Set particle parameters
+-add warning for removal
+
+Set Stable ID
+-should not be deprecated. because id can be drastically different due to realize instance.
+
+Tracer
+-auto-remove becomes an option now.
+	-it's a bit pointless because turning it off where not be anywhere better.
+		-> need a system to detect newly joined geo better.
+	-hide the option in resample for the moment.
+-for now, normal tracing works.
+	-for particles with deletion, must have a stable ID as Seed
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
 	-only if related with bake and output attribute.
+
+Solidify
+-in the past, not possible to integrate with step extrusion, because output socket visible.
+	-> now possible and think again?
+
+Tracer
+-if to use the newly joined geo detection function?
+	-[index - (sampled index + 1)]
+-what about using detect by id method now?
+
+Temporal Smooth
+-need to support newly joined geo as well?
+
+Add: Reset Instance Origin.
+-can be clean up rotation and scale, split to instance and rebox again. but what's the point?
 
 Dynamic Curve Sampling
 -add warning as in DSS.
@@ -928,7 +965,6 @@ x--Attribute Mesh?
 	-Curve Info
 -G_Boundary Selection
 	-warning only if 5.1
--Set Stable ID
 
 **Helical Connections
 -Default Vs. Custom mode
@@ -979,13 +1015,8 @@ Dynamic Space Sampling
 Tracer
 -I think there are cases you don't want to delete trace when they are deleted?
 
-Polygon Unfolding
--has some minor rotation of transform to prevent bug.
-	-is it still happening in 4.5???
-
 Solidify
 -In Instance Mode, Merge by Distance Not Working.
--not possible to integrate with step extrusion, because output socket visible.
 
 Freeze Geometry
 -what if different geometry requiring different status of freeze?
@@ -1015,9 +1046,6 @@ Bevel Curve
 	-seems if field is in scale it will be as if it's determined with statistic?
 	-but generally still working.
 
-Reset Instance Origin.
--Use Bounding Box?
-
 Join Particles
 -Investigate: why joining 2/frame has more hits than joining 1/frame?
 	-seems to only happen if using temporal object info?
@@ -1025,10 +1053,6 @@ Join Particles
 Helical Connections
 -is it possible to auto-detect the decimals when connecting in chains?
 	-difficult, so far no success.
-
-Tracer
--if to use the newly joined geo detection function?
-	-[index - (sampled index + 1)]
 
 Unknown Nodes:
 -Group Index, Count Per Island.
