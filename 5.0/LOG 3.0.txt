@@ -735,6 +735,10 @@ Tracer
 	-hide the option in resample for the moment.
 -for now, normal tracing works.
 	-for particles with deletion, must have a stable ID as Seed
+
+Grid Array
+-scale should better be default 1 to resolve confusion.
+-fix hiding socket issue.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
