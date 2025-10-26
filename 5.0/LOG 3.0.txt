@@ -739,6 +739,9 @@ Tracer
 Grid Array
 -scale should better be default 1 to resolve confusion.
 -fix hiding socket issue.
+
+Knit Surface
+-fix part broken due to Grid Array Settings.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
