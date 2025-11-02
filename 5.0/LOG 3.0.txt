@@ -742,12 +742,44 @@ Grid Array
 
 Knit Surface
 -fix part broken due to Grid Array Settings.
+
+Filled Mesh circle
+-should not have centered UVMap
+	-because all Shader nodes input are centered.
+	-> center upstream is not really beneficial.
+
+S_Proximity Falloff
+-decimal shift should allow 0
+
+Curve Falloff
+-support decimal shift
+
+Point Distribute
+-it is not working on instances?
+	-distribute work on instance, but domain size can't read the first result.
+
+Grid Array
+-output attribute.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
 	-only if related with bake and output attribute.
+
+Bend Deformer
+-offset default re-check.
+
+Follow Curves
+-sometimes offset needs to distinguish absolute Vs. relative.
+	-done by divide spline length.
+
+Add: Memory Falloff
+-support decay
+-support wave propagation?
+
+array on Curves
+-does the point have an ID?
 
 Solidify
 -in the past, not possible to integrate with step extrusion, because output socket visible.
