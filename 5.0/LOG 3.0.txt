@@ -760,6 +760,12 @@ Point Distribute
 
 Grid Array
 -output attribute.
+
+Time Falloff
+-most commonly when it's working with particle system, it should use Birthtime mode.
+	-> so change the default to birthtime mode.
+-> time mode is still valid, for specific time code from delay falloff & animate node, etc.
+	-although more commonly I'm currently using Animate node.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
