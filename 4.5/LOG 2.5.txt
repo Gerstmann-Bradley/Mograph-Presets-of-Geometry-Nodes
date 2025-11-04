@@ -1120,6 +1120,9 @@ Bevel Curve
 
 Join Particles
 -add deprecate warning of ID attribute rename.
+
+Store UVMap
+-support curve & points
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:
