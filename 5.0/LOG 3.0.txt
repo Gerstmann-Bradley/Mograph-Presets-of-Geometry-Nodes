@@ -774,6 +774,9 @@ Store UVMap
 
 UV Deformer
 -automatic curve split with validity
+
+Bend Deformer
+-instance mode, rotation & scale recovery also requires global axis.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
