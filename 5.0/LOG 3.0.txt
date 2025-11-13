@@ -771,6 +771,9 @@ Store UVMap
 -support curve & points for point domain.
 	-store named attribute in sequence will still overwrite each other.
 -> but ideally mesh without face for face corner should also store UV on point domain.
+
+UV Deformer
+-automatic curve split with validity
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
