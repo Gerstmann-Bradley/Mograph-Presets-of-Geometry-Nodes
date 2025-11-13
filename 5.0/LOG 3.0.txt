@@ -777,6 +777,7 @@ UV Deformer
 
 Bend Deformer
 -instance mode, rotation & scale recovery also requires global axis.
+-fix realize instane issue, so instance mode can also have multiple bend deformer connected.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
