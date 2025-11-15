@@ -778,6 +778,13 @@ UV Deformer
 Bend Deformer
 -instance mode, rotation & scale recovery also requires global axis.
 -fix realize instane issue, so instance mode can also have multiple bend deformer connected.
+
+Motion Variance
+-Start Var. should be 0.
+
+UV deformer
+-the geometry should be directly passed if no source/UV Map.
+-add warnings about source & missing UVMap, etc.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -792,12 +799,29 @@ Follow Curves
 -sometimes offset needs to distinguish absolute Vs. relative.
 	-done by divide spline length.
 
+Proximity falloff
+-Instance interpreted as Points/Geo should be in advanced option
+
+Add: Set Secondary Axis for Rotation
+-use align rotation to vector with pivot axis?
+
+Offset towards Camera
+-add support to move farther away?
+
 Add: Memory Falloff
 -support decay
 -support wave propagation?
 
 array on Curves
 -does the point have an ID?
+
+S_Vector Noise 
+S_Noise Displacement
+-support polar coordinate directly inside?
+	-the coordinate change must be done through closure.
+
+Wave Propagate
+-Offset & interval to have separate decimal shift?
 
 Solidify
 -in the past, not possible to integrate with step extrusion, because output socket visible.
@@ -920,6 +944,10 @@ x-improve Animate interpolation?
 -Delta Time better using inversed frame rate than current calculation.
 	otherwise it will cause divide by 0 error.
 
+UV Deformer
+-Source rename tob Surface
+-UVMap string no label.
+
 **Inline Toggles.
 -Mirror Modifier
 -Voxel?
@@ -965,12 +993,19 @@ x--Attribute Mesh?
     -Geometry & Vector...
 -UV Deformer
 
+
 **Inline output Need Design.
 -Helical Connections
 -Fill Volume
 -Curve Deformer
 -UV Deformer
     -custom bounding box Vs. Bounds Preview
+-Time Falloff
+	-time mode should add delay time option for sequencial event?
+		-it seems just similar as the Animate Node.
+		-should they be made together?
+	-Birthtime should also support delay as in time for sequencial event.
+		-how to design?
 
 **Inline output Breaking?
 -remap 0-1
