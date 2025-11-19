@@ -785,6 +785,47 @@ Motion Variance
 UV deformer
 -the geometry should be directly passed if no source/UV Map.
 -add warnings about source & missing UVMap, etc.
+
+Mix Translucent
+-use percentage.
+	-too difficult to use decimal shift.
+
+Fade Falloff
+-use 100% percentage
+
+UV Deformer
+-integrate store UVMap; it's usually needed.
+	-will cost performance and thus was not done in the first place.
+	-add an toggle for it?
+
+Curve Extrapolation
+-decimal shift
+-change default value.
+
+Set Curve Radius
+-add support to multiply with the original curve radius.
+	-decimal shift should be default 0 in such a case?
+-> Set Vs. Scale mode.
+
+hair on geometry
+-use instance on point method
+	-this time automatically record UVMap
+
+Smooth Curve
+-Bezier Handle Factor
+-Fillet need Decimal Shift
+
+Add: Bezier Handle Viewer
+
+Add: Memory Falloff
+-support decay
+	-use flat value / string?
+		-string can support selection. is it really necessary/helpful?
+	-> but then it will require a trigger to make sure new values are included?
+-support wave propagation?
+	-blur attribute
+
+Add: Paint Wave Solver
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -792,8 +833,22 @@ To Do:
 	-only for modifier nodes
 	-only if related with bake and output attribute.
 
-Bend Deformer
--offset default re-check.
+S_Vector Noise 
+S_Noise Displacement
+-support polar coordinate directly inside?
+	-the coordinate change must be done through closure.
+
+Transparent Shadow Ray
+-also disable other ray such as diffuse, glossy, etc.
+
+Array on Curves
+-stability issue
+	-changing in length can disrupt the array on curves.
+	-instance on point mode will be the most stable by length.
+		-but instancing method by itself doesn't allow offset along curve.
+-> to allow instancing method, need to get the offset to recover the position and parameter?
+	-as long as they are resampled, poitns will be moved.
+-> difficult to solve it now.
 
 Follow Curves
 -sometimes offset needs to distinguish absolute Vs. relative.
@@ -807,21 +862,6 @@ Add: Set Secondary Axis for Rotation
 
 Offset towards Camera
 -add support to move farther away?
-
-Add: Memory Falloff
--support decay
--support wave propagation?
-
-array on Curves
--does the point have an ID?
-
-S_Vector Noise 
-S_Noise Displacement
--support polar coordinate directly inside?
-	-the coordinate change must be done through closure.
-
-Wave Propagate
--Offset & interval to have separate decimal shift?
 
 Solidify
 -in the past, not possible to integrate with step extrusion, because output socket visible.
@@ -1022,7 +1062,9 @@ x--Attribute Mesh?
 **Curve & Color Ramp Panel.
 	-shouldn't be on most nodes, for the sake of remap 0-1 re-usibility.
 **support curve Interpolate function outside group using Closure & Bundles.
-	-Remap Vector Scale
+-Remap Vector Scale
+-Sample in Proximity
+	-this need external sampling/color ramp so bad.
 -layered proximity falloff
 -all ease ease function...
 -Add: Curve Parameter Interpolate.
