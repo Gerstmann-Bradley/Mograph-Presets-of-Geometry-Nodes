@@ -826,17 +826,20 @@ Add: Memory Falloff
 	-blur attribute
 
 Add: Paint Wave Solver
+
+S_Vector Noise 
+S_Noise Displacement
+-support polar coordinate directly inside?
+	-the coordinate change must be done through closure.
+
+Proximity falloff
+-Instance interpreted as Points/Geo should be in advanced option
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
 	-only if related with bake and output attribute.
-
-S_Vector Noise 
-S_Noise Displacement
--support polar coordinate directly inside?
-	-the coordinate change must be done through closure.
 
 Transparent Shadow Ray
 -also disable other ray such as diffuse, glossy, etc.
@@ -853,9 +856,6 @@ Array on Curves
 Follow Curves
 -sometimes offset needs to distinguish absolute Vs. relative.
 	-done by divide spline length.
-
-Proximity falloff
--Instance interpreted as Points/Geo should be in advanced option
 
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
