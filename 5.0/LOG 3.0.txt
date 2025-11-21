@@ -834,15 +834,47 @@ S_Noise Displacement
 
 Proximity falloff
 -Instance interpreted as Points/Geo should be in advanced option
+
+Done:
+**Menu Switch Selection output
+	-mainly to improve the maintainence
+	-no functional change.
+--bevel curve
+--text mesh
+
+World BG
+-also disable other ray such as diffuse, glossy, etc.
+
+Directional Falloff
+-currently right side is always positive.
+	-most of cases it should be reversed.
+-> should flip direction by default or flip inside?
+	-> best to flip by default. changing internal structure can be a bit risky for versioning.
+
+Paint Wave Solver
+-Paint Solver inside should be removed & replaced by nodes.
+-falloff needs to be clamped.
+
+Offset towards Camera
+-add support to move farther away?
+-> rename: Offset to Camera
+
+Face Points
+x-update to existing Instance on Element?
+	-IOE can have certain issue as in Suzanne knitting example.
+		-thus UV tangent can still be very helpful, I don't see a reason to complicate it now.
+
+Follow Curves
+-added Absolute Offset
+
+Follow Path Constraint
+-fix to fit the nwest follow curves.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
 	-only if related with bake and output attribute.
-
-Transparent Shadow Ray
--also disable other ray such as diffuse, glossy, etc.
 
 Array on Curves
 -stability issue
@@ -853,19 +885,8 @@ Array on Curves
 	-as long as they are resampled, poitns will be moved.
 -> difficult to solve it now.
 
-Follow Curves
--sometimes offset needs to distinguish absolute Vs. relative.
-	-done by divide spline length.
-
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
-
-Offset towards Camera
--add support to move farther away?
-
-Solidify
--in the past, not possible to integrate with step extrusion, because output socket visible.
-	-> now possible and think again?
 
 Tracer
 -if to use the newly joined geo detection function?
@@ -875,70 +896,16 @@ Tracer
 Temporal Smooth
 -need to support newly joined geo as well?
 
-Add: Reset Instance Origin.
--can be clean up rotation and scale, split to instance and rebox again. but what's the point?
-
 Dynamic Curve Sampling
 -add warning as in DSS.
-
-Grid Statistics
--if SDF grid is not closed?
-	-values are all positive.
-	-but how to know it's SDF grid? manually or?
 
 Add: S_Random Color
 
 Add: Project UV from View
 
-Add: Grid Viewer
-
-Hair on Geometry
--does it make sense to have a mix vector for rotation?
-	-mix from where to where?
-
-Face Points
--use face tangent vector method.
-	-capture subtraction of corner position on face.
--to see how it works on weight?
-
-G_Store Attribute
--add warnings.
-	-missing object
-	-wrong domain.
-
-**S_ series node redesign.
--Integer Seed is not for generic usage.
-	-float point precision on vector attribute is huge.
--> seed in 2 form: float random Vs. Vector Offset
--should offset before or after multiply?
-	-> offset after will be better so that less influenced by multiplier above maximum threshold.
-
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
-
-Add: Memory Falloff?
--use closure?
-
-Delay Falloff
--a rewrite for new design?
-	-multiple delays, and add a new node for "Delay by Index"?
-
-Mesh Rolling
--it's working with mesh with thickness. but not plane
-	-smaller thickness, needs higher center to roll it.
-	-if the thickness is 0, center can't be elevated.
--implement different axis?
--investigate the initial portion.
-
-Follow Path Constraint
--investigate its function with curve normal.
-	-may need to fix?
--> Add ways to offset so it becomes more clear about the actual direction.
-
-Set Curve tilt by Normal
--Camera tilt often has an issue that whole length can skew the result.
-	-may need an operation to only account for an average mid-point?
 
 Curve Linear
 -The curve has normal inherently facing downwards, why?
@@ -947,33 +914,10 @@ Curve Linear
 Attribute Viewer
 -support face corner with better positioning of the existing vector.
 
-**Socket Shape Struct
-	-it would be better if many nodes' socket structure being re-defined instead of automatic.
-	-otherwise confusion between dynamic & single value & field value.
-
-**Menu Switch Selection output
-	-mainly to improve the maintainence
-	-no functional change.
---bevel curve
---text mesh
-
 **Deprecating due to existing Assets
 -G_Edge Length.
 
-**Face Points
--update to existing Instance on Element?
-
 Check Sample Index Vs. Attribute statistic performance again.
-
-**Closure and Bundles
-	-remove duplication of code
--Add loop for noise.
--Instance for each element?
-	-save the point node and index input?
-	-how to output attribute without store named attribute?
--Tree Generator
-	-is it possible for a more manual version using closure & bundles?
-	-what's the difference of it compared to the one by a group node?
 ********************************************************
 5.1:
 *Scene Info.
@@ -1006,7 +950,9 @@ UV Deformer
 -parenting
 -Knit
 	-may add an vector output for non-center vector?
--Array nodes.
+-Follow Curves, Array on Curves
+	-loop mode should be a panel, enable Loop, Start, End separately.
+	-> 1 line to replace the entire previous complex menu.
 
 **InLine output
 -Reset Self Object Transform
@@ -1117,6 +1063,9 @@ Tree Generator
 Add Curve Branch
 -this one is broken now due to hierarchy issue?
 	-Use different modes for Inside Simulation Vs. Inside Loop.
+
+Curve Split
+-will lose material set before, because there's conversion within.
 
 Animate
 -is having a curve scape goat inside for warning evaluation.
