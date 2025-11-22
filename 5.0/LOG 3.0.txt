@@ -869,6 +869,14 @@ Follow Curves
 
 Follow Path Constraint
 -fix to fit the nwest follow curves.
+
+Hair on Geometry
+-fix Normal & Tangent mode & Extra Rotation in both Mesh & Curve mode.
+
+UV Deformer
+-UV shouldn't be a single value.
+	-single value evaluation because of warning
+-Store UVMap was on multiplier instead of real UVMap
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
