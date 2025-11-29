@@ -877,6 +877,29 @@ UV Deformer
 -UV shouldn't be a single value.
 	-single value evaluation because of warning
 -Store UVMap was on multiplier instead of real UVMap
+
+World BG
+-must mix with transparent; non-shader means black.
+
+Grid Array
+-should realize single layer or all layers?
+	-if sequential connection. realizing only single layer can cause confusion.
+-> it's one rare kind of array that can be connected in sequence.
+
+Bend Deformer
+-offset default should be 0.5
+	-since not easy to set without reset default.
+	-0 value can be simply slided to the side.
+-additional offset is still not influencing the general result for a plane.
+
+Add: Surface Curvature
+
+Paint Wave Solver
+-memory falloff also need clamp.
+-memory falloff need to allow dynamic geometry instead of constant frozen state.
+-check clamp inside & outside differences.
+	-clampping inside will diminishing the falloff & wave.
+	-> thus only clamp outside.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -884,14 +907,15 @@ To Do:
 	-only for modifier nodes
 	-only if related with bake and output attribute.
 
-Array on Curves
--stability issue
-	-changing in length can disrupt the array on curves.
-	-instance on point mode will be the most stable by length.
-		-but instancing method by itself doesn't allow offset along curve.
--> to allow instancing method, need to get the offset to recover the position and parameter?
-	-as long as they are resampled, poitns will be moved.
--> difficult to solve it now.
+Paint Wave Solver
+-if the temporal sample index is not working properly like for boolean object.
+	-how to control outside?
+
+Hair on Geometry
+-should test about join original geometry?
+-what about Custom Rotation?
+	-seems require closure for normal & tangent.
+-investigate why subdivide curve is causing issue without capturing.
 
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
@@ -939,6 +963,9 @@ x-improve Animate interpolation?
 UV Deformer
 -Source rename tob Surface
 -UVMap string no label.
+
+Points Distribute
+-add density in case requirement of switching.
 
 **Inline Toggles.
 -Mirror Modifier
@@ -1067,6 +1094,15 @@ GN-Known Issue:
 Tree Generator
 -Noises displacement is displacing branches out of way.
 -need a better interpolation for "over parameter" method.
+
+Array on Curves
+-stability issue
+	-changing in length can disrupt the array on curves.
+	-instance on point mode will be the most stable by length.
+		-but instancing method by itself doesn't allow offset along curve.
+-> to allow instancing method, need to get the offset to recover the position and parameter?
+	-as long as they are resampled, poitns will be moved.
+-> difficult to solve it now.
 
 Add Curve Branch
 -this one is broken now due to hierarchy issue?
