@@ -900,6 +900,12 @@ Paint Wave Solver
 -check clamp inside & outside differences.
 	-clampping inside will diminishing the falloff & wave.
 	-> thus only clamp outside.
+
+Solidify
+-add settings to disable removal upon enclosed geometry.
+	-sometimes need it to get border region of a mesh.
+-> in fact solidify modifier always solidify stuff for 2 layers.
+	-I'm not sure if it's meaningful to keep the function.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
