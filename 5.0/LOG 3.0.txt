@@ -906,6 +906,10 @@ Solidify
 	-sometimes need it to get border region of a mesh.
 -> in fact solidify modifier always solidify stuff for 2 layers.
 	-I'm not sure if it's meaningful to keep the function.
+
+Add: S_Star
+
+Add: S_Random Color
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -936,8 +940,6 @@ Temporal Smooth
 
 Dynamic Curve Sampling
 -add warning as in DSS.
-
-Add: S_Random Color
 
 Add: Project UV from View
 
