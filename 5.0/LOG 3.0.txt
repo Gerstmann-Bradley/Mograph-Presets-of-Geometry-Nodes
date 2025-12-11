@@ -910,6 +910,27 @@ Solidify
 Add: S_Star
 
 Add: S_Random Color
+
+Append Point to Curves
+-Append point from start will flip the curve.
+
+Voronoi 3D
+-Evolution disappeared in 3D mode.
+-Advanced Settings rename to "Advanced"
+
+Separate RGB
+-optimization, when separation is 0, no need to calculate texture multiple times.
+
+S_Random Color
+x-seed should be showed differently?
+	-to indicate ranges?
+	-it is vector offset range.
+x-should lightness instead of value, otherwise it can be just not dark enough.
+	-lightness will make color more whitish/black, but not simply dark.
+	-not dark engouh because of value var.
+
+S_Hash Seed
+-output vector seed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -920,12 +941,7 @@ To Do:
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
 	-how to control outside?
-
-Hair on Geometry
--should test about join original geometry?
--what about Custom Rotation?
-	-seems require closure for normal & tangent.
--investigate why subdivide curve is causing issue without capturing.
+	-> menu with nearest?
 
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
@@ -947,6 +963,9 @@ Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
 
+Offset Origin
+-absolute offset Vs. Rel Offset
+
 Curve Linear
 -The curve has normal inherently facing downwards, why?
 -should I set radius at low?
@@ -960,6 +979,14 @@ Attribute Viewer
 Check Sample Index Vs. Attribute statistic performance again.
 ********************************************************
 5.1:
+*Hair on Geometry
+-should test about join original geometry?
+	-useful if single geo + Single hair gen.
+	-but if single geo for multiple hair gen. may not that helpful.
+-what about Custom Rotation?
+	-seems require closure for normal & tangent.
+-investigate why subdivide curve is causing issue without capturing.
+
 *Scene Info.
 x-improve Animate interpolation?
 	-but curves are not accessible?
