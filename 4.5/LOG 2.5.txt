@@ -1123,6 +1123,9 @@ Join Particles
 
 Store UVMap
 -support curve & points
+
+UV Deformer
+-sample Normal regardless if original Geo contains Z axis or not.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:

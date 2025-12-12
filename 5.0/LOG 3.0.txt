@@ -931,6 +931,32 @@ x-should lightness instead of value, otherwise it can be just not dark enough.
 
 S_Hash Seed
 -output vector seed.
+
+Bevel Curve
+-cap output go into panel.
+	-although less visible, but it should be considered as advanced option anyway.
+
+UVMap Viewer
+-severely broken.
+	-must ensure the input is on face corner domain.
+
+Hexagonal Array
+x-value precision
+-for now firstly use more automatic method.
+	-also added "set Geo radius".
+
+mix normal by proximity
+-value precision
+
+UV Deformer
+-mapped normal is broken for align rotation to vector?
+	-if the original geo has no Z height, normal was not sampled for efficiency.
+	-but it's found out this can be needed.
+
+Add: G_Set Geo Radius
+-support Point & Curves.
+	-using separate geometry for auto-detection?
+		-usually there's no mixture btw points & curves, thus auto the better.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -1102,7 +1128,7 @@ x--Attribute Mesh?
 	-want to add an custom input option if it's possible.
 		-in case of dynamic function that requires a bigger bounding box.
 
-**Deprecation 5.2 LTS:
+**Deprecation after 5.2 LTS:
 -Set Curve Tilt Alignment
 	-Set Curve Tilt by Normal
 -Random Helices Distribution
@@ -1115,6 +1141,9 @@ x--Attribute Mesh?
 	-Curve Info
 -G_Boundary Selection
 	-warning only if 5.1
+-G_Set Curve radius
+	-included and replaced by "G_Set Geo radius" to also support points.
+	-warning only upto 5.2, remove in 5.4?
 
 **Helical Connections
 -Default Vs. Custom mode
