@@ -957,6 +957,9 @@ Add: G_Set Geo Radius
 -support Point & Curves.
 	-using separate geometry for auto-detection?
 		-usually there's no mixture btw points & curves, thus auto the better.
+
+Offset Origin
+-absolute offset Vs. Rel Offset
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_04.
 To Do:
@@ -988,9 +991,6 @@ Add: Project UV from View
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
-
-Offset Origin
--absolute offset Vs. Rel Offset
 
 Curve Linear
 -The curve has normal inherently facing downwards, why?
