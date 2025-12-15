@@ -960,8 +960,11 @@ Add: G_Set Geo Radius
 
 Offset Origin
 -absolute offset Vs. Rel Offset
+
+Point Light BG
+-use percentage to be more practical
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_04.
+The Newest Test Demo Tree: ZG_09.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
