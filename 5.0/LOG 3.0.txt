@@ -968,6 +968,9 @@ Mirror Modifier
 Knit Unit
 -Offset Origin change was changing socket value and disrupt the result.
 	-fixed.
+
+Mirror Modifer
+-custom origin flip Z seems broken.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
