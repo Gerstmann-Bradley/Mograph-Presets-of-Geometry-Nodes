@@ -991,6 +991,15 @@ Mirror Modifer
 	-clamp & flip clamp support is done.
 -XZ-Y & ZY-Z when clamping seems broken?
 	-fixed; likely happen since the previous axis picking change by not relying on Z anymore.
+-fix other cases.
+-addition offset will never have 2 offset appearing at the same time in the group.
+
+Paint Wave Solver
+-Clean up
+	-no need to store W anymore
+	x-re-arrange math?
+		-resonant needs to be dif from velocity.
+		-velocity can have decay, but resonant must not since it's for falloff.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -1002,11 +1011,6 @@ Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
 	-how to control outside?
 	-> menu with nearest?
--Clean up
-	-no need to store W anymore
-	x-re-arrange math?
-		-resonant needs to be dif from velocity.
-		-velocity can have decay, but resonant must not since it's for falloff.
 
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
