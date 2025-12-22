@@ -971,6 +971,26 @@ Knit Unit
 
 Mirror Modifer
 -custom origin flip Z seems broken.
+
+**Bend Deformer
+-additional offset for a plane should influence the origin.
+	x-menu for relative offset Vs. absolute offset?
+-> if no thickness, use a hard-coded default value of 0.5.
+	-mix is un-clamped now and thus can go beyond the range.
+-rotation is broken somehow as rotating the whole geometry as well.
+	-fixed by adding back invert rotation.
+-> rotation clamp improvement.
+	-requires rotating the original position as well for a tilted mask.
+-if final output realize instance, origin GP preview is broken.
+	-fixed
+-rotation clamp is on the world origin due to "Rotate Vector".
+	-> if the geometry is not centered then mask is broken.
+	-> fixed by offset position evaluation.
+-add warning of non-instances input in instance mode.
+--support rolling using "Inward Pull".
+	-clamp & flip clamp support is done.
+-XZ-Y & ZY-Z when clamping seems broken?
+	-fixed; likely happen since the previous axis picking change by not relying on Z anymore.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -982,9 +1002,18 @@ Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
 	-how to control outside?
 	-> menu with nearest?
+-Clean up
+	-no need to store W anymore
+	x-re-arrange math?
+		-resonant needs to be dif from velocity.
+		-velocity can have decay, but resonant must not since it's for falloff.
 
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
+-support objects?
+
+Radial Array
+-curve circle should have normal facing upwards for easier understanding of axes?
 
 Tracer
 -if to use the newly joined geo detection function?
@@ -1041,6 +1070,9 @@ Points Distribute
 
 **Inline Toggles.
 -Mirror Modifier
+	-once the node sizes decreases, add offset function.
+	-offset custom origin already supports object, needs additional support for gizmo.
+		-panel toggle for gizmo visibility? otherwise annoying.
 -Voxel?
 -nodes with Decimal Shift now?
 	-Fill Volume.
