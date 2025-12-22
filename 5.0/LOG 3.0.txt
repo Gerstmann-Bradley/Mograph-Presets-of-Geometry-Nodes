@@ -1000,6 +1000,9 @@ Paint Wave Solver
 	x-re-arrange math?
 		-resonant needs to be dif from velocity.
 		-velocity can have decay, but resonant must not since it's for falloff.
+
+Bend Deformer
+-the bending rotation and preview option should be more correct and in-line with simple deform.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
