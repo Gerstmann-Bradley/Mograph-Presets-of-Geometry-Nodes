@@ -1003,6 +1003,13 @@ Paint Wave Solver
 
 Bend Deformer
 -the bending rotation and preview option should be more correct and in-line with simple deform.
+-fix magnitude of ZY-X.
+	-due to absolute bounding box change, some weirdness happens in calculating influencer scale.
+-> when calculating influencer scale, use the most original Bbox dif without modification.
+	-side note, additional offset can create seemingly 2X Vs. 1X dif in 1 Vs. 0.
+	-this is because when it's in 0.5 center, it's already 1X on positive side.
+		-so adding 0.5 on either side will just scale it further on positive region.
+		-while removing 0.5 will flip the orientation.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -1203,6 +1210,9 @@ x--Attribute Mesh?
 **Remove Trash Code:
 -cleaning up ZA_19 Curve Deformers
 -UV deformer
+-Bend Deformer
+	-the "captured scale" is not used as multiplied early with angle.
+		-> should be removed in 5.2 LTS
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
