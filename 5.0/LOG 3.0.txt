@@ -1001,7 +1001,7 @@ Paint Wave Solver
 		-resonant needs to be dif from velocity.
 		-velocity can have decay, but resonant must not since it's for falloff.
 
-Bend Deformer
+**Bend Deformer
 -the bending rotation and preview option should be more correct and in-line with simple deform.
 -fix magnitude of ZY-X.
 	-due to absolute bounding box change, some weirdness happens in calculating influencer scale.
@@ -1010,6 +1010,16 @@ Bend Deformer
 	-this is because when it's in 0.5 center, it's already 1X on positive side.
 		-so adding 0.5 on either side will just scale it further on positive region.
 		-while removing 0.5 will flip the orientation.
+-when used as modifier, even in instance mode, there will be mesh 000 input.
+-errors in supporting instances in axis that shouldn't work?
+	-previously the fix magnitude of ZY-X, the influencer scale doesn't count the 0-thickness change.
+	-> this seems to causes float-point precision issue causing glitches in certain cases.
+-> needs to use the new absolute dif and still fix the ZY-X issue.
+	-why is the issue only in ZY-X?
+		-fixed, seems ZY is such as special case.
+-menu rename, for example in XY plane, most of time Z is main influencer unless folding on Z.
+	-> XZ tob ZX, ZY tob YZ to match the main influencer at spare time.
+**-Menu Re-order for XY, YZ, ZX.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
