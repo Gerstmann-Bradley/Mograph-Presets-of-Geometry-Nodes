@@ -1020,6 +1020,13 @@ Paint Wave Solver
 -menu rename, for example in XY plane, most of time Z is main influencer unless folding on Z.
 	-> XZ tob ZX, ZY tob YZ to match the main influencer at spare time.
 **-Menu Re-order for XY, YZ, ZX.
+
+**Bend Deformer
+-without FEEZ is much slower than with FEEZ most of time.
+	-most time is due to split to instance slower than geometry to instance.
+-> again rebuild to use FEEZ method.
+	--finishing clean up of instancing code.
+	--finishing testing environment. 
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
