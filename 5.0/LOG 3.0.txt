@@ -1040,6 +1040,13 @@ Check Sample Index Vs. Attribute statistic performance again.
 
 Bend Deformer
 -fix warning of Single Vs. Instance mode.
+
+Bend Deformer
+-default mode should disable realize instance.
+	-it seems quite common requiring to chaining them?
+-Bend Deformer Instancing mode is not recovering the original position of instances.
+	-set position should be done outside after geometry to instance.
+-Origin preview of instance has issue.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
