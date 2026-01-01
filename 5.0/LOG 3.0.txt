@@ -1047,6 +1047,13 @@ Bend Deformer
 -Bend Deformer Instancing mode is not recovering the original position of instances.
 	-set position should be done outside after geometry to instance.
 -Origin preview of instance has issue.
+
+Inertial Deformer
+-should made more compatible with newly generated geometry.
+	-otherwise always being overshoot.
+-> lack of Sample by ID.
+	-"is New Geometry" is not working because it can only be used for static geometry.
+	-use "Is ID Valid", but not making it to asset it.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -1054,10 +1061,17 @@ To Do:
 	-only for modifier nodes
 	-only if related with bake and output attribute.
 
+Get UVMap
+-update to accept object & Geometry nodes separately, etc.
+-add ways to map a UV map the the other map's bounding box?
+	-so that grid UVMap can map itself to another grid UVMap?
+
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
 	-how to control outside?
 	-> menu with nearest?
+-resistance test again.
+	-I think it's influencing blur attribute in bad way and requires better method?
 
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
@@ -1090,7 +1104,12 @@ Curve Linear
 Attribute Viewer
 -support face corner with better positioning of the existing vector.
 
+
+
 Add: S_Parallax Occlusion
+
+Add: New Tree Generator
+-attach in sequence. using bundle?
 
 **Deprecating due to existing Assets
 -G_Edge Length.
@@ -1264,6 +1283,11 @@ Array on Curves
 -> to allow instancing method, need to get the offset to recover the position and parameter?
 	-as long as they are resampled, poitns will be moved.
 -> difficult to solve it now.
+
+Inertial Deformer
+-have rough support for newly generated geometry.
+	-but in case of reversed index generation still tons of issue.
+	-Temporal Sampling seems not working great. It really needs Sample by ID.
 
 Add Curve Branch
 -this one is broken now due to hierarchy issue?
