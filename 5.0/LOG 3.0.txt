@@ -1054,17 +1054,22 @@ Inertial Deformer
 -> lack of Sample by ID.
 	-"is New Geometry" is not working because it can only be used for static geometry.
 	-use "Is ID Valid", but not making it to asset it.
+
+Tracer
+x-since it uses Seed now, does epsilone need to be large as 100?
+	-Seed is still a large value.
+	-id is a small value.
+-> so for now there's no issue.
+	-but sampling Seed seems not very Ideal.
+
+Get UVMap
+-update to accept object & Geometry nodes separately, etc.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
 	-only if related with bake and output attribute.
-
-Get UVMap
--update to accept object & Geometry nodes separately, etc.
--add ways to map a UV map the the other map's bounding box?
-	-so that grid UVMap can map itself to another grid UVMap?
 
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
@@ -1079,11 +1084,6 @@ Add: Set Secondary Axis for Rotation
 
 Radial Array
 -curve circle should have normal facing upwards for easier understanding of axes?
-
-Tracer
--if to use the newly joined geo detection function?
-	-[index - (sampled index + 1)]
--what about using detect by id method now?
 
 Temporal Smooth
 -need to support newly joined geo as well?
@@ -1103,8 +1103,6 @@ Curve Linear
 
 Attribute Viewer
 -support face corner with better positioning of the existing vector.
-
-
 
 Add: S_Parallax Occlusion
 
@@ -1259,9 +1257,18 @@ x--Attribute Mesh?
 	-warning only upto 5.2, remove in 5.4?
 
 **Helical Connections
--Default Vs. Custom mode
+-Default Vs. Custom mode in 5.2
 	-Amount no longer useful when using custom mode?
 -> a sample is done. wait ntl future to depoly it.
+
+**Sample by ID
+-Inertial Deformer
+	-response to newly generated geometry.
+-temporal sampling
+	-also cto the issue of inertial deformer.
+-tracer
+	-cto issue of inertial deformer.
+-is ID valid?
 
 **Remove Trash Code:
 -cleaning up ZA_19 Curve Deformers
@@ -1274,6 +1281,10 @@ GN-Known Issue:
 Tree Generator
 -Noises displacement is displacing branches out of way.
 -need a better interpolation for "over parameter" method.
+
+Solidified Outline
+-it can't really be made into sequence, likely because of double extrusion.
+	-is it really needed to be fixed?
 
 Array on Curves
 -stability issue
