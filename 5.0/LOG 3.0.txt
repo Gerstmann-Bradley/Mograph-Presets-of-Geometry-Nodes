@@ -1064,6 +1064,13 @@ x-since it uses Seed now, does epsilone need to be large as 100?
 
 Get UVMap
 -update to accept object & Geometry nodes separately, etc.
+
+Bend Deformer
+-if angle becomes negative, inward pull should copy the sign automatically.
+
+Curve Rolling
+-output the mask.
+-add deprecation warning due to Bend Deformer.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -1255,6 +1262,7 @@ x--Attribute Mesh?
 -G_Set Curve radius
 	-included and replaced by "G_Set Geo radius" to also support points.
 	-warning only upto 5.2, remove in 5.4?
+-Curve Rolling
 
 **Helical Connections
 -Default Vs. Custom mode in 5.2
@@ -1274,8 +1282,10 @@ x--Attribute Mesh?
 -cleaning up ZA_19 Curve Deformers
 -UV deformer
 -Bend Deformer
+	-Clean up ZB_11 group.
 	-the "captured scale" is not used as multiplied early with angle.
 		-> should be removed in 5.2 LTS
+	-origin preview, the position input for points.
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
