@@ -1071,6 +1071,18 @@ Bend Deformer
 Curve Rolling
 -output the mask.
 -add deprecation warning due to Bend Deformer.
+
+**S_Random Color
+-internal white noise can still have issues even in small C value.
+	-use menu toggle to allow Seed Vs. Random Value?
+-test shows Random Color node will never work with Noise.
+-Noise texture can tolerate good amount of W
+	-but randomness concept can not take even C for white noise
+-> Random Values Vs. Offset.
+
+Fade Falloff
+-add toggle to allow percentage Vs. 0-1
+	-better a boolean toggle. not worth to switch socket.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
