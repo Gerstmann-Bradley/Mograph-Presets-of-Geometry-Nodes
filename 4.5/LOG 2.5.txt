@@ -1126,6 +1126,9 @@ Store UVMap
 
 UV Deformer
 -sample Normal regardless if original Geo contains Z axis or not.
+
+Mirror Modifier
+-doesn't preserve curve radius due curve-to-mesh mesh-to-curve conversion.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZF_16.
 To Do:

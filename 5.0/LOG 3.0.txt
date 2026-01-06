@@ -1083,6 +1083,9 @@ Curve Rolling
 Fade Falloff
 -add toggle to allow percentage Vs. 0-1
 	-better a boolean toggle. not worth to switch socket.
+
+Mirror Modifier
+-doesn't preserve curve radius due curve-to-mesh mesh-to-curve conversion.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
