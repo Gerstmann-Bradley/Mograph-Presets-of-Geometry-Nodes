@@ -1086,6 +1086,9 @@ Fade Falloff
 
 Mirror Modifier
 -doesn't preserve curve radius due curve-to-mesh mesh-to-curve conversion.
+
+**Mirror Modifier
+-start to support mixture geometry
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -1100,15 +1103,24 @@ Paint Wave Solver
 -resistance test again.
 	-I think it's influencing blur attribute in bad way and requires better method?
 
+Collision in Ray
+-add decimal shift
+
+Bevel Curve
+-implement Even Thickness?
+
+World BG
+-point light BG should use 2D-vector
+
+parenting
+-using different mode for Obj & Geo.
+
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
 -support objects?
 
 Radial Array
 -curve circle should have normal facing upwards for easier understanding of axes?
-
-Temporal Smooth
--need to support newly joined geo as well?
 
 Dynamic Curve Sampling
 -add warning as in DSS.
@@ -1177,6 +1189,8 @@ Points Distribute
 -Value Precision.
 	-merge lots of boolean?
 -parenting
+	-also need Object Mode Vs. Geometry Mode.
+	-gizmo mode also?
 -Knit
 	-may add an vector output for non-center vector?
 -Follow Curves, Array on Curves
@@ -1292,6 +1306,7 @@ x--Attribute Mesh?
 -tracer
 	-cto issue of inertial deformer.
 -is ID valid?
+-Temporal Smooth
 
 **Remove Trash Code:
 -cleaning up ZA_19 Curve Deformers
@@ -1301,11 +1316,18 @@ x--Attribute Mesh?
 	-the "captured scale" is not used as multiplied early with angle.
 		-> should be removed in 5.2 LTS
 	-origin preview, the position input for points.
+-Mirror Modifier
+	-some constant socket on closure is no longer used.
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
 -Noises displacement is displacing branches out of way.
 -need a better interpolation for "over parameter" method.
+
+Mirror Modifier
+-edge can't handle boolean.
+	-> curves not simply to edge but to thin tube. then merged back to curve.
+	-without merge by ID, sometimes it's over mergring and disrupt radius.
 
 Solidified Outline
 -it can't really be made into sequence, likely because of double extrusion.
