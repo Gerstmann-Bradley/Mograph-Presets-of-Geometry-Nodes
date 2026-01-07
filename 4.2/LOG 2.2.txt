@@ -548,6 +548,9 @@ Add: Radial Instancer
 -> Vector Seed shouldn't be 1D.
 	-Remove dimension in Hash Seed.
 -> Simplify.
+
+Mirror Modifier
+-doesn't preserve curve radius due curve-to-mesh mesh-to-curve conversion.
 ****************************************************************************************************
 To Do:
 Investigate the use of Separate geometry by Index
