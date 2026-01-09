@@ -1089,6 +1089,22 @@ Mirror Modifier
 
 **Mirror Modifier
 -start to support mixture geometry
+
+Collision in Ray
+-add decimal shift
+
+Curve Rolling
+-may still be necessary for specific curve orientation.
+	-> remove deprecation warning.
+
+Random Per Island
+-add a seed option
+
+S_Random Color
+-different default values, etc.
+
+World BG
+-point light BG should use 2D-vector instea of 3D
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -1103,14 +1119,8 @@ Paint Wave Solver
 -resistance test again.
 	-I think it's influencing blur attribute in bad way and requires better method?
 
-Collision in Ray
--add decimal shift
-
 Bevel Curve
 -implement Even Thickness?
-
-World BG
--point light BG should use 2D-vector
 
 parenting
 -using different mode for Obj & Geo.
