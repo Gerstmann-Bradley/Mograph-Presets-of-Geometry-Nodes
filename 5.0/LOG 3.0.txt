@@ -1105,6 +1105,9 @@ S_Random Color
 
 World BG
 -point light BG should use 2D-vector instea of 3D
+
+parenting
+-using different mode for Obj & Geo.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
@@ -1121,9 +1124,6 @@ Paint Wave Solver
 
 Bevel Curve
 -implement Even Thickness?
-
-parenting
--using different mode for Obj & Geo.
 
 Add: Set Secondary Axis for Rotation
 -use align rotation to vector with pivot axis?
