@@ -1108,6 +1108,9 @@ World BG
 
 parenting
 -using different mode for Obj & Geo.
+
+Knit Surface
+-Set Geo Radius has wrong default value for radius. fixed
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
