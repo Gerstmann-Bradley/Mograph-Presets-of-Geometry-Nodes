@@ -1111,6 +1111,9 @@ parenting
 
 Knit Surface
 -Set Geo Radius has wrong default value for radius. fixed
+
+Woven Surface
+-add Set Geo Radius function, also link level to height.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
