@@ -1114,6 +1114,9 @@ Knit Surface
 
 Woven Surface
 -add Set Geo Radius function, also link level to height.
+
+inertial deformer
+-fix curve warning.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
