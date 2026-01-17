@@ -1127,6 +1127,12 @@ To Volume Grid
 Paint Wave Solver
 -add Spread mode.
 	-unfortunately I can't integrate the important functions inside Wave.
+
+Random Color
+-all into percentage
+-shader as Color tag, GN as input tag.
+	-as shader is hue shift of existing color.
+	-GN is generating color using random values.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
