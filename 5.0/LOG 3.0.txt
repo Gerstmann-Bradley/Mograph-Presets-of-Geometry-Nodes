@@ -1136,6 +1136,15 @@ Random Color
 
 Collision Deformer
 -add decimal shfit
+
+Remove: Grid statistics
+-useful now for bug, perhaps useless in the future.
+	-the biggest problem is it's conflicting with the search of attribute statistics.
+	-have to find a new name for it
+
+Points Distribute
+-expose implicit density option.
+	-add warnings to turn it.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
