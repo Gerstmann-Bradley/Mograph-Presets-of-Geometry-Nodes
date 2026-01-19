@@ -1145,6 +1145,12 @@ Remove: Grid statistics
 Points Distribute
 -expose implicit density option.
 	-add warnings to turn it.
+
+Polar Coordinate
+-add mode to cyclic Linear coordinate
+
+Bevel Curve
+-add toggle to store UVMap more easily.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_09.
 To Do:
