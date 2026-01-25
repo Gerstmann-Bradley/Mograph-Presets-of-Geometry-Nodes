@@ -1157,8 +1157,11 @@ Bevel Curve
 
 Edge Gradient
 -rename: Plane Edge Gradient
+
+Point Instance Geometry
+-In case of custom mode, position should be offset not set position.
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_09.
+The Newest Test Demo Tree: ZG_11.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
@@ -1171,12 +1174,25 @@ Paint Wave Solver
 -resistance test again.
 	-I think it's influencing blur attribute in bad way and requires better method?
 
+Point Instance Geometry
+-allow capture attribute for instance...
+
+Smooth position
+-border smooth, but it can also just smooth border
+	-how to design it?
+
+Parenting
+-Object should always use relative?
+	-what if evaluating as point Vs. evaluate its geometry?
+	-what if the object itself is parented to another??
+
 Bevel Curve
 -implement Even Thickness?
 
-Add: Set Secondary Axis for Rotation
+Add: Align Rotation to Secondary Axis
 -use align rotation to vector with pivot axis?
--support objects?
+-design use set curve normal as an example.
+	-normal, vector (vector + object), etc?
 
 Radial Array
 -curve circle should have normal facing upwards for easier understanding of axes?
@@ -1221,6 +1237,10 @@ x-improve Animate interpolation?
 -Is Inside View Still has resolution X and Y issue.
 -Delta Time better using inversed frame rate than current calculation.
 	otherwise it will cause divide by 0 error.
+
+Text Mesh
+-incorporate the string to curve node.
+	-text-illusion tutorial.
 
 UV Deformer
 -Source rename tob Surface
@@ -1280,7 +1300,6 @@ x--Attribute Mesh?
 -Match Size
     -Geometry & Vector...
 -UV Deformer
-
 
 **Inline output Need Design.
 -Helical Connections
