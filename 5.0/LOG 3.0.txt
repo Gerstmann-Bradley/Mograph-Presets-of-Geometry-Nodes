@@ -1160,6 +1160,9 @@ Edge Gradient
 
 Point Instance Geometry
 -In case of custom mode, position should be offset not set position.
+
+Trim Curve
+-rewrite to add loop function
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
