@@ -1163,6 +1163,19 @@ Point Instance Geometry
 
 Trim Curve
 -rewrite to add loop function
+
+Fade Falloff
+-value bug compared to the spline parameter?
+	-fixed & tested.
+
+**Randomness
+-rename: Random Value
+	-for better search as "GRV"
+-Add: Randomness in case of compatibility of old tutorial?
+
+Random Value
+-float Vs. Vector
+	-does it make sense to include rotation & color?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -1174,8 +1187,6 @@ Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
 	-how to control outside?
 	-> menu with nearest?
--resistance test again.
-	-I think it's influencing blur attribute in bad way and requires better method?
 
 Point Instance Geometry
 -allow capture attribute for instance...
@@ -1373,6 +1384,8 @@ x--Attribute Mesh?
 	-included and replaced by "G_Set Geo radius" to also support points.
 	-warning only upto 5.2, remove in 5.4?
 -Curve Rolling
+-G_Randomness
+	-warning only upto 5.2, remove in 5.4.
 
 **Helical Connections
 -Default Vs. Custom mode in 5.2
