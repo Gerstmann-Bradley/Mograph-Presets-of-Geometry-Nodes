@@ -1176,6 +1176,15 @@ Fade Falloff
 Random Value
 -float Vs. Vector
 	-does it make sense to include rotation & color?
+
+voxel remesh
+-re-organize smooth position
+
+Volume Grid Geometry
+-add smooth
+
+Plane Remesh
+-rename: Planar Remesh
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
