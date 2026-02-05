@@ -1185,6 +1185,26 @@ Volume Grid Geometry
 
 Plane Remesh
 -rename: Planar Remesh
+
+Point Instance Geometry
+-custom mode offset is using "position" by default.
+	-fixed
+
+G_Random Value
+-using % for Rel Var.
+
+Snap Function
+-need tob wider.
+-add decimal shift to factor.
+
+Rod
+using a more general scale
+
+S_Sine Function
+-using menu switch
+
+Add: G_Noise Texture
+Add: G_Voronoi Texture
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -1199,6 +1219,12 @@ Paint Wave Solver
 
 Point Instance Geometry
 -allow capture attribute for instance...
+
+Snap Function
+-can it be made smoother?
+
+Rod
+-using Blender's curve to tube for better UV...
 
 Smooth position
 -border smooth, but it can also just smooth border
@@ -1245,6 +1271,17 @@ Add: New Tree Generator
 -G_Edge Length.
 ********************************************************
 5.1:
+Gizmo Study
+	-for falloff to use gizmo?
+-proximity falloff
+	-gizmo only allow single-value offset.
+		-> different mode I need different setup for offset?
+	-location offset seems tricky because it requires exposure?
+-directional falloff
+	-doable, but likely extremely complicate.
+-radial falloff
+-dot product falloff
+
 *Hair on Geometry
 -should test about join original geometry?
 	-useful if single geo + Single hair gen.
@@ -1388,13 +1425,14 @@ x--Attribute Mesh?
 -Spline Info
 	-Curve Info
 -G_Boundary Selection
-	-warning only if 5.1
 -G_Set Curve radius
 	-included and replaced by "G_Set Geo radius" to also support points.
 	-warning only upto 5.2, remove in 5.4?
 -Curve Rolling
 -G_Randomness
 	-warning only upto 5.2, remove in 5.4.
+-Noise 3D
+-Voronoi 3D
 
 **Helical Connections
 -Default Vs. Custom mode in 5.2
