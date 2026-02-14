@@ -1205,6 +1205,11 @@ S_Sine Function
 
 Add: G_Noise Texture
 Add: G_Voronoi Texture
+
+Is Inside View
+-custom camera label?
+-in Vertical resolution, the viewbox isn't correct.
+	-add sensor fit menu.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -1220,11 +1225,16 @@ Paint Wave Solver
 Point Instance Geometry
 -allow capture attribute for instance...
 
+Delay Falloff
+-new way of looping.
+	-currently looping each, can field statistic to loop as a whole?
+
 Snap Function
 -can it be made smoother?
 
 Rod
--using Blender's curve to tube for better UV...
+-using Blender's curve to tube for better UV>
+	-need performance test.
 
 Smooth position
 -border smooth, but it can also just smooth border
@@ -1275,12 +1285,15 @@ Gizmo Study
 	-for falloff to use gizmo?
 -proximity falloff
 	-gizmo only allow single-value offset.
-		-> different mode I need different setup for offset?
+		-> for different mode I need different setup for offset?
 	-location offset seems tricky because it requires exposure?
 -directional falloff
 	-doable, but likely extremely complicate.
 -radial falloff
 -dot product falloff
+
+New Grid Nodes to update old grid preset.
+-dilate/erode for offset.
 
 *Hair on Geometry
 -should test about join original geometry?
@@ -1290,15 +1303,7 @@ Gizmo Study
 	-seems require closure for normal & tangent.
 -investigate why subdivide curve is causing issue without capturing.
 
-*Scene Info.
-x-improve Animate interpolation?
-	-but curves are not accessible?
-		-closure and bundles?
--Is Inside View Still has resolution X and Y issue.
--Delta Time better using inversed frame rate than current calculation.
-	otherwise it will cause divide by 0 error.
-
-Text Mesh
+**Text Mesh
 -incorporate the string to curve node.
 	-text-illusion tutorial.
 
@@ -1308,110 +1313,7 @@ UV Deformer
 
 Points Distribute
 -add density in case requirement of switching.
-
-**Inline Toggles.
--Mirror Modifier
-	-once the node sizes decreases, add offset function.
-	-offset custom origin already supports object, needs additional support for gizmo.
-		-panel toggle for gizmo visibility? otherwise annoying.
--Voxel?
--nodes with Decimal Shift now?
-	-Fill Volume.
-	-Array on Splines
-	-Step Extrusion.
-	-braid?
--Solidify
-	-Expose Merge by Distance.
-		-it will largely improve the performance.
--Loft Curves
-	-Count -1 was used for default...
--Value Precision.
-	-merge lots of boolean?
--parenting
-	-also need Object Mode Vs. Geometry Mode.
-	-gizmo mode also?
--Knit
-	-may add an vector output for non-center vector?
--Follow Curves, Array on Curves
-	-loop mode should be a panel, enable Loop, Start, End separately.
-	-> 1 line to replace the entire previous complex menu.
-
-**InLine output
--Reset Self Object Transform
--Curve Extrapolation
-x--Time Falloff
-    -better to separate the meaning of Time & Falloff
-x--Attribute Mesh?
-    -has split edge so better to separate the meaning?
--Motion Variance
--Follow Path
--Bevel Curve Fill Cap
--Curve Extrapolation
--reset spline cyclic
--float range
--Snap Function
--Get UVMap
--Join Particles
--Tracer
-    -Sample Attribute
--Freeze Geometry
--trigger
-	-need evaluation gradient.
--Match Size
-    -Geometry & Vector...
--UV Deformer
-
-**Inline output Need Design.
--Helical Connections
--Fill Volume
--Curve Deformer
--UV Deformer
-    -custom bounding box Vs. Bounds Preview
--Time Falloff
-	-time mode should add delay time option for sequencial event?
-		-it seems just similar as the Animate Node.
-		-should they be made together?
-	-Birthtime should also support delay as in time for sequencial event.
-		-how to design?
-
-**Inline output Breaking?
--remap 0-1
--Random Rotation
--Curve Extrapolation?
--Store UVMap
--
-
-**Dynamic Socket Type: effect nodes requiring multiple types.
--Sample in Proximity.
--Inertial Offset
--...
-
-**Curve & Color Ramp Panel.
-	-shouldn't be on most nodes, for the sake of remap 0-1 re-usibility.
-**support curve Interpolate function outside group using Closure & Bundles.
--Remap Vector Scale
--Sample in Proximity
-	-this need external sampling/color ramp so bad.
--layered proximity falloff
--all ease ease function...
--Add: Curve Parameter Interpolate.
--probability skew
-
-**Separator
-	-more of a simple UI thing.
--array on Splines
--Attribute Viewer
--Braid
--Fill Volume
--Sharp Edge wireframe
--Step Extrude
--Displace Deformer
-
-**Interface Order
-	-panel used to be only possible at bottom of all.
--Match Size.
-	-want to add an custom input option if it's possible.
-		-in case of dynamic function that requires a bigger bounding box.
+	-study how the blender nodes are doing for the amount and performance.
 
 **Deprecation after 5.2 LTS:
 -Set Curve Tilt Alignment
@@ -1438,16 +1340,6 @@ x--Attribute Mesh?
 -Default Vs. Custom mode in 5.2
 	-Amount no longer useful when using custom mode?
 -> a sample is done. wait ntl future to depoly it.
-
-**Sample by ID
--Inertial Deformer
-	-response to newly generated geometry.
--temporal sampling
-	-also cto the issue of inertial deformer.
--tracer
-	-cto issue of inertial deformer.
--is ID valid?
--Temporal Smooth
 
 **Remove Trash Code:
 -cleaning up ZA_19 Curve Deformers
