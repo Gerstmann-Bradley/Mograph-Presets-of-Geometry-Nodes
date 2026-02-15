@@ -1210,6 +1210,9 @@ Is Inside View
 -custom camera label?
 -in Vertical resolution, the viewbox isn't correct.
 	-add sensor fit menu.
+
+Grass Generator
+-fix due to Random Value change.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
