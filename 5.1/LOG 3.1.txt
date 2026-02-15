@@ -40,6 +40,9 @@ Delay Falloff
 x-new way of looping.
 	-currently looping each, can field statistic to loop as a whole?
 		x-> not possible, because field statistic requires domain.
+
+**Text Mesh
+-incorporate the string to curve node.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -136,10 +139,6 @@ Gizmo Study
 New Grid Nodes to update old grid preset.
 -dilate/erode for offset.
 
-**Text Mesh
--incorporate the string to curve node.
-	-text-illusion tutorial.
-
 Points Distribute
 -add density in case requirement of switching.
 	-study how the blender nodes are doing for the amount and performance.
@@ -218,8 +217,8 @@ Face Points
 	-dynamic case require sampling and capture on respective domain.
 		-which is not exposed and has to be done outside.
 
-Hair on Surface
--Proximity targets differently for each point in complex geometry
+Hair on Geometry
+-in surface cling, Proximity targets differently for each point in complex geometry
 
 Dynamic Space Sampling
 -Curve Tangent/grid edge tangent method is not working
@@ -239,7 +238,7 @@ Freeze Geometry
 	-Separate Geometry for Freeze?
 		-if the index is changing, what to do?
 
-Set Particle Parameter
+Join Particles
 -Should Inheret the previous velocity?
 	-currently the velocity must be newly written.
 
