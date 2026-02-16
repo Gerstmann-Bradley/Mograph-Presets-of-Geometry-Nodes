@@ -1216,6 +1216,9 @@ Grass Generator
 
 Curve Deformer
 -fix bug due to realized instance in "Point Instance geometry"
+
+S_Venetian Blinds
+-fix from Sin Function change
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
