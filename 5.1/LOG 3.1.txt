@@ -57,20 +57,24 @@ Sample in Proximity
 	-since now interpolation can be made with falloff
 -currently not supporting instances. but all other geometry types.
 
+Paint Wave Solver
+-spread mode falloff uses greater than to be only 0 & 1.
+	-originally diffused values are lower & newly added brush made it higher.
+
 Scale Selection
 -needs to support float.
 -what if the input float & subtracting float needs to be a bit different?
 	-it's the issue specific to paint wave solver falloff I think.
-
-Paint Wave Solver
--spread mode falloff uses greater than to be only 0 & 1.
-	-originally diffused values are lower & newly added brush made it higher.
+-> previous paint wave solver change.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
 	-only if related with bake and output attribute.
+
+Text Mesh
+-support shearing for italic?
 
 *Hair on Geometry
 -should test about join original geometry?
@@ -189,6 +193,10 @@ GN-Known Issue:
 Tree Generator
 -Noises displacement is displacing branches out of way.
 -need a better interpolation for "over parameter" method.
+
+Scale Selection
+-shrink float has issue in low iterations causing jagged edges.
+	-implement so as float inverter by itself can cause huge subtraction of values.
 
 Mirror Modifier
 -edge can't handle boolean.
