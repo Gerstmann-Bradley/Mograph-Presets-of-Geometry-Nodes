@@ -157,6 +157,10 @@ Add: New Tree Generator
 	-origin preview, the position input for points.
 -Mirror Modifier
 	-some constant socket on closure is no longer used.
+
+Hair on Geometry
+-add selection input
+-mesh normal rotation should support tangent socket visibility.
 ********************************************************
 5.1:
 Gizmo Study
