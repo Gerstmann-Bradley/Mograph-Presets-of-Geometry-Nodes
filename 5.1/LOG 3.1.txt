@@ -71,6 +71,8 @@ Hair on Geometry
 -Count & Count per curve must be clearly separated.
 	-otherwise mixing can freeze computer.
 -falloff needs to be captured before instancing hairs.
+
+Add: Grid Viewer
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
