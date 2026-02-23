@@ -1222,6 +1222,28 @@ S_Venetian Blinds
 
 Hair on Geometry
 -falloff needs to be captured before instancing hairs.
+
+**Random Value
+	-fix Var % in presets.
+-attribute viewer
+-cloud generator
+-exploded view
+x-fill curve tube
+	-abs var.
+-follow curves
+--grass generator
+	-bend, width, scale
+-hair on geometry
+-hair on surface
+-motion var
+x-random color
+	-all abs Var.
+-random helices distribute
+-random spirals
+-set branch parameter
+	-?
+-tree generator
+	-?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:

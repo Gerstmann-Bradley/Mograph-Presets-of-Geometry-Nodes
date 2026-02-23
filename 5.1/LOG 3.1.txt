@@ -80,6 +80,39 @@ Spherical Geo
 -UVMap as modifier default to 
 -dual mesh mabe made separately for all other types.
 	-note dual mesh mode won't work for UV Deformer regardless though.
+
+**Remove Trash Code:
+-cleaning up ZA_19 Curve Deformers
+-UV deformer
+-Bend Deformer
+	-Clean up ZB_11 group.
+	-the "captured scale" is not used as multiplied early with angle.
+		-> should be removed in 5.2 LTS
+	-origin preview, the position input for points.
+-Mirror Modifier
+	-some constant socket on closure is no longer used.
+
+**Random Value
+	-fix Var % in presets.
+-attribute viewer
+-cloud generator
+-exploded view
+x-fill curve tube
+	-abs var.
+-follow curves
+--grass generator
+	-bend, width, scale
+-hair on geometry
+-hair on surface
+-motion var
+x-random color
+	-all abs Var.
+-random helices distribute
+-random spirals
+-set branch parameter
+	-?
+-tree generator
+	-?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -156,17 +189,6 @@ Add: New Tree Generator
 
 **Deprecating due to existing Assets
 -G_Edge Length.
-
-**Remove Trash Code:
--cleaning up ZA_19 Curve Deformers
--UV deformer
--Bend Deformer
-	-Clean up ZB_11 group.
-	-the "captured scale" is not used as multiplied early with angle.
-		-> should be removed in 5.2 LTS
-	-origin preview, the position input for points.
--Mirror Modifier
-	-some constant socket on closure is no longer used.
 ********************************************************
 5.1:
 Gizmo Study
