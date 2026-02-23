@@ -73,6 +73,13 @@ Hair on Geometry
 -falloff needs to be captured before instancing hairs.
 
 Add: Grid Viewer
+
+Spherical Geo
+-settings update? in the past it has to use level because no hiding inputs.
+	-add resolution factor as multiplier
+-UVMap as modifier default to 
+-dual mesh mabe made separately for all other types.
+	-note dual mesh mode won't work for UV Deformer regardless though.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -82,6 +89,7 @@ To Do:
 
 UV Deformer
 -Bounding Box evalua should support offset.
+-surface can't really take collection, because likely multiple islands each having 0-1 UV.
 
 Text Mesh
 -support shearing for italic?
@@ -159,10 +167,6 @@ Add: New Tree Generator
 	-origin preview, the position input for points.
 -Mirror Modifier
 	-some constant socket on closure is no longer used.
-
-Hair on Geometry
--add selection input
--mesh normal rotation should support tangent socket visibility.
 ********************************************************
 5.1:
 Gizmo Study
