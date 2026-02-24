@@ -151,6 +151,9 @@ UV Deformer
 	-> for the moment perhaps add warnings if UV surface seems overlapping but how?
 -> decide to always Pack UV island.
 	-plus the improvement of Get UVMap seam.
+
+Helical Connections
+-supported better autonomatic radius detections and decisions from now on.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
