@@ -113,6 +113,44 @@ x-random color
 	-?
 -tree generator
 	-?
+
+Hair on Geometry
+-add implicit geometry of a grid to easily support UV deformer.
+
+World BG
+-clean up the common part using closure.
+
+Helical Connections
+-mode to use original curve radius? and set even smaller cure radius automatically?
+
+Spherical Geo
+-definitely needs indication of vertices count.
+	-otherwise can be risky when exploding vertices count in different mode.
+
+Knit Surface
+-Add Freq in Sine mode.
+-need various information about index
+
+*Hair on Geometry
+x-should test about join original geometry?
+	-useful if single geo + Single hair gen.
+	-but if single geo for multiple hair gen. may not that helpful.
+
+Get UVMap Seam
+-Implement better face corner-based method.
+	-merge by distance can disrupt overlapping UVMap and pack UV island result
+-> result is definitely correct, performance also sometimes better.
+	-especially when split edges will take more time like in icosphere.
+	-for suzanne head it seems taking long time for unknown reason?
+		-but at least the result is ensured correct.
+
+UV Deformer
+-surface can't really take collection, because likely multiple islands each having 0-1 UV.
+	-known issue. even though FEEZ can solve it. mesh island & layer support becomes difficult?
+		-what about performance of pack UV island?
+	-> for the moment perhaps add warnings if UV surface seems overlapping but how?
+-> decide to always Pack UV island.
+	-plus the improvement of Get UVMap seam.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -120,20 +158,21 @@ To Do:
 	-only for modifier nodes
 	-only if related with bake and output attribute.
 
+Add: Hue/Sat/Value
+
 UV Deformer
 -Bounding Box evalua should support offset.
--surface can't really take collection, because likely multiple islands each having 0-1 UV.
 
-Text Mesh
--support shearing for italic?
+New Grid Nodes to update old grid preset.
+-dilate/erode for offset.
 
-*Hair on Geometry
--should test about join original geometry?
-	-useful if single geo + Single hair gen.
-	-but if single geo for multiple hair gen. may not that helpful.
+Points Distribute
+-add density in case requirement of switching.
+	-study how the blender nodes are doing for the amount and performance.
+
 
 **grass generator
-	-rewrite since bend deformer support without FEEZ now.
+	-rewrite since bend deformer support without FEEZ now?
 
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
@@ -189,8 +228,19 @@ Add: New Tree Generator
 
 **Deprecating due to existing Assets
 -G_Edge Length.
+
+**Remove Trash Code:
+-cleaning up ZA_19 Curve Deformers
+-UV deformer
+-Bend Deformer
+	-Clean up ZB_11 group.
+	-the "captured scale" is not used as multiplied early with angle.
+		-> should be removed in 5.2 LTS
+	-origin preview, the position input for points.
+-Mirror Modifier
+	-some constant socket on closure is no longer used.
 ********************************************************
-5.1:
+5.2:
 Gizmo Study
 	-for falloff to use gizmo?
 -proximity falloff
@@ -202,22 +252,25 @@ Gizmo Study
 -radial falloff
 -dot product falloff
 
-New Grid Nodes to update old grid preset.
--dilate/erode for offset.
-
-Points Distribute
--add density in case requirement of switching.
-	-study how the blender nodes are doing for the amount and performance.
+**Implicit Named Attribute input
+-all UVMap
+	-UV deformer
+	-UV viewer
+	-Get UV seam...
+-radius attribute?
+	-but what if no radius? currently lots fallback evalua of radius.
 
 **Deprecation after 5.2 LTS:
 -Set Curve Tilt Alignment
 	-Set Curve Tilt by Normal
 -Random Helices Distribution
 	-Random Spirals
+	-remove in 5.2
 -Set particle parameters
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
 -Hair on Surface
-	-integrate into Hair on Geometry?
+	-integrated into Hair on Geometry.
+	-remove in 5.2
 -Spline Info
 	-Curve Info
 -G_Boundary Selection
