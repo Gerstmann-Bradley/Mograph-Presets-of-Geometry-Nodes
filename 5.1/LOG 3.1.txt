@@ -161,6 +161,9 @@ UV Deformer
 	-> is there way to improve it?
 -> seems to be linked with normal factor, which is also compensating the loss.
 -Instance warning should cover the surface too.
+
+Knit Surface
+-X Amplitude will be normalized to 1 regardless of frequency.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
