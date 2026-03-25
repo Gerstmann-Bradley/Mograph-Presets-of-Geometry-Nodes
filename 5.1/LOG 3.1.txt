@@ -164,6 +164,13 @@ UV Deformer
 
 Knit Surface
 -X Amplitude will be normalized to 1 regardless of frequency.
+
+Add: Hue/Sat/Value
+-separate Color & Combine Color method.
+
+Bevel Curve
+-due to dependency issue resolved in #154760
+	-warning now has better inference and actually shows some sockets that were not shown before.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -171,9 +178,10 @@ To Do:
 	-only for modifier nodes
 	-only if related with bake and output attribute.
 
-Add: Hue/Sat/Value
+Fill Curve Tube
+-rewrite to also decide whether to scale or set the radius?
 
-UV Deformer
+UV deformer
 -Bounding Box evalua should support offset.
 
 New Grid Nodes to update old grid preset.
@@ -181,8 +189,7 @@ New Grid Nodes to update old grid preset.
 
 Points Distribute
 -add density in case requirement of switching.
-	-study how the blender nodes are doing for the amount and performance.
-
+-also study how the blender nodes are doing for the amount and performance.
 
 **grass generator
 	-rewrite since bend deformer support without FEEZ now?
@@ -194,6 +201,8 @@ Paint Wave Solver
 
 Point Instance Geometry
 -allow capture attribute for instance...
+-use closure instead of directly on instance on points?
+	-redefine rotation and scale when needed?
 
 Snap Function
 -can it be made smoother?
@@ -239,6 +248,10 @@ Add: S_Parallax Occlusion
 Add: New Tree Generator
 -attach in sequence. using bundle?
 
+**Random Color
+-use the new Hue/Saturation/Value for consistency in design.
+-only do that from 5.4
+
 **Deprecating due to existing Assets
 -G_Edge Length.
 
@@ -264,6 +277,9 @@ Gizmo Study
 	-doable, but likely extremely complicate.
 -radial falloff
 -dot product falloff
+-Store UVMap
+	-support gizmo? especially in scaling & others.
+		-probably not a good idea since gizmo is difficult to control.
 
 **Implicit Named Attribute input
 -all UVMap
@@ -271,7 +287,11 @@ Gizmo Study
 	-UV viewer
 	-Get UV seam...
 -radius attribute?
-	-but what if no radius? currently lots fallback evalua of radius.
+		-but what if no radius? currently lots fallback evalua of radius.
+	-Helical Connections
+		-scale mode
+	-Set Geo Radius
+	-
 
 **Deprecation after 5.2 LTS:
 -Set Curve Tilt Alignment
@@ -294,6 +314,10 @@ Gizmo Study
 	-warning only upto 5.2, remove in 5.4.
 -Noise 3D
 -Voronoi 3D
+
+**Trash Code Removal
+-Helical Connections
+	-Keep Curve Radius is replaced by Expansion Radius capture.
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
@@ -333,6 +357,9 @@ Add Curve Branch
 
 Curve Split
 -will lose material set before, because there's conversion within.
+	-can add material back using join geometry and delete method.
+	-need to check performance to see if it's needed.
+-but hair on geometry still can't be fixed, because it already has set material at the end.
 
 Animate
 -is having a curve scape goat inside for warning evaluation.
