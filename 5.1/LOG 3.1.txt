@@ -174,6 +174,24 @@ Bevel Curve
 
 Grid Array
 -allow vector scale.
+
+Points Distribute
+-warning improvement in case if the selection is meant to have no points
+	-no need to warn if expected.
+-add density in case requirement of switching.
+-also study how the blender nodes are doing for the amount and performance.
+	x-it was using similar method to count ratio, but also repeat zone X5 for accuracy.
+	-> use original method, don't think repeat zone is required.
+
+Curve Linear
+-support decimal shift for both modes. default to be 0 now.
+
+Merge by Distance Curve
+-keep original radius
+
+Curve Deformer
+-bypass if no curve input
+-add warning if wrong curve geometry types input
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
@@ -184,15 +202,21 @@ To Do:
 Fill Curve Tube
 -rewrite to also decide whether to scale or set the radius?
 
+UV Deformer
+-allow length UV?
+
+Woven Surface
+-allow vector dimension?
+
+Add: Ratio node
+-divide ratio then multiply with a factor
+
 UV deformer
--Bounding Box evalua should support offset.
+-Can from custom have option to support BBox or custom geo.
+-Bounding Box evalua should support offset?
 
 New Grid Nodes to update old grid preset.
 -dilate/erode for offset.
-
-Points Distribute
--add density in case requirement of switching.
--also study how the blender nodes are doing for the amount and performance.
 
 **grass generator
 	-rewrite since bend deformer support without FEEZ now?
