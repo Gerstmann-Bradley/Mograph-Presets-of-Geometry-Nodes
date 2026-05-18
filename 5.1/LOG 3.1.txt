@@ -203,6 +203,16 @@ Radial Array
 Bounding box falloff
 -flip should support instance?
 -instance mode for non-instance should have warning.
+
+**Bounding Box Falloff
+-rewrite using For Each Element.
+-removing duplicate in main algorithm using closure.
+-support local and global axis
+-improved performance by a lot.
+	-because old instance bounding box global is using Split to Instance.
+
+Instance Bounding Box
+-rewrite to remove reliance on Split to Instance
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
