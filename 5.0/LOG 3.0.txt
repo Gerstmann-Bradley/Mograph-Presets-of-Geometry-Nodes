@@ -1244,6 +1244,12 @@ x-random color
 	-?
 -tree generator
 	-?
+
+Mirror Modifier
+-disrupting curves somehow
+	-needs to fix LTS as well?
+-> mesh boolean was using thin-tube, it was too thick to be merged.
+	-LTS didn't fully support curve in this case.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:

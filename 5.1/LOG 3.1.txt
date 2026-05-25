@@ -213,8 +213,14 @@ Bounding box falloff
 
 Instance Bounding Box
 -rewrite to remove reliance on Split to Instance
+
+Mirror Modifier
+-disrupting curves somehow
+	-needs to fix LTS as well?
+-> mesh boolean was using thin-tube, it was too thick to be merged.
+	-LTS didn't fully support curve in this case.
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_11.
+The Newest Test Demo Tree: ZG_12.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
