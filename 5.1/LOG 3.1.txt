@@ -219,6 +219,16 @@ Mirror Modifier
 	-needs to fix LTS as well?
 -> mesh boolean was using thin-tube, it was too thick to be merged.
 	-LTS didn't fully support curve in this case.
+
+Normal Displacement
+-default change to 5m decimal shift 2 instead of 0.5 DS 1.
+
+**Bevel Curve
+-Improve UV generation to not rely on additional mesh generation
+	-improve performance by 2X
+-UV 0-1 test passed.
+-length test passed.
+-count 2 test passed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:
