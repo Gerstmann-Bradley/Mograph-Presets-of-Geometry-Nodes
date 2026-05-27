@@ -230,12 +230,36 @@ Normal Displacement
 -length test passed.
 -count 2 test passed.
 -Organize panel & add option to store UVL.
+
+**Falloff Animation
+	-can use mix instead of Map Range for -1 to 1 range.
+	-not a must change, just visually improving for internal maintainence.
+-proximity falloff, mesh falloff, center falloff
+-directional falloff
+-radial falloff
+-bounding box falloff
+
+Add: Value Ratio
+-currently only support direct ratio.
+	-inverse ratio is made but I don't know the use case at this moment.
+
+Point Instance Geometry
+-allow capture attribute for instance...
+	x-use closure instead of directly on instance on points?
+		-no because can't output it directly otherwise.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:
 **Don't Show Manage Panel
 	-only for modifier nodes
 	-only if related with bake and output attribute.
+
+Add: Bridge Curve Loop?
+-curve version to bridge edge loop, etc.
+
+Curve Fill Fracture
+-update for distribution method.
+-also to enable split to instances for fracture-pieces?
 
 Fill Curve Tube
 -rewrite to also decide whether to scale or set the radius?
@@ -244,10 +268,7 @@ UV Deformer
 -allow length UV?
 
 Woven Surface
--allow vector dimension?
-
-Add: Ratio node
--divide ratio then multiply with a factor
+-allow vector dimension? for length UV beyond 0-1?
 
 UV deformer
 -Can from custom have option to support BBox or custom geo.
@@ -264,16 +285,11 @@ Paint Wave Solver
 	-how to control outside?
 	-> menu with nearest?
 
-Point Instance Geometry
--allow capture attribute for instance...
--use closure instead of directly on instance on points?
-	-redefine rotation and scale when needed?
-
 Snap Function
 -can it be made smoother?
 
 Rod
--using Blender's curve to tube for better UV>
+-using Blender's curve to tube for better UV?
 	-need performance test.
 
 Parenting
@@ -345,6 +361,14 @@ Gizmo Study
 -Store UVMap
 	-support gizmo? especially in scaling & others.
 		-probably not a good idea since gizmo is difficult to control.
+
+Is Inside View
+-https://projects.blender.org/blender/blender/pulls/158966
+	-is fixing sensor size for sensor fit.
+	-I made the fix, but now given fix upstream, i need to check new behavior.
+
+Geometry Component
+-perhaps to simplify sample in proximity?
 
 **Implicit Named Attribute input
 -all UVMap
