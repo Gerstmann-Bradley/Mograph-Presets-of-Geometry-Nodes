@@ -229,6 +229,7 @@ Normal Displacement
 -UV 0-1 test passed.
 -length test passed.
 -count 2 test passed.
+-Organize panel & add option to store UVL.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:
