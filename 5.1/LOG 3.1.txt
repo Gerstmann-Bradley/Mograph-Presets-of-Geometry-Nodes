@@ -239,7 +239,7 @@ Normal Displacement
 -radial falloff
 -bounding box falloff
 
-Add: Value Ratio
+Add: Ratio
 -currently only support direct ratio.
 	-inverse ratio is made but I don't know the use case at this moment.
 
