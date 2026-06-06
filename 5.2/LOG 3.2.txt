@@ -22,9 +22,33 @@ Is Inside View
 
 Inertial Deformer
 -Is ID valid was not working since 5.0
-	-fixed.
+	-seems due to some update after the tutorial.
+	-fixed now from 5.0 versions.
+
+**Transfer Attribute
+-may help replace Temporal Sample Index
+	-complete removal of Temporal Sampling
+
+Add: Replace Instances
+
+Curve Fill Fracture
+-update for distribution method.
+
+Geometry Component
+	-perhaps to simplify some nodes?
+-sample in proximity?
+	x-not sure if worth it.
+-curve points preview?
+	x-doesn't seem necessary
+
+Compare Data Block
+-check more easily about string, if any input, etc?
+	-but most are already fwth default string for convenience.
+
+Bevel Curve
+-rename: G_Curve to Mesh
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_12.
+The Newest Test Demo Tree: ZG_14
 To Do:
 **String
 -now is a larger text box available for annotations
@@ -39,13 +63,7 @@ Add: Bridge Curve Loop?
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
 
-**Transfer Attribute
--may help replace Temporal Sample Index
-
-Add: Replace Instances
-
 Curve Fill Fracture
--update for distribution method.
 -also to enable split to instances for fracture-pieces?
 
 Fill Curve Tube
@@ -89,6 +107,7 @@ Parenting
 
 Bevel Curve
 -implement Even Thickness?
+-renaming?
 
 Add: Set Rotation Secondary Axis
 -use align rotation to vector with pivot axis?
@@ -137,16 +156,8 @@ Add: New Tree Generator
 -Mirror Modifier
 	-some constant socket on closure is no longer used.
 ********************************************************
-5.2:
-Compare Data Block
--check more easily about string, if any input, etc?
-
-Geometry Component
-	-perhaps to simplify some nodes?
--sample in proximity?
--curve points preview?
-
-**Deprecation after 5.2 LTS:
+5.3:
+**Deprecation in 5.3:
 -Set Curve Tilt Alignment
 	-Set Curve Tilt by Normal
 -Random Helices Distribution
@@ -167,6 +178,7 @@ Geometry Component
 	-warning only upto 5.2, remove in 5.4.
 -Noise 3D
 -Voronoi 3D
+-Bevel Curve
 
 **Trash Code Removal
 -Helical Connections
