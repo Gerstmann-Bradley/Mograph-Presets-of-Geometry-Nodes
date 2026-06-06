@@ -19,6 +19,10 @@ Is Inside View
 	-I made the fix, but now given fix upstream, i need to check new behavior.
 -> it's breaking the preset, but easy fix.
 	also it seems really auto now.
+
+Inertial Deformer
+-Is ID valid was not working since 5.0
+	-fixed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:

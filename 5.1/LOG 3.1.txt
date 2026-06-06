@@ -247,6 +247,10 @@ Point Instance Geometry
 -allow capture attribute for instance...
 	x-use closure instead of directly on instance on points?
 		-no because can't output it directly otherwise.
+
+Inertial Deformer
+-Is ID valid was not working since 5.0
+	-fixed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:

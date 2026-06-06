@@ -1250,6 +1250,10 @@ Mirror Modifier
 	-needs to fix LTS as well?
 -> mesh boolean was using thin-tube, it was too thick to be merged.
 	-LTS didn't fully support curve in this case.
+
+Inertial Deformer
+-Is ID valid was not working since 5.0
+	-fixed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
