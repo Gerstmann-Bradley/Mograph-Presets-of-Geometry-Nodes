@@ -6,15 +6,37 @@ Done:
 --Delay Falloff
 --Time Falloff
 
+To Curve Points
+-preserve radius
+-if no geo input, implicit single curve point output.
+
+Append Point to Curves
+-preserve radius
+
+Is Inside View
+-https://projects.blender.org/blender/blender/pulls/158966
+	-is fixing sensor size for sensor fit.
+	-I made the fix, but now given fix upstream, i need to check new behavior.
+-> it's breaking the preset, but easy fix.
+	also it seems really auto now.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:
-**Don't Show Manage Panel
-	-only for modifier nodes
-	-only if related with bake and output attribute.
+**String
+-now is a larger text box available for annotations
+
+Text Mesh
+-support shearing for italic?
+    -new bounding box falloff method may work great for lines too?
 
 Add: Bridge Curve Loop?
 -curve version to bridge edge loop, etc.
+
+**Set Geometry Bundle, Get Geometry Bundle
+-to complete rewrite of tree generator
+
+**Transfer Attribute
+-may help replace Temporal Sample Index
 
 Add: Replace Instances
 
@@ -112,50 +134,13 @@ Add: New Tree Generator
 	-some constant socket on closure is no longer used.
 ********************************************************
 5.2:
-Gizmo Study
-	-for falloff to use gizmo?
--proximity falloff
-	-gizmo only allow single-value offset.
-		-> for different mode I need different setup for offset?
-	-location offset seems tricky because it requires exposure?
--directional falloff
-	-doable, but likely extremely complicate.
--radial falloff
--dot product falloff
--Store UVMap
-	-support gizmo? especially in scaling & others.
-		-probably not a good idea since gizmo is difficult to control.
-
-Set Geometry Bundle, Get Geometry Bundle
--to complete rewrite of tree generator
-
-**Transfer Attribute
--may help replace Temporal Sample Index
-
-**String
--now is a larger text box available for annotations
-
-Is Inside View
--https://projects.blender.org/blender/blender/pulls/158966
-	-is fixing sensor size for sensor fit.
-	-I made the fix, but now given fix upstream, i need to check new behavior.
+Compare Data Block
+-check more easily about string, if any input, etc?
 
 Geometry Component
 	-perhaps to simplify some nodes?
 -sample in proximity?
 -curve points preview?
-
-**Implicit Named Attribute input
--all UVMap
-	-UV deformer
-	-UV viewer
-	-Get UV seam...
--radius attribute?
-		-but what if no radius? currently lots fallback evalua of radius.
-	-Helical Connections
-		-scale mode
-	-Set Geo Radius
-	-
 
 **Deprecation after 5.2 LTS:
 -Set Curve Tilt Alignment
@@ -181,7 +166,11 @@ Geometry Component
 
 **Trash Code Removal
 -Helical Connections
+	-5.3
 	-Keep Curve Radius is replaced by Expansion Radius capture.
+-Is Inside View
+	-5.3
+	-auto function seems not needed?
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
