@@ -47,6 +47,15 @@ Compare Data Block
 
 Bevel Curve
 -rename: G_Curve to Mesh
+
+Is Enclosed Geometry
+-use field max to be independent on Geo.
+	-but mesh island support cost performance.
+-> use menu switch to support single Vs. islands.
+
+Loft Curves
+-attribute not preserved and propagated due completely dif geo.
+	-use transfer attribtue after converting geo to the same type seems to work
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
@@ -142,9 +151,6 @@ Add: New Tree Generator
 -use the new Hue/Saturation/Value for consistency in design.
 -only do that from 5.4
 
-**Deprecating due to existing Assets
--G_Edge Length.
-
 **Remove Trash Code:
 -cleaning up ZA_19 Curve Deformers
 -UV deformer
@@ -225,7 +231,7 @@ Array on Curves
 Inertial Deformer
 -have rough support for newly generated geometry.
 	-but in case of reversed index generation still tons of issue.
-	-Temporal Sampling seems not working great. It really needs Sample by ID.
+	-It really needs Sample by ID.
 
 Add Curve Branch
 -this one is broken now due to hierarchy issue?
@@ -287,7 +293,7 @@ Add: Mesh Tangent?
 Step Extrude
 -The stop mode currently doesn't support attribute for multiple polygons.
 
-Bevel Curve
+Curve to Mesh
 -give warning in Mesh Instances.
 	-curve to mesh will work in curve instances wtho realization.
 -when used as a modifier for mesh, it will cause lose of material.
