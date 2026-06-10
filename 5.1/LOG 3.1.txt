@@ -251,6 +251,10 @@ Point Instance Geometry
 Inertial Deformer
 -Is ID valid was not working since 5.0
 	-fixed.
+
+Follow Curves
+-Sampling color was passing to float.
+	-fixed
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:

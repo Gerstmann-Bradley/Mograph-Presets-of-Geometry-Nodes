@@ -56,6 +56,18 @@ Is Enclosed Geometry
 Loft Curves
 -attribute not preserved and propagated due completely dif geo.
 	-use transfer attribtue after converting geo to the same type seems to work
+
+**Array on Curves
+-adding Length, and modify old count algorithm.
+-add new loop settings to replace old menu method.
+
+Follow Curves
+-use new loop settings.
+-follow curves seems redundant given array on curves now.
+	-but Abs, Rel method seems still usable. not sure yet.
+
+Follow Path Constraints
+-use new loop settings
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
