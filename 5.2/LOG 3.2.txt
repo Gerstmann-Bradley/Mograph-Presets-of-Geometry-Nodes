@@ -68,6 +68,10 @@ Follow Curves
 
 Follow Path Constraints
 -use new loop settings
+
+solidify
+-was using is enclosed geometry for a check; ath not really functional.
+	-fix the warning.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
