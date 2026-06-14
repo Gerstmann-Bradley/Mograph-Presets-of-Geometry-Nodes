@@ -72,6 +72,13 @@ Follow Path Constraints
 solidify
 -was using is enclosed geometry for a check; ath not really functional.
 	-fix the warning.
+
+Remove: Force
+-in simulation zone better using accumulate force.
+-in XPBD better use custom force.
+
+Add: Pin Position
+-place holder since dev didn't include it.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
