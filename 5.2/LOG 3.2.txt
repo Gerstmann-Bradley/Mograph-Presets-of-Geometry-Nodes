@@ -79,6 +79,9 @@ Remove: Force
 
 Add: Pin Position
 -place holder since dev didn't include it.
+
+Random Color
+-change design to be the same as shader version.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
