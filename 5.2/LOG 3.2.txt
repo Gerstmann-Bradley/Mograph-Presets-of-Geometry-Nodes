@@ -82,6 +82,15 @@ Add: Pin Position
 
 Random Color
 -change design to be the same as shader version.
+
+Transfer Attributes
+	-needs to be doubled in simulation zone.
+-1st transfer for prev_attributes.
+	-2nd transfer to overwrite back the original attribute.
+--Inertial Deformer
+--Inertial Offset
+--Record Event
+--Record Velocity
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
