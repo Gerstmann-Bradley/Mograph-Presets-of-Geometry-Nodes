@@ -108,6 +108,10 @@ random rotation
 	-rewrite done, but performance basically the same.
 	-not sure how to deal with it.
 --use the new version
+
+grass generator
+-store UVMap panel
+-solution when count in 1.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
