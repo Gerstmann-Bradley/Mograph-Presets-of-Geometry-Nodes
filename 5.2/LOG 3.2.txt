@@ -91,11 +91,39 @@ Transfer Attributes
 --Inertial Offset
 --Record Event
 --Record Velocity
+
+Grass Generator
+-rewrite without FEEZ by default except for bend deformer.
+
+remap 0-1
+-use mix inside.
+
+Add: G_axes to rotation
+
+Face Points
+-for the moment use UV tangent node.
+
+random rotation
+-rewrite using axis to rotation for potentially better performance?
+	-rewrite done, but performance basically the same.
+	-not sure how to deal with it.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
 **String
 -now is a larger text box available for annotations
+
+fibonacci spiral
+-will flip the rotation, needs fix.
+
+Curve to Mesh
+-support flat thickness
+	-also suppport UV Map in that case, because seam generation can be tricky.
+
+**Shader Scene Time node
+
+Temporal Smooth Position
+-use transfer attribute?
 
 Text Mesh
 -support shearing for italic?
@@ -109,6 +137,13 @@ Add: Bridge Curve Loop?
 
 Curve Fill Fracture
 -also to enable split to instances for fracture-pieces?
+
+Dynamic Surface Sampling
+Dynamic Curve Sampling
+-a new approach using transfer attribute?
+	-transfer dynamic attribute to static one.
+ 	-and my original geometry to sample the static one.
+		-can replaces lots of redundant sample index by index?
 
 Fill Curve Tube
 -rewrite to also decide whether to scale or set the radius?
@@ -149,17 +184,13 @@ Parenting
 	-what if evaluating as point Vs. evaluate its geometry?
 	-what if the object itself is parented to another??
 
-Bevel Curve
+Curve to Mesh
 -implement Even Thickness?
--renaming?
 
 Add: Set Rotation Secondary Axis
 -use align rotation to vector with pivot axis?
 -design use set curve normal as an example.
 	-normal, vector (vector + object), etc?
-
-Radial Array
--curve circle should have normal facing upwards for easier understanding of axes?
 
 Dynamic Curve Sampling
 -add warning as in DSS.
@@ -169,6 +200,9 @@ Add: Project UV from View
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
+
+Radial Array
+-curve circle should have normal facing upwards for easier understanding of axes?
 
 Curve Linear
 -The curve has normal inherently facing downwards, why?
@@ -219,7 +253,14 @@ Add: New Tree Generator
 	-warning only upto 5.2, remove in 5.4.
 -Noise 3D
 -Voronoi 3D
+
+Rasterize Point
+-to replace Layered Proximity Falloff?
+
+**Deprecation in 6.0
 -Bevel Curve
+-Align Rotation on Curves
+	-warning up to 5.4, remove in 5.5
 
 **Trash Code Removal
 -Helical Connections
@@ -228,6 +269,8 @@ Add: New Tree Generator
 -Is Inside View
 	-5.3
 	-auto function seems not needed?
+-Array on Curve
+	-removing old count algorithm...
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
