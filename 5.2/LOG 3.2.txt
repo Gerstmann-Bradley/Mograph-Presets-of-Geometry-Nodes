@@ -125,6 +125,9 @@ Curve to Mesh
 x-> directly using quadrilaterial will have issue about resampling.
 	-a better thought is to use solidify afterwards?
 	-but it automatically fills the caps
+
+World BG
+-vector map range should not clamp.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
