@@ -131,6 +131,17 @@ World BG
 
 Fill Volume
 -allow field input
+
+Points Distribute
+-grid mode needs to disable mesh and seleciton
+	-dependency due to warning.
+-expose voxel amount
+
+Set Curve Tilt by Normal
+-object remove label.
+-tilt need a different implementation.
+	-so that downstream tilt won't overwrite the settings.
+	-otherwise helical connections will have to add tilt on top of its tilt.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
