@@ -142,6 +142,13 @@ Set Curve Tilt by Normal
 -tilt need a different implementation.
 	-so that downstream tilt won't overwrite the settings.
 	-otherwise helical connections will have to add tilt on top of its tilt.
+
+modulo falloff
+-use time inside
+
+Mesh Falloff
+-disable scale offset warning.
+-make node wider.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_14
 To Do:
