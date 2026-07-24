@@ -149,8 +149,11 @@ modulo falloff
 Mesh Falloff
 -disable scale offset warning.
 -make node wider.
+
+Grass Generator
+-Duplicate mode should use a different spread? or even totally remove it?
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_14
+The Newest Test Demo Tree: ZG_16
 To Do:
 **String
 -now is a larger text box available for annotations
@@ -158,18 +161,26 @@ To Do:
 fibonacci spiral
 -will flip the rotation, needs fix.
 
-Curve to Mesh
--support flat thickness
-	-also suppport UV Map in that case, because seam generation can be tricky.
-
-**Shader Scene Time node
-
 Temporal Smooth Position
 -use transfer attribute?
+
+Add: Duplicate Points
+-to increase point resolution from simulaiton.
 
 Text Mesh
 -support shearing for italic?
     -new bounding box falloff method may work great for lines too?
+
+Add: G_set position
+-support instane automatically.
+-remember to set ID using captured index.
+	-i forgot what it means in this note.
+
+**Curve Deformer
+-for each element optimization without realize.
+
+**Bend Deformer
+-for each element optimization without realize.
 
 Add: Bridge Curve Loop?
 -curve version to bridge edge loop, etc.
