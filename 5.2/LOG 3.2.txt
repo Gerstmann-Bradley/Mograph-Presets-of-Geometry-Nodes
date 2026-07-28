@@ -152,6 +152,9 @@ Mesh Falloff
 
 Grass Generator
 -Duplicate mode should use a different spread? or even totally remove it?
+
+Mix Mesh Normal by Proximity
+-fix from proximity falloff change
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
