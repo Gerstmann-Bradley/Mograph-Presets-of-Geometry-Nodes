@@ -155,6 +155,13 @@ Grass Generator
 
 Mix Mesh Normal by Proximity
 -fix from proximity falloff change
+
+G_Random Per Island
+S_Random Color
+S_Random Value
+-rewrite using a rounding value logic on index.
+	-shader node doesn't have enable output.
+	-shader node doesn't have warning node
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
@@ -164,8 +171,17 @@ To Do:
 fibonacci spiral
 -will flip the rotation, needs fix.
 
+Face Points
+-UV method can still offer X and Y differences.
+
 Temporal Smooth Position
 -use transfer attribute?
+
+Layered Proximity
+-shouldn't they are added instead of displacement on displacement?
+
+Directional Falloff
+-add animation factor?
 
 Add: Duplicate Points
 -to increase point resolution from simulaiton.
@@ -309,6 +325,9 @@ Add: New Tree Generator
 	-warning only upto 5.2, remove in 5.4.
 -Noise 3D
 -Voronoi 3D
+-S_Randomness
+	-there was no warning, but it must be deprecated on time.
+	-kept for 5.2 for linking.
 
 Rasterize Point
 -to replace Layered Proximity Falloff?
@@ -327,6 +346,8 @@ Rasterize Point
 	-auto function seems not needed?
 -Array on Curve
 	-removing old count algorithm...
+-Random Per Island
+	-simplify .G_Store Seed
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
