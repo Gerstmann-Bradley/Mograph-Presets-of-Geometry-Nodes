@@ -162,6 +162,14 @@ S_Random Value
 -rewrite using a rounding value logic on index.
 	-shader node doesn't have enable output.
 	-shader node doesn't have warning node
+
+Random Per Island
+-use RPI instead of IDs.
+	-for a unique name.
+-add seed; found to support up to power of 6.
+
+S_randomness
+-needs fix on usage inference on absolute var.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
