@@ -170,17 +170,61 @@ Random Per Island
 
 S_randomness
 -needs fix on usage inference on absolute var.
+
+Random Per Island
+-fix RPI for Points
+	-mesh island may not exist for point.
+
+Get UV Seam
+-update to remove Geometry input.
+	-performance will be faster.
+-already proven to be 2X faster than Is UV Split.
+
+
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
+UV deformer
+-Can from custom have option to support BBox or custom geo.
+	-select object/geo.
+	-select vector / separated vector.
+-Bounding Box evalua should support offset?
+-pop up warnings for overallped UV.
+	-use index nearest and evaluate at index to find?
+
+Paint Wave Solver
+-if the temporal sample index is not working properly like for boolean object.
+	-how to control outside?
+	-> menu with nearest?
+
+FEEZ store named attribute on point domain.
+-can FEEZ capture and transfer attribute on point domain?
+
 **String
 -now is a larger text box available for annotations
+
+Is Inside Volume
+x-SDF method vs. Ray Cast method
+	-SDF cost based on the sampled result.
+		-raycast method cost based on the original mesh density.
+	-what if islands?
+	-SDF method could be more accurate in the case of suzanne.
+		-but I think it's unlikely to happen in common case?
+	-build test but not to do it.
+
 
 fibonacci spiral
 -will flip the rotation, needs fix.
 
+Random Per Island
+-deprecate value method completely?
+-allows setting up island for different domain really?
+	-ID using mesh island or actual stable ID? etc.
+
 Face Points
 -UV method can still offer X and Y differences.
+
+
 
 Temporal Smooth Position
 -use transfer attribute?
@@ -203,11 +247,12 @@ Add: G_set position
 -remember to set ID using captured index.
 	-i forgot what it means in this note.
 
-**Curve Deformer
--for each element optimization without realize.
-
-**Bend Deformer
--for each element optimization without realize.
+**FEEZ in Instance Domain
+-Curve Deformer
+	-for each element optimization without realize.
+-Bend Deformer
+	-for each element optimization without realize.
+-Instance Bounding Box?
 
 Add: Bridge Curve Loop?
 -curve version to bridge edge loop, etc.
@@ -237,20 +282,10 @@ Dynamic Sampling nodes
 Woven Surface
 -allow vector dimension? for length UV beyond 0-1?
 
-UV deformer
--Can from custom have option to support BBox or custom geo.
--Bounding Box evalua should support offset?
+
 
 New Grid Nodes to update old grid preset.
 -dilate/erode for offset.
-
-**grass generator
-	-rewrite since bend deformer support without FEEZ now?
-
-Paint Wave Solver
--if the temporal sample index is not working properly like for boolean object.
-	-how to control outside?
-	-> menu with nearest?
 
 Snap Function
 -can it be made smoother?
