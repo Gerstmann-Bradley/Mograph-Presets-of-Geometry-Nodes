@@ -179,6 +179,9 @@ Get UV Seam
 -update to remove Geometry input.
 	-performance will be faster.
 -already proven to be 2X faster than Is UV Split.
+
+Knit Unit
+-fix fatal bug due to curve linear decimal and Grid decimal.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:

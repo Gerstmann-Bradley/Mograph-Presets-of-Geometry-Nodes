@@ -258,6 +258,9 @@ Follow Curves
 
 Mix Mesh Normal by Proximity
 -fix from proximity falloff change
+
+Knit Unit
+-fix fatal bug due to curve linear decimal and Grid decimal.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:
