@@ -182,6 +182,12 @@ Get UV Seam
 
 Knit Unit
 -fix fatal bug due to curve linear decimal and Grid decimal.
+
+UV deformer
+-Can from custom have option to support BBox or custom geo.
+	-select object/geo.
+	-select vector / separated vector.
+-default UV add margin option
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
