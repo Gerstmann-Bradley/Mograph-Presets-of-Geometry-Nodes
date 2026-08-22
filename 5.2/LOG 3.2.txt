@@ -188,16 +188,22 @@ UV deformer
 	-select object/geo.
 	-select vector / separated vector.
 -default UV add margin option
+
+Set Curve Tilt by Normal
+-add Constraint to Tangent option.
+	-default on since resolve many issues like 0-disappearing & others.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
-UV deformer
--Can from custom have option to support BBox or custom geo.
-	-select object/geo.
-	-select vector / separated vector.
+UV Defromer
 -Bounding Box evalua should support offset?
--pop up warnings for overallped UV.
+-pop up warnings for overlaped UV?
 	-use index nearest and evaluate at index to find?
+-remove stretching part for boundary.
+	-edge length method.
+	-curve????
+
+Add: G_Principle Component?
 
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
@@ -218,7 +224,6 @@ x-SDF method vs. Ray Cast method
 	-SDF method could be more accurate in the case of suzanne.
 		-but I think it's unlikely to happen in common case?
 	-build test but not to do it.
-
 
 fibonacci spiral
 -will flip the rotation, needs fix.
@@ -357,12 +362,10 @@ Add: New Tree Generator
 	-Set Curve Tilt by Normal
 -Random Helices Distribution
 	-Random Spirals
-	-remove in 5.2
 -Set particle parameters
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
 -Hair on Surface
 	-integrated into Hair on Geometry.
-	-remove in 5.2
 -Spline Info
 	-Curve Info
 -G_Boundary Selection
@@ -396,6 +399,7 @@ Rasterize Point
 	-removing old count algorithm...
 -Random Per Island
 	-simplify .G_Store Seed
+-Set Curve Tilt by Normal
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
