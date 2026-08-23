@@ -192,6 +192,12 @@ UV deformer
 Set Curve Tilt by Normal
 -add Constraint to Tangent option.
 	-default on since resolve many issues like 0-disappearing & others.
+
+Instance Bounding Box
+-add warning for Non-Instance input on Instance domain.
+-Radius input shouldn't hide value.
+-make sure both Geometry and Bounding box can visualize Min & Max.
+-as a whole mode shouldn't have realize instance option because already did.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
