@@ -194,10 +194,12 @@ Set Curve Tilt by Normal
 	-default on since resolve many issues like 0-disappearing & others.
 
 Instance Bounding Box
--add warning for Non-Instance input on Instance domain.
 -Radius input shouldn't hide value.
 -make sure both Geometry and Bounding box can visualize Min & Max.
--as a whole mode shouldn't have realize instance option because already did.
+
+3D viewer
+-add warning for Non-Instance input on Instance domain.
+-3D viewer must have at least 1 point in case constant vector input
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
