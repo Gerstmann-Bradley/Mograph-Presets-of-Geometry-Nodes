@@ -200,6 +200,11 @@ Instance Bounding Box
 3D viewer
 -add warning for Non-Instance input on Instance domain.
 -3D viewer must have at least 1 point in case constant vector input
+
+UV Deformer
+-use boolean cutter for mesh
+	--auto-detection for manifold boolean.
+	--flip face for wrongly sampled UV Surface normal.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_16
 To Do:
