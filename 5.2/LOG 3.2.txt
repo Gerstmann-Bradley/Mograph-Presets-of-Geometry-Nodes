@@ -205,18 +205,38 @@ UV Deformer
 -use boolean cutter for mesh
 	--auto-detection for manifold boolean.
 	--flip face for wrongly sampled UV Surface normal.
-****************************************************************************************************
-The Newest Test Demo Tree: ZG_16
-To Do:
-UV Defromer
--Bounding Box evalua should support offset?
--pop up warnings for overlaped UV?
-	-use index nearest and evaluate at index to find?
--remove stretching part for boundary.
-	-edge length method.
-	-curve????
 
+UV Deformer
+-preview, toggle to include radius influence or not.
+--curve can go from inner geometry and extend itself towards the boundary?
+	-use sample nearest instead.
+	--also make it work on edge.
+	x-point seems not suitable, because not sure how much distance ok.
+
+**merge points/merge by ID
+-Curve to Mesh
+	-need to think more.
+x-mirror modifier
+	-boolean on curve is quite difficult to be successful.
+	-improved separation part.
+	-merge ID is failing
+--Planar Remesh
+	-cluster by distance, but no longer needed set position.
+--Text Mesh
+	-use cluster by distance.
+	-solve the one for solidify.
+--Solidify
+	-'ve made sure comparable performance, and successful merge.
+x-Screw
+	-not requiring a sophisticated one.
+****************************************************************************************************
+The Newest Test Demo Tree: ZG_17
+To Do:
 Add: G_Principle Component?
+-the reason to add it is to really ensure the box and vector?
+	-axis can also be used for axis angle to rotation.
+-> the invert rotation and add rotation part is a bit convoluted and better handle with preset.
+-also mode for both geometry and vector?
 
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
@@ -368,6 +388,7 @@ Add: New Tree Generator
 	-origin preview, the position input for points.
 -Mirror Modifier
 	-some constant socket on closure is no longer used.
+	-failed implementation of merge points.
 ********************************************************
 5.3:
 **Deprecation in 5.3:
@@ -392,6 +413,9 @@ Add: New Tree Generator
 -S_Randomness
 	-there was no warning, but it must be deprecated on time.
 	-kept for 5.2 for linking.
+
+5.5:
+-ZC_05_UV Deformer
 
 Rasterize Point
 -to replace Layered Proximity Falloff?
