@@ -229,6 +229,15 @@ x-mirror modifier
 	-'ve made sure comparable performance, and successful merge.
 x-Screw
 	-not requiring a sophisticated one.
+
+Curve Deformer
+-absolute should be the default mode.
+
+**Mirror Modifier
+-more complete support for curve using mesh boolean.
+-support manifold boolean where applicable for fast performance.
+-curve boolean support preservation of radius and normal.
+-add panel to support midline merge
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
