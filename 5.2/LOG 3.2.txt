@@ -213,6 +213,15 @@ UV Deformer
 	--also make it work on edge.
 	x-point seems not suitable, because not sure how much distance ok.
 
+Is Inside Volume
+x-SDF method vs. Ray Cast method
+	-SDF cost based on the sampled result.
+		-raycast method cost based on the original mesh density.
+	-what if islands?
+	-SDF method could be more accurate in the case of suzanne.
+		-but I think it's unlikely to happen in common case?
+	-build test but not to do it.
+
 **merge points/merge by ID
 -Curve to Mesh
 	-need to think more.
@@ -238,6 +247,10 @@ Curve Deformer
 -support manifold boolean where applicable for fast performance.
 -curve boolean support preservation of radius and normal.
 -add panel to support midline merge
+
+**Curve to Mesh
+-UVMap improvement for round cap & flat cap.
+	-new algorithm required to manually calculate flat cap circumference.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
