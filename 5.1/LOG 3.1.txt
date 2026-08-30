@@ -261,6 +261,9 @@ Mix Mesh Normal by Proximity
 
 Knit Unit
 -fix fatal bug due to curve linear decimal and Grid decimal.
+
+Rod
+-fix parameter
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_12.
 To Do:

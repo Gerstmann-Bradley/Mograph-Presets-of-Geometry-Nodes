@@ -284,6 +284,9 @@ Rod
 -fixed scaling issue
 -UI re-organize, add panel to store UVMap
 -UV improved due to curve to mesh.
+
+Mirror Modifier
+-support Edge & vertices boolean.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
@@ -302,11 +305,6 @@ Point Instance Geometry
 Face Points
 Grid Array, Hexagonal Array, etc.
 -also add option to influence the radius of curve?
-
-Mirror Modifier
--edge can't handle boolean.
-	-> curves not simply to edge but to thin tube. then merged back to curve.
-	-without merge by ID, sometimes it's over mergring and disrupt radius.
 
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
@@ -477,14 +475,14 @@ Inertial Offset
 -quaternion inertia
 	-through vector is a bad idea.
 	-inertia has to be done on quaternion itself.
-		-
--quaternion offset should be done by mixing rotation with a overshoot factor.
+-quaternion offset should be done by mixing rotation with a overshoot factor?
 
 Scale Selection
 -shrink float has issue in low iterations causing jagged edges.
 	-implement so as float inverter by itself can cause huge subtraction of values.
 
-
+Solidify
+-In Instance Mode, Merge by Distance Not Working.
 
 Solidified Outline
 -it can't really be made into sequence, likely because of double extrusion.
@@ -545,9 +543,6 @@ Dynamic Space Sampling
 Tracer
 -I think there are cases you don't want to delete trace when they are deleted?
 
-Solidify
--In Instance Mode, Merge by Distance Not Working.
-
 Freeze Geometry
 -what if different geometry requiring different status of freeze?
 	-switch node can't accept Field.
@@ -557,9 +552,6 @@ Freeze Geometry
 Join Particles
 -Should Inheret the previous velocity?
 	-currently the velocity must be newly written.
-
-Add: Mesh Tangent?
--How to make sure between vertex & face tangent?
 
 Step Extrude
 -The stop mode currently doesn't support attribute for multiple polygons.

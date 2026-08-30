@@ -1258,6 +1258,9 @@ Inertial Deformer
 Follow Curves
 -Sampling color was passing to float.
 	-fixed
+
+Rod
+-fix parameter
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_11.
 To Do:
