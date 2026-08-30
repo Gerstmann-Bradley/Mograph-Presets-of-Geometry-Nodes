@@ -251,14 +251,34 @@ Curve Deformer
 **Curve to Mesh
 -UVMap improvement for round cap & flat cap.
 	-new algorithm required to manually calculate flat cap circumference.
+-both round & flat cap UV are now continuous to the body.
+	-flat cap is flattened round for radial UV upstream.
+-length is made sure more correct than before.
+	-circular Length is calculated by formular
+	-others are correctly captured by spline length.
+
+S_Polar Coordinate
+-add clear description to cyclic mode & X & Y toggle.
+	-they are made in case a linear UV geometry has been deformed into cyclic.
+-test node tree improvement ZSA_06
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
+**Menu Tooltip update
+	-each menu item should have their description
+--UV Deformer
+--Is Inside Volume
+
 Add: G_Principle Component?
 -the reason to add it is to really ensure the box and vector?
 	-axis can also be used for axis angle to rotation.
 -> the invert rotation and add rotation part is a bit convoluted and better handle with preset.
 -also mode for both geometry and vector?
+
+Point Instance Geometry
+Face Points
+Grid Array, Hexagonal Array, etc.
+-also add option to influence the radius of curve?
 
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
@@ -271,22 +291,8 @@ FEEZ store named attribute on point domain.
 **String
 -now is a larger text box available for annotations
 
-Is Inside Volume
-x-SDF method vs. Ray Cast method
-	-SDF cost based on the sampled result.
-		-raycast method cost based on the original mesh density.
-	-what if islands?
-	-SDF method could be more accurate in the case of suzanne.
-		-but I think it's unlikely to happen in common case?
-	-build test but not to do it.
-
 fibonacci spiral
 -will flip the rotation, needs fix.
-
-Random Per Island
--deprecate value method completely?
--allows setting up island for different domain really?
-	-ID using mesh island or actual stable ID? etc.
 
 Face Points
 -UV method can still offer X and Y differences.
@@ -347,8 +353,6 @@ Dynamic Sampling nodes
 Woven Surface
 -allow vector dimension? for length UV beyond 0-1?
 
-
-
 New Grid Nodes to update old grid preset.
 -dilate/erode for offset.
 
@@ -396,10 +400,6 @@ Add: S_Parallax Occlusion
 Add: New Tree Generator
 -attach in sequence. using bundle?
 
-**Random Color
--use the new Hue/Saturation/Value for consistency in design.
--only do that from 5.4
-
 **Remove Trash Code:
 -cleaning up ZA_19 Curve Deformers
 -UV deformer
@@ -409,8 +409,7 @@ Add: New Tree Generator
 		-> should be removed in 5.2 LTS
 	-origin preview, the position input for points.
 -Mirror Modifier
-	-some constant socket on closure is no longer used.
-	-failed implementation of merge points.
+	-red frames are no longer needed.
 ********************************************************
 5.3:
 **Deprecation in 5.3:
@@ -436,16 +435,23 @@ Add: New Tree Generator
 	-there was no warning, but it must be deprecated on time.
 	-kept for 5.2 for linking.
 
-5.5:
--ZC_05_UV Deformer
+**Index Switch & Switch Node in shader
+-polar coordinate
 
-Rasterize Point
--to replace Layered Proximity Falloff?
+**Deprecation in 5.5:
+-ZC_05_UV Deformer
+-Random Per Island
+	-deprecate value method completely?
+	-allows setting up island for different domain really?
+		-ID using mesh island or actual stable ID? etc.
 
 **Deprecation in 6.0
 -Bevel Curve
 -Align Rotation on Curves
-	-warning up to 5.4, remove in 5.5
+	-warning up to 5.4, remove in 5.5?
+
+Rasterize Point
+-to replace Layered Proximity Falloff?
 
 **Trash Code Removal
 -Helical Connections
@@ -566,11 +572,6 @@ Curve to Mesh
 	-because of Mesh to Curve step.
 ****************************************************************************************************
 Investigation:
-Bevel Curve
--investigate UV Length Multiplier.
-	-seems if field is in scale it will be as if it's determined with statistic?
-	-but generally still working.
-
 Hair on Geometry
 -investigate why subdivide curve is causing issue without capturing.
 
