@@ -261,6 +261,23 @@ S_Polar Coordinate
 -add clear description to cyclic mode & X & Y toggle.
 	-they are made in case a linear UV geometry has been deformed into cyclic.
 -test node tree improvement ZSA_06
+
+Layered Proximity
+x-shouldn't they are added instead of displacement on displacement?
+	-it was not doing displacement within the zone, so won't change reuslt
+
+Temporal Smooth Position
+-use transfer attribute
+-fixed newly joined geometry in temporal smooth.
+
+G_Instance Bounds
+-support Local and Transformed.
+	-original local better used in FEEZ.
+
+Bend Deformer
+-optimized with Single to support FEEZ.
+	-found to be much faster than the original approach.
+-original function is intact and can be independent from the new implementation.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
@@ -400,16 +417,7 @@ Add: S_Parallax Occlusion
 Add: New Tree Generator
 -attach in sequence. using bundle?
 
-**Remove Trash Code:
--cleaning up ZA_19 Curve Deformers
--UV deformer
--Bend Deformer
-	-Clean up ZB_11 group.
-	-the "captured scale" is not used as multiplied early with angle.
-		-> should be removed in 5.2 LTS
-	-origin preview, the position input for points.
--Mirror Modifier
-	-red frames are no longer needed.
+
 ********************************************************
 5.3:
 **Deprecation in 5.3:
@@ -450,6 +458,7 @@ Add: New Tree Generator
 -Align Rotation on Curves
 	-warning up to 5.4, remove in 5.5?
 
+
 Rasterize Point
 -to replace Layered Proximity Falloff?
 
@@ -465,6 +474,18 @@ Rasterize Point
 -Random Per Island
 	-simplify .G_Store Seed
 -Set Curve Tilt by Normal
+-cleaning up ZA_19 Curve Deformers
+-UV deformer
+-Bend Deformer
+	-Clean up ZB_11 group.
+	-the "captured scale" is not used as multiplied early with angle.
+		-> should be removed in 5.2 LTS
+	-origin preview, the position input for points.
+-Mirror Modifier
+	-red frames are no longer needed.
+-Bend Deformer
+	-old instancing method can be completely removed.
+	-position recovery can be made into the .unit for easier management.
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
