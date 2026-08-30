@@ -277,7 +277,13 @@ G_Instance Bounds
 Bend Deformer
 -optimized with Single to support FEEZ.
 	-found to be much faster than the original approach.
--original function is intact and can be independent from the new implementation.
+-Optimize Instancing mode to use the newest FEEZ approach.
+	-for some reason not as fast as single mode #163300
+
+Rod
+-fixed scaling issue
+-UI re-organize, add panel to store UVMap
+-UV improved due to curve to mesh.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
@@ -297,16 +303,15 @@ Face Points
 Grid Array, Hexagonal Array, etc.
 -also add option to influence the radius of curve?
 
+Mirror Modifier
+-edge can't handle boolean.
+	-> curves not simply to edge but to thin tube. then merged back to curve.
+	-without merge by ID, sometimes it's over mergring and disrupt radius.
+
 Paint Wave Solver
 -if the temporal sample index is not working properly like for boolean object.
 	-how to control outside?
 	-> menu with nearest?
-
-FEEZ store named attribute on point domain.
--can FEEZ capture and transfer attribute on point domain?
-
-**String
--now is a larger text box available for annotations
 
 fibonacci spiral
 -will flip the rotation, needs fix.
@@ -314,15 +319,11 @@ fibonacci spiral
 Face Points
 -UV method can still offer X and Y differences.
 
-Temporal Smooth Position
--use transfer attribute?
-
-Layered Proximity
--shouldn't they are added instead of displacement on displacement?
-
 Directional Falloff
 -add animation factor?
-
+	-there may be cases not simply covered by bounding box falloff?
+-or add extension bounds setting for Bounding Box falloff?
+		
 Add: Duplicate Points
 -to increase point resolution from simulaiton.
 
@@ -330,26 +331,22 @@ Text Mesh
 -support shearing for italic?
     -new bounding box falloff method may work great for lines too?
 
-Add: G_set position
--support instane automatically.
--remember to set ID using captured index.
-	-i forgot what it means in this note.
-
 **FEEZ in Instance Domain
 -Curve Deformer
-	-for each element optimization without realize.
--Bend Deformer
 	-for each element optimization without realize.
 -Instance Bounding Box?
 
 Add: Bridge Curve Loop?
+-better to support multi-input socket?
 -curve version to bridge edge loop, etc.
+-kind of skeleton version of loft curve?
 
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
 
 Curve Fill Fracture
 -also to enable split to instances for fracture-pieces?
+	-will be too slow, no?
 
 Dynamic Surface Sampling
 Dynamic Curve Sampling
@@ -360,9 +357,6 @@ Dynamic Curve Sampling
 
 Fill Curve Tube
 -rewrite to also decide whether to scale or set the radius?
-
-UV Deformer
--allow length UV?
 
 Dynamic Sampling nodes
 -selection may need to be a float for better flexibility.
@@ -376,17 +370,10 @@ New Grid Nodes to update old grid preset.
 Snap Function
 -can it be made smoother?
 
-Rod
--using Blender's curve to tube for better UV?
-	-need performance test.
-
 Parenting
 -Object should always use relative?
 	-what if evaluating as point Vs. evaluate its geometry?
 	-what if the object itself is parented to another??
-
-Curve to Mesh
--implement Even Thickness?
 
 Add: Set Rotation Secondary Axis
 -use align rotation to vector with pivot axis?
@@ -402,11 +389,7 @@ Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
 
-Radial Array
--curve circle should have normal facing upwards for easier understanding of axes?
-
 Curve Linear
--The curve has normal inherently facing downwards, why?
 -should I set radius at low?
 
 Attribute Viewer
@@ -417,9 +400,12 @@ Add: S_Parallax Occlusion
 Add: New Tree Generator
 -attach in sequence. using bundle?
 
-
+**Remove Trash Code:
 ********************************************************
 5.3:
+Curve to Mesh
+-support Miter Scale for Even Thickness.
+
 **Deprecation in 5.3:
 -Set Curve Tilt Alignment
 	-Set Curve Tilt by Normal
@@ -442,25 +428,11 @@ Add: New Tree Generator
 -S_Randomness
 	-there was no warning, but it must be deprecated on time.
 	-kept for 5.2 for linking.
+-Bend Deformer
+	-moving to use new FEEZ method. seems good for all cases?
 
 **Index Switch & Switch Node in shader
 -polar coordinate
-
-**Deprecation in 5.5:
--ZC_05_UV Deformer
--Random Per Island
-	-deprecate value method completely?
-	-allows setting up island for different domain really?
-		-ID using mesh island or actual stable ID? etc.
-
-**Deprecation in 6.0
--Bevel Curve
--Align Rotation on Curves
-	-warning up to 5.4, remove in 5.5?
-
-
-Rasterize Point
--to replace Layered Proximity Falloff?
 
 **Trash Code Removal
 -Helical Connections
@@ -476,16 +448,25 @@ Rasterize Point
 -Set Curve Tilt by Normal
 -cleaning up ZA_19 Curve Deformers
 -UV deformer
+-Mirror Modifier
+	-red frames are no longer needed.
 -Bend Deformer
 	-Clean up ZB_11 group.
 	-the "captured scale" is not used as multiplied early with angle.
 		-> should be removed in 5.2 LTS
 	-origin preview, the position input for points.
--Mirror Modifier
-	-red frames are no longer needed.
--Bend Deformer
-	-old instancing method can be completely removed.
-	-position recovery can be made into the .unit for easier management.
+
+**Deprecation in 5.5:
+-ZC_05_UV Deformer
+-Random Per Island
+	-deprecate value method completely?
+	-allows setting up island for different domain really?
+		-ID using mesh island or actual stable ID? etc.
+
+**Deprecation in 6.0
+-Bevel Curve
+-Align Rotation on Curves
+	-warning up to 5.4, remove in 5.5?
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
@@ -503,10 +484,7 @@ Scale Selection
 -shrink float has issue in low iterations causing jagged edges.
 	-implement so as float inverter by itself can cause huge subtraction of values.
 
-Mirror Modifier
--edge can't handle boolean.
-	-> curves not simply to edge but to thin tube. then merged back to curve.
-	-without merge by ID, sometimes it's over mergring and disrupt radius.
+
 
 Solidified Outline
 -it can't really be made into sequence, likely because of double extrusion.
