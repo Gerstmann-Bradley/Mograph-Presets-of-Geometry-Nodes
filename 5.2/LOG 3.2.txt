@@ -315,8 +315,16 @@ Face Points
 -clean up using closure
 -UV method can still offer X and Y differences.
 	-UV tangent pointing to greater-X, it should point to greater Y.
+
+**FEEZ in Instance Domain
+x-Curve Deformer
+	-lots of sampling function inside, difc to access withotu realize.
+x-Instance Bounding Box
+	-no improvement of FEEZ is suitable.
+	-but made clean up and optimization.
+	-fixed a bug due to Instance Bounds improvements.
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_17
+The Newest Test Demo Tree: ZG_18
 To Do:
 **Menu Tooltip update
 	-each menu item should have their description
@@ -339,10 +347,7 @@ Directional Falloff
 	-there may be cases not simply covered by bounding box falloff?
 -or add extension bounds setting for Bounding Box falloff?
 
-**FEEZ in Instance Domain
--Curve Deformer
-	-for each element optimization without realize.
--Instance Bounding Box?
+
 
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
@@ -443,7 +448,9 @@ Curve Split
 -Set Curve Tilt by Normal?
 	-rather warning than something dumb imo.
 -cleaning up ZA_19 Curve Deformers
--UV deformer?
+-UV deformer
+	-5.3
+	-marked red frames
 -Mirror Modifier
 	-red frames are no longer needed.
 -Bend Deformer
