@@ -310,6 +310,11 @@ Woven Surface
 
 UV Deformer
 -clean up closure dimension with math maximum.
+
+Face Points
+-clean up using closure
+-UV method can still offer X and Y differences.
+	-UV tangent pointing to greater-X, it should point to greater Y.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
@@ -323,9 +328,6 @@ Add: G_Principle Component?
 	-axis can also be used for axis angle to rotation.
 -> the invert rotation and add rotation part is a bit convoluted and better handle with preset.
 -also mode for both geometry and vector?
-
-Face Points
--UV method can still offer X and Y differences.
 
 Point Instance Geometry
 Face Points
@@ -432,13 +434,16 @@ Curve Split
 -Is Inside View
 	-5.3
 	-auto function seems not needed?
+-Face Point
+	-5.3
 -Array on Curve
 	-removing old count algorithm...
 -Random Per Island
 	-simplify .G_Store Seed
--Set Curve Tilt by Normal
+-Set Curve Tilt by Normal?
+	-rather warning than something dumb imo.
 -cleaning up ZA_19 Curve Deformers
--UV deformer
+-UV deformer?
 -Mirror Modifier
 	-red frames are no longer needed.
 -Bend Deformer
