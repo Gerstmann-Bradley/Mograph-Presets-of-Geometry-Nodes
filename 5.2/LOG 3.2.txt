@@ -323,6 +323,12 @@ x-Instance Bounding Box
 	-no improvement of FEEZ is suitable.
 	-but made clean up and optimization.
 	-fixed a bug due to Instance Bounds improvements.
+
+Add: G_Principle Component?
+-the reason to add it is to really ensure the box and vector?
+	-axis can also be used for axis angle to rotation.
+-> the invert rotation and add rotation part is a bit convoluted and better handle with preset.
+-also mode for both geometry and vector?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
@@ -331,52 +337,15 @@ To Do:
 --UV Deformer
 --Is Inside Volume
 
-Add: G_Principle Component?
--the reason to add it is to really ensure the box and vector?
-	-axis can also be used for axis angle to rotation.
--> the invert rotation and add rotation part is a bit convoluted and better handle with preset.
--also mode for both geometry and vector?
-
-Point Instance Geometry
-Face Points
-Grid Array, Hexagonal Array, etc.
--also add option to influence the radius of curve?
-
-Directional Falloff
--add animation factor?
-	-there may be cases not simply covered by bounding box falloff?
--or add extension bounds setting for Bounding Box falloff?
-
-
-
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
-
-Curve Fill Fracture
--also to enable split to instances for fracture-pieces?
-	-will be too slow, no?
-
-Dynamic Surface Sampling
-Dynamic Curve Sampling
--a new approach using transfer attribute?
-	-transfer dynamic attribute to static one.
- 	-and my original geometry to sample the static one.
-		-can replaces lots of redundant sample index by index?
--selection may need to be a float for better flexibility?
-
-Fill Curve Tube
--rewrite to also decide whether to scale or set the radius?
 
 New Grid Nodes to update old grid preset.
 -dilate/erode for offset.
 
-Snap Function
--can it be made smoother?
-
-Parenting
--Object should always use relative?
-	-what if evaluating as point Vs. evaluate its geometry?
-	-what if the object itself is parented to another??
+Curve Fill Fracture
+-also to enable split to instances for fracture-pieces?
+	-will be too slow, no?
 
 Add: Set Rotation Secondary Axis
 -use align rotation to vector with pivot axis?
