@@ -267,7 +267,7 @@ x-shouldn't they are added instead of displacement on displacement?
 	-it was not doing displacement within the zone, so won't change reuslt
 
 Temporal Smooth Position
--use transfer attribute
+-use transfer attributes
 -fixed newly joined geometry in temporal smooth.
 
 G_Instance Bounds
@@ -287,6 +287,19 @@ Rod
 
 Mirror Modifier
 -support Edge & vertices boolean.
+
+fibonacci spiral
+-improvement on inner radius setting & allow swap radii.
+
+Radial array
+-fix fibonacci spiral, made into new mode for more general setting change.
+
+Bend Deformer
+-add a negate toggle.
+
+Paint Wave Solver
+--use Transfer Attribtues
+	-spread mode doesn't work with it, even if double transfer.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
@@ -306,14 +319,6 @@ Face Points
 Grid Array, Hexagonal Array, etc.
 -also add option to influence the radius of curve?
 
-Paint Wave Solver
--if the temporal sample index is not working properly like for boolean object.
-	-how to control outside?
-	-> menu with nearest?
-
-fibonacci spiral
--will flip the rotation, needs fix.
-
 Face Points
 -UV method can still offer X and Y differences.
 
@@ -321,13 +326,6 @@ Directional Falloff
 -add animation factor?
 	-there may be cases not simply covered by bounding box falloff?
 -or add extension bounds setting for Bounding Box falloff?
-		
-Add: Duplicate Points
--to increase point resolution from simulaiton.
-
-Text Mesh
--support shearing for italic?
-    -new bounding box falloff method may work great for lines too?
 
 **FEEZ in Instance Domain
 -Curve Deformer
@@ -378,31 +376,29 @@ Add: Set Rotation Secondary Axis
 -design use set curve normal as an example.
 	-normal, vector (vector + object), etc?
 
-Dynamic Curve Sampling
--add warning as in DSS.
-
 Add: Project UV from View
 
 Offset Origin
 Center Geoemtry
 -should also output a transform so that invert operation can be possible?
 
-Curve Linear
--should I set radius at low?
-
 Attribute Viewer
 -support face corner with better positioning of the existing vector.
 
 Add: S_Parallax Occlusion
-
-Add: New Tree Generator
--attach in sequence. using bundle?
 
 **Remove Trash Code:
 ********************************************************
 5.3:
 Curve to Mesh
 -support Miter Scale for Even Thickness.
+
+**Get geometry material:
+Curve Split
+-will lose material set before, because there's conversion within.
+	-can add material back using join geometry and delete method.
+	-need to check performance to see if it's needed.
+-but hair on geometry still can't be fixed, because it already has set material at the end.
 
 **Deprecation in 5.3:
 -Set Curve Tilt Alignment
@@ -413,9 +409,6 @@ Curve to Mesh
 	-this node should be completely ungrouped and removed to be replaced by Join Particles.
 -Hair on Surface
 	-integrated into Hair on Geometry.
--Spline Info
-	-Curve Info
--G_Boundary Selection
 -G_Set Curve radius
 	-included and replaced by "G_Set Geo radius" to also support points.
 	-warning only upto 5.2, remove in 5.4?
@@ -454,14 +447,14 @@ Curve to Mesh
 		-> should be removed in 5.2 LTS
 	-origin preview, the position input for points.
 
-**Deprecation in 5.5:
+**Deprecation in 5.5/6.0:
 -ZC_05_UV Deformer
 -Random Per Island
 	-deprecate value method completely?
 	-allows setting up island for different domain really?
 		-ID using mesh island or actual stable ID? etc.
-
-**Deprecation in 6.0
+-Spline Info
+	-Curve Info; I forgot to enable warning earlier.
 -Bevel Curve
 -Align Rotation on Curves
 	-warning up to 5.4, remove in 5.5?
@@ -506,11 +499,9 @@ Add Curve Branch
 -this one is broken now due to hierarchy issue?
 	-Use different modes for Inside Simulation Vs. Inside Loop.
 
-Curve Split
--will lose material set before, because there's conversion within.
-	-can add material back using join geometry and delete method.
-	-need to check performance to see if it's needed.
--but hair on geometry still can't be fixed, because it already has set material at the end.
+**Transfer Attributes
+-all nodes using it in simulation zone needs double transfer to keep dynamic named attribute
+-Paint wave solver Spread mode doesn't work with it for unknown reason.
 
 Animate
 -is having a curve scape goat inside for warning evaluation.
