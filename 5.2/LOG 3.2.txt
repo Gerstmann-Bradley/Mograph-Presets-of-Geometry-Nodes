@@ -300,6 +300,16 @@ Bend Deformer
 Paint Wave Solver
 --use Transfer Attribtues
 	-spread mode doesn't work with it, even if double transfer.
+
+Loft Curves
+-support Bridge mode since the function was included within.
+
+Woven Surface
+-for the moment, connect height factor to influence radius factor.
+-dimension should directly influence the level of details.
+
+UV Deformer
+-clean up closure dimension with math maximum.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_17
 To Do:
@@ -314,13 +324,13 @@ Add: G_Principle Component?
 -> the invert rotation and add rotation part is a bit convoluted and better handle with preset.
 -also mode for both geometry and vector?
 
+Face Points
+-UV method can still offer X and Y differences.
+
 Point Instance Geometry
 Face Points
 Grid Array, Hexagonal Array, etc.
 -also add option to influence the radius of curve?
-
-Face Points
--UV method can still offer X and Y differences.
 
 Directional Falloff
 -add animation factor?
@@ -331,11 +341,6 @@ Directional Falloff
 -Curve Deformer
 	-for each element optimization without realize.
 -Instance Bounding Box?
-
-Add: Bridge Curve Loop?
--better to support multi-input socket?
--curve version to bridge edge loop, etc.
--kind of skeleton version of loft curve?
 
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
@@ -350,15 +355,10 @@ Dynamic Curve Sampling
 	-transfer dynamic attribute to static one.
  	-and my original geometry to sample the static one.
 		-can replaces lots of redundant sample index by index?
+-selection may need to be a float for better flexibility?
 
 Fill Curve Tube
 -rewrite to also decide whether to scale or set the radius?
-
-Dynamic Sampling nodes
--selection may need to be a float for better flexibility.
-
-Woven Surface
--allow vector dimension? for length UV beyond 0-1?
 
 New Grid Nodes to update old grid preset.
 -dilate/erode for offset.
