@@ -329,6 +329,9 @@ Add: G_Principle Component?
 	-axis can also be used for axis angle to rotation.
 -> the invert rotation and add rotation part is a bit convoluted and better handle with preset.
 -also mode for both geometry and vector?
+
+Hair on Geometry
+-set curve type to catmull-rom at the end for cycles rendering.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
