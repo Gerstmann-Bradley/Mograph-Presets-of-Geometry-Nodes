@@ -332,6 +332,20 @@ Add: G_Principle Component?
 
 Hair on Geometry
 -set curve type to catmull-rom at the end for cycles rendering.
+
+random spirals
+-should have options turning off object seed.
+	-perhaps even keep off by default.
+
+S_Tiling
+-add ID.
+
+S_Random Value
+-remove old ID support, otherwise will need a boolean socket for switch.
+-absolute var. mode need fix.
+
+Points Distribute
+-rotation should include tangent where possible.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
@@ -351,6 +365,7 @@ Curve Fill Fracture
 	-will be too slow, no?
 
 Add: Set Rotation Secondary Axis
+	-simi function already kind of used in Points Distribute
 -use align rotation to vector with pivot axis?
 -design use set curve normal as an example.
 	-normal, vector (vector + object), etc?
@@ -403,6 +418,8 @@ Curve Split
 
 **Index Switch & Switch Node in shader
 -polar coordinate
+-random value
+-
 
 **Trash Code Removal
 -Helical Connections
@@ -415,8 +432,9 @@ Curve Split
 	-5.3
 -Array on Curve
 	-removing old count algorithm...
--Random Per Island
+-G_Random Per Island
 	-simplify .G_Store Seed
+	-value mode is almost non-existant with latest S_RV & S_RC change.
 -Set Curve Tilt by Normal?
 	-rather warning than something dumb imo.
 -cleaning up ZA_19 Curve Deformers
