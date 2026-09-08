@@ -346,6 +346,19 @@ S_Random Value
 
 Points Distribute
 -rotation should include tangent where possible.
+
+Match Size
+-use bounding box or not?
+	-field min-max itself will not properly handle different geometry types.
+	-> add mode to support bounding box.
+-the vector mode uses field min-max to support non-position attributes, etc.
+
+Loop Index
+-re-organize it since elem selection is repalced by FEEZ.
+
+mirror modifier
+-has issues regarding planar mesh.
+	-solved by solidify the bounding box than extrude, as required for generating volume.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
