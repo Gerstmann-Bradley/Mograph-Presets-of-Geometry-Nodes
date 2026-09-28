@@ -408,26 +408,11 @@ Hair on Geometry
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
-**Menu Tooltip update
-	-each menu item should have their description
---UV Deformer
---Is Inside Volume
-
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
 
 New Grid Nodes to update old grid preset.
 -dilate/erode for offset.
-
-Curve Fill Fracture
--also to enable split to instances for fracture-pieces?
-	-will be too slow, no?
-
-Add: Set Rotation Secondary Axis
-	-simi function already kind of used in Points Distribute
--use align rotation to vector with pivot axis?
--design use set curve normal as an example.
-	-normal, vector (vector + object), etc?
 
 Add: Project UV from View
 
