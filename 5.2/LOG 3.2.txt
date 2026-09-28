@@ -359,6 +359,49 @@ Loop Index
 mirror modifier
 -has issues regarding planar mesh.
 	-solved by solidify the bounding box than extrude, as required for generating volume.
+
+world BG
+-viewport display into others, so not blocking orthographic views.
+
+Negati
+-avg should also support decimal shift
+
+Align Rotation to Point
+-fix issues from G_axes to rotation.
+	-it was on Curve mode, should be swapped 1` & 2` axis for Default Mesh mode.
+
+Axes to Rotation
+-even in mesh mode, should support custom tangent?
+
+Follow Path Constraint
+-loop mode is contradicting the extrapolation.
+	-but circular case need loop mode.
+-> made into two modes.
+	-resolution can only support loop mode instead of Extrapola.
+
+Track to Constarint.
+-fix issues from Follow Path Constraint & Align rotation to Point.
+
+3D Viewer
+-rotation should also have switch on domain.
+
+Axes to Rotation
+	-previous align rotation on Curves has flipped normal tangent relationship.
+		-needs to check how it influences other assets using it.
+--3D Viewer
+--Align Rotation to Point
+--Array on Curves
+--Curve to Mesh
+--Hair on Geometry
+--Radial Array
+	-fixed unintentional rotation offset made from node duplicate?
+--Tree Generator
+	-needs rewrite anyway.
+--Trim Curve
+
+Array on Curves
+-fix cyclic distribution.
+-fix uniform offset
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
