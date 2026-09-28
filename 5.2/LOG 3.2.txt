@@ -402,6 +402,9 @@ Axes to Rotation
 Array on Curves
 -fix cyclic distribution.
 -fix uniform offset
+
+Hair on Geometry
+-Mesh tangent rotation utilizes the one directly from Point Distribute?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
