@@ -1,0 +1,208 @@
+Done:
+**Deprecation in 5.3:
+--Set Curve Tilt Alignment
+	-Set Curve Tilt by Normal
+--Random Helices Distribution
+	-Random Spirals
+--Set particle parameters
+	-this node should be completely ungrouped and removed to be replaced by Join Particles.
+--Hair on Surface
+	-integrated into Hair on Geometry.
+--Noise 3D
+--Voronoi 3D
+--S_Randomness
+	-there was no warning, but it must be deprecated on time.
+	-kept for 5.2 for linking.
+
+UV Deformer
+-fix issue in mapping due to New Avg Decimal Shift in Negati. 
+
+**Trash Code Removal
+--Is Inside View
+	-5.3
+	-auto function seems not needed?
+--Face Point
+	-5.3
+--Array on Curve
+	-removing old count algorithm...
+-G_Random Per Island
+	-simplify .G_Store Seed
+	-value mode is almost non-existant with latest S_RV & S_RC change.
+--Set Curve Tilt by Normal?
+	-rather warning than something dumb imo.
+--cleaning up ZA_19 Curve Deformers
+--UV deformer
+	-5.3
+	-marked red frames
+--Mirror Modifier
+	-red frames are no longer needed.
+--Bend Deformer
+	-Clean up ZB_11 group.
+****************************************************************************************************
+The Newest Test Demo Tree: ZG_18
+To Do:
+**Set Geometry Bundle, Get Geometry Bundle
+-to complete rewrite of tree generator
+
+New Grid Nodes to update old grid preset.
+-dilate/erode for offset.
+
+Add: Project UV from View
+
+Offset Origin
+Center Geoemtry
+-should also output a transform so that invert operation can be possible?
+
+Attribute Viewer
+-support face corner with better positioning of the existing vector.
+
+Add: S_Parallax Occlusion
+
+**Remove Trash Code:
+********************************************************
+5.3:
+Curve to Mesh
+-support Miter Scale for Even Thickness.
+
+**Get geometry material:
+Curve Split
+-will lose material set before, because there's conversion within.
+	-can add material back using join geometry and delete method.
+	-need to check performance to see if it's needed.
+-but hair on geometry still can't be fixed, because it already has set material at the end.
+
+**Index Switch & Switch Node in shader
+-polar coordinate
+-random value
+-
+
+**Deprecation in 5.5/6.0:
+-ZC_05_UV Deformer
+-G_Set Curve radius
+	-included and replaced by "G_Set Geo radius" to also support points.
+	-warning only upto 5.2, remove in 5.4?
+-G_Randomness
+	-warning only upto 5.2, remove in 5.4.
+-Set Curve Radius
+	-enable warning from 5.3.
+-Random Per Island
+	-deprecate value method completely?
+	-allows setting up island for different domain really?
+		-ID using mesh island or actual stable ID? etc.
+-Spline Info
+	-Curve Info; I forgot to enable warning earlier.
+-Bevel Curve
+-Align Rotation on Curves
+	-warning up to 5.4, remove in 5.5?
+****************************************************************************************************
+GN-Known Issue:
+Tree Generator
+-Noises displacement is displacing branches out of way.
+-need a better interpolation for "over parameter" method.
+
+Inertial Offset
+-quaternion inertia
+	-through vector is a bad idea.
+	-inertia has to be done on quaternion itself.
+-quaternion offset should be done by mixing rotation with a overshoot factor?
+
+Scale Selection
+-shrink float has issue in low iterations causing jagged edges.
+	-implement so as float inverter by itself can cause huge subtraction of values.
+
+Solidify
+-In Instance Mode, Merge by Distance Not Working.
+
+Solidified Outline
+-it can't really be made into sequence, likely because of double extrusion.
+	-is it really needed to be fixed?
+
+Array on Curves
+-stability issue
+	-changing in length can disrupt the array on curves.
+	-instance on point mode will be the most stable by length.
+		-but instancing method by itself doesn't allow offset along curve.
+-> to allow instancing method, need to get the offset to recover the position and parameter?
+	-as long as they are resampled, poitns will be moved.
+-> difficult to solve it now.
+
+Inertial Deformer
+-have rough support for newly generated geometry.
+	-but in case of reversed index generation still tons of issue.
+	-It really needs Sample by ID.
+
+Add Curve Branch
+-this one is broken now due to hierarchy issue?
+	-Use different modes for Inside Simulation Vs. Inside Loop.
+
+**Transfer Attributes
+-all nodes using it in simulation zone needs double transfer to keep dynamic named attribute
+-Paint wave solver Spread mode doesn't work with it for unknown reason.
+
+Animate
+-is having a curve scape goat inside for warning evaluation.
+
+Curve Extrapolation
+-can't completley bypass using selection, because curve to mesh has no selection and must happen.
+-in some dynamic cases it will switch the curve Index and thus point index too.
+
+Face Points
+-Join Vertices Points will cause evaluation disturbance.
+	-likely due to sample index disturbance?
+-> perhaps better solved by closure to duplicate functions.
+	-for now it seems working or not working anyway. pending.
+-Dual Mesh doesn't mean the exact vertices location.
+	-as avg. point to form polygon for face points can be bad at low subd.
+-Join Vertex Points function needs some more thoughts.
+	-while it's working on basic case.
+	-dynamic case require sampling and capture on respective domain.
+		-which is not exposed and has to be done outside.
+
+Hair on Geometry
+-in surface cling, Proximity targets differently for each point in complex geometry
+
+Dynamic Space Sampling
+-Curve Tangent/grid edge tangent method is not working
+	-because they aren't stable relative to geometry?
+-basic setup is working.
+	-but somehow moving as a whole in complex scene. why?
+
+Tracer
+-I think there are cases you don't want to delete trace when they are deleted?
+
+Freeze Geometry
+-what if different geometry requiring different status of freeze?
+	-switch node can't accept Field.
+	-Separate Geometry for Freeze?
+		-if the index is changing, what to do?
+
+Join Particles
+-Should Inheret the previous velocity?
+	-currently the velocity must be newly written.
+
+Step Extrude
+-The stop mode currently doesn't support attribute for multiple polygons.
+
+Curve to Mesh
+-give warning in Mesh Instances.
+	-curve to mesh will work in curve instances wtho realization.
+-when used as a modifier for mesh, it will cause lose of material.
+	-because of Mesh to Curve step.
+****************************************************************************************************
+Investigation:
+Hair on Geometry
+-investigate why subdivide curve is causing issue without capturing.
+
+Join Particles
+-Investigate: why joining 2/frame has more hits than joining 1/frame?
+	-seems to only happen if using temporal object info?
+
+Helical Connections
+-is it possible to auto-detect the decimals when connecting in chains?
+	-difficult, so far no success.
+
+Unknown Nodes:
+-Group Index, Count Per Island.
+-Group per Domain
+-Iteration Count per Domain.
+	-used to be for repeat zone. but currently questionable.

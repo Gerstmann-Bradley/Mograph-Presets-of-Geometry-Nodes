@@ -405,6 +405,9 @@ Array on Curves
 
 Hair on Geometry
 -Mesh tangent rotation utilizes the one directly from Point Distribute?
+
+UV Deformer
+-fix issue in mapping due to New Avg Decimal Shift in Negati. 
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
