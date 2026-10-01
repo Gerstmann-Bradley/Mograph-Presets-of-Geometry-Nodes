@@ -410,6 +410,13 @@ UV Deformer
 -fix issue in mapping due to New Avg Decimal Shift in Negati.
 
 Add: G_UVMap
+
+Attribute Viewer
+-the switch node allowing dynamics is generating errors
+	-need to manually switch to single type, or using attribute statistics.
+
+Curve to Mesh
+-UV length multiplier is broken if radius is not a constant.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

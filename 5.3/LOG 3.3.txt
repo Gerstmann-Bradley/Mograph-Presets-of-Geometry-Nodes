@@ -37,6 +37,14 @@ UV Deformer
 	-Clean up ZB_11 group.
 
 Add: G_UVMap
+
+Attribute Viewer
+-the switch node allowing dynamics is generating errors
+	-need to manually switch to single type, or using attribute statistics.
+
+Curve to Mesh
+-UV length multiplier is broken if radius is not a constant.
+	-made a bit more elegant than the fix in 5.2
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
