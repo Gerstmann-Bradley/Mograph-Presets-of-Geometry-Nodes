@@ -25,9 +25,6 @@ UV Deformer
 	-5.3
 --Array on Curve
 	-removing old count algorithm...
--G_Random Per Island
-	-simplify .G_Store Seed
-	-value mode is almost non-existant with latest S_RV & S_RC change.
 --Set Curve Tilt by Normal?
 	-rather warning than something dumb imo.
 --cleaning up ZA_19 Curve Deformers
@@ -38,6 +35,8 @@ UV Deformer
 	-red frames are no longer needed.
 --Bend Deformer
 	-Clean up ZB_11 group.
+
+Add: G_UVMap
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
