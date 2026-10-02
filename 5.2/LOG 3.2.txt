@@ -417,6 +417,9 @@ Attribute Viewer
 
 Curve to Mesh
 -UV length multiplier is broken if radius is not a constant.
+
+Center Falloff
+-fix decimal shift, should only influence the added scale offset.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
