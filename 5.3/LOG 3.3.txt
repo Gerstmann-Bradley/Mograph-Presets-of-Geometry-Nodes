@@ -48,6 +48,13 @@ Curve to Mesh
 
 Center Falloff
 -fix decimal shift, should only influence the added scale offset.
+
+Curve Falloff
+-why animation and size is influence falloff result when position are unified?
+	-because distance position should also be included within?
+
+Text Mesh
+-index output warning for no remesh mode.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
