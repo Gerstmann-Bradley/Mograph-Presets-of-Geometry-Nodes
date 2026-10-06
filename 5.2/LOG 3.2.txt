@@ -427,6 +427,9 @@ Curve Falloff
 
 Text Mesh
 -index output warning for no remesh mode.
+
+Paint Wave Solver
+-toggle spread usage inference should be fixed.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
