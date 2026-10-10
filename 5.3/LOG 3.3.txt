@@ -58,6 +58,28 @@ Text Mesh
 
 Paint Wave Solver
 -toggle spread usage inference should be fixed.
+
+Planar Remesh
+-made into a modifier
+-use border mode of smooth
+	-& enable border selection
+-it seems merge point change made geometry must flip face after merge.
+
+UVMap Viewer
+-support non-Mesh UV, since they may not be on face corner domain.
+
+Negati
+-socket re-arrangement, factor should be right below it.
+-original value should be 1 so that factor could be kind of 2nd value control.
+
+World BG
+-known issue: not having detailed control in GN panel because color ramp....
+	-still worth to expose it, otherwise too anoying to tweak it.
+
+Curve Linear
+-given how new hair is intepreting curve without radius as thin.
+	-the default radius should be set and make sure it's thinner.
+-> 1 for the moment. keep Curve to Mesh decimal shift 1
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
