@@ -447,6 +447,11 @@ Negati
 World BG
 -known issue: not having detailed control in GN panel because color ramp....
 	-still worth to expose it, otherwise too anoying to tweak it.
+
+RayCast
+-automation in SDF may still not be enough for circular case.
+	-still need choice of manual settings.
+-> add Accuracy
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

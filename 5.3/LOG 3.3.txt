@@ -79,7 +79,13 @@ World BG
 Curve Linear
 -given how new hair is intepreting curve without radius as thin.
 	-the default radius should be set and make sure it's thinner.
--> 1 for the moment. keep Curve to Mesh decimal shift 1
+-> 1 for the moment. keep Curve to Mesh decimal shift 1.
+	-because other curve geometry like Quadrilateral may also miss it.
+
+RayCast
+-automation in SDF may still not be enough for circular case.
+	-still need choice of manual settings.
+-> add Accuracy
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
