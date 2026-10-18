@@ -452,6 +452,22 @@ RayCast
 -automation in SDF may still not be enough for circular case.
 	-still need choice of manual settings.
 -> add Accuracy
+
+Random Transform
+-translation shouldn't allow negative.
+
+random per island
+-in shader, should include both geometry and instance attribute.
+
+S_translate position
+-scale shouldn't be negative.
+
+Rotation to Vector
+-use expanded menu.
+
+Vector Noise
+Plane Edge Gradient
+-implement RPI within.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

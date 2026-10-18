@@ -86,9 +86,118 @@ RayCast
 -automation in SDF may still not be enough for circular case.
 	-still need choice of manual settings.
 -> add Accuracy
+
+Random Transform
+-translation shouldn't allow negative.
+
+random per island
+-in shader, should include both geometry and instance attribute.
+
+S_translate position
+-scale shouldn't be negative.
+
+Rotation to Vector
+-use expanded menu.
+
+Vector Noise
+Plane Edge Gradient
+-implement RPI within.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
+G_Random Per Island
+-simplify .G_Store Seed
+-value mode is almost non-existant with latest S_RV & S_RC change.
+-add an "as a whole" option in case used in FEEZ?
+
+Random Transform
+-add decimal shift
+
+Add: aligned Bounding Box to View
+-kind of for BBox for screen space?
+
+Radial Array
+-it needs to output rotation to rotation to vector.
+-resolution should be count
+
+Add: Camera Wiggler
+-a point to duplicate camera position, and then wiggle the point.
+	-camera will read position of the point.
+
+Plane Edge Gradient
+-uniform & non-uniform noise.
+
+Loft Curves
+-assuming the original set of curves form a ring, need to loft the loop?
+
+filled mesh circle
+-support decimal shift
+
+Add: Semi-Sphere
+-need to think about UV, straight or circular.
+
+Curve to Mesh
+-add comment on the cap UV factor.
+	-it's going from 0-100 for small length due to the length division.
+
+Random Rotation
+-clamp on the default Var. not working properly, perhaps precision issue.
+
+S_Star
+-skew shouldn't influence radius, any thoughts?
+
+Animate
+-should use duration by default?
+
+S_Polar Coordinate
+-when it's cyclic mode, proximity falloff need a better method to be dealt with.
+	-if using separate XYZ method, the coordinate is offset by 0.5, so need to fix that as well.
+
+Add: Set Nurbs Order
+-as tool to recover nurbs order from 2.
+
+UV Deformer
+-mapping to on XY and Z axis may need to be separated.
+	-if the geo already has its own UV, but need to determine Z separately.
+-why mid-level is not equally inserted for mesh and curve?
+-contains curve split and even conversion, so missing material set before.
+
+Hair on Geometry
+-DSS should have transfer attributes enabled?
+
+S_Random Color
+-need a mode for color ramp.
+
+Curve to Mesh
+-support Miter Scale for Even Thickness.
+
+**Get geometry material:
+Curve Split
+-will lose material set before, because there's conversion within.
+	-can add material back using join geometry and delete method.
+	-need to check performance to see if it's needed.
+-but hair on geometry still can't be fixed, because it already has set material at the end.
+
+**Index Switch & Switch Node in shader
+-polar coordinate
+-random value
+-
+
+Hair on Geometry
+-Mesh mode support count & density.
+-why it has "realize output"? hair won't be available anyway.
+
+Paint Wave Solver
+-add interval of blur to see if it's possible to slow down the spread.
+
+Edge of Face
+-need some update.
+
+Curve to Mesh
+-flat cap should allow planar type of Cap UV.
+	-so that low resolution could have high resolution circular UV.
+-flat cap UV maximum and minimum seems too much beyond 0 and 1, need investigate.
+
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
 
@@ -108,21 +217,10 @@ Add: S_Parallax Occlusion
 
 **Remove Trash Code:
 ********************************************************
-5.3:
-Curve to Mesh
--support Miter Scale for Even Thickness.
-
-**Get geometry material:
-Curve Split
--will lose material set before, because there's conversion within.
-	-can add material back using join geometry and delete method.
-	-need to check performance to see if it's needed.
--but hair on geometry still can't be fixed, because it already has set material at the end.
-
-**Index Switch & Switch Node in shader
--polar coordinate
--random value
--
+5.4:
+Custom Viewer with Geometry Overlay
+-3D Viewer
+-Attribute Viewer
 
 **Deprecation in 5.5/6.0:
 -ZC_05_UV Deformer
