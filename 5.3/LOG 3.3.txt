@@ -102,6 +102,13 @@ Rotation to Vector
 Vector Noise
 Plane Edge Gradient
 -implement RPI within.
+
+Offset to Camera
+-no need to clamp minimum at farthest mode. also remove mix factor clamp.
+
+Point Distribute
+-volume should ignore use UV tangent option
+-volume density socket inference has issues.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
@@ -110,8 +117,17 @@ G_Random Per Island
 -value mode is almost non-existant with latest S_RV & S_RC change.
 -add an "as a whole" option in case used in FEEZ?
 
+Add: Arc
+-need a better arc compared to the original design.
+
 Random Transform
 -add decimal shift
+
+Sin Function
+-add index for each sin peak...
+
+S_Venetian Blinds
+-add index or seed from sine function index.
 
 Add: aligned Bounding Box to View
 -kind of for BBox for screen space?
@@ -125,10 +141,11 @@ Add: Camera Wiggler
 	-camera will read position of the point.
 
 Plane Edge Gradient
--uniform & non-uniform noise.
+-uniform & non-uniform noise factor?
 
 Loft Curves
 -assuming the original set of curves form a ring, need to loft the loop?
+	-add a toggle of loop either way?
 
 filled mesh circle
 -support decimal shift
@@ -161,6 +178,8 @@ UV Deformer
 	-if the geo already has its own UV, but need to determine Z separately.
 -why mid-level is not equally inserted for mesh and curve?
 -contains curve split and even conversion, so missing material set before.
+-custom geo mode should be default than object mode.
+-if originally already have material, and material slot empty, use original material.
 
 Hair on Geometry
 -DSS should have transfer attributes enabled?
