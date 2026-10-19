@@ -475,6 +475,10 @@ Offset to Camera
 Point Distribute
 -volume should ignore use UV tangent option
 -volume density socket inference has issues.
+
+Text Mesh
+-somehow merge point is a bit broken for "E" in "BLENDER".
+	-it requires a slightly larger distance. but the issue not presenting in 5.3
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
