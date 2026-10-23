@@ -479,6 +479,9 @@ Point Distribute
 Text Mesh
 -somehow merge point is a bit broken for "E" in "BLENDER".
 	-it requires a slightly larger distance. but the issue not presenting in 5.3
+
+Object Seed
+-should use hash seed power 4 in case of shader
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
