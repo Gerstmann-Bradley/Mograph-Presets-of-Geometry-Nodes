@@ -115,6 +115,15 @@ Object Seed
 
 G_Random Per Island
 -use RPI for addition instead of W.
+
+world BG
+-bugged, vector offset doesn't seem to reflect the real amount; or shifted by the scale.
+
+Dot Product Cartoon
+-value shouldn't be 0. perhaps 0,0,-1
+
+Polar Coordinate
+-centering must be exerted to input UVMap as well.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
@@ -123,51 +132,16 @@ G_Random Per Island
 -value mode is almost non-existant with latest S_RV & S_RC change.
 -add an "as a whole" option in case used in FEEZ?
 
-Add: Arc
--need a better arc compared to the original design.
+Translate position
+-should add RPI, but to where?
+	-should enable a toggle or?
 
-Random Transform
--add decimal shift
-
-Sin Function
--add index for each sin peak...
-
-S_Venetian Blinds
--add index or seed from sine function index.
-
-Add: aligned Bounding Box to View
--kind of for BBox for screen space?
-
-Radial Array
--it needs to output rotation to rotation to vector.
--resolution should be count
-
-Add: Camera Wiggler
--a point to duplicate camera position, and then wiggle the point.
-	-camera will read position of the point.
-
-Plane Edge Gradient
--uniform & non-uniform noise factor?
-
-Loft Curves
--assuming the original set of curves form a ring, need to loft the loop?
-	-add a toggle of loop either way?
+Text Mesh
+-extrusion issue investigate.
+-segment 0 is still extruding somehow?
 
 filled mesh circle
 -support decimal shift
-
-Add: Semi-Sphere
--need to think about UV, straight or circular.
-
-Curve to Mesh
--add comment on the cap UV factor.
-	-it's going from 0-100 for small length due to the length division.
-
-Random Rotation
--clamp on the default Var. not working properly, perhaps precision issue.
-
-S_Star
--skew shouldn't influence radius, any thoughts?
 
 Animate
 -should use duration by default?
@@ -175,6 +149,68 @@ Animate
 S_Polar Coordinate
 -when it's cyclic mode, proximity falloff need a better method to be dealt with.
 	-if using separate XYZ method, the coordinate is offset by 0.5, so need to fix that as well.
+
+solidify
+-why it has set shade non-smooth inside.
+	-if I set auto-smooth inside, can it be overwritten otherwise later?
+
+Bounding Box falloff
+-what if I want per instance? as a whole?
+
+Random Rotation
+-clamp on the default Var. not working properly, perhaps precision issue.
+
+random transform
+-scale variation should be in %
+-should set position first before scaling, so can read falloff information.
+-add decimal shift for scale.
+
+Curve to Mesh
+-add comment on the cap UV factor.
+	-it's going from 0-100 for small length due to the length division.
+
+S_Star
+-skew shouldn't influence radius, any thoughts?
+
+offset origin
+-add option to work based on object's own tranfsorm.
+
+Curve falloff
+-how should it behave in low size while full high animation factor?
+
+Add: Arc
+-need a better arc compared to the original design.
+
+Sin Function
+-add index for each sin peak...
+
+S_Venetian Blinds
+-add index or seed from sine function index.
+
+Radial Array
+-it needs to output rotation to rotation to vector.
+-resolution should be count
+
+Loft Curves
+-assuming the original set of curves form a ring, need to loft the loop?
+	-add a toggle of loop either way?
+
+Step Extrusion
+-list to allow input from outside?
+-insersion closure to allow randomness or determine total value within FEEZ?
+
+Add: aligned Bounding Box to View
+-kind of for BBox for screen space?
+
+Add: Semi-Sphere
+-need to think about UV, straight or circular.
+
+Add: Camera Wiggler
+-a point to duplicate camera position, and then wiggle the point.
+	-camera will read position of the point.
+
+Plane Edge Gradient
+-uniform & non-uniform noise factor?
 
 Add: Set Nurbs Order
 -as tool to recover nurbs order from 2.

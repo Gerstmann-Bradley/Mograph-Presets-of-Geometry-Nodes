@@ -482,6 +482,15 @@ Text Mesh
 
 Object Seed
 -should use hash seed power 4 in case of shader
+
+world BG
+-bugged, vector offset doesn't seem to reflect the real amount; or shifted by the scale.
+
+Dot Product Cartoon
+-value shouldn't be 0. perhaps 0,0,-1
+
+Polar Coordinate
+-centering must be exerted to input UVMap as well.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
