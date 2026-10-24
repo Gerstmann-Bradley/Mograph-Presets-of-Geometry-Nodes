@@ -491,6 +491,17 @@ Dot Product Cartoon
 
 Polar Coordinate
 -centering must be exerted to input UVMap as well.
+
+Random Transform
+-should set position first before scaling, so can read falloff information.
+
+**store UVMap
+-shouldn't rely on implicit attribute
+	-UV could have negative range interrupting implicit attribute.
+	-output is by default on point domain instead of face corner.
+--UVMap Viewer
+--UV Deformer
+--Get UVMap
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

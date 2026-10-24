@@ -124,6 +124,33 @@ Dot Product Cartoon
 
 Polar Coordinate
 -centering must be exerted to input UVMap as well.
+
+filled mesh circle
+-support decimal shift
+
+Animate
+-should use duration by default
+
+solidify
+-why it has set shade non-smooth inside.
+	-if I set auto-smooth inside, can it be overwritten otherwise later?
+-> shade autosmooth internally; can be overwritten later.
+
+Random Rotation
+-clamp on the default Var. not working properly, perhaps precision issue.
+
+random transform
+-scale variation should be in %
+-should set position first before scaling, so can read falloff information.
+-add decimal shift for scale.
+
+**store UVMap
+-shouldn't rely on implicit attribute
+	-UV could have negative range interrupting implicit attribute.
+	-output is by default on point domain instead of face corner.
+--UVMap Viewer
+--UV Deformer
+--Get UVMap
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
