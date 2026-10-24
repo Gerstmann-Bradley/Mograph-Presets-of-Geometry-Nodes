@@ -151,6 +151,23 @@ random transform
 --UVMap Viewer
 --UV Deformer
 --Get UVMap
+
+Curve to Mesh
+-support Miter Scale for Even Thickness.
+-flat cap should allow planar type of Cap UV.
+	-so that low resolution could have high resolution circular UV.
+x-flat cap UV maximum and minimum seems too much beyond 0 and 1, need investigate.
+	-because length division included within factor.
+
+Polar Coordinate
+-polar mode fix
+-add "original" coordinate in both mode.
+	-in polar mode, original is real original flat.
+	-in cyclic mode, it's non-offsetted original.
+
+Radial Array
+-it needs to output rotation to rotation to vector.
+-resolution should be count
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
