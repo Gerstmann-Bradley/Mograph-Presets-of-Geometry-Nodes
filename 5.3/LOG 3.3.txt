@@ -168,6 +168,12 @@ Polar Coordinate
 Radial Array
 -it needs to output rotation to rotation to vector.
 -resolution should be count
+
+Add: Arc
+-need a better arc compared to the original design.
+
+Add: Semi-Sphere
+-support better UV.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
