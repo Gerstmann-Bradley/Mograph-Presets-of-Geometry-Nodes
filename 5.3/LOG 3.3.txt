@@ -186,41 +186,47 @@ S_Venetian Blinds
 	-will lose material set before, because there's conversion within.
 -Hair on Geometry
 	-can compare material to see if it's needed to set new.
-****************************************************************************************************
-The Newest Test Demo Tree: ZG_18
-To Do:
+
 **Index Switch & Switch Node in shader
 --polar coordinate
--random value
--
-
-S_Star
--skew shouldn't influence radius, any thoughts?
-
-offset origin
--add option to work based on object's own tranfsorm.
-
-Translate position
--should add RPI, but to where?
-	-should enable a toggle or?
+--random Color
+	-also update ID into integer.
+--random value
+	-also update ID into integer.
 
 G_Random Per Island
 -simplify .G_Store Seed
 -value mode is almost non-existant with latest S_RV & S_RC change.
--add an "as a whole" option in case used in FEEZ?
+-add an "Single Value" option in case used in FEEZ.
+-> Complete Rewrite.
+
+**S_Negati
+-changed order, not sure how it impacts other nodes now, simply reversed the order?
+
+S_Star
+-skew shouldn't influence radius, any thoughts?
+	-it's not influencing radius, just illusion when radius is changed.
+
+Translate position
+-should add RPI to single axis using panel toggle.
 
 Bounding Box falloff
--what if I want per instance? as a whole?
-
+-add a per instance mode.
+****************************************************************************************************
+The Newest Test Demo Tree: ZG_18
+To Do:
 Loft Curves
 -assuming the original set of curves form a ring, need to loft the loop?
 	-add a toggle of loop either way?
+
+offset origin
+-add option to work based on object's own tranfsorm.
 
 Add: aligned Bounding Box to View
 -kind of for BBox for screen space?
 
 Add: Camera Wiggler
--a point to duplicate camera position, and then wiggle the point.
+-a point to duplicate camera position? and then wiggle the point?
 	-camera will read position of the point.
 
 Plane Edge Gradient
@@ -246,7 +252,8 @@ S_Random Color
 
 Hair on Geometry
 -Mesh mode support count & density.
--why it has "realize output"? hair won't be available anyway.
+x-why it has "realize output"? hair won't be available anyway.
+	-in case used in legacy object type not supporting curve.
 
 Paint Wave Solver
 -add interval of blur to see if it's possible to slow down the spread.
@@ -272,6 +279,8 @@ Attribute Viewer
 Add: S_Parallax Occlusion
 
 **Remove Trash Code:
+-G_Random Value
+-Random Per Island.old
 ********************************************************
 5.4:
 Custom Viewer with Geometry Overlay
