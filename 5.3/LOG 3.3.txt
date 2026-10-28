@@ -116,6 +116,9 @@ Object Seed
 G_Random Per Island
 -use RPI for addition instead of W.
 
+S_Random Color
+-made a mode for color ramp.
+
 world BG
 -bugged, vector offset doesn't seem to reflect the real amount; or shifted by the scale.
 
@@ -217,6 +220,13 @@ Loft Curves
 -assuming the original set of curves form a ring, need to loft the loop?
 	-add a toggle of loop either way?
 -> add panel & options to set cyclic.
+
+Text Mesh
+-better output the output as well, in case for knitting effect on outline stitches.
+
+Add: Camera Wiggler
+-a point to duplicate camera position? and then wiggle the point?
+	-camera will read position of the point.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
@@ -226,15 +236,8 @@ Exploded View
 offset origin
 -add option to work based on object's own tranfsorm.
 
-Text Mesh
--better output the output as well, in case for knitting effect on outline stitches.
-
 Add: aligned Bounding Box to View
 -kind of for BBox for screen space?
-
-Add: Camera Wiggler
--a point to duplicate camera position? and then wiggle the point?
-	-camera will read position of the point.
 
 Plane Edge Gradient
 -uniform & non-uniform noise factor?
@@ -243,9 +246,6 @@ UV Deformer
 -mapping to on XY and Z axis may need to be separated.
 	-if the geo already has its own UV, but need to determine Z separately.
 -why mid-level is not equally inserted for mesh and curve?
--contains curve split and even conversion, so missing material set before.
--custom geo mode should be default than object mode.
--if originally already have material, and material slot empty, use original material.
 
 Step Extrusion
 -list to allow input from outside?
@@ -253,9 +253,7 @@ Step Extrusion
 
 Hair on Geometry
 -DSS should have transfer attributes enabled?
-
-S_Random Color
--need a mode for color ramp.
+	-how does it know how to interpolate transferred index?
 
 Hair on Geometry
 -Mesh mode support count & density.
