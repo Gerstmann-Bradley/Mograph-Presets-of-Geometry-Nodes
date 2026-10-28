@@ -212,15 +212,22 @@ Translate position
 
 Bounding Box falloff
 -add a per instance mode.
-****************************************************************************************************
-The Newest Test Demo Tree: ZG_18
-To Do:
+
 Loft Curves
 -assuming the original set of curves form a ring, need to loft the loop?
 	-add a toggle of loop either way?
+-> add panel & options to set cyclic.
+****************************************************************************************************
+The Newest Test Demo Tree: ZG_18
+To Do:
+Exploded View
+-add mode for per-vertex to know if there are missing part
 
 offset origin
 -add option to work based on object's own tranfsorm.
+
+Text Mesh
+-better output the output as well, in case for knitting effect on outline stitches.
 
 Add: aligned Bounding Box to View
 -kind of for BBox for screen space?
@@ -281,6 +288,7 @@ Add: S_Parallax Occlusion
 **Remove Trash Code:
 -G_Random Value
 -Random Per Island.old
+-Loft Curves
 ********************************************************
 5.4:
 Custom Viewer with Geometry Overlay
@@ -402,6 +410,11 @@ Curve to Mesh
 
 S_Venetian Blinds
 -index currently can only work for non-threshold & threshold 0.5.
+
+Loft Curves
+-when resultant sequence going from top to bottom,
+	the resultant orientation will be flipped.
+-> face orientation is really difficult to solve, will need Recalculate Normal.
 ****************************************************************************************************
 Investigation:
 Hair on Geometry
