@@ -505,6 +505,11 @@ Random Transform
 
 Polar Coordinate
 -polar mode fix
+
+**Join Particles
+-Serial ID originally only support Point Cloud
+	-> now support Mesh Curve Point Instance.
+-Seed into RPI, update tooltip.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
