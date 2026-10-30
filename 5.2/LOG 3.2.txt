@@ -513,6 +513,9 @@ Polar Coordinate
 
 Radial Array
 -falloff output from fibonacci should be hidden.
+
+Gabor Flow
+-use menu switch for dimension
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

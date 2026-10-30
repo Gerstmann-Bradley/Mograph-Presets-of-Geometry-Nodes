@@ -264,6 +264,10 @@ Radial Array
 
 Add: Select 0-1
 -for selecting geometry from falloff 0-1.
+
+Gabor Flow
+-use menu switch for dimension
+-use switch internally.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
