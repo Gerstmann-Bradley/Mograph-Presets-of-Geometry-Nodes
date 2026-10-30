@@ -234,6 +234,30 @@ Add: Camera Wiggler
 -Seed into RPI, update tooltip.
 
 Add: Mesh Flattener
+
+Time Falloff
+-output raw age?
+
+Exploded View
+-add mode for per-vertex to know if there are missing part
+	-> add per point mode.
+
+Hair on Geometry
+x-why it has "realize output"? hair won't be available anyway.
+	-in case used in legacy object type not supporting curve?
+-> hide realized output for the moment then think about removal.
+x-DSS should have transfer attributes enabled?
+	-how does it know how to interpolate transferred index?
+
+Origin Offset
+-add option to work based on object's own tranfsorm.
+
+Hair on Geometry
+-Mesh mode support count & density.
+
+Edge of Face
+-UI update.
+-function checking on ZC_11
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
