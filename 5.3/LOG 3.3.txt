@@ -258,6 +258,12 @@ Hair on Geometry
 Edge of Face
 -UI update.
 -function checking on ZC_11
+
+Radial Array
+-falloff output from fibonacci should be hidden.
+
+Add: Select 0-1
+-for selecting geometry from falloff 0-1.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
