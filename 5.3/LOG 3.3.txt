@@ -268,6 +268,29 @@ Add: Select 0-1
 Gabor Flow
 -use menu switch for dimension
 -use switch internally.
+
+Gabor Flow
+-Freq should be 1
+
+Add: S_Gradient Wipe
+
+S_Wave Propagate
+-rename: S_Gradient Propagate
+
+**S_Translate Position
+-relative seems not really used anywhere.
+	-delete and expose absolute offset.
+
+**S_Vector Noise
+-Polar mode shouldn't use offsetted UV.
+-add Factor Y for Y axis.
+
+**S_Plane Edge Gradient
+-rename: S_UV Edge Gradient
+
+**S_UV Edge Gradient
+-add factor Y for Y axis
+-remove relative offset.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

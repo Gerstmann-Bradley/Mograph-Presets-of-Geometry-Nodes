@@ -516,6 +516,9 @@ Radial Array
 
 Gabor Flow
 -use menu switch for dimension
+
+S_Vector Noise
+-Polar mode shouldn't use offsetted UV.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
