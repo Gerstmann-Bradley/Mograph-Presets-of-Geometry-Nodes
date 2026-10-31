@@ -294,17 +294,12 @@ S_Wave Propagate
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
-Exploded View
--add mode for per-vertex to know if there are missing part
-
-offset origin
--add option to work based on object's own tranfsorm.
-
 Add: aligned Bounding Box to View
 -kind of for BBox for screen space?
 
-Plane Edge Gradient
--uniform & non-uniform noise factor?
+Mesh Flattener
+-in order to be used for character, need a way to group character.
+-need to be able to refer to external object?
 
 UV Deformer
 -mapping to on XY and Z axis may need to be separated.
@@ -315,20 +310,8 @@ Step Extrusion
 -list to allow input from outside?
 -insersion closure to allow randomness or determine total value within FEEZ?
 
-Hair on Geometry
--DSS should have transfer attributes enabled?
-	-how does it know how to interpolate transferred index?
-
-Hair on Geometry
--Mesh mode support count & density.
-x-why it has "realize output"? hair won't be available anyway.
-	-in case used in legacy object type not supporting curve.
-
 Paint Wave Solver
 -add interval of blur to see if it's possible to slow down the spread.
-
-Edge of Face
--need some update.
 
 **Set Geometry Bundle, Get Geometry Bundle
 -to complete rewrite of tree generator
@@ -361,20 +344,23 @@ Custom Viewer with Geometry Overlay
 -ZC_05_UV Deformer
 -G_Set Curve radius
 	-included and replaced by "G_Set Geo radius" to also support points.
-	-warning only upto 5.2, remove in 5.4?
+	-quite new, so warning to 5.4.
 -G_Randomness
-	-warning only upto 5.2, remove in 5.4.
--Set Curve Radius
-	-enable warning from 5.3.
--Random Per Island
-	-deprecate value method completely?
-	-allows setting up island for different domain really?
-		-ID using mesh island or actual stable ID? etc.
+	-quite commonly used, warning to 5.4.
 -Spline Info
 	-Curve Info; I forgot to enable warning earlier.
+	-warning to 5.4
 -Bevel Curve
+	-commonly used, warning to 5.4
 -Align Rotation on Curves
 	-warning up to 5.4, remove in 5.5?
+-S_Noise Displacement
+	-seems not needed based on Vector Noise.
+	-need warning from 5.3
+-S_Dissipation
+	-made in 5.0, at the time noted issue in design but kept for now.
+	-haven't used in years, test result seems broken.
+	-already made non-asset now
 ****************************************************************************************************
 GN-Known Issue:
 Tree Generator
