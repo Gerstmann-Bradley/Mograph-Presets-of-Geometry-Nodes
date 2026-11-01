@@ -291,6 +291,11 @@ S_Wave Propagate
 **S_UV Edge Gradient
 -add factor Y for Y axis
 -remove relative offset.
+
+Transparent Shadow Ray
+-turn switch to be shadow only.
+
+Add: Set Object Seed
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
