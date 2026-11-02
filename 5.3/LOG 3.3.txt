@@ -239,7 +239,7 @@ Time Falloff
 -output raw age?
 
 Exploded View
--add mode for per-vertex to know if there are missing part
+-add mode for per-vertex to know if there are splitted edges requiring merge.
 	-> add per point mode.
 
 Hair on Geometry
@@ -296,6 +296,10 @@ Transparent Shadow Ray
 -turn switch to be shadow only.
 
 Add: Set Object Seed
+
+Noise Texture
+Voronoi Texture
+-make dimension into expanded menu.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
