@@ -300,6 +300,9 @@ Add: Set Object Seed
 Noise Texture
 Voronoi Texture
 -make dimension into expanded menu.
+
+**Remove: Gravity
+-not really used anywhere.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
