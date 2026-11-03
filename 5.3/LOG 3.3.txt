@@ -312,6 +312,11 @@ Curve Points Preview
 
 Delay Faloff
 -offset output should be fixed to include time offset & delay time as well.
+
+Select 0-1
+-rename: socket into "Value"
+-found cases of bad accuracy on greater than and less than.
+	-use or equal operation to increase accuracy.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
