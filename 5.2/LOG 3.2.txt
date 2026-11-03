@@ -519,6 +519,9 @@ Gabor Flow
 
 S_Vector Noise
 -Polar mode shouldn't use offsetted UV.
+
+Delay Faloff
+-offset output should be fixed to include time offset & delay time as well.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
