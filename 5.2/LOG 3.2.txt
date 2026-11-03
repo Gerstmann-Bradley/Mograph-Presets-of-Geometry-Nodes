@@ -525,6 +525,9 @@ Delay Faloff
 
 Follow Curves
 -all outputs need to be captured
+
+Flowery Mask
+-count was multiplied by 2 due to incomplete Menu change in Sine Function.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
