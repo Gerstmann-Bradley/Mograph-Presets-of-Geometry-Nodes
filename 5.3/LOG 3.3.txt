@@ -317,6 +317,9 @@ Select 0-1
 -rename: socket into "Value"
 -found cases of bad accuracy on greater than and less than.
 	-use or equal operation to increase accuracy.
+
+Follow Curves
+-all outputs need to be captured
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

@@ -522,6 +522,9 @@ S_Vector Noise
 
 Delay Faloff
 -offset output should be fixed to include time offset & delay time as well.
+
+Follow Curves
+-all outputs need to be captured
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
