@@ -323,7 +323,10 @@ Follow Curves
 
 Flowery Mask
 -count was multiplied by 2 due to incomplete Menu change in Sine Function.
--add integer math in count to resolve #issues/166045
+-add integer math in count to resolve #issues/154324
+
+World BG
+-fix issues from changing default in transparent shadow ray.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
