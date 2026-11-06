@@ -327,6 +327,9 @@ Flowery Mask
 
 World BG
 -fix issues from changing default in transparent shadow ray.
+
+Polar Coordinate
+-for cyclic mode, improve Coordinate & Gradient.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
