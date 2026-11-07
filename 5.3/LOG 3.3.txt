@@ -330,6 +330,10 @@ World BG
 
 Polar Coordinate
 -for cyclic mode, improve Coordinate & Gradient.
+
+Set Object Seed
+-due to deletion of "Object Seed", it's broken inside.
+	-fixed by adding internal nodes back; not sure if want support custom object.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
