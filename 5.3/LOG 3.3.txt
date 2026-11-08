@@ -366,6 +366,13 @@ Set Object Seed
 
 Align Rotation to Camera
 -Geo Vs. Field mode to save the amount of "Sample Index" operation required.
+
+S_Center UV
+-need 3D scale multiply into a panel.
+
+Vector Noise
+-in polar mode, think about case when additionally input center UV.
+	-perhaps still need to expose custom vector...
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
