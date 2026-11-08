@@ -373,6 +373,9 @@ S_Center UV
 Vector Noise
 -in polar mode, think about case when additionally input center UV.
 	-perhaps still need to expose custom vector...
+-add Dimension
+
+Add: S_Parallax Occlusion
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
