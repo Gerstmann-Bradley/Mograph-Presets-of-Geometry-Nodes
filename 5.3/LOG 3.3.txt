@@ -334,6 +334,38 @@ Polar Coordinate
 Set Object Seed
 -due to deletion of "Object Seed", it's broken inside.
 	-fixed by adding internal nodes back; not sure if want support custom object.
+
+S_Translate position
+-take negative offset as a toggle.
+
+S_Random Value
+-vector mode panel should be closed.
+
+Emission Alpha BSDF
+-color socket should be named to be color.
+-add toggle for Transparent Shadow.
+
+Gabor Flow
+-should default by 3D.
+	**-dimension not needed.
+
+Set Curve Tilt by Normal
+x-should consider if include object transform in place?
+	-for unknown reason, the differences doesn't seem obvious at all.
+	-in fact it feels even wrong including it.
+
+S_Proximity Falloff
+-add a length output.
+-distance default value to be 5/10=0.5.
+
+Gradient Propagate
+-width by 10/10 in default to fit UVMap.
+
+Set Object Seed
+-seed power to 6. minor fix on linkage to hash seed.
+
+Align Rotation to Camera
+-Geo Vs. Field mode to save the amount of "Sample Index" operation required.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
