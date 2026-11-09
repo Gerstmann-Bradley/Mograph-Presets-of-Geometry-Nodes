@@ -376,6 +376,9 @@ Vector Noise
 -add Dimension
 
 Add: S_Parallax Occlusion
+-add Hide Ground
+-add power exponent in hide ground
+-add alpha boost
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
