@@ -528,6 +528,9 @@ Follow Curves
 
 Flowery Mask
 -count was multiplied by 2 due to incomplete Menu change in Sine Function.
+
+Fade Falloff
+-input should be renamed: "Offset"
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
