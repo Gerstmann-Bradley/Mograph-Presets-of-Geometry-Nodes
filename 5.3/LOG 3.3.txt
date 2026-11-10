@@ -380,8 +380,13 @@ Add: S_Parallax Occlusion
 -add power exponent in hide ground
 -add alpha boost
 
-Bend Deformre
+Bend Deformer
 -realize instance should always work regardless built-in bypassing status.
+
+Parallax Occlusion
+-add support for Curve to Mesh generated Mesh & UV.
+	-automatic detection can still have flaws & performance issue.
+	-> better not to rely on it and use manual method instead.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
