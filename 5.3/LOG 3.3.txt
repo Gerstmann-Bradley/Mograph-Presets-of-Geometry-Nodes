@@ -390,6 +390,17 @@ Parallax Occlusion
 
 Fade Falloff
 -input should be renamed: "Offset"
+
+Arc
+-fix UI and mid-level mistake.
+
+**Radial Array
+-change how default orientation should look like.
+
+Radial Array
+-add falloff
+	-it's questionable how to design falloff for radial mode.
+	?-should it be normalized to 0-1, or based on spline parameter that may not be max 1?
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:
@@ -399,6 +410,9 @@ Add: aligned Bounding Box to View
 Mesh Flattener
 -in order to be used for character, need a way to group character.
 -need to be able to refer to external object?
+
+Object Seed
+-power should be made to 6.
 
 UV Deformer
 -mapping to on XY and Z axis may need to be separated.
