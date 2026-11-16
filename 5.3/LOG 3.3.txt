@@ -432,6 +432,9 @@ Curve Resampling
 -using id instead of Seed/RPI.
 -expose Auto-Remove to make it more obvious.
 -fix non-AutoRemove case upon no implicit geo added.
+
+Array on Curves
+-Spline Parameter Output should be Clamped to 0-1
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_20
 To Do:
