@@ -531,6 +531,17 @@ Flowery Mask
 
 Fade Falloff
 -input should be renamed: "Offset"
+
+**Join Particles
+-RPI concept seems no use anymore, better back to SEED?
+	-per point is also still needed for Tracer to work.
+-RPI can still be RPI, but id needs to be per point. two values don't have to sync in same way?
+	-storing values per island before or after can also be easy without extra settings.
+
+**Tracer
+-using id instead of Seed/RPI.
+-expose Auto-Remove to make it more obvious.
+-fix non-AutoRemove case upon no implicit geo added.
 ****************************************************************************************************
 The Newest Test Demo Tree: ZG_18
 To Do:

@@ -401,8 +401,39 @@ Radial Array
 -add falloff
 	-it's questionable how to design falloff for radial mode.
 	?-should it be normalized to 0-1, or based on spline parameter that may not be max 1?
+
+**Curve Points Preview
+	-due to mode into menu change, things different.
+--Array on Curves
+	-major fix.
+--Bezier Handle Preview
+	-non-obvious fix.
+--Decay Function
+	-minor fix.
+--Curve Intersection Detection
+	-this node is too old though, needs update.
+x-Tracer
+	-was used for internal preview, not changing function.
+x-Follow Path Constraint
+	-being separate component internally, no need fix.
+x-Curve Resampling
+	-will need to preview both points and curves anyway.
+
+Curve Resampling
+-add Smooth for Resampling, so the whole curvature can be benefited from resampling.
+
+**Join Particles
+-RPI concept seems no use anymore, better back to SEED?
+	-per point is also still needed for Tracer to work.
+-RPI can still be RPI, but id needs to be per point. two values don't have to sync in same way?
+	-storing values per island before or after can also be easy without extra settings.
+
+**Tracer
+-using id instead of Seed/RPI.
+-expose Auto-Remove to make it more obvious.
+-fix non-AutoRemove case upon no implicit geo added.
 ****************************************************************************************************
-The Newest Test Demo Tree: ZG_18
+The Newest Test Demo Tree: ZG_20
 To Do:
 Add: aligned Bounding Box to View
 -kind of for BBox for screen space?
@@ -410,9 +441,17 @@ Add: aligned Bounding Box to View
 Mesh Flattener
 -in order to be used for character, need a way to group character.
 -need to be able to refer to external object?
+	-or follow kind of object instancer and freeze bound workflow?
 
-Object Seed
--power should be made to 6.
+Append Points to Curve
+-can be improved with transfer attribtues or not?
+
+Delay Falloff
+-Time uses duration, offset doesn't.
+	-what if need duration to influence offset?
+
+Parenting
+-made into a modifier?
 
 UV Deformer
 -mapping to on XY and Z axis may need to be separated.
@@ -441,8 +480,6 @@ Center Geoemtry
 Attribute Viewer
 -support face corner with better positioning of the existing vector.
 
-Add: S_Parallax Occlusion
-
 **Remove Trash Code:
 -G_Random Value
 -Random Per Island.old
@@ -452,6 +489,13 @@ Add: S_Parallax Occlusion
 Custom Viewer with Geometry Overlay
 -3D Viewer
 -Attribute Viewer
+
+**Delay Falloff
+-Step method should be made into a panel with a switch?
+	-better not to touch it now.
+	-> but ease ease may be arranged to the top in the future.
+-index randomize should be included in a panel.
+	-panel toggle required as to override original index?
 
 **Deprecation in 5.5/6.0:
 -ZC_05_UV Deformer
@@ -463,6 +507,9 @@ Custom Viewer with Geometry Overlay
 -Spline Info
 	-Curve Info; I forgot to enable warning earlier.
 	-warning to 5.4
+?-Helical Connections
+	-Spline Index should be renamed to "Curve Index"...
+	-change it until spline info change, to minimize the cost of renaming in versions.
 -Bevel Curve
 	-commonly used, warning to 5.4
 -Align Rotation on Curves
